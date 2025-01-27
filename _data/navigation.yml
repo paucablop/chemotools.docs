@@ -3,7 +3,7 @@ main:
     url: /en/posts/
   - title: "About"
     url: /en/about/
-  - title: "Language"
+  - title: "🌐"  # Language globe emoji
     children:
       - title: "English"
         url: /en/
