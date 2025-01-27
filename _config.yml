@@ -15,6 +15,16 @@ repository               : # GitHub username/repo-name
 search                   : true # true, false (default)
 search_full_content      : true # true, false (default)
 
+
+# Build settings
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-remote-theme
+
 # Site Author
 author:
   name             : "Your Name"
@@ -47,3 +57,5 @@ defaults:
     values:
       layout: single
       author_profile: true
+
+
