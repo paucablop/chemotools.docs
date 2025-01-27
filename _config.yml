@@ -14,6 +14,9 @@ baseurl                  : # the subpath of your site (e.g., "/blog")
 repository               : # GitHub username/repo-name
 search                   : true # true, false (default)
 search_full_content      : true # true, false (default)
+languages                : ["en", "es"]  # Add your languages here
+default_lang             : "en"
+exclude_from_localization: ["assets", "images", "css", "README.md"]
 
 
 # Build settings

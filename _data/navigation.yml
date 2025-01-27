@@ -1,7 +1,12 @@
+# English Navigation
 main:
   - title: "Posts"
     url: /posts/
-  - title: "Categories"
-    url: /categories/
   - title: "About"
     url: /about/
+  - title: "Language"
+    children:
+      - title: "English"
+        url: /en/
+      - title: "Español"
+        url: /es/

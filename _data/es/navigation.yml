@@ -1,0 +1,10 @@
+- title: "Publicaciones"
+    url: /es/posts/
+  - title: "Sobre mí"
+    url: /es/about/
+  - title: "Idioma"
+    children:
+      - title: "English"
+        url: /en/
+      - title: "Español"
+        url: /es/
