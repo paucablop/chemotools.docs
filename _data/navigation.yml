@@ -1,9 +1,8 @@
-# English Navigation
 main:
   - title: "Posts"
-    url: /posts/
+    url: /en/posts/
   - title: "About"
-    url: /about/
+    url: /en/about/
   - title: "Language"
     children:
       - title: "English"

@@ -1,4 +1,5 @@
-- title: "Publicaciones"
+main:
+  - title: "Publicaciones"
     url: /es/posts/
   - title: "Sobre mí"
     url: /es/about/
