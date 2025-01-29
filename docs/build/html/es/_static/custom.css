@@ -1,0 +1,26 @@
+.language-switcher {
+    margin-left: 1rem;
+}
+
+.language-switcher .btn {
+    color: var(--pst-color-text-base);
+    background: none;
+    border: 1px solid var(--pst-color-border);
+    padding: 0.5rem 1rem;
+}
+
+.language-switcher .btn:hover {
+    background: var(--pst-color-background-hover);
+}
+
+.language-switcher .dropdown-menu {
+    min-width: 120px;
+}
+
+.language-switcher .dropdown-item {
+    padding: 0.5rem 1rem;
+}
+
+.language-switcher .dropdown-item:hover {
+    background: var(--pst-color-background-hover);
+}

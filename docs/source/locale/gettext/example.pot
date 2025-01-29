@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, chemotools
+# This file is distributed under the same license as the Chemotools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Chemotools \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-29 21:48+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../example.rst:2
+#: bc6a5132df9b46d89390cbcaf1c4232c
+msgid "Example Page"
+msgstr ""
+
+#: ../../example.rst:4
+#: e0bb3351945a49ed8da1a9530cb8cc17
+msgid "This is an example page in the documentation."
+msgstr ""
+
+#: ../../example.rst:7
+#: 098ab77bc72e49c9909939f8f28e834e
+msgid "Section 1"
+msgstr ""
+
+#: ../../example.rst:9
+#: 000e4bd2b5194909ae545cfb0c214596
+msgid "Here's some sample text with different formatting:"
+msgstr ""
+
+#: ../../example.rst:11
+#: 8748d9c0320c449f877d611b4bcd7cbf
+msgid "**Bold text** is written like this"
+msgstr ""
+
+#: ../../example.rst:12
+#: 7edbd0b937724256ac61265d18911f53
+msgid "*Italic text* is written like this"
+msgstr ""
+
+#: ../../example.rst:13
+#: c40b03a813c74b22b72ceec5de456864
+msgid "``Code snippets`` are written like this"
+msgstr ""
+
+#: ../../example.rst:16
+#: 102e271b6810476dbcc17092f1cfb14d
+msgid "Code Example"
+msgstr ""
+
+#: ../../example.rst:18
+#: cbeb13f388cd4225b5fb7c53ff8fccc5
+msgid "Here's a Python code example:"
+msgstr ""
+
+#: ../../example.rst:27
+#: 8d4133ec40114954818e3f420597e2e6
+msgid "Tables"
+msgstr ""
+
+#: ../../example.rst:29
+#: debd5f8df14c4f678954ae3666fbaf37
+msgid "Here's a sample table:"
+msgstr ""
+
+#: ../../example.rst:32
+#: ee66110266ae4d888ee2454edd8a9aad
+msgid "Header 1"
+msgstr ""
+
+#: ../../example.rst:32
+#: 6bc1b26bbb5b4d099a28c6cf42512990
+msgid "Header 2"
+msgstr ""
+
+#: ../../example.rst:32
+#: d98001f9d161456bb3a710e9feac4309
+msgid "Header 3"
+msgstr ""
+
+#: ../../example.rst:34
+#: 8e688fce18df45bb84ac5610b6065a91
+msgid "cell 1"
+msgstr ""
+
+#: ../../example.rst:34
+#: d842bf6d365f4d2890928d26f7a1a2c2
+msgid "cell 2"
+msgstr ""
+
+#: ../../example.rst:34
+#: de7f4ea47b244a1aaa5bf8fab49c517c
+msgid "cell 3"
+msgstr ""
+
+#: ../../example.rst:36
+#: 7b9ddb990fa44d28bf9272af0e3a3cbd
+msgid "cell 4"
+msgstr ""
+
+#: ../../example.rst:36
+#: ab368faa613b4f22ac7c86312c44bfec
+msgid "cell 5"
+msgstr ""
+
+#: ../../example.rst:36
+#: 95e1be3540d84cd7adb0d37aadcf13f9
+msgid "cell 6"
+msgstr ""

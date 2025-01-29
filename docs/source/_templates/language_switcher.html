@@ -1,0 +1,33 @@
+{% if languages|length >= 2 %}
+<div class="dropdown language-switcher">
+    <button class="btn dropdown-toggle" type="button" id="languageSwitch" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false">
+        {% if language == 'en' %}
+        🇺🇸 English
+        {% elif language == 'es' %}
+        🇪🇸 Español
+        {% elif language == 'zh' %}
+        🇨🇳 中文
+        {% else %}
+        {{ language }}
+        {% endif %}
+    </button>
+    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="languageSwitch">
+        {% for lang_code, lang_name in languages %}
+        {% if lang_code != language %}
+        <a class="dropdown-item" href="{{ pathto('../' + lang_code + '/' + pagename + file_suffix, 1) }}">
+            {% if lang_code == 'en' %}
+            🇺🇸 English
+            {% elif lang_code == 'es' %}
+            🇪🇸 Español
+            {% elif lang_code == 'zh' %}
+            🇨🇳 中文
+            {% else %}
+            {{ lang_name }}
+            {% endif %}
+        </a>
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>
+{% endif %}

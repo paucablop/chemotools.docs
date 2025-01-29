@@ -3,11 +3,17 @@ import sys
 sys.path.insert(0, os.path.abspath('../..'))
 
 project = 'Chemotools'
-copyright = '2025, Chemotools'
+copyright = '2025, chemotools'
 author = 'Pau Cabaneros'
 
 # The full version, including alpha/beta/rc tags
 release = '0.1.0'
+
+# Language settings
+language = 'en'
+locale_dirs = ['locale/']
+gettext_compact = False
+gettext_uuid = True
 
 # Add any Sphinx extension module names here
 extensions = [
@@ -18,26 +24,34 @@ extensions = [
     'sphinx_copybutton',
 ]
 
-# Add any paths that contain templates here
 templates_path = ['_templates']
 exclude_patterns = []
 
-# HTML theme settings
 html_theme = 'pydata_sphinx_theme'
 
-# GitHub context
+# GitHub context and other variables
 html_context = {
-    "github_user": "paucablop",  # Replace with your GitHub username
-    "github_repo": "chemotools.docs",      # Replace with your repository name
+    "github_user": "yourusername",
+    "github_repo": "yourrepo",
     "github_version": "main",
+    "doc_path": "docs/source",
+    # Language settings
+    "languages": [
+        ('en', 'English'),
+        ('es', 'Español'),
+        ('zh', '中文'),
+    ],
+    "language": "en",  # Current language
+    "default_language": "en",
 }
 
 html_theme_options = {
     "github_url": "https://github.com/paucablop/chemotools.docs",
-    "announcement": "This is a demo site!",
     "use_edit_page_button": True,
     "show_toc_level": 2,
+    # Add the language switcher component
+    "navbar_end": ["theme-switcher", "navbar-icon-links", "components/language-switcher.html"]
 }
 
-# The theme to use for HTML and HTML Help pages.
 html_static_path = ['_static']
+html_css_files = ['custom.css']

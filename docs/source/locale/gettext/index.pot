@@ -1,0 +1,52 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, chemotools
+# This file is distributed under the same license as the Chemotools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Chemotools \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-29 21:48+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../index.rst:6
+#: 
+msgid "Contents:"
+msgstr ""
+
+#: ../../index.rst:2
+#: 1aa74eb8e5424d358e652561788de08b
+msgid "Welcome to Your Project's documentation!"
+msgstr ""
+
+#: ../../index.rst:4
+#: fb0c641080624c39aabfd8cc55d949f5
+msgid "This is a sample documentation using the PyData Sphinx Theme."
+msgstr ""
+
+#: ../../index.rst:13
+#: a93debdaa12f47dd92c938aa776a9b69
+msgid "Indices and tables"
+msgstr ""
+
+#: ../../index.rst:15
+#: 030872e443ea4134aa03d34f47b6a7af
+msgid ":ref:`genindex`"
+msgstr ""
+
+#: ../../index.rst:16
+#: e6b82a8941f14223bf5fe3dba8615839
+msgid ":ref:`modindex`"
+msgstr ""
+
+#: ../../index.rst:17
+#: 81386c6a40af49e08f8d28793895eba6
+msgid ":ref:`search`"
+msgstr ""
