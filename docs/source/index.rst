@@ -1,5 +1,5 @@
 Welcome to Your Project's documentation!
-=====================================
+==========================================
 
 This is a sample documentation using the PyData Sphinx Theme.
 

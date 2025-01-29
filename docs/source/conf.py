@@ -2,9 +2,9 @@ import os
 import sys
 sys.path.insert(0, os.path.abspath('../..'))
 
-project = 'Your Project Name'
-copyright = '2025, Your Name'
-author = 'Your Name'
+project = 'Chemotools'
+copyright = '2025, Chemotools'
+author = 'Pau Cabaneros'
 
 # The full version, including alpha/beta/rc tags
 release = '0.1.0'
@@ -24,18 +24,20 @@ exclude_patterns = []
 
 # HTML theme settings
 html_theme = 'pydata_sphinx_theme'
+
+# GitHub context
+html_context = {
+    "github_user": "paucablop",  # Replace with your GitHub username
+    "github_repo": "chemotools.docs",      # Replace with your repository name
+    "github_version": "main",
+}
+
 html_theme_options = {
     "github_url": "https://github.com/paucablop/chemotools.docs",
     "announcement": "This is a demo site!",
-    "icon_links": [
-        {
-            "name": "GitHub",
-            "url": "https://github.com/paucablop/chemotools.docs",
-            "icon": "fab fa-github-square",
-        },
-    ],
     "use_edit_page_button": True,
     "show_toc_level": 2,
 }
 
+# The theme to use for HTML and HTML Help pages.
 html_static_path = ['_static']

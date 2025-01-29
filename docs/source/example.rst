@@ -13,7 +13,7 @@ Here's some sample text with different formatting:
 * ``Code snippets`` are written like this
 
 Code Example
------------
+------------
 
 Here's a Python code example:
 
