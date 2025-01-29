@@ -2,7 +2,6 @@
 
 {% block navbar_end %}
 {{ super() }}
-<!-- DEBUG: Language Switcher Start -->
 <div style="border: 2px solid red;" class="language-switcher">
     <button class="dropdown-toggle" type="button" aria-expanded="false">
         {% if language == 'en' %}
@@ -32,5 +31,4 @@
         {% endfor %}
     </ul>
 </div>
-<!-- DEBUG: Language Switcher End -->
 {% endblock %}
