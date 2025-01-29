@@ -1,26 +1,33 @@
 .language-switcher {
     margin-left: 1rem;
+    display: flex;
+    align-items: center;
 }
 
-.language-switcher .btn {
+.language-switcher .btn-link {
     color: var(--pst-color-text-base);
-    background: none;
-    border: 1px solid var(--pst-color-border);
-    padding: 0.5rem 1rem;
+    text-decoration: none;
+    padding: 0.375rem 0.75rem;
 }
 
-.language-switcher .btn:hover {
-    background: var(--pst-color-background-hover);
+.language-switcher .btn-link:hover {
+    color: var(--pst-color-text-base);
+    text-decoration: none;
+    background-color: var(--pst-color-surface);
 }
 
 .language-switcher .dropdown-menu {
-    min-width: 120px;
+    min-width: 8rem;
+    background-color: var(--pst-color-background);
+    border: 1px solid var(--pst-color-border);
 }
 
 .language-switcher .dropdown-item {
-    padding: 0.5rem 1rem;
+    color: var(--pst-color-text-base);
+    padding: 0.25rem 1.5rem;
 }
 
 .language-switcher .dropdown-item:hover {
-    background: var(--pst-color-background-hover);
+    background-color: var(--pst-color-surface);
+    color: var(--pst-color-text-base);
 }

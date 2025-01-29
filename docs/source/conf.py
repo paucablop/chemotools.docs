@@ -31,8 +31,8 @@ html_theme = 'pydata_sphinx_theme'
 
 # GitHub context and other variables
 html_context = {
-    "github_user": "yourusername",
-    "github_repo": "yourrepo",
+    "github_user": "paucablop",
+    "github_repo": "chemotools.docs",
     "github_version": "main",
     "doc_path": "docs/source",
     # Language settings
@@ -49,9 +49,13 @@ html_theme_options = {
     "github_url": "https://github.com/paucablop/chemotools.docs",
     "use_edit_page_button": True,
     "show_toc_level": 2,
-    # Add the language switcher component
-    "navbar_end": ["theme-switcher", "navbar-icon-links", "components/language-switcher.html"]
+    # Add a custom template to the navbar
+    "navbar_end": ["theme-switcher", "navbar-icon-links"],
 }
 
 html_static_path = ['_static']
 html_css_files = ['custom.css']
+
+# Add custom template
+templates_path = ['_templates']
+html_additional_pages = {}

@@ -1,6 +1,14 @@
+{% extends "pydata_sphinx_theme/base.html" %}
+
+{% block footer %}
+{{ super() }}
+{% endblock %}
+
+{% block navbar_end %}
+{{ super() }}
 {% if languages|length >= 2 %}
 <div class="dropdown language-switcher">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="languageSwitch" data-bs-toggle="dropdown"
+    <button class="btn btn-link dropdown-toggle" type="button" id="bd-langs" data-bs-toggle="dropdown"
         aria-expanded="false">
         {% if language == 'en' %}
         🇺🇸 English
@@ -12,7 +20,7 @@
         {{ language }}
         {% endif %}
     </button>
-    <ul class="dropdown-menu" aria-labelledby="languageSwitch">
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-langs">
         {% for lang_code, lang_name in languages %}
         {% if lang_code != language %}
         <li>
@@ -33,3 +41,4 @@
     </ul>
 </div>
 {% endif %}
+{% endblock %}
