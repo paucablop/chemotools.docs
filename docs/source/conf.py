@@ -41,7 +41,7 @@ html_context = {
         ('es', 'Español'),
         ('zh', '中文'),
     ],
-    "language": "en",  # Current language
+    "language": "en",
     "default_language": "en",
 }
 
@@ -49,13 +49,12 @@ html_theme_options = {
     "github_url": "https://github.com/paucablop/chemotools.docs",
     "use_edit_page_button": True,
     "show_toc_level": 2,
-    # Add a custom template to the navbar
-    "navbar_end": ["theme-switcher", "navbar-icon-links"],
+    "navbar_end": ["theme-switcher", "navbar-icon-links"]
 }
 
+# Make sure static files are properly configured
 html_static_path = ['_static']
 html_css_files = ['custom.css']
+html_js_files = ['custom.js']
 
-# Add custom template
 templates_path = ['_templates']
-html_additional_pages = {}

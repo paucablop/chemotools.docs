@@ -1,26 +1,20 @@
 {% extends "pydata_sphinx_theme/base.html" %}
 
-{% block footer %}
-{{ super() }}
-{% endblock %}
-
 {% block navbar_end %}
 {{ super() }}
-{% if languages|length >= 2 %}
-<div class="dropdown language-switcher">
-    <button class="btn btn-link dropdown-toggle" type="button" id="bd-langs" data-bs-toggle="dropdown"
-        aria-expanded="false">
+<!-- DEBUG: Language Switcher Start -->
+<div style="border: 2px solid red;" class="language-switcher">
+    <button class="dropdown-toggle" type="button" aria-expanded="false">
         {% if language == 'en' %}
         🇺🇸 English
         {% elif language == 'es' %}
         🇪🇸 Español
         {% elif language == 'zh' %}
         🇨🇳 中文
-        {% else %}
-        {{ language }}
         {% endif %}
+        <span class="dropdown-caret"></span>
     </button>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-langs">
+    <ul class="dropdown-menu">
         {% for lang_code, lang_name in languages %}
         {% if lang_code != language %}
         <li>
@@ -31,8 +25,6 @@
                 🇪🇸 Español
                 {% elif lang_code == 'zh' %}
                 🇨🇳 中文
-                {% else %}
-                {{ lang_name }}
                 {% endif %}
             </a>
         </li>
@@ -40,5 +32,5 @@
         {% endfor %}
     </ul>
 </div>
-{% endif %}
+<!-- DEBUG: Language Switcher End -->
 {% endblock %}
