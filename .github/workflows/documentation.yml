@@ -29,17 +29,14 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install sphinx pydata-sphinx-theme sphinx-copybutton sphinx-intl
+          pip install poetry
+          poetry install
 
       - name: Build documentation (all languages)
         run: |
           cd docs
           # Build English version
           make html
-          # Build Spanish version
-          sphinx-build -b html -D language=es source _build/html/es
-          # Build Chinese version
-          sphinx-build -b html -D language=zh source _build/html/zh
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
