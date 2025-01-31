@@ -20,7 +20,8 @@ release = '0.1.0'
 extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.napoleon",
-    "pydata_sphinx_theme"
+    #"pydata_sphinx_theme",
+    "nbsphinx",
 ]
 
 html_theme = "pydata_sphinx_theme"
