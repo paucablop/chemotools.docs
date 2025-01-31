@@ -39,9 +39,9 @@ jobs:
 
       - name: Build documentation (all languages)
         run: |
-          cd docs/source
+          cd docs
           # Build English version
-          poetry run sphinx-build -b html . _build/html
+          poetry run sphinx-build -b html ./source _build/html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
