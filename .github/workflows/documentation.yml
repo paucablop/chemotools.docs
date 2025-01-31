@@ -39,7 +39,7 @@ jobs:
 
       - name: Build documentation (all languages)
         run: |
-          cd docs
+          cd docs/source
           # Build English version
           poetry run sphinx-build -b html . _build/html
 
