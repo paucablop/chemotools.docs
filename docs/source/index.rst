@@ -3,12 +3,14 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-chemotools.docs documentation
-=============================
+chemotools.docs
+===============
 
-Add your content using ``reStructuredText`` syntax. See the
-`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
-documentation for details.
+
+Hi there! welcome to the chemotools website! We are currently constructing the new documentation page for this library. Please check out our old documentation page:
+
+https://paucablop.github.io/chemotools/
+
 
 .. warning::
 

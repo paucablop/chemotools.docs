@@ -9,10 +9,10 @@ import os
 import sys
 sys.path.insert(0, os.path.abspath('../..'))
 
-project = 'chemotools.docs'
-copyright = '2025, Pau Cabaneros'
+project = 'chemotools'
+copyright = '2025, chemotools'
 author = 'Pau Cabaneros'
-release = '0.1.0'
+#release = '0.1.0'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -32,7 +32,7 @@ html_theme_options = {
     "icon_links": [
         {
             "name": "GitHub",
-            "url": "https://github.com/paucablop/chemotools.docs",  # replace with your repo
+            "url": "https://github.com/paucablop/chemotools",  # replace with your repo
             "icon": "fab fa-github-square",
             "type": "fontawesome",
         }
