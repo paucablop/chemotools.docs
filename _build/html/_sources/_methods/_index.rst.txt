@@ -1,0 +1,8 @@
+Methods
+=======
+
+.. toctree::
+    :maxdepth: 1
+    :hidden:
+    
+Some text about the methods

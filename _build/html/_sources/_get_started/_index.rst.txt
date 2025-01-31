@@ -1,6 +1,12 @@
 Install chemotools
 ==================
 
+.. toctree::
+    :maxdepth: 1
+    :hidden:
+
+    Installation
+
 To Install chemotools run the following command:
 
 .. code-block:: bash

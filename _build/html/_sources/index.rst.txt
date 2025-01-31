@@ -1,24 +1,12 @@
-.. chemotools.docs documentation master file, created by
-   sphinx-quickstart on Thu Jan 30 18:20:26 2025.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
-chemotools.docs
-===============
-
-
-Hi there! welcome to the chemotools website! We are currently constructing the new documentation page for this library. Please check out our old documentation page:
-
-https://paucablop.github.io/chemotools/
-
-
-.. warning::
-
-    This library is currently under development and may undergo significant changes.
+########################
+chemotools documentation
+########################
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 1
+   :hidden:
 
-   usage
-   _notebooks/tutorial
+   User Guide <_user/index>
+   Methods <_methods/index>
+   Get Started <_get_started/index>
+
