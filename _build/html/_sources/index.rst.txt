@@ -20,26 +20,21 @@ preprocessed data, making it possible to identify patterns and make predictions 
    :target: https://pypi.org/project/chemotools
    :alt: PyPI version
 
-
 .. image:: https://img.shields.io/pypi/pyversions/chemotools
    :target: https://pypi.org/project/chemotools
    :alt: Python versions
-
 
 .. image:: https://img.shields.io/pypi/l/chemotools
    :target: https://github.com/paucablop/chemotools/blob/main/LICENSE
    :alt: License
 
-
 .. image:: https://codecov.io/github/paucablop/chemotools/branch/main/graph/badge.svg?token=D7JUJM89LN
    :target: https://codecov.io/github/paucablop/chemotools
    :alt: Code coverage
 
-
 .. image:: https://static.pepy.tech/badge/chemotools
    :target: https://pepy.tech/project/chemotools
    :alt: Downloads
-
 
 .. image:: https://joss.theoj.org/papers/10.21105/joss.06802/status.svg
    :target: https://doi.org/10.21105/joss.06802
@@ -51,10 +46,10 @@ preprocessed data, making it possible to identify patterns and make predictions 
    :gutter: 2 3 4 4
 
    .. grid-item-card::
-      :img-top: ../source/_static/index-images/getting_started.svg
+      :img-top: ../source/_static/_test_image/icon_test.png
       :text-align: center
 
-      Install
+      **Install**
       ^^^
 
       Installing chemotools is super easy
@@ -69,10 +64,10 @@ preprocessed data, making it possible to identify patterns and make predictions 
             Check installation guide!ee how to install chemotools!
 
    .. grid-item-card::
-      :img-top: ../source/_static/index-images/getting_started.svg
+      :img-top: ../source/_static/_test_image/icon_test.png
       :text-align: center
 
-      Install
+      **Install**
       ^^^
 
       Installing chemotools is super easy
@@ -87,10 +82,10 @@ preprocessed data, making it possible to identify patterns and make predictions 
             Check installation guide!ee how to install chemotools!
 
    .. grid-item-card::
-      :img-top: ../source/_static/index-images/getting_started.svg
+      :img-top: ../source/_static/_test_image/icon_test.png
       :text-align: center
 
-      Install
+      **Install**
       ^^^
 
       Installing chemotools is super easy
@@ -105,10 +100,10 @@ preprocessed data, making it possible to identify patterns and make predictions 
             Check installation guide!ee how to install chemotools!
 
    .. grid-item-card::
-      :img-top: ../source/_static/index-images/getting_started.svg
+      :img-top: ../source/_static/_test_image/icon_test.png
       :text-align: center
 
-      Install
+      **Install**
       ^^^
 
       Installing chemotools is super easy
