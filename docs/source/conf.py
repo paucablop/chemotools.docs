@@ -20,6 +20,7 @@ author = 'Pau Cabaneros'
 extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.napoleon",
+    "sphinx_design",
     #"pydata_sphinx_theme",
     "nbsphinx",
 ]

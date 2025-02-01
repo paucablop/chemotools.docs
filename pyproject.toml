@@ -13,6 +13,7 @@ sphinx-copybutton = "^0.5.2"
 nbsphinx = "^0.9.6"
 ipykernel = "^6.29.5"
 chemotools = "^0.1.9"
+sphinx-design = "^0.6.1"
 
 
 [tool.poetry.group.dev.dependencies]
