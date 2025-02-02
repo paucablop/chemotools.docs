@@ -10,6 +10,8 @@ Welcome to chemotools
    Methods <_methods/index>
    Get Started <_get_started/index>
 
+Site under construction! check https://paucablop.github.io/chemotools/ for a full documentation site
+
 This project provides a toolkit for spectral preprocessing techniques integrated with the widely popular
 ``scikit-learn`` API and the rest of the Python machine learning environment. The goal of the project is to 
 provide a comprehensive and user-friendly package to standardize the development and deployment of chemometric models. 
@@ -46,13 +48,49 @@ preprocessed data, making it possible to identify patterns and make predictions 
    :gutter: 2 3 4 4
 
    .. grid-item-card::
-      :img-top: ../source/_static/_test_image/icon_test.png
+      :img-top: ../source/_static/_test_image/explore.png
       :text-align: center
 
-      **Install**
+      **Explore**
       ^^^
 
-      Installing chemotools is super easy
+      Explore your dataset
+
+      +++
+
+      .. button-ref:: _get_started/install
+            :expand:
+            :color: secondary
+            :click-parent:
+
+            Check installation guide!ee how to install chemotools!
+
+   .. grid-item-card::
+      :img-top: ../source/_static/_test_image/model.png
+      :text-align: center
+
+      **Model**
+      ^^^
+
+      Augment and model your data
+
+      +++
+
+      .. button-ref:: _get_started/install
+            :expand:
+            :color: secondary
+            :click-parent:
+
+            Check installation guide!ee how to install chemotools!
+
+   .. grid-item-card::
+      :img-top: ../source/_static/_test_image/deploy.png
+      :text-align: center
+
+      **Deploy**
+      ^^^
+
+      Easy and standardized deployment
 
       +++
 
@@ -67,46 +105,10 @@ preprocessed data, making it possible to identify patterns and make predictions 
       :img-top: ../source/_static/_test_image/icon_test.png
       :text-align: center
 
-      **Install**
+      **Leanr**
       ^^^
 
-      Installing chemotools is super easy
-
-      +++
-
-      .. button-ref:: _get_started/install
-            :expand:
-            :color: secondary
-            :click-parent:
-
-            Check installation guide!ee how to install chemotools!
-
-   .. grid-item-card::
-      :img-top: ../source/_static/_test_image/icon_test.png
-      :text-align: center
-
-      **Install**
-      ^^^
-
-      Installing chemotools is super easy
-
-      +++
-
-      .. button-ref:: _get_started/install
-            :expand:
-            :color: secondary
-            :click-parent:
-
-            Check installation guide!ee how to install chemotools!
-
-   .. grid-item-card::
-      :img-top: ../source/_static/_test_image/icon_test.png
-      :text-align: center
-
-      **Install**
-      ^^^
-
-      Installing chemotools is super easy
+      Learn the fundamentals of chemometrics
 
       +++
 
