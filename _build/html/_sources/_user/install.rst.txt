@@ -1,10 +1,10 @@
-Installation
-============
+How to install chemotools
+=========================
 
 Installing chemotools is very easy! It can be installed directly from `PyPI <https://pypi.org/project/chemotools/>`_ using ``pip`` or using ``conda`` from the ``conda-forge`` channel.
 
-Pip Installation
-----------------
+Install using ``pip``
+=====================
 
 To install using ``pip``, run:
 
@@ -12,8 +12,8 @@ To install using ``pip``, run:
 
     pip install chemotools
 
-Conda Installation
-------------------
+Install using ``conda``
+=======================
 
 To install using ``conda`` from the ``conda-forge`` channel, use:
 

@@ -7,5 +7,6 @@ User guide
    :maxdepth: 1
    :hidden:
 
+   what_is_chemotools
    install
    user

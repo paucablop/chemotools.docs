@@ -37,7 +37,7 @@ html_theme_options = {
     "navbar_align": "left",
     "navbar_center": ["navbar-nav"],
     "navbar_end": ["navbar-icon-links", "theme-switcher"],  # Added theme-switcher here
-    "show_nav_level": 2,
+    "show_nav_level": 4,
     "icon_links": [
         {
             "name": "GitHub",
