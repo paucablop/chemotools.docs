@@ -1,0 +1,29 @@
+# Sphinx documentation builds
+docs/_build/
+docs/build/
+_build/
+build/
+
+# Sphinx auto-generated files
+_autosummary/
+generated/
+
+# Python bytecode
+*.py[cod]
+__pycache__/
+
+# Development environment
+.venv/
+venv/
+.env/
+env/
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Operating System
+.DS_Store
+Thumbs.db
