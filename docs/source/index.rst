@@ -102,10 +102,10 @@ preprocessed data, making it possible to identify patterns and make predictions 
             Check installation guide!ee how to install chemotools!
 
    .. grid-item-card::
-      :img-top: ../source/_static/_test_image/icon_test.png
+      :img-top: ../source/_static/_test_image/learn.png
       :text-align: center
 
-      **Leanr**
+      **Learn**
       ^^^
 
       Learn the fundamentals of chemometrics

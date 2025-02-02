@@ -21,19 +21,27 @@ extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.napoleon",
     "sphinx_design",
-    #"pydata_sphinx_theme",
     "nbsphinx",
 ]
 
 html_theme = "pydata_sphinx_theme"
+html_logo = "_static/_main_page/_logo_pixel.png"
 
 # Optional theme customization
 html_theme_options = {
     "show_prev_next": True,
+    "logo": {
+        "image_light": "_static/_main_page/_logo_pixel.png",
+        "image_dark": "_static/_main_page/_logo_pixel.png",
+    },
+    "navbar_align": "left",
+    "navbar_center": ["navbar-nav"],
+    "navbar_end": ["navbar-icon-links", "theme-switcher"],  # Added theme-switcher here
+    "show_nav_level": 2,
     "icon_links": [
         {
             "name": "GitHub",
-            "url": "https://github.com/paucablop/chemotools",  # replace with your repo
+            "url": "https://github.com/paucablop/chemotools",
             "icon": "fab fa-github-square",
             "type": "fontawesome",
         }
@@ -41,6 +49,7 @@ html_theme_options = {
     "use_edit_page_button": False,
     "navigation_with_keys": False,
 }
+
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
