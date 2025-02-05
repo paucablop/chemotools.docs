@@ -25,14 +25,15 @@ extensions = [
 ]
 
 html_theme = "pydata_sphinx_theme"
-html_logo = "_static/_main_page/_logo_pixel.png"
+html_logo = "_static/_main_page/logo-light.svg"
+html_favicon = "_static/_main_page/chemotools_logo_large.svg"  # or favicon.png if using PNG
 
 # Optional theme customization
 html_theme_options = {
     "show_prev_next": True,
     "logo": {
-        "image_light": "_static/_main_page/_logo_pixel.png",
-        "image_dark": "_static/_main_page/_logo_pixel.png",
+        "image_light": "_static/_main_page/logo-light.svg",
+        "image_dark": "_static/_main_page/logo-dark.svg",
     },
     "navbar_align": "left",
     "navbar_center": ["navbar-nav"],
