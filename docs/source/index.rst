@@ -46,77 +46,38 @@ preprocessed data, making it possible to identify patterns and make predictions 
 
 |
 
-.. grid:: 1 1 2 2
+.. grid:: 1 1 3 3
    :gutter: 2 3 4 4
 
    .. grid-item-card::
-      :img-top: ../source/_static/_test_image/explore.png
+      :img-top: ../source/_static/_test_image/explore2.png
       :text-align: center
-
-      **Explore**
-      ^^^
-
-      Explore your dataset
-
-      +++
 
       .. button-ref:: _get_started/install
             :expand:
             :color: secondary
             :click-parent:
 
-            Check installation guide!ee how to install chemotools!
+            **Start exploring chemotools**
 
    .. grid-item-card::
-      :img-top: ../source/_static/_test_image/model.png
+      :img-top: ../source/_static/_test_image/explore2.png
       :text-align: center
-
-      **Model**
-      ^^^
-
-      Augment and model your data
-
-      +++
 
       .. button-ref:: _get_started/install
             :expand:
             :color: secondary
             :click-parent:
 
-            Check installation guide!ee how to install chemotools!
+            **Bring your models to life**
 
    .. grid-item-card::
-      :img-top: ../source/_static/_test_image/deploy.png
+      :img-top: ../source/_static/_test_image/explore2.png
       :text-align: center
-
-      **Deploy**
-      ^^^
-
-      Easy and standardized deployment
-
-      +++
 
       .. button-ref:: _get_started/install
             :expand:
             :color: secondary
             :click-parent:
 
-            Check installation guide!ee how to install chemotools!
-
-   .. grid-item-card::
-      :img-top: ../source/_static/_test_image/learn.png
-      :text-align: center
-
-      **Learn**
-      ^^^
-
-      Learn the fundamentals of chemometrics
-
-      +++
-
-      .. button-ref:: _get_started/install
-            :expand:
-            :color: secondary
-            :click-parent:
-
-            Check installation guide!ee how to install chemotools!
+            **Learn with chemotools**

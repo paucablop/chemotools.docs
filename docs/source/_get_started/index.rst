@@ -1,7 +1,7 @@
 .. _get_started:
 
-Install chemotools
-==================
+Get Started
+===========
 
 .. toctree::
    :maxdepth: 1

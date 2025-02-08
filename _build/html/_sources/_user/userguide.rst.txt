@@ -1,4 +1,0 @@
-User Guide
-==========
-
-Some text about the user Guide

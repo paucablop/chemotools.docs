@@ -14,41 +14,34 @@ Methods
    :gutter: 2 3 4 4
 
    .. grid-item-card::
+      :img-top: ../../source/_static/_methods/noisy_spectra_2.png
       :text-align: center
-
-      **Data Augmentation**
-      ^^^
 
       .. button-ref:: _get_started/install
             :expand:
             :color: secondary
             :click-parent:
             
-            Check!
+            **Augmentation**
 
    .. grid-item-card::
+      :img-top: ../../source/_static/_methods/noisy_spectra_2.png
       :text-align: center
-
-      **Preprocessing**
-      ^^^
 
       .. button-ref:: _get_started/install
             :expand:
             :color: secondary
             :click-parent:
 
-            Check!
+            **Preprocessing**
 
    .. grid-item-card::
-      :img-top: ../source/_static/_test_image/deploy.png
+      :img-top: ../../source/_static/_methods/noisy_spectra_2.png
       :text-align: center
-
-      **Feature selection**
-      ^^^
 
       .. button-ref:: _get_started/install
             :expand:
             :color: secondary
             :click-parent:
 
-            Check!
+            **Feature selection**

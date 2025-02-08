@@ -45,6 +45,12 @@ html_theme_options = {
             "url": "https://github.com/paucablop/chemotools",
             "icon": "fab fa-github-square",
             "type": "fontawesome",
+        },
+        {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/company/chemotools",
+        "icon": "fab fa-linkedin",
+        "type": "fontawesome",
         }
     ],
     "use_edit_page_button": False,
