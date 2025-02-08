@@ -1,3 +1,6 @@
+:html_theme.sidebar_secondary.remove:
+:notoc:
+
 .. _methods:
 
 Methods
@@ -7,10 +10,7 @@ Methods
    :maxdepth: 1
    :hidden:
 
-   methods
-
-
-.. grid:: 1 1 3 3
+.. grid:: 1 1 4 4
    :gutter: 2 3 4 4
 
    .. grid-item-card::
@@ -25,7 +25,7 @@ Methods
             **Augmentation**
 
    .. grid-item-card::
-      :img-top: ../../source/_static/_methods/noisy_spectra_2.png
+      :img-top: ../../source/_static/_methods/derivate_spectra.png
       :text-align: center
 
       .. button-ref:: _get_started/install
@@ -45,3 +45,14 @@ Methods
             :click-parent:
 
             **Feature selection**
+
+   .. grid-item-card::
+      :img-top: ../../source/_static/_methods/noisy_spectra_2.png
+      :text-align: center
+
+      .. button-ref:: _get_started/install
+            :expand:
+            :color: secondary
+            :click-parent:
+
+            **Metrics**
