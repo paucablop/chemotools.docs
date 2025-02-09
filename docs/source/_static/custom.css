@@ -1,12 +1,16 @@
-/* Ensure transparency of the SVG in both themes */
-.banner {
-    background-color: transparent !important;
-}
-
+/* Light theme */
 html[data-theme="light"] .banner {
-    background-color: white;
+    content: url("./_test_image/banner-light.svg");
 }
 
+/* Dark theme */
 html[data-theme="dark"] .banner {
-    background-color: black;
+    content: url("./_test_image/banner-dark.svg");
+}
+
+/* Common styles for both */
+.banner {
+    width: 100%;
+    height: auto;
+    background-color: transparent !important;
 }
