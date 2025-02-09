@@ -1,7 +1,5 @@
 # Sphinx documentation builds
-docs/_build/*
 docs/build/*
-_build/*
 build/*
 
 # Sphinx auto-generated files

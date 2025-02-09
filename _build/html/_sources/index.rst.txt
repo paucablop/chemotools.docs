@@ -1,5 +1,6 @@
 :html_theme.sidebar_secondary.remove:
 
+
 #####################
 Welcome to chemotools
 #####################
@@ -12,7 +13,9 @@ Welcome to chemotools
    Methods <_methods/index>
    Get Started <_get_started/index>
 
-Site under construction! check https://paucablop.github.io/chemotools/ for a full documentation site
+
+.. warning::
+   Site under construction! check https://paucablop.github.io/chemotools/ for a full documentation site
 
 This project provides a toolkit for spectral preprocessing techniques integrated with the widely popular
 ``scikit-learn`` API and the rest of the Python machine learning environment. The goal of the project is to 
@@ -44,7 +47,10 @@ preprocessed data, making it possible to identify patterns and make predictions 
    :target: https://doi.org/10.21105/joss.06802
    :alt: DOI
 
-|
+----
+
+Start exploring
+===============
 
 .. grid:: 1 1 3 3
    :gutter: 2 3 4 4
@@ -61,7 +67,7 @@ preprocessed data, making it possible to identify patterns and make predictions 
             **Start exploring chemotools**
 
    .. grid-item-card::
-      :img-top: ../source/_static/_test_image/explore2.png
+      :img-top: ../source/_static/_test_image/deploy2.png
       :text-align: center
 
       .. button-ref:: _get_started/install
@@ -72,7 +78,7 @@ preprocessed data, making it possible to identify patterns and make predictions 
             **Bring your models to life**
 
    .. grid-item-card::
-      :img-top: ../source/_static/_test_image/explore2.png
+      :img-top: ../source/_static/_test_image/learn2.png
       :text-align: center
 
       .. button-ref:: _get_started/install
@@ -81,3 +87,4 @@ preprocessed data, making it possible to identify patterns and make predictions 
             :click-parent:
 
             **Learn with chemotools**
+
