@@ -1,9 +1,8 @@
 :html_theme.sidebar_secondary.remove:
 
+.. image:: _static/_test_image/banner.svg
+   :class: banner
 
-#####################
-Welcome to chemotools
-#####################
 
 .. toctree::
    :maxdepth: 1
@@ -46,6 +45,7 @@ preprocessed data, making it possible to identify patterns and make predictions 
 .. image:: https://joss.theoj.org/papers/10.21105/joss.06802/status.svg
    :target: https://doi.org/10.21105/joss.06802
    :alt: DOI
+
 
 ----
 

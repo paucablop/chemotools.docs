@@ -1,0 +1,12 @@
+/* Ensure transparency of the SVG in both themes */
+.banner {
+    background-color: transparent !important;
+}
+
+html[data-theme="light"] .banner {
+    background-color: white;
+}
+
+html[data-theme="dark"] .banner {
+    background-color: black;
+}
