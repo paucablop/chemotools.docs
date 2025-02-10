@@ -1,6 +1,6 @@
 :html_theme.sidebar_secondary.remove:
 
-.. image:: _static/_test_image/banner-dark.svg
+.. image:: _static/_test_image/banner.svg
    :class: banner
 
 

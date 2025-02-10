@@ -1,11 +1,11 @@
 /* Light theme */
 html[data-theme="light"] .banner {
-    content: url("./_test_image/banner-light.svg");
+    content: url("./_test_image/banner_light.png");
 }
 
 /* Dark theme */
 html[data-theme="dark"] .banner {
-    content: url("./_test_image/banner-dark.svg");
+    content: url("./_test_image/banner_dark.png");
 }
 
 /* Common styles for both */
