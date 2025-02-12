@@ -14,3 +14,7 @@ html[data-theme="dark"] .banner {
     height: auto;
     background-color: transparent !important;
 }
+
+.no-background {
+    background-color: transparent !important;
+}
