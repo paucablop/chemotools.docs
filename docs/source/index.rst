@@ -56,7 +56,7 @@ Start exploring
    :gutter: 2 3 4 4
 
    .. grid-item-card::
-      :img-top: ../source/_static/_test_image/explore2.png
+      :img-top: ../source/_static/_test_image/explore4.png
       :text-align: center
 
       .. button-ref:: _get_started/install
@@ -67,7 +67,7 @@ Start exploring
             **Start exploring chemotools**
 
    .. grid-item-card::
-      :img-top: ../source/_static/_test_image/deploy2.png
+      :img-top: ../source/_static/_test_image/deploy4.png
       :text-align: center
 
       .. button-ref:: _get_started/install
@@ -78,7 +78,7 @@ Start exploring
             **Bring your models to life**
 
    .. grid-item-card::
-      :img-top: ../source/_static/_test_image/learn2.png
+      :img-top: ../source/_static/_test_image/learn4.png
       :text-align: center
 
       .. button-ref:: _get_started/install
