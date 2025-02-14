@@ -7,18 +7,20 @@ Explore
 =======
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 3
    :hidden:
+   
+   sklearn
 
 
 .. grid:: 1 1 3 3
    :gutter: 2 3 4 4
 
    .. grid-item-card::
-      :img-top: ../../source/_static/_methods/noisy_spectra_2.png
+      :img-top: ../../source/_static/_explore/sklearn.png
       :text-align: center
 
-      .. button-ref:: _get_started/install
+      .. button-ref:: ./sklearn
             :expand:
             :color: secondary
             :click-parent:
@@ -26,10 +28,10 @@ Explore
             **Get started with scikit-learn**
 
    .. grid-item-card::
-      :img-top: ../../source/_static/_methods/derivate_spectra.png
+      :img-top: ../../source/_static/_explore/spectra.png
       :text-align: center
 
-      .. button-ref:: _get_started/install
+      .. button-ref:: ./sklearn
             :expand:
             :color: secondary
             :click-parent:
@@ -37,10 +39,10 @@ Explore
             **Single spectra**
 
    .. grid-item-card::
-      :img-top: ../../source/_static/_methods/noisy_spectra_2.png
+      :img-top: ../../source/_static/_explore/pipeline.jpg
       :text-align: center
 
-      .. button-ref:: _get_started/install
+      .. button-ref:: ./sklearn
             :expand:
             :color: secondary
             :click-parent:
@@ -48,10 +50,10 @@ Explore
             **Working with pipelines**
 
    .. grid-item-card::
-      :img-top: ../../source/_static/_methods/noisy_spectra_2.png
+      :img-top: ../../source/_static/_explore/spectra.png
       :text-align: center
 
-      .. button-ref:: _get_started/install
+      .. button-ref:: ./sklearn
             :expand:
             :color: secondary
             :click-parent:
@@ -59,10 +61,10 @@ Explore
             **Optimize your processing**
 
    .. grid-item-card::
-      :img-top: ../../source/_static/_methods/noisy_spectra_2.png
+      :img-top: ../../source/_static/_explore/dataframes.png
       :text-align: center
 
-      .. button-ref:: _get_started/install
+      .. button-ref:: ./sklearn
             :expand:
             :color: secondary
             :click-parent:
@@ -70,10 +72,10 @@ Explore
             **Work with DataFrames**
 
    .. grid-item-card::
-      :img-top: ../../source/_static/_methods/noisy_spectra_2.png
+      :img-top: ../../source/_static/_explore/spectra.png
       :text-align: center
 
-      .. button-ref:: _get_started/install
+      .. button-ref:: ./sklearn
             :expand:
             :color: secondary
             :click-parent:
