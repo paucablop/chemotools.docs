@@ -72,7 +72,7 @@ Explore
             **Optimize your processing**
 
    .. grid-item-card::
-      :img-top: ../../source/_static/_explore/spectra.png
+      :img-top: ../../source/_static/_explore/models.png
       :text-align: center
 
       .. button-ref:: ./sklearn
