@@ -11,6 +11,7 @@ Explore
 
    sklearn
    spectra
+   dataframes
 
 .. grid:: 1 1 3 3
    :gutter: 2 3 4 4
@@ -35,10 +36,21 @@ Explore
             :color: secondary
             :click-parent:
 
-            **Single spectra**
+            **Working with spectra**
 
    .. grid-item-card::
-      :img-top: ../../source/_static/_explore/pipeline.jpg
+      :img-top: ../../source/_static/_explore/dataframes.png
+      :text-align: center
+
+      .. button-ref:: ./dataframes
+            :expand:
+            :color: secondary
+            :click-parent:
+
+            **DataFrame lover?**
+
+   .. grid-item-card::
+      :img-top: ../../source/_static/_explore/pipeline.png
       :text-align: center
 
       .. button-ref:: ./sklearn
@@ -46,10 +58,10 @@ Explore
             :color: secondary
             :click-parent:
 
-            **Working with pipelines**
+            **Creating your pipelines**
 
    .. grid-item-card::
-      :img-top: ../../source/_static/_explore/spectra.png
+      :img-top: ../../source/_static/_explore/optimize.png
       :text-align: center
 
       .. button-ref:: ./sklearn
@@ -58,17 +70,6 @@ Explore
             :click-parent:
 
             **Optimize your processing**
-
-   .. grid-item-card::
-      :img-top: ../../source/_static/_explore/dataframes.png
-      :text-align: center
-
-      .. button-ref:: ./sklearn
-            :expand:
-            :color: secondary
-            :click-parent:
-
-            **Work with DataFrames**
 
    .. grid-item-card::
       :img-top: ../../source/_static/_explore/spectra.png

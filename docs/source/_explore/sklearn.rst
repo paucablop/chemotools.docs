@@ -1,15 +1,14 @@
 .. _sklearn:
 
-**Introduction to Scikit-Learn for Chemometrics**
-=================================================
+**Getting started with Scikit-Learn**
+=====================================
 
-`Scikit-learn <https://scikit-learn.org/>`_ is a powerful and versatile machine-learning library in Python. It provides a rich collection of tools for data analysis, modeling, and preprocessing, making it a valuable asset for chemometrics workflows.
-
+This section describes the basics of working with scikit-learn. You'll learn about scikit-learn's key features, models, and methods.
 
 What is Scikit-Learn?
 ---------------------
 
-Scikit-learn (``sklearn``) is an open-source machine-learning library built on top of **NumPy**, **SciPy**. It offers a unified API for various machine-learning techniques, including:
+`Scikit-learn <https://scikit-learn.org/>`_ (``sklearn``) is an open-source machine-learning library built on top of **NumPy**, **SciPy**. It offers a unified API for various machine-learning techniques, including:
 
 * **Supervised learning**: Regression, classification, and ensemble methods
 * **Unsupervised learning**: Clustering and dimensionality reduction
@@ -97,7 +96,7 @@ Building a ``PLSRegression`` model:
 Why Use Scikit-Learn for Chemometrics?
 --------------------------------------
 
-* **Flexibility**: Works with various chemometric models and preprocessing methods.
+* **Flexibility**: Works with various chemometric models and preprocessing meth``numpy``:ods.
 * **Integration**: Can be combined with domain-specific tools for spectral analysis, multivariate statistics, and experimental design.
 * **Scalability**: Can handle small laboratory datasets as well as large-scale industrial data.
 * **Easy Experimentation**: Rapid prototyping with different algorithms and preprocessing techniques.
