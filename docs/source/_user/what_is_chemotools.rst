@@ -7,7 +7,7 @@ provide a comprehensive and user-friendly package to standardize the development
 The project intends to enable users to easily build and deploy machine learning and chemometric models on top of 
 preprocessed data, making it possible to identify patterns and make predictions with greater accuracy.
 
-.. image:: ../_static/_user_guide/devop-vectorized.svg
+.. image:: ../_static/_user_guide/devop-vectorized.png
    :class: no-background
    :alt: DevOps loop
    :align: center
