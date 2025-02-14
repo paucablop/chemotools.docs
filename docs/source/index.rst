@@ -59,7 +59,7 @@ Start exploring
       :img-top: ../source/_static/_test_image/explore4.png
       :text-align: center
 
-      .. button-ref:: _get_started/install
+      .. button-ref:: _explore/index
             :expand:
             :color: secondary
             :click-parent:
