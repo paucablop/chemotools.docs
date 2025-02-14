@@ -11,6 +11,7 @@
    User Guide <_user/index>
    Methods <_methods/index>
    Get Started <_get_started/index>
+   Explore <_explore/index>
 
 
 .. warning::

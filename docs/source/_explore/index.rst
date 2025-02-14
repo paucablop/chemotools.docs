@@ -1,5 +1,4 @@
 :html_theme.sidebar_secondary.remove:
-:notoc:
 
 .. _explore:
 
@@ -7,11 +6,11 @@ Explore
 =======
 
 .. toctree::
-   :maxdepth: 3
-   :hidden:
-   
-   sklearn
+   :maxdepth: 2
+   :hidden:  
 
+   sklearn
+   spectra
 
 .. grid:: 1 1 3 3
    :gutter: 2 3 4 4
@@ -31,7 +30,7 @@ Explore
       :img-top: ../../source/_static/_explore/spectra.png
       :text-align: center
 
-      .. button-ref:: ./sklearn
+      .. button-ref:: ./spectra
             :expand:
             :color: secondary
             :click-parent:
