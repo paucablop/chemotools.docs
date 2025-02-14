@@ -12,6 +12,7 @@
    Methods <_methods/index>
    Get Started <_get_started/index>
    Explore <_explore/index>
+   Learn <_learn/index>
 
 
 .. warning::
@@ -82,7 +83,7 @@ Start exploring
       :img-top: ../source/_static/_test_image/learn4.png
       :text-align: center
 
-      .. button-ref:: _get_started/install
+      .. button-ref:: _learn/index
             :expand:
             :color: secondary
             :click-parent:
