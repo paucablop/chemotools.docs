@@ -17,7 +17,7 @@ Learn
    :gutter: 2 3 4 4
 
    .. grid-item-card::
-      :img-top: ../../source/_static/_explore/sklearn.png
+      :img-top: ../../source/_static/_learn/datasets.png
       :text-align: center
 
       .. button-ref:: ./sklearn
