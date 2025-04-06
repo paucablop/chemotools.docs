@@ -9,9 +9,6 @@ Learn
    :maxdepth: 2
    :hidden:  
 
-   sklearn
-   spectra
-   dataframes
 
 .. grid:: 1 1 3 3
    :gutter: 2 3 4 4
@@ -20,7 +17,7 @@ Learn
       :img-top: ../../source/_static/_learn/datasets.png
       :text-align: center
 
-      .. button-ref:: ./sklearn
+      .. button-ref:: 
             :expand:
             :color: secondary
             :click-parent:
@@ -31,7 +28,7 @@ Learn
       :img-top: ../../source/_static/_learn/fermentation.png
       :text-align: center
 
-      .. button-ref:: ./spectra
+      .. button-ref:: 
             :expand:
             :color: secondary
             :click-parent:
@@ -42,7 +39,7 @@ Learn
       :img-top: ../../source/_static/_learn/coffee.png
       :text-align: center
 
-      .. button-ref:: ./dataframes
+      .. button-ref:: 
             :expand:
             :color: secondary
             :click-parent:

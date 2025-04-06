@@ -10,6 +10,8 @@ Methods
    :maxdepth: 1
    :hidden:
 
+   _get_started
+
 .. grid:: 1 1 4 4
    :gutter: 2 3 4 4
 
