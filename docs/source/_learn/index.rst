@@ -6,11 +6,12 @@ Learn
 =====
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 3
    :hidden:
 
    datasets
    pls_regression
+   pls_classification
 
 
 .. grid:: 1 1 3 3
@@ -42,7 +43,7 @@ Learn
       :img-top: ../../source/_static/_learn/coffee.png
       :text-align: center
 
-      .. button-ref:: ./pls_regression
+      .. button-ref:: ./pls_classification
             :expand:
             :color: secondary
             :click-parent:
