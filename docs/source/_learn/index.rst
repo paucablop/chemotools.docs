@@ -7,7 +7,10 @@ Learn
 
 .. toctree::
    :maxdepth: 2
-   :hidden:  
+   :hidden:
+
+   datasets
+   pls_regression
 
 
 .. grid:: 1 1 3 3
@@ -17,7 +20,7 @@ Learn
       :img-top: ../../source/_static/_learn/datasets.png
       :text-align: center
 
-      .. button-ref:: 
+      .. button-ref:: ./datasets
             :expand:
             :color: secondary
             :click-parent:
@@ -28,7 +31,7 @@ Learn
       :img-top: ../../source/_static/_learn/fermentation.png
       :text-align: center
 
-      .. button-ref:: 
+      .. button-ref:: ./pls_regression
             :expand:
             :color: secondary
             :click-parent:
@@ -39,7 +42,7 @@ Learn
       :img-top: ../../source/_static/_learn/coffee.png
       :text-align: center
 
-      .. button-ref:: 
+      .. button-ref:: ./pls_regression
             :expand:
             :color: secondary
             :click-parent:

@@ -7,19 +7,19 @@ journey. These captivating datasets are tucked away in the ``chemotools.datasets
 unleashed using loading functions. Let's dive into the adventure:
 
 - 🍷 **The Fermentation Dataset: A Journey into Biochemistry**: Immerse yourself in the world of fermentation 
-with this dataset containing mesmerizing spectra collected during a unique fermentation process.
+   with this dataset containing mesmerizing spectra collected during a unique fermentation process.
 
 - ☕ **The Coffee Dataset: A Global Coffee Journey**: Savor the flavors of the world with this dataset, 
-featuring spectra from diverse coffee samples sourced from different countries.
+   featuring spectra from diverse coffee samples sourced from different countries.
 
 🍷 The Fermentation Dataset: A Journey into Biochemistry 🧪
----------------------------------------------------------
+--------------------------------------------------------------
 
 The Fermentation Dataset takes you on a thrilling ride through the art of fermentation. These spectra were meticulously 
 gathered using attenuated total reflectance Fourier transform infrared spectroscopy (ATR-FTIR). The dataset comprises 
 two sets of spectra: a training set and a test set. Take a peek at the enchanting fermentation setup in the image below:
 
-.. image:: ./figures/fermentation_setup.png
+.. image:: ./_figures/fermentation_setup.png
 
 For those curious minds, you can find more about the Fermentation Dataset in these fascinating publications:
 
@@ -31,7 +31,7 @@ For those curious minds, you can find more about the Fermentation Dataset in the
 
 
 📚 THE TRAIN SET: Start Your Training Adventure
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The train set boasts 21 synthetic spectra paired with their reference glucose concentrations, measured by high-performance 
 liquid chromatography (HPLC). Ready to embark on your training journey? You can load the train set as a ``pandas.DataFrame`` 
@@ -90,7 +90,7 @@ Ready for this real-time exploration? Load the test set like a pro:
    names must be of type ``str``.
 
 ☕ The Coffee Dataset: A Global Coffee Journey 🌍
-------------------------------------------------
+-------------------------------------------------------
 
 The Coffee Dataset invites you to embark on a journey through the world of coffee. These captivating spectra are collected 
 from a rich diversity of coffee samples, each originating from a different country. The magic happens with attenuated total 
