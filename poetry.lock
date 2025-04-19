@@ -2038,6 +2038,26 @@ standalone = ["Sphinx (>=5)"]
 test = ["pytest"]
 
 [[package]]
+name = "sphinxcontrib-youtube"
+version = "1.4.1"
+description = "Sphinx \"youtube\" extension."
+optional = false
+python-versions = "*"
+files = [
+    {file = "sphinxcontrib_youtube-1.4.1-py2.py3-none-any.whl", hash = "sha256:de9cb454f066d580a1e7ad64efae7dd9e12c1b1567a31faa330b1aeaeed40460"},
+    {file = "sphinxcontrib_youtube-1.4.1.tar.gz", hash = "sha256:eb7871c8af47fd2b5c9727615354b7f95bce554be8be45b9fa8e5bc022f88059"},
+]
+
+[package.dependencies]
+requests = "*"
+Sphinx = ">=6.1"
+
+[package.extras]
+dev = ["nox"]
+doc = ["pydata-sphinx-theme", "sphinx-copybutton", "sphinx-design"]
+test = ["beautifulsoup4", "pytest", "pytest-cov", "pytest-regressions"]
+
+[[package]]
 name = "stack-data"
 version = "0.6.3"
 description = "Extract data from python stack frames and tracebacks for informative displays"
@@ -2380,4 +2400,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.13"
-content-hash = "6052050e454cf5f6d6bf1dd51c7bddf67a4a3651057afc7674c8dbdb29c27a19"
+content-hash = "218cf5d914ef4d1920fdc17cd55e095f09d0f547329f708173616aba128b0382"

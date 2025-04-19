@@ -12,6 +12,7 @@ Explore
    sklearn
    spectra
    pipelines
+   optimize
    dataframes
 
 .. grid:: 1 1 3 3
@@ -54,7 +55,7 @@ Explore
       :img-top: ./_figures/optimize.png
       :text-align: center
 
-      .. button-ref:: ./sklearn
+      .. button-ref:: ./optimize
             :expand:
             :color: secondary
             :click-parent:
