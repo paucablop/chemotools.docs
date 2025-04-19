@@ -12,7 +12,7 @@ Hyperparameters are those parameters that are set before training the model. Som
 To answer these, different hyperparameter combinations are tested and evaluated, typically using cross-validation, to find the ones that yield the best performant model.
 
 In this section, we’ll investigate different options to optimize these choices using ``chemotools`` and Scikit-Learn’s model optimization options 
-such as ``GridSearchCV`` or ``RandomSearchCV``, and ``BayesSearchCV`` from the ``sklearn-optimization``, which will help searching the 
+such as ``GridSearchCV`` or ``RandomSearchCV``, which will help searching the 
 hyperparameter space systematically and selecting the best hyper parameters.
 
 Two excellent advanced resources for hyperparameter optimization are shown below by the fellows at `Probabl. <https://probabl.ai/>`_.
