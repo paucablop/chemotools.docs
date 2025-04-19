@@ -8,11 +8,11 @@ For the ``pandas.DataFrame`` and ``polars.DataFrame`` lovers. By default, all ``
 
 Below there are two examples of how to use this new API:
 
-Example 1: Using the ``set_output()`` API with a single preprocessing method
------------------------------------------------------------------------------
+**Example 1: Using the ``set_output()`` API with a single preprocessing method**
+----------------------------------------------------------------------------------
 
 1. Load your spectral data as a ``pandas.DataFrame``
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 First load your spectral data. In this case, we assume a file called ``spectra.csv`` where each row represents a spectrum and each column represents wavenumbers.
 
@@ -56,8 +56,8 @@ The output of the ``fit_transform()`` method is now a ``pandas.DataFrame`` objec
 .. hint::
     Notice that by default the indices and the columns of the input data are not maintained to the output, and the ``spectra_airpls`` DataFrame has default indices and columns.
 
-Example 2: Using the ``set_output()`` API with a pipeline
----------------------------------------------------------
+**Example 2: Using the ``set_output()`` API with a pipeline**
+-----------------------------------------------------------------
 
 Similarly, the ``set_output()`` API can be used with pipelines. The following code shows how to create a pipeline that performs:
 
@@ -71,9 +71,13 @@ Similarly, the ``set_output()`` API can be used with pipelines. The following co
     from sklearn.preprocessing import StandardScaler
     from chemotools.scatter import MultiplicativeScatterCorrection
     
+    # Make the pipeline
     pipeline = make_pipeline(MultiplicativeScatterCorrection(), StandardScaler())
+
+    # Set the output to pandas
     pipeline.set_output(transform="pandas")
     
+    # Fit the pipeline and transform the spectra
     output = pipeline.fit_transform(spectra)
 
 .. hint::

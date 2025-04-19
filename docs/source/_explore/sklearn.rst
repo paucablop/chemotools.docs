@@ -1,6 +1,6 @@
 .. _sklearn:
 
-**Getting started with Scikit-Learn**
+**Why Scikit-Learn?**
 =====================================
 
 This section describes the basics of working with scikit-learn. You'll learn about scikit-learn's key features, models, and methods.

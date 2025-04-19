@@ -1,6 +1,6 @@
 .. _spectra:
 
-**Working with Single Spectra in Scikit-learn**
+**Working with spectra**
 ================================================
 
 When working with spectroscopic data in ``chemotools`` and ``scikit-learn``, you often need to reshape single spectra to fit the expected data shapes. This guide explains how to reshape single spectra for preprocessing in ``scikit-learn`` and ``chemotools``.
@@ -13,7 +13,7 @@ Understanding Data Shapes
 * Each row represents a sample
 * Each column represents a feature
 
-However, spectroscopic data often comes as single spectra in 1D arrays (vectors). Here's an example of a single spectrum:
+However, spectroscopic data often comes as single spectrum in 1D arrays (vectors). Here's an example of a single spectrum:
 
 .. code-block:: python
 

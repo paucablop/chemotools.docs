@@ -17,7 +17,7 @@ Explore
    :gutter: 2 3 4 4
 
    .. grid-item-card::
-      :img-top: ../../source/_static/_explore/sklearn.png
+      :img-top: ./_figures/sklearn.png
       :text-align: center
 
       .. button-ref:: ./sklearn
@@ -28,7 +28,7 @@ Explore
             **Get started with scikit-learn**
 
    .. grid-item-card::
-      :img-top: ../../source/_static/_explore/spectra.png
+      :img-top: ./_figures/spectra.png
       :text-align: center
 
       .. button-ref:: ./spectra
@@ -39,18 +39,7 @@ Explore
             **Working with spectra**
 
    .. grid-item-card::
-      :img-top: ../../source/_static/_explore/dataframes.png
-      :text-align: center
-
-      .. button-ref:: ./dataframes
-            :expand:
-            :color: secondary
-            :click-parent:
-
-            **DataFrame lover?**
-
-   .. grid-item-card::
-      :img-top: ../../source/_static/_explore/pipeline.png
+      :img-top: ./_figures/pipeline.png
       :text-align: center
 
       .. button-ref:: ./sklearn
@@ -61,7 +50,7 @@ Explore
             **Creating your pipelines**
 
    .. grid-item-card::
-      :img-top: ../../source/_static/_explore/optimize.png
+      :img-top: ./_figures/optimize.png
       :text-align: center
 
       .. button-ref:: ./sklearn
@@ -72,7 +61,19 @@ Explore
             **Optimize your processing**
 
    .. grid-item-card::
-      :img-top: ../../source/_static/_explore/models.png
+      :img-top: ./_figures/dataframes.png
+      :text-align: center
+
+      .. button-ref:: ./dataframes
+            :expand:
+            :color: secondary
+            :click-parent:
+
+            **DataFrame lover?**
+
+
+   .. grid-item-card::
+      :img-top: ./_figures/models.png
       :text-align: center
 
       .. button-ref:: ./sklearn
