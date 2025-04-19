@@ -5,8 +5,8 @@ Welcome to the world of data exploration! Our ``chemotools`` package provides us
 that help you test the package and learn. You can find these datasets in the ``chemotools.datasets`` 
 module and access them using simple loading functions. Here's what we offer:
 
-The Fermentation Dataset 🧪
------------------------------
+**The Fermentation Dataset 🧪**
+---------------------------------
 
 This dataset contains spectra collected during a yeast fermentation process using attenuated total 
 reflectance Fourier transform infrared spectroscopy (ATR-FTIR). The dataset includes both a 
@@ -48,7 +48,7 @@ or as a ``polars.DataFrame``:
    Polars is supported in ``chemotools``>=0.1.5
 
 .. note::
-   To learn how to build a PLS model using the Fermentation Dataset, see our `Training Guide <https://paucablop.github.io/chemotools/get-started/brewing_regressor.html>`_.
+   To learn how to build a PLS model using the Fermentation Dataset, see our `Training Guide <https://chemotools.org/_learn/pls_regression.html>`_.
 
 The Test Set
 ~~~~~~~~~~~~~~~
@@ -80,8 +80,8 @@ Load the test set using:
    In a ``pandas.DataFrame`` the column names can be of type ``float``, but in a ``polars.DataFrame`` the column 
    names must be of type ``str``.
 
-The Coffee Dataset ☕
-----------------------
+**The Coffee Dataset ☕**
+---------------------------
 
 The Coffee Dataset contains spectra collected from various coffee samples from different countries. 
 These spectra were collected using attenuated total reflectance Fourier transform infrared 
@@ -105,6 +105,6 @@ spectroscopy (ATR-FTIR).
 
 .. note::
    To learn how to build a PLS-DA classification model using the Coffee Dataset, 
-   see our `Training Guide <https://paucablop.github.io/chemotools/get-started/coffee_spectra_classifier.html>`_.
+   see our `Training Guide <https://chemotools.org/_learn/pls_classification.html>`_.
 
 We hope you enjoy exploring these datasets! 🚀
