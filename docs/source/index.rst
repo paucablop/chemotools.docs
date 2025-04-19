@@ -67,18 +67,7 @@ Start exploring
             :color: secondary
             :click-parent:
 
-            **Start exploring chemotools**
-
-   .. grid-item-card::
-      :img-top: https://www.youtube.com/watch?v=leB43KchETw&t=2095s/maxresdefault.jpg
-      :text-align: center
-
-      .. button-ref:: _explore/index
-            :expand:
-            :color: secondary
-            :click-parent:
-
-            **Check out our Webinar**
+            **Explore chemotools**
 
    .. grid-item-card::
       :img-top: ../source/_static/_test_image/learn4.png
@@ -89,5 +78,18 @@ Start exploring
             :color: secondary
             :click-parent:
 
-            **Learn with chemotools**
+            **Chemometrics tutorials**
+
+   .. grid-item-card::
+      :img-top: https://img.youtube.com/vi/leB43KchETw/maxresdefault.jpg
+      :text-align: center
+
+      .. button-link:: https://www.youtube.com/watch?v=leB43KchETw&t=2095s
+         :expand:
+         :color: secondary
+         :click-parent:
+
+         **Check out our Webinar**
+
+
 
