@@ -10,19 +10,20 @@
 
    User Guide <_user/index>
    Methods <_methods/index>
-   Get Started <_get_started/index>
    Explore <_explore/index>
    Learn <_learn/index>
+   Cite <_cite/index>
+
 
 
 .. warning::
    Site under construction! check https://paucablop.github.io/chemotools/ for a full documentation site
 
-This project provides a toolkit for spectral preprocessing techniques integrated with the widely popular
-``scikit-learn`` API and the rest of the Python machine learning environment. The goal of the project is to 
-provide a comprehensive and user-friendly package to standardize the development and deployment of chemometric models. 
-The project intends to enable users to easily build and deploy machine learning and chemometric models on top of 
-preprocessed data, making it possible to identify patterns and make predictions with greater accuracy.
+chemotools is a Python project that provides a toolkit of algorithms for spectral preprocessing that integrates with the widely popular
+``scikit-learn`` API and the rest of the Python machine learning environment. The goal of chemotools is to 
+provide a comprehensive and user-friendly environment to standardize the development and deployment of chemometric models. Through chemotools, 
+scientists are empowered to build and deploy machine learning and chemometric solutions for their specific use cases.
+
 
 .. image:: https://img.shields.io/pypi/v/chemotools
    :target: https://pypi.org/project/chemotools
@@ -69,15 +70,15 @@ Start exploring
             **Start exploring chemotools**
 
    .. grid-item-card::
-      :img-top: ../source/_static/_test_image/deploy4.png
+      :img-top: https://www.youtube.com/watch?v=leB43KchETw&t=2095s/maxresdefault.jpg
       :text-align: center
 
-      .. button-ref:: _get_started/install
+      .. button-ref:: _explore/index
             :expand:
             :color: secondary
             :click-parent:
 
-            **Bring your models to life**
+            **Check out our Webinar**
 
    .. grid-item-card::
       :img-top: ../source/_static/_test_image/learn4.png

@@ -1,5 +1,5 @@
-Installation
-============
+Cite chemotools
+=================
 
 To Install chemotools run the following command:
 
