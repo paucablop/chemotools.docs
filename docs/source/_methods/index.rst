@@ -10,7 +10,7 @@ Methods
    :maxdepth: 1
    :hidden:
 
-   _cite
+   methods
 
 .. grid:: 1 1 4 4
    :gutter: 2 3 4 4
@@ -19,7 +19,7 @@ Methods
       :img-top: ../../source/_static/_methods/noisy_spectra_2.png
       :text-align: center
 
-      .. button-ref:: _cite/install
+      .. button-ref:: methods
             :expand:
             :color: secondary
             :click-parent:
@@ -30,7 +30,7 @@ Methods
       :img-top: ../../source/_static/_methods/derivate_spectra.png
       :text-align: center
 
-      .. button-ref:: _cite/install
+      .. button-ref:: methods
             :expand:
             :color: secondary
             :click-parent:
@@ -41,7 +41,7 @@ Methods
       :img-top: ../../source/_static/_methods/noisy_spectra_2.png
       :text-align: center
 
-      .. button-ref:: _cite/install
+      .. button-ref:: methods
             :expand:
             :color: secondary
             :click-parent:
@@ -52,7 +52,7 @@ Methods
       :img-top: ../../source/_static/_methods/noisy_spectra_2.png
       :text-align: center
 
-      .. button-ref:: _cite/install
+      .. button-ref:: methods
             :expand:
             :color: secondary
             :click-parent:
