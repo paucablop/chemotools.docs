@@ -3,7 +3,13 @@
 **Why Scikit-Learn?**
 =====================================
 
-This section describes the basics of working with scikit-learn. You'll learn about scikit-learn's key features, models, and methods.
+Scikit-Learn brings modern machine learning tools to chemometrics—making workflows more flexible, scalable, and easy to prototype and validate.
+
+* **Flexibility**: Works with various chemometric models and preprocessing methods.
+* **Integration**: Can be combined with domain-specific tools for spectral analysis, multivariate statistics, and experimental design.
+* **Scalability**: Can handle small laboratory datasets as well as large-scale industrial data.
+* **Easy Experimentation**: Rapid prototyping with different algorithms and preprocessing techniques.
+
 
 What is Scikit-Learn?
 ---------------------
@@ -53,15 +59,22 @@ Preprocessing Tools
 The scikit-learn workflow
 -------------------------
 
-Scikit-learn follows an intuitive two-step process:
+Scikit-learn follows an intuitive three-step process outlined in the figure below:
 
-1.  **Fit**: The model learns patterns from training data using ``fit()``
-2.  **Apply**: The fitted model processes new data using either:
+.. image:: _figures/sklearn_workflow.jpg
+    :target: _figures/sklearn_workflow.jpg
+    :width: 400
+    :alt: scikit-learn workflow
+    :align: center
+
+1.  **Define**: Configure the model/preprocessing parameters.
+2.  **Fit**: The model learns patterns from training data using ``fit()``
+3.  **Apply**: The fitted model processes new data using either:
 
 - ``transform()`` for preprocessing steps and unsupervised learning
 - ``predict()`` for supervised learning models (classification and regression)
 
-First, import the required modules:
+Let's see two examples, one for a preprocessing and one for a regerssion model. First, import the required modules:
 
 .. code-block:: python
 
@@ -72,31 +85,27 @@ Preprocessing with ``StandardScaler``:
 
 .. code-block:: python
 
-    # Create and fit the scaler
-    scaler = StandardScaler()
+    # 1. Define the preprocessor
+    scaler = StandardScaler(with_mean=True, with_std=False)
+
+    # 2. Fit the preprocessor to the data
     scaler.fit(X)
 
-    # Transform the data
+    # 3. Apply the processor to the data
     X_scaled = scaler.transform(X)
 
-    # For new data
+    # ... or to new new data
     X_new_scaled = scaler.transform(X_new)
 
 Building a ``PLSRegression`` model:
 
 .. code-block:: python
 
-    # Create and fit the PLS model
+    # 1. Define the PLS model with two components
     pls = PLSRegression(n_components=2)
+
+    # 2. Fit the PLS model to the training data
     pls.fit(X_scaled, y)
 
-    # Make predictions
+    # 3. Apply the PLS model to new data
     y_pred = pls.predict(X_new_scaled)
-
-Why Use Scikit-Learn for Chemometrics?
---------------------------------------
-
-* **Flexibility**: Works with various chemometric models and preprocessing meth``numpy``:ods.
-* **Integration**: Can be combined with domain-specific tools for spectral analysis, multivariate statistics, and experimental design.
-* **Scalability**: Can handle small laboratory datasets as well as large-scale industrial data.
-* **Easy Experimentation**: Rapid prototyping with different algorithms and preprocessing techniques.
