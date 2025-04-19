@@ -84,7 +84,7 @@ Start exploring
       :img-top: https://img.youtube.com/vi/leB43KchETw/maxresdefault.jpg
       :text-align: center
 
-      .. button-link:: https://www.youtube.com/watch?v=leB43KchETw&t=2095s
+      .. button-link:: https://www.youtube.com/watch?v=leB43KchETw&t
          :expand:
          :color: secondary
          :click-parent:

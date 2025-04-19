@@ -9,7 +9,8 @@ Hyperparameters are those parameters that are set before training the model. Som
 
 - *Which polynomial order works best?*
 
-To answer these, different hyperparameter combinations are tested and evaluated, typically using cross-validation, to find the ones that yield the best performant model.
+To answer these, different hyperparameter combinations are tested and evaluated, typically using cross-validation, 
+to find the ones that yield the best performant model.
 
 In this section, we’ll investigate different options to optimize these choices using ``chemotools`` and Scikit-Learn’s model optimization options 
 such as ``GridSearchCV`` or ``RandomSearchCV``, which will help searching the 
@@ -23,7 +24,7 @@ Two excellent advanced resources for hyperparameter optimization are shown below
    :width: 100%
 
 .. |youtube_thumbnail2| image:: https://img.youtube.com/vi/KdIcUDqMVpE/maxresdefault.jpg
-   :target: https://www.youtube.com/watch?v=KdIcUDqMVpE&t=832s
+   :target: https://www.youtube.com/watch?v=KdIcUDqMVpE&t
    :alt: GridSearchCV Optimize
    :width: 100%
 
@@ -69,7 +70,8 @@ All hyperparameter optmization methods, following the three follwoing steps:
 
 .. note:: 
     The main difference between these methods is how they explore the hyperparameter space. 
-    For example, ``GridSearchCV`` explores the hyperparameter space systematically, while ``RandomSearchCV`` samples a fixed number of random combinations from the hyperparameter space.
+    For example, ``GridSearchCV`` explores the hyperparameter space systematically, while ``RandomSearchCV`` samples a 
+    fixed number of random combinations from the hyperparameter space.
 
 The first step is to define the hyperparameter space. In our case we would like to evaluate the
 following hyperparameters:
@@ -78,7 +80,8 @@ following hyperparameters:
 - The polynomial order of the Savitzky-Golay filter (`polynomial_order`)
 - The derivative order of the Savitzky-Golay filter (`derivate_order`)
 
-To define the hyperparameter space, we can define the hyper parameter grid as a dictionary, where the keys are the names of the hyperparameters and the values are lists of possible values for each hyperparameter.
+To define the hyperparameter space, we can define the hyper parameter grid as a dictionary, where the keys 
+are the names of the hyperparameters and the values are lists of possible values for each hyperparameter.
 The code to define the hyperparameter space is shown below:
 
 .. code-block:: python
@@ -141,7 +144,8 @@ There are a few important parameters to note in the ``GridSearchCV`` function:
     - ``n_jobs`` specifies the number of jobs to run in parallel. In this case, we are using all available cores by setting ``n_jobs=-1``.
 
 .. note::
-    Laveraging the multiple cores will speed up the process of hyperparameter optimization, especially when the dataset is large.
+    🚀 Laveraging the multiple cores will speed up the process of hyperparameter optimization, especially when the dataset is large. You can further speed the process by caching the intermediate results using the ``memory`` parameter in the pipeline, 
+    as shown in the video above!
 
 **RandomizedSearchCV**
 --------------------------
