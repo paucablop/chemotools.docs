@@ -84,4 +84,4 @@ Discover the environment
             :color: secondary
             :click-parent:
 
-            **Persist your models**
+            **Persisting your models**
