@@ -81,7 +81,7 @@ Start exploring
             **Chemometrics tutorials**
 
    .. grid-item-card::
-      :img-top: https://img.youtube.com/vi/leB43KchETw/maxresdefault.jpg
+      :img-top: ../source/_static/_test_image/webinar.png
       :text-align: center
 
       .. button-link:: https://www.youtube.com/watch?v=leB43KchETw&t
