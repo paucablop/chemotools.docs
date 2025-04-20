@@ -2,8 +2,8 @@
 
 .. _explore:
 
-Explore
-=======
+Discover the environment
+========================
 
 .. toctree::
    :maxdepth: 2
