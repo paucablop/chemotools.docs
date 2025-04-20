@@ -14,6 +14,7 @@ Discover the environment
    pipelines
    optimize
    dataframes
+   persist
 
 .. grid:: 1 1 3 3
    :gutter: 2 3 4 4
@@ -75,12 +76,12 @@ Discover the environment
 
 
    .. grid-item-card::
-      :img-top: ./_figures/models.png
+      :img-top: ./_figures/persist.png
       :text-align: center
 
-      .. button-ref:: ./sklearn
+      .. button-ref:: ./persist
             :expand:
             :color: secondary
             :click-parent:
 
-            **Explore different models**
+            **Persist your models**
