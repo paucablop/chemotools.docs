@@ -70,7 +70,7 @@ Start exploring
             **Explore chemotools**
 
    .. grid-item-card::
-      :img-top: ../source/_static/_test_image/learn4.png
+      :img-top: ../source/_static/_test_image/learn5.png
       :text-align: center
 
       .. button-ref:: _learn/index
