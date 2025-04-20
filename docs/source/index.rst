@@ -70,7 +70,7 @@ Start exploring
             **Explore chemotools**
 
    .. grid-item-card::
-      :img-top: ../source/_static/_test_image/learn5.png
+      :img-top: ../source/_static/_test_image/learn6.png
       :text-align: center
 
       .. button-ref:: _learn/index
@@ -81,7 +81,7 @@ Start exploring
             **Chemometrics tutorials**
 
    .. grid-item-card::
-      :img-top: ../source/_static/_test_image/webinar.png
+      :img-top: ../source/_static/_test_image/webinar2.png
       :text-align: center
 
       .. button-link:: https://www.youtube.com/watch?v=leB43KchETw&t
