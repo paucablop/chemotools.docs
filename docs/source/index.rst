@@ -59,7 +59,7 @@ Start exploring
    :gutter: 2 3 4 4
 
    .. grid-item-card::
-      :img-top: ../source/_static/_test_image/explore4.png
+      :img-top: ../source/_static/_test_image/discover.png
       :text-align: center
 
       .. button-ref:: _explore/index
@@ -67,7 +67,7 @@ Start exploring
             :color: secondary
             :click-parent:
 
-            **Explore chemotools**
+            **Discover the environment**
 
    .. grid-item-card::
       :img-top: ../source/_static/_test_image/learn6.png
