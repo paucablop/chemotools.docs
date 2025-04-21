@@ -12,7 +12,7 @@ Methods
 
    methods
 
-.. grid:: 2 2 2 2
+.. grid:: 1 1 2 2
    :gutter: 4 4 5 5
 
    .. grid-item-card::
