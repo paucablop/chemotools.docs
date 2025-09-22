@@ -1,0 +1,1736 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Glucose monitoring with PLS &#8212; chemotools  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nbsphinx-code-cells.css?v=2aa19091" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=d29a62e4" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '_learn/pls_regression';</script>
+    <link rel="icon" href="../_static/favicon.svg"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Classify coffees with PLS-DA" href="pls_classification.html" />
+    <link rel="prev" title="Explore our datasets 🔍" href="datasets.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo-light-3.svg" class="logo__image only-light" alt="chemotools  documentation - Home"/>
+    <img src="../_static/logo-dark-3.svg" class="logo__image only-dark pst-js-only" alt="chemotools  documentation - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../_user/index.html">
+    User Guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../_methods/index.html">
+    Methods
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../_explore/index.html">
+    Explore
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="index.html">
+    Learn
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../_cite/index.html">
+    Cite
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/paucablop/chemotools" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fab fa-github-square fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.linkedin.com/company/chemotools" title="LinkedIn" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">LinkedIn</span></a>
+        </li>
+</ul></div>
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../_user/index.html">
+    User Guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../_methods/index.html">
+    Methods
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../_explore/index.html">
+    Explore
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="index.html">
+    Learn
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../_cite/index.html">
+    Cite
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/paucablop/chemotools" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fab fa-github-square fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.linkedin.com/company/chemotools" title="LinkedIn" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">LinkedIn</span></a>
+        </li>
+</ul></div>
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="datasets.html">Explore our datasets 🔍</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Glucose monitoring with PLS</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="pls_classification.html"><strong>Classify coffees with PLS-DA</strong></a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Learn</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>Glucose monitoring with PLS</strong></span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="Glucose-monitoring-with-PLS">
+<h1><strong>Glucose monitoring with PLS</strong><a class="headerlink" href="#Glucose-monitoring-with-PLS" title="Link to this heading">#</a></h1>
+<blockquote>
+<div><p>💡<strong>NOTE:</strong> This document is a Jupyter notebook. You can download the source file and run it in your Jupyter environment!</p>
+</div></blockquote>
+<section id="Introduction">
+<h2><strong>Introduction</strong><a class="headerlink" href="#Introduction" title="Link to this heading">#</a></h2>
+<p>This dataset provides information on lignocellulosic ethanol fermentation through spectroscopic data collected data using attenuated total reflectance, mid-infrared (ATR-MIR) spectroscopy, along with reference measurements using high-performance liquid chromatography (HPLC) for validation.</p>
+<p>The project contains two datasets:</p>
+<ul class="simple">
+<li><p><strong>Training Dataset:</strong> Contains spectral data with corresponding HPLC measurements used to train the partial least squares (PLS) models.</p></li>
+<li><p><strong>Testing Dataset:</strong> Includes a time series of spectra collected during fermentation, plus off-line HPLC measurements.</p></li>
+</ul>
+<p>For more information about these datasets and how they can be used to monitor fermentation, please see our article: “Transforming Data to Information: A Parallel Hybrid Model for Real-Time State Estimation in Lignocellulosic Ethanol Fermentation.” (Note that the data in the article differs from the data provided here.)</p>
+</section>
+<section id="Objective">
+<h2><strong>Objective</strong><a class="headerlink" href="#Objective" title="Link to this heading">#</a></h2>
+<p>In this exercise, you will build a PLS model to monitor glucose concentration in real-time using ATR-MIR spectroscopy. You’ll train the model using a small training set of spiked spectra, then test its performance with spectra from an actual fermentation process.</p>
+</section>
+<section id="Before-starting">
+<h2><strong>Before starting</strong><a class="headerlink" href="#Before-starting" title="Link to this heading">#</a></h2>
+<p>Before we start, you need to be sure to have the following dependencies installed:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>chemotools
+matplotlib
+numpy
+pandas
+scikit-learn
+</pre></div>
+</div>
+<p>You can install them using</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>chemotools
+pip<span class="w"> </span>install<span class="w"> </span>matplotlib
+pip<span class="w"> </span>install<span class="w"> </span>numpy
+pip<span class="w"> </span>install<span class="w"> </span>pandas
+pip<span class="w"> </span>install<span class="w"> </span>scikit-learn
+</pre></div>
+</div>
+</section>
+<section id="Loading-the-training-data">
+<h2><strong>Loading the training data</strong><a class="headerlink" href="#Loading-the-training-data" title="Link to this heading">#</a></h2>
+<p>You can access the from the <code class="docutils literal notranslate"><span class="pre">chemotools.datasets</span></code> module with the <code class="docutils literal notranslate"><span class="pre">load_fermentation_train()</span></code> function.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">chemotools.datasets</span><span class="w"> </span><span class="kn">import</span> <span class="n">load_fermentation_train</span>
+
+<span class="n">spectra</span><span class="p">,</span> <span class="n">hplc</span> <span class="o">=</span> <span class="n">load_fermentation_train</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">load_fermentation_train()</span></code> function returns two <code class="docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code>:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">spectra</span></code>: This dataframe contains spectral data, with columns representing wavenumbers and rows representing samples.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">hplc</span></code>: Here, you’ll find reference HPLC measurements for the glucose concentration (in g/L) of each sample, stored in a single column labeled <code class="docutils literal notranslate"><span class="pre">glucose</span></code>.</p></li>
+</ul>
+<blockquote>
+<div><p>💡<strong>NOTE:</strong> If you are interested in working with <code class="docutils literal notranslate"><span class="pre">polars.DataFrame</span></code> you can simply use <code class="docutils literal notranslate"><span class="pre">load_fermentation_train(set_output=&quot;polars&quot;)</span></code>. Note that if you choose to work with <code class="docutils literal notranslate"><span class="pre">polars.DataFrame</span></code> the wavenumbers are given in the column names as <code class="docutils literal notranslate"><span class="pre">str</span></code> and not as <code class="docutils literal notranslate"><span class="pre">float</span></code>. This is because <code class="docutils literal notranslate"><span class="pre">polars</span></code> does not support column names with types other than <code class="docutils literal notranslate"><span class="pre">str</span></code>. To extract the wavenumbers as <code class="docutils literal notranslate"><span class="pre">float</span></code> from the <code class="docutils literal notranslate"><span class="pre">polars.DataFrame</span></code> you can use the <code class="docutils literal notranslate"><span class="pre">df.columns.to_numpy(dtype=np.float64)</span></code>
+method.</p>
+</div></blockquote>
+</section>
+<section id="Exploring-the-training-data">
+<h2><strong>Exploring the training data</strong><a class="headerlink" href="#Exploring-the-training-data" title="Link to this heading">#</a></h2>
+<p>Before starting with data modeling, it’s important to get familiar with your data. Let’s start by answering some basic questions:</p>
+<ul class="simple">
+<li><p><em>How many samples are there?</em></p></li>
+<li><p><em>and how many wavenumbers are available?</em></p></li>
+</ul>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Number of samples: </span><span class="si">{</span><span class="n">spectra</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Number of wavenumbers: </span><span class="si">{</span><span class="n">spectra</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Number of samples: 21
+Number of wavenumbers: 1047
+</pre></div></div>
+</div>
+<p>Now that we have the basics down, let’s take a closer look at the data.</p>
+<p>For the spectral data, you can use the <code class="docutils literal notranslate"><span class="pre">pandas.DataFrame.head()</span></code> method to examine the first 5 rows:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">spectra</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area rendered_html docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>428.0</th>
+      <th>429.0</th>
+      <th>431.0</th>
+      <th>432.0</th>
+      <th>434.0</th>
+      <th>436.0</th>
+      <th>437.0</th>
+      <th>439.0</th>
+      <th>440.0</th>
+      <th>442.0</th>
+      <th>...</th>
+      <th>1821.0</th>
+      <th>1823.0</th>
+      <th>1824.0</th>
+      <th>1825.0</th>
+      <th>1826.0</th>
+      <th>1828.0</th>
+      <th>1829.0</th>
+      <th>1830.0</th>
+      <th>1831.0</th>
+      <th>1833.0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.493506</td>
+      <td>-0.383721</td>
+      <td>0.356846</td>
+      <td>0.205714</td>
+      <td>0.217082</td>
+      <td>0.740331</td>
+      <td>0.581749</td>
+      <td>0.106719</td>
+      <td>0.507973</td>
+      <td>0.298643</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.108225</td>
+      <td>0.488372</td>
+      <td>-0.037344</td>
+      <td>0.448571</td>
+      <td>0.338078</td>
+      <td>0.632597</td>
+      <td>0.368821</td>
+      <td>0.462451</td>
+      <td>0.530752</td>
+      <td>0.221719</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.095238</td>
+      <td>0.790698</td>
+      <td>0.174274</td>
+      <td>0.314286</td>
+      <td>0.106762</td>
+      <td>0.560773</td>
+      <td>0.182510</td>
+      <td>0.482213</td>
+      <td>0.482916</td>
+      <td>0.341629</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0.666667</td>
+      <td>0.197674</td>
+      <td>0.352697</td>
+      <td>0.385714</td>
+      <td>0.405694</td>
+      <td>0.508287</td>
+      <td>0.463878</td>
+      <td>0.430830</td>
+      <td>0.455581</td>
+      <td>0.527149</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0.532468</td>
+      <td>-0.255814</td>
+      <td>0.078838</td>
+      <td>0.057143</td>
+      <td>0.238434</td>
+      <td>0.997238</td>
+      <td>0.399240</td>
+      <td>0.201581</td>
+      <td>0.533030</td>
+      <td>0.246606</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 1047 columns</p>
+</div></div>
+</div>
+<p>For brevity, we won’t display the entire table here, but you’ll notice that each column corresponds to a wavenumber, and each row represents a sample.</p>
+<p>Turning to the HPLC data, the <code class="docutils literal notranslate"><span class="pre">pandas.DataFrame.describe()</span></code> method provides a summary of the glucose column:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">hplc</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area rendered_html docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>glucose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>21.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>19.063895</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>12.431570</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>9.057189</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>18.395220</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>29.135105</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>38.053004</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<p>This summary offers insights into the distribution of the glucose concentration. With this practical knowledge, we are now ready to continue with our data modeling journey.</p>
+</section>
+<section id="Visualizing-the-training-data">
+<h2><strong>Visualizing the training data</strong><a class="headerlink" href="#Visualizing-the-training-data" title="Link to this heading">#</a></h2>
+<p>To better understand our dataset, we will visualize the data. We will plot the spectra in the train dataset, with each spectrum color-coded to reflect its associated glucose concentration. This visual approach provides a didactic means to understand the dataset’s characteristics, offering insights into chemical variations among the samples. To do so, we’ll use the <code class="docutils literal notranslate"><span class="pre">matplotlib.pyplot</span></code> module. Remember to install it first using:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>matplotlib
+</pre></div>
+</div>
+<p>Up until now, we have used <code class="docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code> to represent the dataset. <code class="docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code> are great for storing and manipulating many large datasets. However, I often find more convenient to use <code class="docutils literal notranslate"><span class="pre">numpy.ndarray</span></code> to work with spectral data. Therefore, we will convert the <code class="docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code> to <code class="docutils literal notranslate"><span class="pre">numpy.ndarray</span></code> using the <code class="docutils literal notranslate"><span class="pre">pandas.DataFrame.to_numpy()</span></code> method.</p>
+<p>So our first step will be to transform our <code class="docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code> to <code class="docutils literal notranslate"><span class="pre">numpy.ndarray</span></code>:</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+
+<span class="c1"># Convert the spectra pandas.DataFrame to numpy.ndarray</span>
+<span class="n">spectra_np</span> <span class="o">=</span> <span class="n">spectra</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">()</span>
+
+<span class="c1"># Convert the wavenumbers pandas.columns to numpy.ndarray</span>
+<span class="n">wavenumbers</span> <span class="o">=</span> <span class="n">spectra</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">(</span><span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">)</span>
+
+<span class="c1"># Convert the hplc pandas.DataFrame to numpy.ndarray</span>
+<span class="n">hplc_np</span> <span class="o">=</span> <span class="n">hplc</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<p>Before plotting our data, we’ll create a dedicated plotting function that color-codes each spectrum according to its glucose concentration. This approach helps visualize the relationship between spectral patterns and glucose levels.</p>
+<p>The function will implement:</p>
+<ol class="arabic simple">
+<li><p><strong>Color normalization</strong>: We’ll use <code class="docutils literal notranslate"><span class="pre">matplotlib.colors.Normalize</span></code> to scale glucose concentration values to a 0-1 range, making them suitable for color mapping.</p></li>
+<li><p><strong>Color mapping</strong>: The normalized values will be mapped to colors using a color map via <code class="docutils literal notranslate"><span class="pre">matplotlib.cm.ScalarMappable</span></code>.</p></li>
+<li><p><strong>Colorbar</strong>: We’ll add a colorbar to indicate how colors correspond to glucose concentration values.</p></li>
+</ol>
+<p>This visualization allows us to compare multiple spectra based on their associated glucose concentrations.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib.colors</span><span class="w"> </span><span class="kn">import</span> <span class="n">Normalize</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">plot_spectra</span><span class="p">(</span><span class="n">spectra</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">wavenumbers</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">hplc</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">zoom_in</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Plot spectra with colors based on glucose concentration.</span>
+
+<span class="sd">    Parameters:</span>
+<span class="sd">    -----------</span>
+<span class="sd">    spectra : np.ndarray</span>
+<span class="sd">        Array containing spectral data, where each row is a spectrum</span>
+<span class="sd">    wavenumbers : np.ndarray</span>
+<span class="sd">        Array of wavenumbers (x-axis values)</span>
+<span class="sd">    hplc : np.ndarray</span>
+<span class="sd">        Array of glucose concentrations corresponding to each spectrum</span>
+<span class="sd">    zoom_in : bool, default=False</span>
+<span class="sd">        If True, zooms into a specific region of interest (950-1550 cm⁻¹)</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">    --------</span>
+<span class="sd">    None</span>
+<span class="sd">        Displays the plot</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Create figure and axis</span>
+    <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+
+    <span class="c1"># Set up color mapping</span>
+    <span class="n">cmap</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">get_cmap</span><span class="p">(</span><span class="s2">&quot;cool&quot;</span><span class="p">)</span>  <span class="c1"># Cool colormap (purple to blue)</span>
+    <span class="n">normalize</span> <span class="o">=</span> <span class="n">Normalize</span><span class="p">(</span><span class="n">vmin</span><span class="o">=</span><span class="n">hplc</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">vmax</span><span class="o">=</span><span class="n">hplc</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
+
+    <span class="c1"># Plot each spectrum with appropriate color</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">spectrum</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">spectra</span><span class="p">):</span>
+        <span class="n">color</span> <span class="o">=</span> <span class="n">cmap</span><span class="p">(</span><span class="n">normalize</span><span class="p">(</span><span class="n">hplc</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">wavenumbers</span><span class="p">,</span> <span class="n">spectrum</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">color</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>
+
+    <span class="c1"># Add colorbar to show glucose concentration scale</span>
+    <span class="n">sm</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">ScalarMappable</span><span class="p">(</span><span class="n">cmap</span><span class="o">=</span><span class="n">cmap</span><span class="p">,</span> <span class="n">norm</span><span class="o">=</span><span class="n">normalize</span><span class="p">)</span>
+    <span class="n">sm</span><span class="o">.</span><span class="n">set_array</span><span class="p">([])</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">sm</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Glucose (g/L)&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Set axis labels and title</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Wavenumber (cm$^{-1}$)&#39;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Absorbance (a.u.)&#39;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Fermentation Training Set Spectra&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Apply zoom if requested</span>
+    <span class="k">if</span> <span class="n">zoom_in</span><span class="p">:</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">950</span><span class="p">,</span> <span class="mi">1550</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mf">0.45</span><span class="p">,</span> <span class="mf">0.65</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Fermentation Training Set Spectra (Zoomed Region)&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Improve appearance</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">)</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+
+    <span class="c1"># Show the plot</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<p>We can now use this function to plot the training dataset:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_spectra</span><span class="p">(</span><span class="n">spectra_np</span><span class="p">,</span> <span class="n">wavenumbers</span><span class="p">,</span> <span class="n">hplc_np</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/_learn_pls_regression_20_0.png" src="../_images/_learn_pls_regression_20_0.png" />
+</div>
+</div>
+<p>These spectra may look unclear because they cover a wide wavenumber range that includes areas with little chemical information. To get a better view, we should focus on the “fingerprint” region between 950 and 1550 cm-1, where the important chemical features appear. For now, we’ll use the zoom_in=True parameter in our plot_spectra() function to focus on this region. Later, we’ll learn how to properly trim the spectra using preprocessing functions.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_spectra</span><span class="p">(</span><span class="n">spectra_np</span><span class="p">,</span> <span class="n">wavenumbers</span><span class="p">,</span> <span class="n">hplc_np</span><span class="p">,</span> <span class="n">zoom_in</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<br/></pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/_learn_pls_regression_22_0.png" src="../_images/_learn_pls_regression_22_0.png" />
+</div>
+</div>
+</section>
+<section id="Preprocessing-the-training-data">
+<h2><strong>Preprocessing the training data</strong><a class="headerlink" href="#Preprocessing-the-training-data" title="Link to this heading">#</a></h2>
+<p>Now that you’ve explored the dataset, it’s time to preprocess the spectral data. This step is essential for removing unwanted variations, such as baseline shifts and noise, which can negatively impact model performance. We’ll use the <code class="docutils literal notranslate"><span class="pre">chemotools</span></code> and the <code class="docutils literal notranslate"><span class="pre">scikit-learn</span></code> modules to preprocess the spectral data.</p>
+<p>We will preprocess the spectra using the following steps:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://paucablop.github.io/chemotools/docs/feature_selection.html#range-cut">Range Cut</a>: to remove the wavenumbers outside the range between 950 and 1550 cm-1.</p></li>
+<li><p><a class="reference external" href="https://paucablop.github.io/chemotools/docs/baseline.html#linear-baseline-correction">Linear Correction</a>: to remove the linear baseline shift.</p></li>
+<li><p><a class="reference external" href="https://paucablop.github.io/chemotools/docs/derivative.html#savitzky-golay-derivative">Savitzky-Golay</a>: calculates the nth order derivative of the spectra using the Savitzky-Golay method. This is useful to remove additive and multiplicative scatter effects.</p></li>
+<li><p><a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html">Standard Scaler</a>: to scale the spectra to zero mean.</p></li>
+</ul>
+<p>We will chain the preprocessing steps using the <code class="docutils literal notranslate"><span class="pre">`make_pipeline()</span></code> &lt;<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.make_pipeline.html">https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.make_pipeline.html</a>&gt;`__ function from <code class="docutils literal notranslate"><span class="pre">scikit-learn</span></code>.</p>
+<blockquote>
+<div><p>💡 <strong>NOTE:</strong> <em>What is a pipeline?</em> A pipeline is a sequence of steps that are executed in a specific order. In our case, we will create a pipeline that will execute the preprocessing steps in the order described above. You can find more information on working with pipelines at our <a class="reference external" href="https://paucablop.github.io/chemotools/get-started/scikit_learn_integration.html#working-with-pipelines">documentation page</a>.</p>
+</div></blockquote>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">chemotools.feature_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">RangeCut</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">chemotools.baseline</span><span class="w"> </span><span class="kn">import</span> <span class="n">LinearCorrection</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">chemotools.derivative</span><span class="w"> </span><span class="kn">import</span> <span class="n">SavitzkyGolay</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.preprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">StandardScaler</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.pipeline</span><span class="w"> </span><span class="kn">import</span> <span class="n">make_pipeline</span>
+
+<span class="c1"># create a pipeline that scales the data</span>
+<span class="n">preprocessing</span> <span class="o">=</span> <span class="n">make_pipeline</span><span class="p">(</span>
+    <span class="n">RangeCut</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="mi">950</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="mi">1500</span><span class="p">,</span> <span class="n">wavenumbers</span><span class="o">=</span><span class="n">wavenumbers</span><span class="p">),</span>
+    <span class="n">LinearCorrection</span><span class="p">(),</span>
+    <span class="n">SavitzkyGolay</span><span class="p">(</span><span class="n">window_size</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">polynomial_order</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">derivate_order</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
+    <span class="n">StandardScaler</span><span class="p">(</span><span class="n">with_std</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>Now we can use the preprocessing pipeline to preprocess the spectra:</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">spectra_preprocessed</span> <span class="o">=</span> <span class="n">preprocessing</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">spectra_np</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>And we can use the <code class="docutils literal notranslate"><span class="pre">plot_spectra()</span></code> function to plot the preprocessed spectra:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># get the wavenumbers after the range cut</span>
+<span class="n">wavenumbers_cut</span> <span class="o">=</span> <span class="n">preprocessing</span><span class="o">.</span><span class="n">named_steps</span><span class="p">[</span><span class="s1">&#39;rangecut&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">wavenumbers_</span>
+
+
+<span class="c1"># plot the preprocessed spectra</span>
+<span class="n">plot_spectra</span><span class="p">(</span><span class="n">spectra_preprocessed</span><span class="p">,</span> <span class="n">wavenumbers_cut</span><span class="p">,</span> <span class="n">hplc_np</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/_learn_pls_regression_29_0.png" src="../_images/_learn_pls_regression_29_0.png" />
+</div>
+</div>
+<blockquote>
+<div><p>💡 <strong>NOTE:</strong> This is cool! See how we are integrating chemometrics with scikit-learn? <code class="docutils literal notranslate"><span class="pre">RangeCut</span></code> <code class="docutils literal notranslate"><span class="pre">LinearCorrection</span></code> and <code class="docutils literal notranslate"><span class="pre">SavitizkyGolay</span></code> are all preprocessing techniques implemented in <code class="docutils literal notranslate"><span class="pre">chemotools</span></code> while <code class="docutils literal notranslate"><span class="pre">StandardScaler</span></code> and <code class="docutils literal notranslate"><span class="pre">pipelines</span></code> are functionalities provided by <code class="docutils literal notranslate"><span class="pre">scikit-learn</span></code> This is the power of <code class="docutils literal notranslate"><span class="pre">chemotools</span></code>— it is designed to work seamlessly with <code class="docutils literal notranslate"><span class="pre">scikit-learn</span></code></p>
+</div></blockquote>
+</section>
+<section id="Training-a-PLS-model">
+<h2><strong>Training a PLS model</strong><a class="headerlink" href="#Training-a-PLS-model" title="Link to this heading">#</a></h2>
+<p>Partial Least Squares (PLS) is a powerful regression technique commonly used in chemometrics. It works by finding a latent space representation that maximizes covariance with the target variable.</p>
+<p>A critical parameter in PLS modeling is the number of components (dimensions) in the latent space:</p>
+<ul class="simple">
+<li><p>Too many components leads to overfitting, where the model captures noise rather than signal</p></li>
+<li><p>Too few components results in underfitting, missing important patterns in the data</p></li>
+</ul>
+<p>When working with limited samples, cross-validation provides a reliable method for selecting the optimal number of components. This approach:</p>
+<ol class="arabic simple">
+<li><p>Divides the data into training and validation sets</p></li>
+<li><p>Trains the model on the training set and evaluates it on the validation set</p></li>
+<li><p>Repeats this process with different data splits</p></li>
+<li><p>Averages the results to estimate the model’s generalization error</p></li>
+</ol>
+<p>For our analysis, we’ll use scikit-learn’s <code class="docutils literal notranslate"><span class="pre">GridSearchCV</span></code> class to systematically test different component numbers through cross-validation. This will identify the optimal complexity for our PLS model based on performance metrics across multiple data splits.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># import the PLSRegression and GridSearchCV classes</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.cross_decomposition</span><span class="w"> </span><span class="kn">import</span> <span class="n">PLSRegression</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">GridSearchCV</span>
+
+<span class="c1"># instanciate a PLSRegression object</span>
+<span class="n">pls</span> <span class="o">=</span> <span class="n">PLSRegression</span><span class="p">(</span><span class="n">scale</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="c1"># define the parameter grid (number of components to evaluate)</span>
+<span class="n">param_grid</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;n_components&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">]}</span>
+
+<span class="c1"># create a grid search object</span>
+<span class="n">grid_search</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">pls</span><span class="p">,</span> <span class="n">param_grid</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;neg_mean_absolute_error&#39;</span><span class="p">)</span>
+
+<span class="c1"># fit the grid search object to the data</span>
+<span class="n">grid_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">spectra_preprocessed</span><span class="p">,</span> <span class="n">hplc_np</span><span class="p">)</span>
+
+<span class="c1"># print the best parameters and score</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Best parameters: &quot;</span><span class="p">,</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Best score: &quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">grid_search</span><span class="o">.</span><span class="n">best_score_</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Best parameters:  {&#39;n_components&#39;: 6}
+Best score:  0.922944026246299
+</pre></div></div>
+</div>
+<p>Suggesting that the optimal number of components is 6, with a mean absolute error of 0.92 g/L. We can verify this by plotting the mean absolute error as a function of the number of components:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">param_grid</span><span class="p">[</span><span class="s1">&#39;n_components&#39;</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">grid_search</span><span class="o">.</span><span class="n">cv_results_</span><span class="p">[</span><span class="s1">&#39;mean_test_score&#39;</span><span class="p">]),</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Number of components&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Mean absolute error (g/L)&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Cross validation results&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/_learn_pls_regression_35_0.png" src="../_images/_learn_pls_regression_35_0.png" />
+</div>
+</div>
+<p>Even though using the number of components that minimize the mean absolute error is a good starting point, it is not always the best. The model with 6 components does not increase the mean absolute error much compared to the model with 3 or even two components. However, the model with 6 components includes components associated with small eigenvalues, which are more uncertain. This means that models with 3 or 2 components might be more robust. Therefore, it is always a good idea to try different
+numbers of components and select the one that gives the best performance. However, for now we will train the model with 6 components:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># instanciate a PLSRegression object with 6 components</span>
+<span class="n">pls</span> <span class="o">=</span> <span class="n">PLSRegression</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="c1"># fit the model to the data</span>
+<span class="n">pls</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">spectra_preprocessed</span><span class="p">,</span> <span class="n">hplc_np</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area rendered_html docutils container">
+<style>#sk-container-id-1 {
+  /* Definition of color scheme common for light and dark mode */
+  --sklearn-color-text: #000;
+  --sklearn-color-text-muted: #666;
+  --sklearn-color-line: gray;
+  /* Definition of color scheme for unfitted estimators */
+  --sklearn-color-unfitted-level-0: #fff5e6;
+  --sklearn-color-unfitted-level-1: #f6e4d2;
+  --sklearn-color-unfitted-level-2: #ffe0b3;
+  --sklearn-color-unfitted-level-3: chocolate;
+  /* Definition of color scheme for fitted estimators */
+  --sklearn-color-fitted-level-0: #f0f8ff;
+  --sklearn-color-fitted-level-1: #d4ebff;
+  --sklearn-color-fitted-level-2: #b3dbfd;
+  --sklearn-color-fitted-level-3: cornflowerblue;
+
+  /* Specific color for light theme */
+  --sklearn-color-text-on-default-background: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, black)));
+  --sklearn-color-background: var(--sg-background-color, var(--theme-background, var(--jp-layout-color0, white)));
+  --sklearn-color-border-box: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, black)));
+  --sklearn-color-icon: #696969;
+
+  @media (prefers-color-scheme: dark) {
+    /* Redefinition of color scheme for dark theme */
+    --sklearn-color-text-on-default-background: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, white)));
+    --sklearn-color-background: var(--sg-background-color, var(--theme-background, var(--jp-layout-color0, #111)));
+    --sklearn-color-border-box: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, white)));
+    --sklearn-color-icon: #878787;
+  }
+}
+
+#sk-container-id-1 {
+  color: var(--sklearn-color-text);
+}
+
+#sk-container-id-1 pre {
+  padding: 0;
+}
+
+#sk-container-id-1 input.sk-hidden--visually {
+  border: 0;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+#sk-container-id-1 div.sk-dashed-wrapped {
+  border: 1px dashed var(--sklearn-color-line);
+  margin: 0 0.4em 0.5em 0.4em;
+  box-sizing: border-box;
+  padding-bottom: 0.4em;
+  background-color: var(--sklearn-color-background);
+}
+
+#sk-container-id-1 div.sk-container {
+  /* jupyter's `normalize.less` sets `[hidden] { display: none; }`
+     but bootstrap.min.css set `[hidden] { display: none !important; }`
+     so we also need the `!important` here to be able to override the
+     default hidden behavior on the sphinx rendered scikit-learn.org.
+     See: https://github.com/scikit-learn/scikit-learn/issues/21755 */
+  display: inline-block !important;
+  position: relative;
+}
+
+#sk-container-id-1 div.sk-text-repr-fallback {
+  display: none;
+}
+
+div.sk-parallel-item,
+div.sk-serial,
+div.sk-item {
+  /* draw centered vertical line to link estimators */
+  background-image: linear-gradient(var(--sklearn-color-text-on-default-background), var(--sklearn-color-text-on-default-background));
+  background-size: 2px 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* Parallel-specific style estimator block */
+
+#sk-container-id-1 div.sk-parallel-item::after {
+  content: "";
+  width: 100%;
+  border-bottom: 2px solid var(--sklearn-color-text-on-default-background);
+  flex-grow: 1;
+}
+
+#sk-container-id-1 div.sk-parallel {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  background-color: var(--sklearn-color-background);
+  position: relative;
+}
+
+#sk-container-id-1 div.sk-parallel-item {
+  display: flex;
+  flex-direction: column;
+}
+
+#sk-container-id-1 div.sk-parallel-item:first-child::after {
+  align-self: flex-end;
+  width: 50%;
+}
+
+#sk-container-id-1 div.sk-parallel-item:last-child::after {
+  align-self: flex-start;
+  width: 50%;
+}
+
+#sk-container-id-1 div.sk-parallel-item:only-child::after {
+  width: 0;
+}
+
+/* Serial-specific style estimator block */
+
+#sk-container-id-1 div.sk-serial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--sklearn-color-background);
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+
+/* Toggleable style: style used for estimator/Pipeline/ColumnTransformer box that is
+clickable and can be expanded/collapsed.
+- Pipeline and ColumnTransformer use this feature and define the default style
+- Estimators will overwrite some part of the style using the `sk-estimator` class
+*/
+
+/* Pipeline and ColumnTransformer style (default) */
+
+#sk-container-id-1 div.sk-toggleable {
+  /* Default theme specific background. It is overwritten whether we have a
+  specific estimator or a Pipeline/ColumnTransformer */
+  background-color: var(--sklearn-color-background);
+}
+
+/* Toggleable label */
+#sk-container-id-1 label.sk-toggleable__label {
+  cursor: pointer;
+  display: flex;
+  width: 100%;
+  margin-bottom: 0;
+  padding: 0.5em;
+  box-sizing: border-box;
+  text-align: center;
+  align-items: start;
+  justify-content: space-between;
+  gap: 0.5em;
+}
+
+#sk-container-id-1 label.sk-toggleable__label .caption {
+  font-size: 0.6rem;
+  font-weight: lighter;
+  color: var(--sklearn-color-text-muted);
+}
+
+#sk-container-id-1 label.sk-toggleable__label-arrow:before {
+  /* Arrow on the left of the label */
+  content: "▸";
+  float: left;
+  margin-right: 0.25em;
+  color: var(--sklearn-color-icon);
+}
+
+#sk-container-id-1 label.sk-toggleable__label-arrow:hover:before {
+  color: var(--sklearn-color-text);
+}
+
+/* Toggleable content - dropdown */
+
+#sk-container-id-1 div.sk-toggleable__content {
+  max-height: 0;
+  max-width: 0;
+  overflow: hidden;
+  text-align: left;
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-0);
+}
+
+#sk-container-id-1 div.sk-toggleable__content.fitted {
+  /* fitted */
+  background-color: var(--sklearn-color-fitted-level-0);
+}
+
+#sk-container-id-1 div.sk-toggleable__content pre {
+  margin: 0.2em;
+  border-radius: 0.25em;
+  color: var(--sklearn-color-text);
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-0);
+}
+
+#sk-container-id-1 div.sk-toggleable__content.fitted pre {
+  /* unfitted */
+  background-color: var(--sklearn-color-fitted-level-0);
+}
+
+#sk-container-id-1 input.sk-toggleable__control:checked~div.sk-toggleable__content {
+  /* Expand drop-down */
+  max-height: 200px;
+  max-width: 100%;
+  overflow: auto;
+}
+
+#sk-container-id-1 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {
+  content: "▾";
+}
+
+/* Pipeline/ColumnTransformer-specific style */
+
+#sk-container-id-1 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {
+  color: var(--sklearn-color-text);
+  background-color: var(--sklearn-color-unfitted-level-2);
+}
+
+#sk-container-id-1 div.sk-label.fitted input.sk-toggleable__control:checked~label.sk-toggleable__label {
+  background-color: var(--sklearn-color-fitted-level-2);
+}
+
+/* Estimator-specific style */
+
+/* Colorize estimator box */
+#sk-container-id-1 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-2);
+}
+
+#sk-container-id-1 div.sk-estimator.fitted input.sk-toggleable__control:checked~label.sk-toggleable__label {
+  /* fitted */
+  background-color: var(--sklearn-color-fitted-level-2);
+}
+
+#sk-container-id-1 div.sk-label label.sk-toggleable__label,
+#sk-container-id-1 div.sk-label label {
+  /* The background is the default theme color */
+  color: var(--sklearn-color-text-on-default-background);
+}
+
+/* On hover, darken the color of the background */
+#sk-container-id-1 div.sk-label:hover label.sk-toggleable__label {
+  color: var(--sklearn-color-text);
+  background-color: var(--sklearn-color-unfitted-level-2);
+}
+
+/* Label box, darken color on hover, fitted */
+#sk-container-id-1 div.sk-label.fitted:hover label.sk-toggleable__label.fitted {
+  color: var(--sklearn-color-text);
+  background-color: var(--sklearn-color-fitted-level-2);
+}
+
+/* Estimator label */
+
+#sk-container-id-1 div.sk-label label {
+  font-family: monospace;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 1.2em;
+}
+
+#sk-container-id-1 div.sk-label-container {
+  text-align: center;
+}
+
+/* Estimator-specific */
+#sk-container-id-1 div.sk-estimator {
+  font-family: monospace;
+  border: 1px dotted var(--sklearn-color-border-box);
+  border-radius: 0.25em;
+  box-sizing: border-box;
+  margin-bottom: 0.5em;
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-0);
+}
+
+#sk-container-id-1 div.sk-estimator.fitted {
+  /* fitted */
+  background-color: var(--sklearn-color-fitted-level-0);
+}
+
+/* on hover */
+#sk-container-id-1 div.sk-estimator:hover {
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-2);
+}
+
+#sk-container-id-1 div.sk-estimator.fitted:hover {
+  /* fitted */
+  background-color: var(--sklearn-color-fitted-level-2);
+}
+
+/* Specification for estimator info (e.g. "i" and "?") */
+
+/* Common style for "i" and "?" */
+
+.sk-estimator-doc-link,
+a:link.sk-estimator-doc-link,
+a:visited.sk-estimator-doc-link {
+  float: right;
+  font-size: smaller;
+  line-height: 1em;
+  font-family: monospace;
+  background-color: var(--sklearn-color-background);
+  border-radius: 1em;
+  height: 1em;
+  width: 1em;
+  text-decoration: none !important;
+  margin-left: 0.5em;
+  text-align: center;
+  /* unfitted */
+  border: var(--sklearn-color-unfitted-level-1) 1pt solid;
+  color: var(--sklearn-color-unfitted-level-1);
+}
+
+.sk-estimator-doc-link.fitted,
+a:link.sk-estimator-doc-link.fitted,
+a:visited.sk-estimator-doc-link.fitted {
+  /* fitted */
+  border: var(--sklearn-color-fitted-level-1) 1pt solid;
+  color: var(--sklearn-color-fitted-level-1);
+}
+
+/* On hover */
+div.sk-estimator:hover .sk-estimator-doc-link:hover,
+.sk-estimator-doc-link:hover,
+div.sk-label-container:hover .sk-estimator-doc-link:hover,
+.sk-estimator-doc-link:hover {
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-3);
+  color: var(--sklearn-color-background);
+  text-decoration: none;
+}
+
+div.sk-estimator.fitted:hover .sk-estimator-doc-link.fitted:hover,
+.sk-estimator-doc-link.fitted:hover,
+div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
+.sk-estimator-doc-link.fitted:hover {
+  /* fitted */
+  background-color: var(--sklearn-color-fitted-level-3);
+  color: var(--sklearn-color-background);
+  text-decoration: none;
+}
+
+/* Span, style for the box shown on hovering the info icon */
+.sk-estimator-doc-link span {
+  display: none;
+  z-index: 9999;
+  position: relative;
+  font-weight: normal;
+  right: .2ex;
+  padding: .5ex;
+  margin: .5ex;
+  width: min-content;
+  min-width: 20ex;
+  max-width: 50ex;
+  color: var(--sklearn-color-text);
+  box-shadow: 2pt 2pt 4pt #999;
+  /* unfitted */
+  background: var(--sklearn-color-unfitted-level-0);
+  border: .5pt solid var(--sklearn-color-unfitted-level-3);
+}
+
+.sk-estimator-doc-link.fitted span {
+  /* fitted */
+  background: var(--sklearn-color-fitted-level-0);
+  border: var(--sklearn-color-fitted-level-3);
+}
+
+.sk-estimator-doc-link:hover span {
+  display: block;
+}
+
+/* "?"-specific style due to the `<a>` HTML tag */
+
+#sk-container-id-1 a.estimator_doc_link {
+  float: right;
+  font-size: 1rem;
+  line-height: 1em;
+  font-family: monospace;
+  background-color: var(--sklearn-color-background);
+  border-radius: 1rem;
+  height: 1rem;
+  width: 1rem;
+  text-decoration: none;
+  /* unfitted */
+  color: var(--sklearn-color-unfitted-level-1);
+  border: var(--sklearn-color-unfitted-level-1) 1pt solid;
+}
+
+#sk-container-id-1 a.estimator_doc_link.fitted {
+  /* fitted */
+  border: var(--sklearn-color-fitted-level-1) 1pt solid;
+  color: var(--sklearn-color-fitted-level-1);
+}
+
+/* On hover */
+#sk-container-id-1 a.estimator_doc_link:hover {
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-3);
+  color: var(--sklearn-color-background);
+  text-decoration: none;
+}
+
+#sk-container-id-1 a.estimator_doc_link.fitted:hover {
+  /* fitted */
+  background-color: var(--sklearn-color-fitted-level-3);
+}
+</style><div id="sk-container-id-1" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>PLSRegression(n_components=6, scale=False)</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-1" type="checkbox" checked><label for="sk-estimator-id-1" class="sk-toggleable__label fitted sk-toggleable__label-arrow"><div><div>PLSRegression</div></div><div><a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.6/modules/generated/sklearn.cross_decomposition.PLSRegression.html">?<span>Documentation for PLSRegression</span></a><span class="sk-estimator-doc-link fitted">i<span>Fitted</span></span></div></label><div class="sk-toggleable__content fitted"><pre>PLSRegression(n_components=6, scale=False)</pre></div> </div></div></div></div></div>
+</div>
+<p>Finally we can evaluate the performance of the model on the training set:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># predict the glucose concentrations</span>
+<span class="n">hplc_pred</span> <span class="o">=</span> <span class="n">pls</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">spectra_preprocessed</span><span class="p">)</span>
+
+<span class="c1"># plot the predictions</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">hplc_np</span><span class="p">,</span> <span class="n">hplc_pred</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">40</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">40</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;magenta&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Reference glucose (g/L)&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Predicted glucose (g/L)&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;PLS regression&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/_learn_pls_regression_39_0.png" src="../_images/_learn_pls_regression_39_0.png" />
+</div>
+</div>
+</section>
+<section id="Applying-the-model">
+<h2><strong>Applying the model</strong><a class="headerlink" href="#Applying-the-model" title="Link to this heading">#</a></h2>
+<p>Now that we have trained our model, we can apply it to the testing dataset. The testing dataset contains spectra recorded in real-time during the fermentation process. The test dataset contains two <code class="docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code>:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">spectra</span></code>: This dataset contains spectral data, with columns representing wavenumbers and rows representing samples. These spectra were recorded in real-time during the fermentation process approximately every 1.5 minutes.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">hplc</span></code>: This dataset contains HPLC measurements, specifically glucose concentrations (in g/L), stored in a single column labeled <code class="docutils literal notranslate"><span class="pre">glucose</span></code>. These measurements were recorded off-line approximately every 60 minutes.</p></li>
+</ul>
+<p>We will use the <code class="docutils literal notranslate"><span class="pre">load_fermentation_test()</span></code> function from the <code class="docutils literal notranslate"><span class="pre">chemotools.datasets</span></code> module to load the testing dataset:</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">chemotools.datasets</span><span class="w"> </span><span class="kn">import</span> <span class="n">load_fermentation_test</span>
+
+<span class="n">spectra_test</span><span class="p">,</span> <span class="n">hplc_test</span> <span class="o">=</span> <span class="n">load_fermentation_test</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<p>Then, we will preprocess the spectra using the same preprocessing pipeline that we used for the training dataset:</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># convert the spectra pandas.DataFrame to numpy.ndarray</span>
+<span class="n">spectra_test_np</span> <span class="o">=</span> <span class="n">spectra_test</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">()</span>
+
+<span class="c1"># preprocess the spectra</span>
+<span class="n">spectra_test_preprocessed</span> <span class="o">=</span> <span class="n">preprocessing</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">spectra_test_np</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>Finally, we can use the PLS model to predict the glucose concentrations:</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># predict the glucose concentrations</span>
+<span class="n">glucose_test_pred</span> <span class="o">=</span> <span class="n">pls</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">spectra_test_preprocessed</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>We can use the predicted values to plot the spectra color-coded according to the predicted glucose concentrations:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_spectra</span><span class="p">(</span><span class="n">spectra_test_preprocessed</span><span class="p">,</span> <span class="n">wavenumbers_cut</span><span class="p">,</span> <span class="n">glucose_test_pred</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/_learn_pls_regression_47_0.png" src="../_images/_learn_pls_regression_47_0.png" />
+</div>
+</div>
+<p>Now we can compare the predicted glucose concentrations with the off-line HPLC measurements. We will plot the predictions and the off-line measurements over time. Each spectrum was taken every 1.25 minutes, while the off-line measurements were taken every 60 minutes.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># make linspace of length of predictoins</span>
+<span class="n">time</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">glucose_test_pred</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">glucose_test_pred</span><span class="p">),)</span> <span class="o">*</span> <span class="mf">1.25</span> <span class="o">/</span> <span class="mi">60</span>
+
+<span class="c1"># plot the predictions</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">glucose_test_pred</span><span class="p">,</span>  <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Predicted&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">hplc_test</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">hplc_test</span><span class="p">[</span><span class="s1">&#39;glucose&#39;</span><span class="p">]</span><span class="o">+</span><span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;fuchsia&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Measured&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Time (h)&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Glucose (g/L)&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Fermentation test set&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/_learn_pls_regression_49_0.png" src="../_images/_learn_pls_regression_49_0.png" />
+</div>
+</div>
+</section>
+<section id="Recap">
+<h2><strong>Recap</strong><a class="headerlink" href="#Recap" title="Link to this heading">#</a></h2>
+<p>In this tutorial, we embarked on a journey into the realm of machine learning for spectroscopic data analysis, focusing on the Fermentation dataset. We covered essential steps in building a regression model to predict glucose concentrations during lignocellulosic ethanol fermentation. Here’s a brief recap of what we accomplished:</p>
+<ul class="simple">
+<li><p><strong>Introduction:</strong> We introduced the Fermentation dataset, which consists of spectral data obtained through attenuated total reflectance, mid-infrared spectroscopy (ATR-MIR), and HPLC reference data. We highlighted the importance of this dataset in understanding real-time fermentation processes.</p></li>
+<li><p><strong>Loading and Exploring Data:</strong> We loaded the training dataset, explored its dimensions, and gained insights into both spectral and HPLC data. Understanding your data is a crucial first step in any data analysis project.</p></li>
+<li><p><strong>Visualizing Data:</strong> We used data visualization to gain a deeper understanding of the dataset. By plotting the spectra color-coded by glucose concentration, we visually examined the chemical variations among samples.</p></li>
+<li><p><strong>Preprocessing Data:</strong> We applied preprocessing techniques, such as range cutting, linear correction, Savitzky-Golay derivative, and standard scaling, to prepare the spectral data for modeling. This step removed unwanted variations and enhanced the data’s quality.</p></li>
+<li><p><strong>Model Training:</strong> We trained a Partial Least Squares (PLS) regression model to predict glucose concentrations. We used cross-validation to find the optimal number of components and assessed model performance.</p></li>
+<li><p><strong>Application to Testing Data:</strong> We extended our model to predict glucose concentrations in real-time by applying it to the testing dataset. This allowed us to monitor glucose levels during fermentation.</p></li>
+</ul>
+<p>This tutorial provides a solid foundation for anyone interested in using machine learning techniques for spectroscopic data analysis. By following these steps, you can gain valuable insights from complex spectral data and make predictions that can be applied in real-world applications. Happy analyzing!</p>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="datasets.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Explore our datasets 🔍</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="pls_classification.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><strong>Classify coffees with PLS-DA</strong></p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Introduction"><strong>Introduction</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Objective"><strong>Objective</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Before-starting"><strong>Before starting</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Loading-the-training-data"><strong>Loading the training data</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Exploring-the-training-data"><strong>Exploring the training data</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Visualizing-the-training-data"><strong>Visualizing the training data</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Preprocessing-the-training-data"><strong>Preprocessing the training data</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Training-a-PLS-model"><strong>Training a PLS model</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Applying-the-model"><strong>Applying the model</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Recap"><strong>Recap</strong></a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/_learn/pls_regression.ipynb.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2025, chemotools.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
