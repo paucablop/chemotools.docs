@@ -36,9 +36,14 @@ class NorrisWilliams(TransformerMixin, OneToOneFeatureMixin, BaseEstimator):
     n_features_in_ : int
         The number of features in the input data.
 
+    References
+    ----------
+    [1] Åsmund Rinnan, Frans van den Berg, Søren Balling Engelsen,
+        "Review of the most common pre-processing techniques for near-infrared spectra,"
+        TrAC Trends in Analytical Chemistry 28 (10) 1201-1222 (2009).
+
     Examples
     --------
-    >>> import numpy as np
     >>> from chemotools.derivative import NorrisWilliams
     >>> from chemotools.datasets import load_fermentation_train
     >>> # Load sample data

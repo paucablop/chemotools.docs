@@ -9,4 +9,7 @@ Preprocess your data to remove remove noise and highlight the chemical informati
 
     baseline
     derivative
+    scale
+    scatter
+    smooth
 

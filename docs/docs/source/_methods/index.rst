@@ -49,7 +49,7 @@ Methods
 
       Select the most chemically relevant features to improve the performance of your model.
 
-      .. button-ref:: methods
+      .. button-ref:: feature_selection
          :ref-type: doc
          :expand:
          :color: secondary
@@ -69,4 +69,4 @@ Methods
          :color: secondary
          :click-parent:
 
-         **Metrics**
+         **Outliers**
