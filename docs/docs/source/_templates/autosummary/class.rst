@@ -8,3 +8,8 @@
     :undoc-members:
     :show-inheritance:
     :noindex:
+
+    {% block attributes %}
+    {% if attributes %}
+    .. rubric:: {{ _('Attributes') }}
+
