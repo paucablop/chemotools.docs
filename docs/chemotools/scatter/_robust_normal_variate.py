@@ -18,11 +18,11 @@ class RobustNormalVariate(TransformerMixin, OneToOneFeatureMixin, BaseEstimator)
 
     Parameters
     ----------
-    percentile : float, optional
+    percentile : float, optional, default=25
         The percentile to use for the robust normal variate. The value should be
         between 0 and 100. The default is 25.
 
-    epsilon : float, optional
+    epsilon : float, optional, default=1e-10
         A small value added to the denominator to avoid numerical instability
         (division by zero). The default is 1e-10.
 

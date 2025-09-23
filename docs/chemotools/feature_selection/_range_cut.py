@@ -17,10 +17,10 @@ class RangeCut(SelectorMixin, BaseEstimator):
 
     Parameters
     ----------
-    start : int, optional
+    start : int, optional, default=0
         The index or wavenumber of the start of the range. Default is 0.
 
-    end : int, optional
+    end : int, optional, default=-1
         The index or wavenumber of the end of the range. Default is -1.
 
     wavenumbers : array-like, optional

@@ -19,7 +19,7 @@ class SubtractReference(TransformerMixin, OneToOneFeatureMixin, BaseEstimator):
 
     Parameters
     ----------
-    reference : np.ndarray, optional
+    reference : np.ndarray, optional, default=None
         The reference spectrum to subtract from the input data. If None, the original spectrum
         is returned.
 

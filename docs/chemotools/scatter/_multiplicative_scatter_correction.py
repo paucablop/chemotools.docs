@@ -22,14 +22,14 @@ class MultiplicativeScatterCorrection(
 
     Parameters
     ----------
-    reference : np.ndarray of shape (n_freatures), optional
+    reference : np.ndarray of shape (n_freatures), optional, default=None
         The reference spectrum to use for the correction. If None, the mean
         spectrum will be used. The default is None.
 
-    use_mean : bool, optional
+    use_mean : bool, optional, default=True
         Whether to use the mean spectrum as the reference. The default is True.
 
-    use_median : bool, optional
+    use_median : bool, optional, default=False
         Whether to use the median spectrum as the reference. The default is False.
 
     Attributes
