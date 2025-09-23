@@ -63,7 +63,7 @@ Methods
 
       Detect outliers from your data to improve diagnostics and reliability of the results.
 
-      .. button-ref:: methods
+      .. button-ref:: outliers
          :ref-type: doc
          :expand:
          :color: secondary
