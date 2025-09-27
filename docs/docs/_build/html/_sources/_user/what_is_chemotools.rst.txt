@@ -16,6 +16,8 @@ What is chemotools?
    :align: center
    :width: 300px
 
+.. hint::
+    **Want to know more about scikit-learn?** Check it out  in our page `here <../_explore/sklearn.html>`_.
 
 Extensive Toolkit
 -----------------
@@ -28,8 +30,10 @@ Spectroscopy is diverse — different instruments, sample matrices, and analysis
    :width: 340px
 
 .. note::
-   Connect your preprocessing with the scikit-learn ecosystem to unlock a wide toolstack for feature selection, model tuning, validation, and deployment.
+   Connect your preprocessing with the ``scikit-learn`` ecosystem to unlock a wide toolstack for feature selection, model tuning, validation, and deployment.
 
+.. hint::
+    **Want to discover the environment at your hands?** Check it out our exploration page `here <../_explore/index.html>`_.
 
 Composable and Scalable
 -----------------------
