@@ -427,16 +427,16 @@
 
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
-<span class="sd">    window_size : int, optional</span>
+<span class="sd">    window_size : int, optional, default=5</span>
 <span class="sd">        The size of the window to use for the derivative calculation. Must be odd. Default is 5.</span>
 
-<span class="sd">    gap_size : int, optional</span>
+<span class="sd">    gap_size : int, optional, default=3 </span>
 <span class="sd">        The size of the gap to use for the derivative calculation. Must be odd. Default is 3.</span>
 
-<span class="sd">    derivative_order : int, optional</span>
+<span class="sd">    derivative_order : int, optional, default=1</span>
 <span class="sd">        The order of the derivative to calculate. Can be 1 or 2. Default is 1.</span>
 
-<span class="sd">    mode : str, optional</span>
+<span class="sd">    mode : str, optional, default=&quot;nearest&quot;</span>
 <span class="sd">        The mode to use for the derivative calculation. Can be &quot;nearest&quot;, &quot;constant&quot;,</span>
 <span class="sd">        &quot;reflect&quot;, &quot;wrap&quot;, &quot;mirror&quot; or &quot;interp&quot;. Default is &quot;nearest&quot;.</span>
 
@@ -445,9 +445,14 @@
 <span class="sd">    n_features_in_ : int</span>
 <span class="sd">        The number of features in the input data.</span>
 
+<span class="sd">    References</span>
+<span class="sd">    ----------</span>
+<span class="sd">    [1] Åsmund Rinnan, Frans van den Berg, Søren Balling Engelsen,</span>
+<span class="sd">        &quot;Review of the most common pre-processing techniques for near-infrared spectra,&quot;</span>
+<span class="sd">        TrAC Trends in Analytical Chemistry 28 (10) 1201-1222 (2009).</span>
+
 <span class="sd">    Examples</span>
 <span class="sd">    --------</span>
-<span class="sd">    &gt;&gt;&gt; import numpy as np</span>
 <span class="sd">    &gt;&gt;&gt; from chemotools.derivative import NorrisWilliams</span>
 <span class="sd">    &gt;&gt;&gt; from chemotools.datasets import load_fermentation_train</span>
 <span class="sd">    &gt;&gt;&gt; # Load sample data</span>

@@ -464,9 +464,12 @@
 <span class="sd">    n_features_in_ : int</span>
 <span class="sd">        The number of features in the input data.</span>
 
-<span class="sd">    DtD_ab_ : np.ndarray</span>
+<span class="sd">    DtD_ : np.ndarray</span>
 <span class="sd">        The precomputed banded representation of D^T D for the second-order</span>
 <span class="sd">        difference operator.</span>
+<span class="sd">        - DtD_ is stored as a banded representation from scipy&#39;s solveh_banded if</span>
+<span class="sd">            solver_type is &quot;banded&quot;.</span>
+<span class="sd">        - DtD_ is stored as a scipy.sparse CSC matrix if solver_type is &quot;sparse&quot;.</span>
 
 <span class="sd">    self.w_init_ : np.ndarray</span>
 <span class="sd">        The weights set for warm-starting.</span>
@@ -479,7 +482,6 @@
 
 <span class="sd">    Examples</span>
 <span class="sd">    --------</span>
-<span class="sd">    &gt;&gt;&gt; import numpy as np</span>
 <span class="sd">    &gt;&gt;&gt; from chemotools.baseline import ArPls</span>
 <span class="sd">    &gt;&gt;&gt; from chemotools.datasets import load_fermentation_train</span>
 <span class="sd">    &gt;&gt;&gt; # Load sample data</span>

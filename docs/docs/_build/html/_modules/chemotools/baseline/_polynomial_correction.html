@@ -429,10 +429,10 @@
 
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
-<span class="sd">    order : int, optional</span>
+<span class="sd">    order : int, optional, default=1</span>
 <span class="sd">        The order of the polynomial to fit to the baseline. Defaults to 1.</span>
 
-<span class="sd">    indices : list, optional</span>
+<span class="sd">    indices : list, optional, default=None</span>
 <span class="sd">        The indices of the points in the spectrum to fit the polynomial to. Defaults to None,</span>
 <span class="sd">        which fits the polynomial to all points in the spectrum (equivalent to detrend).</span>
 
@@ -447,13 +447,13 @@
 
 <span class="sd">    Examples</span>
 <span class="sd">    --------</span>
-<span class="sd">    &gt;&gt;&gt; import numpy as np</span>
 <span class="sd">    &gt;&gt;&gt; from chemotools.baseline import PolynomialCorrection</span>
 <span class="sd">    &gt;&gt;&gt; from chemotools.datasets import load_fermentation_train</span>
 <span class="sd">    &gt;&gt;&gt; # Load sample data</span>
 <span class="sd">    &gt;&gt;&gt; X, _ = load_fermentation_train()</span>
 <span class="sd">    &gt;&gt;&gt; # Instantiate the transformer</span>
 <span class="sd">    &gt;&gt;&gt; transformer = PolynomialCorrection(order=2, indices=[0, 100, 200, 300, 400, 500])</span>
+<span class="sd">    PolynomialCorrection()</span>
 <span class="sd">    &gt;&gt;&gt; transformer.fit(X)</span>
 <span class="sd">    &gt;&gt;&gt; # Generate baseline-corrected data</span>
 <span class="sd">    &gt;&gt;&gt; X_corrected = transformer.transform(X)</span>

@@ -16,14 +16,6 @@
 
 
 
-.. warning::
-   Site under construction! check https://paucablop.github.io/chemotools/ for a full documentation site
-
-``chemotools`` is a **Python toolkit** designed for **spectral preprocessing**, built to easily integrate with the widely adopted ``scikit-learn`` API and the broader **Python machine learning ecosystem**, leveraging state-of-the-art infrastructure available within the Python environment.
-
-Our mission is to **empower development scientists** with the tools they need to create **production-ready chemometric models**. ``chemotools`` offers a **flexible, intuitive environment** that streamlines the **development and deployment** of these models—making it easier to **standardize workflows** and focus on solving **real-world problems**.
-
-
 .. image:: https://img.shields.io/pypi/v/chemotools
    :target: https://pypi.org/project/chemotools
    :alt: PyPI version
@@ -47,6 +39,19 @@ Our mission is to **empower development scientists** with the tools they need to
 .. image:: https://joss.theoj.org/papers/10.21105/joss.06802/status.svg
    :target: https://doi.org/10.21105/joss.06802
    :alt: DOI
+
+----
+
+Welcome to chemotools
+=====================
+
+
+``chemotools`` is a Python toolkit designed for spectral preprocessing, built to easily integrate with the widely adopted ``scikit-learn`` API and the broader Python machine learning ecosystem, leveraging state-of-the-art infrastructure available within the Python environment.
+
+Born after years of industrial experience, our mission is to empower development scientists with the tools they need to create production-ready chemometric models. ``chemotools`` offers a flexible, intuitive environment that streamlines the development and deployment of these models to your production environment, making it easier to standardize workflows and focus on solving real-world problems.
+
+.. image:: _static/_main_page/chemotools_overview.png
+   :alt: chemotools workflow
 
 
 ----

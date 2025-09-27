@@ -459,13 +459,12 @@
 
 <span class="sd">    Examples</span>
 <span class="sd">    --------</span>
-<span class="sd">    &gt;&gt;&gt; import numpy as np</span>
 <span class="sd">    &gt;&gt;&gt; from chemotools.augmentation import IndexShift</span>
 <span class="sd">    &gt;&gt;&gt; from chemotools.datasets import load_fermentation_train</span>
 <span class="sd">    &gt;&gt;&gt; # Load sample data</span>
 <span class="sd">    &gt;&gt;&gt; X, _ = load_fermentation_train()</span>
 <span class="sd">    &gt;&gt;&gt; # Instantiate the transformer</span>
-<span class="sd">    &gt;&gt;&gt; transformer = IndexShift(shift=5, padding_mode=&quot;linear&quot;)</span>
+<span class="sd">    &gt;&gt;&gt; transformer = IndexShift(shift=2, padding_mode=&quot;constant&quot;,)</span>
 <span class="sd">    IndexShift()</span>
 <span class="sd">    &gt;&gt;&gt; transformer.fit(X)</span>
 <span class="sd">    &gt;&gt;&gt; # Generate shifted data</span>

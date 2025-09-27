@@ -31,7 +31,7 @@ extensions = [
 html_theme = "pydata_sphinx_theme"
 html_logo = "_static/_main_page/logo-light-3.svg"
 html_favicon = (
-    "_static/_main_page/favicon.svg"  # or favicon.png if using PNG
+    "_static/_main_page/favicon2.svg"  # or favicon.png if using PNG
 )
 
 # Optional theme customization

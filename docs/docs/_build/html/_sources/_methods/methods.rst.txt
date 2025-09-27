@@ -13,3 +13,5 @@ Available pages
 
     augmentation
     preprocessing
+    feature_selection
+    outliers

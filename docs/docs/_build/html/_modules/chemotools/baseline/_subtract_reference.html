@@ -428,7 +428,7 @@
 
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
-<span class="sd">    reference : np.ndarray, optional</span>
+<span class="sd">    reference : np.ndarray, optional, default=None</span>
 <span class="sd">        The reference spectrum to subtract from the input data. If None, the original spectrum</span>
 <span class="sd">        is returned.</span>
 
@@ -442,17 +442,20 @@
 
 <span class="sd">    Examples</span>
 <span class="sd">    --------</span>
-<span class="sd">    &gt;&gt;&gt; import numpy as np</span>
 <span class="sd">    &gt;&gt;&gt; from chemotools.baseline import SubtractReference</span>
 <span class="sd">    &gt;&gt;&gt; from chemotools.datasets import load_fermentation_train</span>
 <span class="sd">    &gt;&gt;&gt; # Load sample data</span>
 <span class="sd">    &gt;&gt;&gt; X, _ = load_fermentation_train()</span>
+<span class="sd">    &gt;&gt;&gt; # Convert X to a numpy array</span>
+<span class="sd">    &gt;&gt;&gt; X = np.array(X)</span>
 <span class="sd">    &gt;&gt;&gt; # Instantiate the transformer with a reference spectrum</span>
 <span class="sd">    &gt;&gt;&gt; reference = X[0]</span>
 <span class="sd">    &gt;&gt;&gt; transformer = SubtractReference(reference=reference)</span>
+<span class="sd">    SubtractReference()</span>
 <span class="sd">    &gt;&gt;&gt; transformer.fit(X)</span>
 <span class="sd">    &gt;&gt;&gt; # Generate baseline-corrected data</span>
 <span class="sd">    &gt;&gt;&gt; X_corrected = transformer.transform(X)</span>
+
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>

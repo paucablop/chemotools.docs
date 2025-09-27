@@ -430,14 +430,14 @@
 
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
-<span class="sd">    wavenumbers : np.ndarray, optional</span>
-<span class="sd">        The wavenumbers corresponding to each feature in the input data.</span>
-
-<span class="sd">    start : int, optional</span>
+<span class="sd">    start : int, optional, default=0</span>
 <span class="sd">        The index of the first feature to use for the baseline correction.</span>
 
-<span class="sd">    end : int, optional</span>
+<span class="sd">    end : int, optional, default=1</span>
 <span class="sd">        The index of the last feature to use for the baseline correction.</span>
+
+<span class="sd">    wavenumbers : np.ndarray, optional, default=None</span>
+<span class="sd">        The wavenumbers corresponding to each feature in the input data.</span>
 
 <span class="sd">    Attributes</span>
 <span class="sd">    ----------</span>
@@ -449,7 +449,6 @@
 
 <span class="sd">    Examples</span>
 <span class="sd">    --------</span>
-<span class="sd">    &gt;&gt;&gt; import numpy as np</span>
 <span class="sd">    &gt;&gt;&gt; from chemotools.baseline import ConstantBaselineCorrection</span>
 <span class="sd">    &gt;&gt;&gt; from chemotools.datasets import load_fermentation_train</span>
 <span class="sd">    &gt;&gt;&gt; # Load sample data</span>

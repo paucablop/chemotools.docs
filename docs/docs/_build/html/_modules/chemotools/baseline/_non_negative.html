@@ -439,13 +439,13 @@
 
 <span class="sd">    Examples</span>
 <span class="sd">    --------</span>
-<span class="sd">    &gt;&gt;&gt; import numpy as np</span>
 <span class="sd">    &gt;&gt;&gt; from chemotools.baseline import NonNegative</span>
 <span class="sd">    &gt;&gt;&gt; from chemotools.datasets import load_fermentation_train</span>
 <span class="sd">    &gt;&gt;&gt; # Load sample data</span>
 <span class="sd">    &gt;&gt;&gt; X, _ = load_fermentation_train()</span>
 <span class="sd">    &gt;&gt;&gt; # Instantiate the transformer</span>
 <span class="sd">    &gt;&gt;&gt; transformer = NonNegative(mode=&quot;zero&quot;)</span>
+<span class="sd">    NonNegative(mode=&quot;zero&quot;)</span>
 <span class="sd">    &gt;&gt;&gt; transformer.fit(X)</span>
 <span class="sd">    &gt;&gt;&gt; # Generate non-negative data</span>
 <span class="sd">    &gt;&gt;&gt; X_non_negative = transformer.transform(X)</span>

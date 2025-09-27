@@ -429,18 +429,18 @@
 
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
-<span class="sd">    window_size : int, optional</span>
+<span class="sd">    window_size : int, optional, default=3</span>
 <span class="sd">        The size of the window to use for the derivative calculation. Must be odd. Default</span>
 <span class="sd">        is 3.</span>
 
-<span class="sd">    polynomial_order : int, optional</span>
+<span class="sd">    polynomial_order : int, optional, default=1</span>
 <span class="sd">        The order of the polynomial to use for the derivative calculation. Must be less</span>
 <span class="sd">        than window_size. Default is 1.</span>
 
-<span class="sd">    derivate_order : int, optional</span>
+<span class="sd">    derivative_order : int, optional, default=1</span>
 <span class="sd">        The order of the derivative to calculate. Default is 1.</span>
 
-<span class="sd">    mode : str, optional</span>
+<span class="sd">    mode : str, optional, default=&quot;nearest&quot;</span>
 <span class="sd">        The mode to use for the derivative calculation. Can be &quot;nearest&quot;, &quot;constant&quot;,</span>
 <span class="sd">        &quot;reflect&quot;, &quot;wrap&quot;, &quot;mirror&quot; or &quot;interp&quot;. Default is &quot;nearest&quot;.</span>
 
@@ -449,9 +449,14 @@
 <span class="sd">    n_features_in_ : int</span>
 <span class="sd">        The number of features in the input data.</span>
 
+<span class="sd">    References</span>
+<span class="sd">    ----------</span>
+<span class="sd">    [1] Åsmund Rinnan, Frans van den Berg, Søren Balling Engelsen,</span>
+<span class="sd">        &quot;Review of the most common pre-processing techniques for near-infrared spectra,&quot;</span>
+<span class="sd">        TrAC Trends in Analytical Chemistry 28 (10) 1201-1222 (2009).</span>
+
 <span class="sd">    Examples</span>
 <span class="sd">    --------</span>
-<span class="sd">    &gt;&gt;&gt; import numpy as np</span>
 <span class="sd">    &gt;&gt;&gt; from chemotools.derivative import SavitzkyGolay</span>
 <span class="sd">    &gt;&gt;&gt; from chemotools.datasets import load_fermentation_train</span>
 <span class="sd">    &gt;&gt;&gt; # Load sample data</span>
@@ -488,7 +493,7 @@
 <span class="sd">            The input data to fit the transformer to.</span>
 
 <span class="sd">        y : None</span>
-<span class="sd">            Ignored.</span>
+<span class="sd">            Ignored to align with API.</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
@@ -514,7 +519,7 @@
 <span class="sd">            The input data to transform.</span>
 
 <span class="sd">        y : None</span>
-<span class="sd">            Ignored.</span>
+<span class="sd">            Ignored to align with API.</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
