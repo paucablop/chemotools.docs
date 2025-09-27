@@ -1,7 +1,7 @@
 .. _sklearn:
 
-**Why Scikit-Learn?**
-=====================================
+Why Scikit-Learn?
+=================
 
 Scikit-Learn brings modern machine learning tools to chemometrics—making workflows more flexible, scalable, and easy to prototype and validate.
 

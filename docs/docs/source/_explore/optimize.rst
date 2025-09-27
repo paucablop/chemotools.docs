@@ -1,5 +1,5 @@
-**Optimize the model**
-===========================
+Optimize the model
+==================
 When building a chemometric model, analysts need to make several choices about hyperparameters that can significantly affect the model's performance. 
 Hyperparameters are those parameters that are set before training the model. Some common hyperparameters are:
 

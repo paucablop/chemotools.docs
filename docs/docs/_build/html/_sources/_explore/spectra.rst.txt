@@ -1,7 +1,7 @@
 .. _spectra:
 
-**Working with spectra**
-================================================
+Working with spectra
+====================
 
 When working with spectroscopic data in ``chemotools`` and ``scikit-learn``, you often need to reshape single spectra to fit the expected data shapes. This guide explains how to reshape single spectra for preprocessing in ``scikit-learn`` and ``chemotools``.
 

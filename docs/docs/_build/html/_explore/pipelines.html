@@ -362,9 +362,9 @@
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="sklearn.html"><strong>Why Scikit-Learn?</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="spectra.html"><strong>Working with spectra</strong></a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Preprocessing pipelines</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="optimize.html"><strong>Optimize the model</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="dataframes.html"><strong>Working with DataFrames</strong></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Preprocessing pipelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="optimize.html">Optimize the model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dataframes.html">Working with DataFrames</a></li>
 <li class="toctree-l1"><a class="reference internal" href="persist.html">Persisting your models</a></li>
 </ul>
 </div>
@@ -409,7 +409,7 @@
     
     <li class="breadcrumb-item"><a href="index.html" class="nav-link">Discover the environment</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>Preprocessing pipelines</strong></span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Preprocessing pipelines</span></li>
   </ul>
 </nav>
 </div>
@@ -427,7 +427,7 @@
                 <article class="bd-article">
                   
   <section id="preprocessing-pipelines">
-<h1><strong>Preprocessing pipelines</strong><a class="headerlink" href="#preprocessing-pipelines" title="Link to this heading">#</a></h1>
+<h1>Preprocessing pipelines<a class="headerlink" href="#preprocessing-pipelines" title="Link to this heading">#</a></h1>
 <p>Pipelines are becoming increasingly popular in machine learning workflows. In essence, pipelines are a sequence of connected data processing steps, where the output of one step is the input of the next. They are very useful for:</p>
 <ul class="simple">
 <li><p>automating complex workflows,</p></li>
@@ -444,7 +444,7 @@
 <li><p>PLS regression</p></li>
 </ul>
 <section id="traditional-flow">
-<h2><strong>Traditional flow</strong><a class="headerlink" href="#traditional-flow" title="Link to this heading">#</a></h2>
+<h2>Traditional flow<a class="headerlink" href="#traditional-flow" title="Link to this heading">#</a></h2>
 <p>In a traditional flow, would apply each preprocessing technique individually to the spectra as shown in the image below:</p>
 <a class="reference internal image-reference" href="../_images/pipelines_no_pipeline.png"><img alt="Traditional workflow" class="align-center" src="../_images/pipelines_no_pipeline.png" style="width: 300px;" />
 </a>
@@ -497,7 +497,7 @@
 <p>This is a tedious and error-prone workflow, especially when the number of preprocessing steps increases. In addition, persisting the model and deploying it to a production environment is not straightforward, as each preprocessing step needs to be persisted and deployed individually.</p>
 </section>
 <section id="pipeline-flow">
-<h2><strong>Pipeline flow</strong><a class="headerlink" href="#pipeline-flow" title="Link to this heading">#</a></h2>
+<h2>Pipeline flow<a class="headerlink" href="#pipeline-flow" title="Link to this heading">#</a></h2>
 <p>In a pipeline flow, we can combine all preprocessing steps into a single object. This simplifies the workflow and reduces the risk of errors. The figure below shows the same workflow as above, but using a pipeline:</p>
 <a class="reference internal image-reference" href="../_images/pipelines_pipeline.png"><img alt="Pipeline workflow" class="align-center" src="../_images/pipelines_pipeline.png" style="width: 800px;" />
 </a>
@@ -985,7 +985,7 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>Optimize the model</strong></p>
+        <p class="prev-next-title">Optimize the model</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1008,8 +1008,8 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#traditional-flow"><strong>Traditional flow</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pipeline-flow"><strong>Pipeline flow</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#traditional-flow">Traditional flow</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pipeline-flow">Pipeline flow</a></li>
 </ul>
   </nav></div>
 

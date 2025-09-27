@@ -1,4 +1,4 @@
-Explore our datasets 🔍
+**Explore our datasets**
 ==============================
 
 Welcome to the world of data exploration! Our ``chemotools`` package provides useful datasets 

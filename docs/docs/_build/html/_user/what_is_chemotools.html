@@ -425,11 +425,11 @@
                   
   <section id="what-is-chemotools">
 <h1>What is chemotools?<a class="headerlink" href="#what-is-chemotools" title="Link to this heading">#</a></h1>
-<p><strong>chemotools</strong> is an open‑source Python package for spectral preprocessing and chemometric workflows. It plugs directly into the Python ecosystem (<code class="docutils literal notranslate"><span class="pre">scikit-learn</span></code>, <code class="docutils literal notranslate"><span class="pre">numpy</span></code>, etc.), enabling flexible, reproducible, and scalable model development.</p>
+<p><code class="docutils literal notranslate"><span class="pre">chemotools</span></code> is an open-source Python package for spectral preprocessing and chemometric modelling. It integrates directly with the <code class="docutils literal notranslate"><span class="pre">scikit-learn</span></code> ecosystem, enabling reproducible and scalable development of spectroscopic models.</p>
 <ul class="simple">
-<li><p><strong>Flexible:</strong> build pipelines that fit your problem.</p></li>
-<li><p><strong>Composable:</strong> works like Lego blocks with scikit-learn pipelines and tools.</p></li>
-<li><p><strong>Scalable:</strong> designed for smooth transitions from prototype to production.</p></li>
+<li><p><strong>Extensive toolkit:</strong> transformers for diverse spectroscopic data.</p></li>
+<li><p><strong>Composable and scalable:</strong> pipelines that integrate directly and grow with your workflow.</p></li>
+<li><p><strong>Reliable and transparent:</strong> rigorously tested, peer-reviewed, and open.</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -437,23 +437,32 @@
 </div>
 <a class="reference internal image-reference" href="../_images/devops-vectorized.png"><img alt="Composable building blocks / lifecycle" class="align-center" src="../_images/devops-vectorized.png" style="width: 300px;" />
 </a>
-<section id="why-it-matters">
-<h2>Why it matters<a class="headerlink" href="#why-it-matters" title="Link to this heading">#</a></h2>
-<p>Spectroscopy is diverse — different instruments, sample matrices, and analysis goals demand different approaches. Chemotools gives you control: use only the pieces you need, combine them with open‑source tools, and evolve your workflow as your problem evolves.</p>
+<section id="extensive-toolkit">
+<h2>Extensive Toolkit<a class="headerlink" href="#extensive-toolkit" title="Link to this heading">#</a></h2>
+<p>Spectroscopy is diverse — different instruments, sample matrices, and analysis goals demand different approaches. <code class="docutils literal notranslate"><span class="pre">chemotools</span></code> provides a focused set of transformers for spectroscopic data and makes it simple to assemble them into preprocessing pipelines. By connecting to the wider Python ecosystem, you can leverage state-of-the-art machine learning and scientific libraries to build robust, end-to-end spectroscopic models.</p>
 <a class="no-background reference internal image-reference" href="../_images/atom.png"><img alt="Ecosystem: chemotools with sklearn, numpy and friends" class="no-background align-center" src="../_images/atom.png" style="width: 340px;" />
 </a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Connect your preprocessing with the scikit-learn ecosystem to unlock a wide toolstack for feature selection, model tuning, validation, and deployment.</p>
+</div>
 </section>
-<section id="how-it-works">
-<h2>How it works<a class="headerlink" href="#how-it-works" title="Link to this heading">#</a></h2>
-<p>Chemotools transforms preprocessing into a <strong>modular, composable process</strong>: each transformer follows the <code class="docutils literal notranslate"><span class="pre">fit</span></code> / <code class="docutils literal notranslate"><span class="pre">transform</span></code> API, so you can chain steps seamlessly with scikit-learn pipelines. That means reproducibility, robustness, and scalability from the start.</p>
+<section id="composable-and-scalable">
+<h2>Composable and Scalable<a class="headerlink" href="#composable-and-scalable" title="Link to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">chemotools</span></code> transforms preprocessing into a <strong>modular, composable process</strong>: each transformer follows the <code class="docutils literal notranslate"><span class="pre">fit</span></code> / <code class="docutils literal notranslate"><span class="pre">transform</span></code> API and integrates directly with <code class="docutils literal notranslate"><span class="pre">scikit-learn</span></code> pipelines. Preprocessing, feature selection, modelling, and validation can be chained directly — no adapters required.</p>
+<p>This composability ensures reproducibility (pipelines are declarative), robustness (swap blocks without refactoring), and scalability (parallelization and deployment patterns leveraging already supported infrastructure by the ecosystem).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>From exploration to deployment, <code class="docutils literal notranslate"><span class="pre">chemotools</span></code> grows with your workflow.</p>
+</div>
 </section>
 <section id="quality-transparency">
 <h2>Quality &amp; Transparency<a class="headerlink" href="#quality-transparency" title="Link to this heading">#</a></h2>
-<p>Chemotools is built not only for flexibility and scalability, but also to make validation and trust easy.</p>
+<p><code class="docutils literal notranslate"><span class="pre">chemotools</span></code> combines extensibility and scalability with open-source transparency, making validation and trust easier from the start.</p>
 <ul class="simple">
-<li><p><strong>Thorough testing</strong> — Chemotools is covered by extensive unit tests and continuous code coverage to ensure reliability and robustness.</p></li>
-<li><p><strong>Transparency</strong> — We proactively provide a Software Bill of Materials (SBOM) in CycloneDX format, making validation and clearance processes straightforward for regulated industries.</p></li>
-<li><p><strong>Peer‑reviewed</strong> — Chemotools has undergone peer review and is published in the <em>Journal of Open Source Software (JOSS)</em>.</p></li>
+<li><p><strong>Thorough testing</strong> — covered by extensive <a class="reference external" href="https://app.codecov.io/github/paucablop/chemotools">unit tests</a> and continuous code coverage for reliability and robustness.</p></li>
+<li><p><strong>Transparency</strong> — we provide a Software Bill of Materials (SBOM) in <a class="reference external" href="https://cyclonedx.org/">CycloneDX</a> format with every release, supporting validation and clearance in regulated environments.</p></li>
+<li><p><strong>Peer-reviewed</strong> — published in the <a class="reference external" href="https://joss.theoj.org/papers/10.21105/joss.06802">Journal of Open Source Software (JOSS)</a> following independent peer review.</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -509,8 +518,8 @@
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-it-matters">Why it matters</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-it-works">How it works</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extensive-toolkit">Extensive Toolkit</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#composable-and-scalable">Composable and Scalable</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quality-transparency">Quality &amp; Transparency</a></li>
 </ul>
   </nav></div>

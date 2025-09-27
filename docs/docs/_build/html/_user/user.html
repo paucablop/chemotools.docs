@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>User Guide &#8212; chemotools  documentation</title>
+    <title>Quick start &#8212; chemotools  documentation</title>
   
   
   
@@ -362,7 +362,7 @@
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="what_is_chemotools.html">What is chemotools?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="install.html">How to install chemotools</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">User Guide</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Quick start</a></li>
 </ul>
 </div>
 </nav></div>
@@ -406,7 +406,7 @@
     
     <li class="breadcrumb-item"><a href="index.html" class="nav-link">User guide</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">User Guide</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Quick start</span></li>
   </ul>
 </nav>
 </div>
@@ -423,9 +423,74 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="user-guide">
-<h1>User Guide<a class="headerlink" href="#user-guide" title="Link to this heading">#</a></h1>
-<p>Some not too complicated user guide</p>
+  <section id="quick-start">
+<h1>Quick start<a class="headerlink" href="#quick-start" title="Link to this heading">#</a></h1>
+<p>Check the <a class="reference external" href="../_user/install.html">installation guide</a> to get started.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p><strong>New in chemometrics?</strong> Check it out in our fully fledged tutorials <a class="reference external" href="../_learn/index.html">here</a>.</p>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p><strong>Want to discover the environment at your hands?</strong> Check it out our exploration page <a class="reference external" href="../_explore/index.html">here</a>.</p>
+</div>
+<section id="load-example-data">
+<h2>Load example data<a class="headerlink" href="#load-example-data" title="Link to this heading">#</a></h2>
+<p>This loads a training set of mid infrared spectra (<code class="docutils literal notranslate"><span class="pre">X_train</span></code>) and associated reference values (<code class="docutils literal notranslate"><span class="pre">y_train</span></code>) from a fermentation process.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">chemotools.datasets</span><span class="w"> </span><span class="kn">import</span> <span class="n">load_fermentation_train</span>
+
+<span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span> <span class="o">=</span> <span class="n">load_fermentation_train</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p><strong>Want to know more about available datasets?</strong> Check it out our datasets <a class="reference external" href="../_learn/datasets.html">here</a>.</p>
+</div>
+</section>
+<section id="preprocess-the-data">
+<h2>Preprocess the data<a class="headerlink" href="#preprocess-the-data" title="Link to this heading">#</a></h2>
+<p>Load, define and apply preprocessing steps to the training data. Here we use a Savitzky-Golay filter to compute the first derivative of the sample spectra.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">chemotools.derivate</span><span class="w"> </span><span class="kn">import</span> <span class="n">SavitzkyGolay</span>
+
+<span class="c1"># Configure the preprocessing step</span>
+<span class="n">sg</span> <span class="o">=</span> <span class="n">SavitzkyGolay</span><span class="p">(</span><span class="n">window_size</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">polynomial_order</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">derivate_order</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Fit and transform the training data</span>
+<span class="n">X_train_preprocessed</span> <span class="o">=</span> <span class="n">sg</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p><strong>Want to know more about available preprocessing methods?</strong> Check it out our preprocessings <a class="reference external" href="../_methods/index.html">here</a>.</p>
+</div>
+</section>
+<section id="compose-preprocessings-and-models">
+<h2>Compose preprocessings and models<a class="headerlink" href="#compose-preprocessings-and-models" title="Link to this heading">#</a></h2>
+<p>Combine preprocessing and modelling steps in a single pipeline.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">chemotools.derivate</span><span class="w"> </span><span class="kn">import</span> <span class="n">SavitzkyGolay</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.cross_decomposition</span><span class="w"> </span><span class="kn">import</span> <span class="n">PLSRegression</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.pipeline</span><span class="w"> </span><span class="kn">import</span> <span class="n">make_pipeline</span>
+
+
+<span class="c1"># Define the pipeline</span>
+<span class="n">pipeline</span> <span class="o">=</span> <span class="n">make_pipeline</span><span class="p">(</span>
+    <span class="n">SavitzkyGolay</span><span class="p">(</span><span class="n">window_size</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">polynomial_order</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">derivate_order</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
+    <span class="n">PLSRegression</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="c1"># Fit the pipeline to the training data</span>
+<span class="n">pipeline</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p><strong>Want to know more about pipelines?</strong> Check it out our pipelines <a class="reference external" href="../_explore/pipelines.html">here</a>.</p>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p><strong>Want to know more about how to optimize your models?</strong> Check it out optimization techniques <a class="reference external" href="../_explore/optiimize.html">here</a>.</p>
+</div>
+</section>
 </section>
 
 
@@ -466,6 +531,20 @@
                 <dialog id="pst-secondary-sidebar-modal"></dialog>
                 <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-example-data">Load example data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocess-the-data">Preprocess the data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compose-preprocessings-and-models">Compose preprocessings and models</a></li>
+</ul>
+  </nav></div>
 
   <div class="sidebar-secondary-item">
   <div role="note" aria-label="source link">

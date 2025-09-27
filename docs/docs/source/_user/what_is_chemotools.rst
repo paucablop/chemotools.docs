@@ -1,11 +1,12 @@
 What is chemotools?
 ====================
 
-**chemotools** is an open‑source Python package for spectral preprocessing and chemometric workflows. It plugs directly into the Python ecosystem (``scikit-learn``, ``numpy``, etc.), enabling flexible, reproducible, and scalable model development.
+``chemotools`` is an open-source Python package for spectral preprocessing and chemometric modelling. It integrates directly with the ``scikit-learn`` ecosystem, enabling reproducible and scalable development of spectroscopic models.
 
-* **Flexible:** build pipelines that fit your problem.
-* **Composable:** works like Lego blocks with scikit-learn pipelines and tools.
-* **Scalable:** designed for smooth transitions from prototype to production.
+* **Extensive toolkit:** transformers for diverse spectroscopic data.  
+* **Composable and scalable:** pipelines that integrate directly and grow with your workflow.  
+* **Reliable and transparent:** rigorously tested, peer-reviewed, and open.  
+
 
 .. note::
    Build exactly what you need, integrate with the tools you trust, and scale without compromise.
@@ -16,9 +17,9 @@ What is chemotools?
    :width: 300px
 
 
-Why it matters
---------------
-Spectroscopy is diverse — different instruments, sample matrices, and analysis goals demand different approaches. Chemotools gives you control: use only the pieces you need, combine them with open‑source tools, and evolve your workflow as your problem evolves.
+Extensive Toolkit
+-----------------
+Spectroscopy is diverse — different instruments, sample matrices, and analysis goals demand different approaches. ``chemotools`` provides a focused set of transformers for spectroscopic data and makes it simple to assemble them into preprocessing pipelines. By connecting to the wider Python ecosystem, you can leverage state-of-the-art machine learning and scientific libraries to build robust, end-to-end spectroscopic models.
 
 .. image:: ./_static/atom.png
    :class: no-background
@@ -26,18 +27,26 @@ Spectroscopy is diverse — different instruments, sample matrices, and analysis
    :align: center
    :width: 340px
 
-How it works
-------------
-Chemotools transforms preprocessing into a **modular, composable process**: each transformer follows the ``fit`` / ``transform`` API, so you can chain steps seamlessly with scikit-learn pipelines. That means reproducibility, robustness, and scalability from the start.
+.. note::
+   Connect your preprocessing with the scikit-learn ecosystem to unlock a wide toolstack for feature selection, model tuning, validation, and deployment.
 
+
+Composable and Scalable
+-----------------------
+``chemotools`` transforms preprocessing into a **modular, composable process**: each transformer follows the ``fit`` / ``transform`` API and integrates directly with ``scikit-learn`` pipelines. Preprocessing, feature selection, modelling, and validation can be chained directly — no adapters required.  
+
+This composability ensures reproducibility (pipelines are declarative), robustness (swap blocks without refactoring), and scalability (parallelization and deployment patterns leveraging already supported infrastructure by the ecosystem).
+
+.. note::
+   From exploration to deployment, ``chemotools`` grows with your workflow.
 
 Quality & Transparency
 -----------------------
-Chemotools is built not only for flexibility and scalability, but also to make validation and trust easy.
+``chemotools`` combines extensibility and scalability with open-source transparency, making validation and trust easier from the start.
 
-* **Thorough testing** — Chemotools is covered by extensive unit tests and continuous code coverage to ensure reliability and robustness.
-* **Transparency** — We proactively provide a Software Bill of Materials (SBOM) in CycloneDX format, making validation and clearance processes straightforward for regulated industries.
-* **Peer‑reviewed** — Chemotools has undergone peer review and is published in the *Journal of Open Source Software (JOSS)*.
+* **Thorough testing** — covered by extensive `unit tests <https://app.codecov.io/github/paucablop/chemotools>`_ and continuous code coverage for reliability and robustness.  
+* **Transparency** — we provide a Software Bill of Materials (SBOM) in `CycloneDX <https://cyclonedx.org/>`_ format with every release, supporting validation and clearance in regulated environments.  
+* **Peer-reviewed** — published in the `Journal of Open Source Software (JOSS) <https://joss.theoj.org/papers/10.21105/joss.06802>`_ following independent peer review.  
 
 .. note::
    Quality, transparency, and trust — built in from the start.

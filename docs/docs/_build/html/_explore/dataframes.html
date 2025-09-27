@@ -360,11 +360,11 @@
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="sklearn.html"><strong>Why Scikit-Learn?</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="spectra.html"><strong>Working with spectra</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="pipelines.html"><strong>Preprocessing pipelines</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="optimize.html"><strong>Optimize the model</strong></a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Working with DataFrames</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="sklearn.html">Why Scikit-Learn?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="spectra.html">Working with spectra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pipelines.html">Preprocessing pipelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="optimize.html">Optimize the model</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Working with DataFrames</a></li>
 <li class="toctree-l1"><a class="reference internal" href="persist.html">Persisting your models</a></li>
 </ul>
 </div>
@@ -409,7 +409,7 @@
     
     <li class="breadcrumb-item"><a href="index.html" class="nav-link">Discover the environment</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>Working with DataFrames</strong></span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Working with DataFrames</span></li>
   </ul>
 </nav>
 </div>
@@ -427,7 +427,7 @@
                 <article class="bd-article">
                   
   <section id="working-with-dataframes">
-<h1><strong>Working with DataFrames</strong><a class="headerlink" href="#working-with-dataframes" title="Link to this heading">#</a></h1>
+<h1>Working with DataFrames<a class="headerlink" href="#working-with-dataframes" title="Link to this heading">#</a></h1>
 <p>For the <code class="docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code> and <code class="docutils literal notranslate"><span class="pre">polars.DataFrame</span></code> lovers. By default, all <code class="docutils literal notranslate"><span class="pre">scikit-learn</span></code> and <code class="docutils literal notranslate"><span class="pre">chemotools</span></code> transformers output <code class="docutils literal notranslate"><span class="pre">numpy.ndarray</span></code>. However, now it is possible to configure your <code class="docutils literal notranslate"><span class="pre">chemotools</span></code> preprocessing methods to produce either a <code class="docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code> or a <code class="docutils literal notranslate"><span class="pre">polars.DataFrame</span></code> objects as output. This is possible after implementing the new <code class="docutils literal notranslate"><span class="pre">set_output()</span></code> API from <code class="docutils literal notranslate"><span class="pre">scikit-learn</span></code> (&gt;= 1.2.2 for <code class="docutils literal notranslate"><span class="pre">pandas</span></code> and &gt;= 1.4.0 for <code class="docutils literal notranslate"><span class="pre">polars</span></code>) (<a class="reference external" href="https://scikit-learn.org/stable/auto_examples/miscellaneous/plot_set_output.html">documentation</a>). The same API implemented in other <code class="docutils literal notranslate"><span class="pre">scikit-learn</span></code> preprocessing methods like the <code class="docutils literal notranslate"><span class="pre">StandardScaler()</span></code> is now available for the <code class="docutils literal notranslate"><span class="pre">chemotools</span></code> transformers.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -435,7 +435,7 @@
 </div>
 <p>Below there are two examples of how to use this new API:</p>
 <section id="example-1-using-the-set-output-api-with-a-single-preprocessing-method">
-<h2><strong>Example 1: Using the ``set_output()`` API with a single preprocessing method</strong><a class="headerlink" href="#example-1-using-the-set-output-api-with-a-single-preprocessing-method" title="Link to this heading">#</a></h2>
+<h2><strong>Example 1: Using the set_output() API with a single preprocessing method</strong><a class="headerlink" href="#example-1-using-the-set-output-api-with-a-single-preprocessing-method" title="Link to this heading">#</a></h2>
 <section id="load-your-spectral-data-as-a-pandas-dataframe">
 <h3>1. Load your spectral data as a <code class="docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code><a class="headerlink" href="#load-your-spectral-data-as-a-pandas-dataframe" title="Link to this heading">#</a></h3>
 <p>First load your spectral data. In this case, we assume a file called <code class="docutils literal notranslate"><span class="pre">spectra.csv</span></code> where each row represents a spectrum and each column represents wavenumbers.</p>
@@ -478,7 +478,7 @@
 </section>
 </section>
 <section id="example-2-using-the-set-output-api-with-a-pipeline">
-<h2><strong>Example 2: Using the ``set_output()`` API with a pipeline</strong><a class="headerlink" href="#example-2-using-the-set-output-api-with-a-pipeline" title="Link to this heading">#</a></h2>
+<h2><strong>Example 2: Using the set_output() API with a pipeline</strong><a class="headerlink" href="#example-2-using-the-set-output-api-with-a-pipeline" title="Link to this heading">#</a></h2>
 <p>Similarly, the <code class="docutils literal notranslate"><span class="pre">set_output()</span></code> API can be used with pipelines. The following code shows how to create a pipeline that performs:</p>
 <ul class="simple">
 <li><p>Multiplicative scatter correction</p></li>
@@ -522,7 +522,7 @@
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>Optimize the model</strong></p>
+        <p class="prev-next-title">Optimize the model</p>
       </div>
     </a>
     <a class="right-next"
@@ -553,13 +553,13 @@
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1-using-the-set-output-api-with-a-single-preprocessing-method"><strong>Example 1: Using the ``set_output()`` API with a single preprocessing method</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1-using-the-set-output-api-with-a-single-preprocessing-method"><strong>Example 1: Using the set_output() API with a single preprocessing method</strong></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#load-your-spectral-data-as-a-pandas-dataframe">1. Load your spectral data as a <code class="docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-chemotools-preprocessing-object-and-set-the-output-to-pandas">2. Create a <code class="docutils literal notranslate"><span class="pre">chemotools</span></code> preprocessing object and set the output to <code class="docutils literal notranslate"><span class="pre">pandas</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fit-and-transform-the-spectra">3. Fit and transform the spectra</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2-using-the-set-output-api-with-a-pipeline"><strong>Example 2: Using the ``set_output()`` API with a pipeline</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2-using-the-set-output-api-with-a-pipeline"><strong>Example 2: Using the set_output() API with a pipeline</strong></a></li>
 </ul>
   </nav></div>
 

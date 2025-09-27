@@ -1,5 +1,5 @@
-**Preprocessing pipelines**
-===========================
+Preprocessing pipelines
+=======================
 
 Pipelines are becoming increasingly popular in machine learning workflows. In essence, pipelines are a sequence of connected data processing steps, where the output of one step is the input of the next. They are very useful for:
 
@@ -16,8 +16,8 @@ All preprocessing techniques in ``chemotools`` are compatible with ``scikit-lear
 - Mean Centering (Standard Scaler)
 - PLS regression
 
-**Traditional flow**
---------------------------
+Traditional flow
+----------------
 
 In a traditional flow, would apply each preprocessing technique individually to the spectra as shown in the image below:
 
@@ -76,8 +76,8 @@ The code to perform this workflow would look like this:
 
 This is a tedious and error-prone workflow, especially when the number of preprocessing steps increases. In addition, persisting the model and deploying it to a production environment is not straightforward, as each preprocessing step needs to be persisted and deployed individually.
 
-**Pipeline flow**
---------------------------
+Pipeline flow
+-------------
 In a pipeline flow, we can combine all preprocessing steps into a single object. This simplifies the workflow and reduces the risk of errors. The figure below shows the same workflow as above, but using a pipeline:
 
 .. image:: ./_figures/pipelines_pipeline.png
