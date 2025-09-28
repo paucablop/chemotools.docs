@@ -46,9 +46,9 @@ Welcome to chemotools
 =====================
 
 
-``chemotools`` is a Python package designed for spectral analysis, built to easily integrate with the widely adopted ``scikit-learn`` API and the broader state-of-the-art Python machine learning ecosystem.
+``chemotools`` is a **Python package for spectral analysis**, designed to integrate natively with the widely adopted ``scikit-learn`` API and the broader **Python machine learning ecosystem**.
 
-Born after years of applying spectroscopy across different industries, our mission is to empower development scientists with the tools they need to create production-ready chemometric models. ``chemotools`` offers a flexible, intuitive environment that streamlines the development and deployment of these models to your production environment, making it easier to standardize workflows and to focus on solving real-world problems.
+Developed after years of applying **spectroscopy** across industries, its mission is to empower **scientists and engineers** with the tools needed to build **production-ready chemometric models**. ``chemotools`` provides an **intuitive, flexible environment** that streamlines the **development and deployment** of models, making it easier to **standardize workflows** and **scale chemometric solutions**.
 
 .. image:: _static/_main_page/chemotools_overview.png
    :alt: chemotools workflow

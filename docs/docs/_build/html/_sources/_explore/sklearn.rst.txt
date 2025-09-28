@@ -21,12 +21,12 @@ What is Scikit-Learn?
 * **Data preprocessing**: Feature scaling, encoding, and transformation
 * **Model evaluation**: Cross-validation, metrics, and hyperparameter tuning
 
-Scikit-learn is widely used in research and industry due to its simplicity, efficiency, and extensive documentation.
+``scikit-learn`` is widely used in research and industry due to its simplicity, efficiency, and extensive documentation. 
 
 A Broad Toolbox of Models and Methods
 -------------------------------------
 
-One of the biggest strengths of scikit-learn is its vast selection of models and tools. Some key categories include:
+One of the biggest strengths of ``scikit-learn`` is its vast selection of models and tools. Some key categories include:
 
 Regression
 ..........
@@ -55,6 +55,14 @@ Preprocessing Tools
 * **Feature Scaling** (``StandardScaler``, ``MinMaxScaler``): Essential for models that rely on distance metrics.
 * **Encoding Categorical Data** (``OneHotEncoder``, ``LabelEncoder``): Transforms categorical variables into numerical format.
 * **Feature Selection** (``SelectKBest``, ``RFE``): Helps choose the most relevant variables.
+
+Additional Utilities
+....................
+In addition to the ``scikit-learn`` main packages, the ecosystem includes a broad range of complementary open-source libraries that extend its functionality:
+
+* **Imbalanced-learn**: Techniques for handling imbalanced datasets.
+* **skore** : Tools for model evaluation and interpretation.
+* **astartes**: advanced techniques for spliting into training and test sets.
 
 The scikit-learn workflow
 -------------------------

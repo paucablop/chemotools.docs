@@ -428,14 +428,14 @@
 <p>Check the <a class="reference external" href="../_user/install.html">installation guide</a> to get started.</p>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
-<p><strong>New in chemometrics?</strong> Check it out in our fully fledged tutorials <a class="reference external" href="../_learn/index.html">here</a>.</p>
+<p><strong>New in chemometrics?</strong> Learn through our step-by-step tutorials <a class="reference external" href="../_learn/index.html">here</a>.</p>
 </div>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
-<p><strong>Want to discover the environment at your hands?</strong> Check it out our exploration page <a class="reference external" href="../_explore/index.html">here</a>.</p>
+<p><strong>Want to explore the tools at your fingertips?</strong> Check out our exploration page <a class="reference external" href="../_explore/index.html">here</a>.</p>
 </div>
-<section id="load-example-data">
-<h2>Load example data<a class="headerlink" href="#load-example-data" title="Link to this heading">#</a></h2>
+<section id="load-data">
+<h2>Load data<a class="headerlink" href="#load-data" title="Link to this heading">#</a></h2>
 <p>This loads a training set of mid infrared spectra (<code class="docutils literal notranslate"><span class="pre">X_train</span></code>) and associated reference values (<code class="docutils literal notranslate"><span class="pre">y_train</span></code>) from a fermentation process.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">chemotools.datasets</span><span class="w"> </span><span class="kn">import</span> <span class="n">load_fermentation_train</span>
 
@@ -444,11 +444,11 @@
 </div>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
-<p><strong>Want to know more about available datasets?</strong> Check it out our datasets <a class="reference external" href="../_learn/datasets.html">here</a>.</p>
+<p><strong>Looking for available datasets?</strong> Find them on our datasets page <a class="reference external" href="../_learn/datasets.html">here</a>.</p>
 </div>
 </section>
-<section id="preprocess-the-data">
-<h2>Preprocess the data<a class="headerlink" href="#preprocess-the-data" title="Link to this heading">#</a></h2>
+<section id="preprocess-spectra">
+<h2>Preprocess spectra<a class="headerlink" href="#preprocess-spectra" title="Link to this heading">#</a></h2>
 <p>Load, define and apply preprocessing steps to the training data. Here we use a Savitzky-Golay filter to compute the first derivative of the sample spectra.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">chemotools.derivate</span><span class="w"> </span><span class="kn">import</span> <span class="n">SavitzkyGolay</span>
 
@@ -461,16 +461,15 @@
 </div>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
-<p><strong>Want to know more about available preprocessing methods?</strong> Check it out our preprocessings <a class="reference external" href="../_methods/index.html">here</a>.</p>
+<p><strong>Want to know more about preprocessing methods?</strong> Check out our preprocessing page <a class="reference external" href="../_methods/index.html">here</a>.</p>
 </div>
 </section>
-<section id="compose-preprocessings-and-models">
-<h2>Compose preprocessings and models<a class="headerlink" href="#compose-preprocessings-and-models" title="Link to this heading">#</a></h2>
+<section id="build-a-pipeline">
+<h2>Build a pipeline<a class="headerlink" href="#build-a-pipeline" title="Link to this heading">#</a></h2>
 <p>Combine preprocessing and modelling steps in a single pipeline.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">chemotools.derivate</span><span class="w"> </span><span class="kn">import</span> <span class="n">SavitzkyGolay</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.cross_decomposition</span><span class="w"> </span><span class="kn">import</span> <span class="n">PLSRegression</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.pipeline</span><span class="w"> </span><span class="kn">import</span> <span class="n">make_pipeline</span>
-
 
 <span class="c1"># Define the pipeline</span>
 <span class="n">pipeline</span> <span class="o">=</span> <span class="n">make_pipeline</span><span class="p">(</span>
@@ -480,16 +479,20 @@
 
 <span class="c1"># Fit the pipeline to the training data</span>
 <span class="n">pipeline</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="c1"># Prediction on the training data</span>
+<span class="n">y_train_pred</span> <span class="o">=</span> <span class="n">pipeline</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
-<p><strong>Want to know more about pipelines?</strong> Check it out our pipelines <a class="reference external" href="../_explore/pipelines.html">here</a>.</p>
+<p><strong>Want to know more about pipelines?</strong> Check out our pipelines page <a class="reference external" href="../_explore/pipelines.html">here</a>.</p>
 </div>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
-<p><strong>Want to know more about how to optimize your models?</strong> Check it out optimization techniques <a class="reference external" href="../_explore/optiimize.html">here</a>.</p>
+<p><strong>Curious to know more about models optimization?</strong> Check out our optimization page <a class="reference external" href="../_explore/optimize.html">here</a>.</p>
 </div>
+<p><strong>Congratulations!</strong> You’ve just built your first chemotools workflow in Python 🎯</p>
 </section>
 </section>
 
@@ -540,9 +543,9 @@
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-example-data">Load example data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocess-the-data">Preprocess the data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compose-preprocessings-and-models">Compose preprocessings and models</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-data">Load data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocess-spectra">Preprocess spectra</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#build-a-pipeline">Build a pipeline</a></li>
 </ul>
   </nav></div>
 

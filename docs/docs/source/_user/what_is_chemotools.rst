@@ -17,11 +17,11 @@ What is chemotools?
    :width: 300px
 
 .. hint::
-    **Want to know more about scikit-learn?** Check it out  in our page `here <../_explore/sklearn.html>`_.
+    **Curious about scikit-learn?** Check it out  in our page `here <../_explore/sklearn.html>`_.
 
 Extensive Toolkit
 -----------------
-Spectroscopy is diverse — different instruments, sample matrices, and analysis goals demand different approaches. ``chemotools`` provides a focused set of transformers for spectroscopic data and makes it simple to assemble them into preprocessing pipelines. By connecting to the wider Python ecosystem, you can leverage state-of-the-art machine learning and scientific libraries to build robust, end-to-end spectroscopic models.
+Spectroscopy is diverse — different **instruments**, **sample matrices**, and **analysis goals** demand different approaches. ``chemotools`` provides a **focused set of transformers** for spectroscopic data and makes it simple to assemble them into **preprocessing pipelines**. By connecting to the wider **Python ecosystem**, you can leverage **state-of-the-art machine learning** and **scientific libraries** to build **robust, end-to-end spectroscopic models**.
 
 .. image:: ./_static/atom.png
    :class: no-background
@@ -33,13 +33,13 @@ Spectroscopy is diverse — different instruments, sample matrices, and analysis
    Connect your preprocessing with the ``scikit-learn`` ecosystem to unlock a wide toolstack for feature selection, model tuning, validation, and deployment.
 
 .. hint::
-    **Want to discover the environment at your hands?** Check it out our exploration page `here <../_explore/index.html>`_.
+    **Want to explore the tools at your fingertips?** Check it out our exploration page `here <../_explore/index.html>`_.
 
 Composable and Scalable
 -----------------------
 ``chemotools`` transforms preprocessing into a **modular, composable process**: each transformer follows the ``fit`` / ``transform`` API and integrates directly with ``scikit-learn`` pipelines. Preprocessing, feature selection, modelling, and validation can be chained directly — no adapters required.  
 
-This composability ensures reproducibility (pipelines are declarative), robustness (swap blocks without refactoring), and scalability (parallelization and deployment patterns leveraging already supported infrastructure by the ecosystem).
+This composability ensures **reproducibility** (pipelines are declarative), **robustness** (swap blocks without refactoring), and **scalability** (parallelization and deployment patterns leveraging already supported infrastructure by the ecosystem).
 
 .. note::
    From exploration to deployment, ``chemotools`` grows with your workflow.
