@@ -56,13 +56,6 @@ Preprocessing Tools
 * **Encoding Categorical Data** (``OneHotEncoder``, ``LabelEncoder``): Transforms categorical variables into numerical format.
 * **Feature Selection** (``SelectKBest``, ``RFE``): Helps choose the most relevant variables.
 
-Additional Utilities
-....................
-In addition to the ``scikit-learn`` main packages, the ecosystem includes a broad range of complementary open-source libraries that extend its functionality:
-
-* **Imbalanced-learn**: Techniques for handling imbalanced datasets.
-* **skore** : Tools for model evaluation and interpretation.
-* **astartes**: advanced techniques for spliting into training and test sets.
 
 The scikit-learn workflow
 -------------------------
@@ -117,3 +110,14 @@ Building a ``PLSRegression`` model:
 
     # 3. Apply the PLS model to new data
     y_pred = pls.predict(X_new_scaled)
+
+
+Extended Ecosystem
+-------------------
+
+In addition to the ``scikit-learn`` main packages, the ecosystem includes a broad range of complementary open-source libraries that extend its functionality:
+
+* `skore <https://docs.skore.probabl.ai/>`_: Streamline and structure model development and interpretation.
+* `astartes <https://jacksonburns.github.io/astartes/README.html>`_: Algorithmic techniques for splitting data into training and test sets.
+* `Imbalanced-learn <https://imbalanced-learn.org/stable/>`_: Techniques for handling imbalanced datasets.
+* `skops <https://skops.readthedocs.io/en/stable/>`_: Tools for serializing and sharing machine learning models.
