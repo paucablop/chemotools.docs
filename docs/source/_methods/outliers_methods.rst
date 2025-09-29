@@ -6,6 +6,7 @@ Outliers Methods
 .. autosummary::
     :toctree: ./generated
     :nosignatures:
+    :noindex:
 
     DModX
     HotellingT2

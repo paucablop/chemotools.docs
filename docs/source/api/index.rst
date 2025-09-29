@@ -8,11 +8,12 @@ using ``autosummary`` + ``autodoc``. Submodules and objects are expanded recursi
     :toctree: generated
     :recursive:
     :caption: Top-level package
+    :hidden:
 
     chemotools
 
 .. note:: The pages under ``generated/`` are auto-created at build time; you normally
-             should not add them to version control.
+            should not add them to version control.
 
 
 
