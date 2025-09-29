@@ -44,7 +44,7 @@ jobs:
 
       - name: Build documentation (all languages)
         run: |
-          task docs:html-all
+          task docs:html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
