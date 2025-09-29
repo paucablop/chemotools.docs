@@ -9,5 +9,5 @@ Smoothing Methods
 
     MeanFilter
     MedianFilter
-    SavitzkyGolay
+    SavitzkyGolayFilter
     WhittakerSmooth
