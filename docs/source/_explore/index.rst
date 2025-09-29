@@ -20,7 +20,7 @@ Discover the environment
    :gutter: 2 3 4 4
 
    .. grid-item-card::
-      :img-top: ./_figures/sklearn.png
+      :img-top: ../_static/images/explore/sklearn.png
       :text-align: center
 
       .. button-ref:: ./sklearn
@@ -31,7 +31,7 @@ Discover the environment
             **Get started with scikit-learn**
 
    .. grid-item-card::
-      :img-top: ./_figures/spectra.png
+      :img-top: ../_static/images/explore/spectra.png
       :text-align: center
 
       .. button-ref:: ./spectra
@@ -42,7 +42,7 @@ Discover the environment
             **Working with spectra**
 
    .. grid-item-card::
-      :img-top: ./_figures/pipeline.png
+      :img-top: ../_static/images/explore/pipeline.png
       :text-align: center
 
       .. button-ref:: ./pipelines
@@ -53,7 +53,7 @@ Discover the environment
             **Creating your pipelines**
 
    .. grid-item-card::
-      :img-top: ./_figures/optimize.png
+      :img-top: ../_static/images/explore/optimize.png
       :text-align: center
 
       .. button-ref:: ./optimize
@@ -64,7 +64,7 @@ Discover the environment
             **Optimize your processing**
 
    .. grid-item-card::
-      :img-top: ./_figures/dataframes.png
+      :img-top: ../_static/images/explore/dataframes.png
       :text-align: center
 
       .. button-ref:: ./dataframes
@@ -76,7 +76,7 @@ Discover the environment
 
 
    .. grid-item-card::
-      :img-top: ./_figures/persist.png
+      :img-top: ../_static/images/explore/persist.png
       :text-align: center
 
       .. button-ref:: ./persist

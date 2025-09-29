@@ -8,7 +8,6 @@ using ``autosummary`` + ``autodoc``. Submodules and objects are expanded recursi
     :toctree: generated
     :recursive:
     :caption: Top-level package
-    :hidden:
 
     chemotools
 

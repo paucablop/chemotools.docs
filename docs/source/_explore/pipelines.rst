@@ -21,7 +21,7 @@ Traditional flow
 
 In a traditional flow, would apply each preprocessing technique individually to the spectra as shown in the image below:
 
-.. image:: ./_figures/pipelines_no_pipeline.png
+.. image:: ../_static/images/explore/pipelines/pipelines_no_pipeline.png
     :alt: Traditional workflow
     :align: center
     :width: 300
@@ -80,14 +80,14 @@ Pipeline flow
 -------------
 In a pipeline flow, we can combine all preprocessing steps into a single object. This simplifies the workflow and reduces the risk of errors. The figure below shows the same workflow as above, but using a pipeline:
 
-.. image:: ./_figures/pipelines_pipeline.png
+.. image:: ../_static/images/explore/pipelines/pipelines_pipeline.png
     :alt: Pipeline workflow
     :align: center
     :width: 800
 
 An outline of the code to perform the pipeline is shown in the image below:
 
-.. image:: ./_figures/pipelines_code.png
+.. image:: ../_static/images/explore/pipelines/pipelines_code.png
     :alt: Pipeline code
     :align: center
     :width: 800
@@ -122,7 +122,7 @@ The code to perform the pipeline is shown below:
 It is now possible to visualize the pipeline and the different preprocessing steps that are applied to the spectra.
 
 .. raw:: html
-    :file: _figures/pipelines_pipeline_visualization.html
+    :file: ../_static/images/explore/pipelines/pipelines_pipeline_visualization.html
 
 .. note::
     

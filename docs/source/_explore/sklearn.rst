@@ -62,8 +62,8 @@ The scikit-learn workflow
 
 Scikit-learn follows an intuitive three-step process outlined in the figure below:
 
-.. image:: _figures/sklearn_workflow.jpg
-    :target: _figures/sklearn_workflow.jpg
+.. image:: ../_static/images/explore/sklearn/sklearn_workflow.jpg
+    :target: ../_static/images/explore/sklearn/sklearn_workflow.jpg
     :width: 400
     :alt: scikit-learn workflow
     :align: center
