@@ -21,7 +21,7 @@ tasks:
   docs:html:
     desc: Build English HTML documentation
     cmds:
-  - uv run sphinx-build -b html {{.SPHINX_SOURCE}} {{.SPHINX_BUILD}}/html -j auto
+      - uv run sphinx-build -b html {{.SPHINX_SOURCE}} {{.SPHINX_BUILD}}/html -j auto
 
   docs:html-es:
     desc: Build Spanish HTML documentation
@@ -54,12 +54,12 @@ tasks:
   docs:check:
     desc: Build English docs treating warnings as errors (CI quality gate)
     cmds:
-  - uv run sphinx-build -b html {{.SPHINX_SOURCE}} {{.SPHINX_BUILD}}/html -W -j auto
+      - uv run sphinx-build -b html {{.SPHINX_SOURCE}} {{.SPHINX_BUILD}}/html -W -j auto
 
   serve:
     desc: Live-reload English docs (no i18n) using sphinx-autobuild
     cmds:
-  - uv run sphinx-autobuild {{.SPHINX_SOURCE}} {{.SPHINX_BUILD}}/html --watch chemotools --ignore "{{.SPHINX_BUILD}}/*" --ignore "{{.API_OUT}}/*"
+      - uv run sphinx-autobuild {{.SPHINX_SOURCE}} {{.SPHINX_BUILD}}/html --watch chemotools --ignore "{{.SPHINX_BUILD}}/*" --ignore "{{.API_OUT}}/*"
 
   clean:
     desc: Remove build artifacts and generated API stubs
