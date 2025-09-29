@@ -1,29 +1,70 @@
-# Sphinx documentation builds
-docs/build/*
-build/*
-_build/*
-docs/_build/*
+# --------------------------------------------------
+# Build / distribution
+# --------------------------------------------------
+build/
+dist/
+*.egg-info/
+*.egg
+pip-wheel-metadata/
 
-# Sphinx auto-generated files
+# Sphinx build output (any _build folder)
+docs/_build/
+**/_build/
+docs/build/*
+
+# Generated API/autosummary stubs
 _autosummary/
 generated/
+docs/source/api/generated/
+docs/source/generated/
 
-# Python bytecode
+# Translations (keep .po, ignore compiled .mo)
+docs/locale/**/LC_MESSAGES/*.mo
+
+# Python bytecode / caches
 *.py[cod]
 __pycache__/
+.mypy_cache/
+.pytest_cache/
+.cache/
+htmlcov/
+*.coverage
+.coverage*
 
-# Development environment
+# Virtual / environment directories
 .venv/
 venv/
-.env/
 env/
+ENV/
+.env
+.envrc
 
-# IDE specific files
+# uv cache
+.uv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editors / IDE
 .vscode/
 .idea/
 *.swp
 *.swo
+*.iml
+*~
 
-# Operating System
+# OS
 .DS_Store
 Thumbs.db
+
+# Logs
+*.log
+
+# Optional: generated example outputs / images
+docs/source/_static/images/generated/
+docs/source/examples/_output/
+
+# Uncomment ONLY if repository root should not contain a top-level package copy.
+# The following would ignore a root 'chemotools' source directory (risky if you later
+# move the library here). Keeping it commented to avoid accidental source loss.
+# chemotools/*

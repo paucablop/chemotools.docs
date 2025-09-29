@@ -1,0 +1,28 @@
+version: "3"
+
+tasks:
+  # i) Install all dependencies (main + groups)
+  install:
+    desc: Install dependencies (all groups)
+    cmds:
+      - uv sync --all-groups
+
+  # ii) Generate API docs with sphinx-apidoc
+  apidoc:
+    desc: Generate API docs from chemotools package
+    cmds:
+      - uv run sphinx-apidoc -o docs/source/api/generated chemotools
+
+  # iii) Run sphinx-autobuild for live preview
+  serve:
+    desc: Run sphinx-autobuild for live docs preview
+    cmds:
+      - uv run sphinx-autobuild docs/source docs/_build/html
+
+
+  # Convenience: run everything from scratch
+  dev:
+    desc: Full dev environment (install →  autobuild)
+    cmds:
+      - task: install
+      - task: serve
