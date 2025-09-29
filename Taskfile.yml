@@ -14,15 +14,76 @@ tasks:
       - uv run sphinx-apidoc -o docs/source/api/generated chemotools
 
   # iii) Run sphinx-autobuild for live preview
-  serve:
-    desc: Run sphinx-autobuild for live docs preview
-    cmds:
-      - uv run sphinx-autobuild docs/source docs/_build/html
+  version: "3"
 
+  vars:
+    SPHINX_SOURCE: docs/source
+    SPHINX_BUILD: docs/_build
+    API_OUT: docs/source/api/generated
 
-  # Convenience: run everything from scratch
-  dev:
-    desc: Full dev environment (install →  autobuild)
-    cmds:
-      - task: install
-      - task: serve
+  tasks:
+    install:
+      desc: Install all dependency groups via uv
+      cmds:
+        - uv sync --all-groups
+
+    # Optional legacy task (kept for manual full module dump). Prefer autosummary.
+    apidoc:
+      desc: (Optional) Generate static API rst stubs with sphinx-apidoc
+      cmds:
+        - mkdir -p {{.API_OUT}}
+        - uv run sphinx-apidoc -o {{.API_OUT}} chemotools
+
+    docs:html:
+      desc: Build English HTML documentation
+      cmds:
+        - uv run sphinx-build -b html {{.SPHINX_SOURCE}} {{.SPHINX_BUILD}}/html/en -j auto
+
+    docs:html-es:
+      desc: Build Spanish HTML documentation
+      cmds:
+        - uv run sphinx-build -b html -D language=es {{.SPHINX_SOURCE}} {{.SPHINX_BUILD}}/html/es -j auto
+
+    docs:html-zh:
+      desc: Build Chinese (zh_CN) HTML documentation
+      cmds:
+        - uv run sphinx-build -b html -D language=zh_CN {{.SPHINX_SOURCE}} {{.SPHINX_BUILD}}/html/zh_CN -j auto
+
+    docs:html-all:
+      desc: Build all language variants (en, es, zh_CN)
+      cmds:
+        - task: docs:html
+        - task: docs:html-es
+        - task: docs:html-zh
+
+    docs:gettext:
+      desc: Extract gettext catalogs
+      cmds:
+        - uv run sphinx-build -b gettext {{.SPHINX_SOURCE}} {{.SPHINX_BUILD}}/gettext -j auto
+
+    docs:update-translations:
+      desc: Update .po files for es and zh_CN
+      deps: [docs:gettext]
+      cmds:
+        - uv run sphinx-intl update -p {{.SPHINX_BUILD}}/gettext -l es -l zh_CN
+
+    docs:check:
+      desc: Build English docs treating warnings as errors (CI quality gate)
+      cmds:
+        - uv run sphinx-build -b html {{.SPHINX_SOURCE}} {{.SPHINX_BUILD}}/html/en -W -j auto
+
+    serve:
+      desc: Live-reload English docs (no i18n) using sphinx-autobuild
+      cmds:
+        - uv run sphinx-autobuild {{.SPHINX_SOURCE}} {{.SPHINX_BUILD}}/html/en --watch chemotools --ignore "{{.SPHINX_BUILD}}/*" --ignore "{{.API_OUT}}/*"
+
+    clean:
+      desc: Remove build artifacts and generated API stubs
+      cmds:
+        - rm -rf {{.SPHINX_BUILD}} {{.API_OUT}}
+
+    dev:
+      desc: Install dependencies then launch live docs server
+      cmds:
+        - task: install
+        - task: serve
