@@ -39,7 +39,6 @@ jobs:
 
       - name: Build documentation (all languages)
         run: |
-          cd docs
           # Build English version
           poetry run sphinx-apidoc -o ./docs/_methods/generated ./chemotools
           poetry run sphinx-build -b html ./docs/source ./docs/_build/html

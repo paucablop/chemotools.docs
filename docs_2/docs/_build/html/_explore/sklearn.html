@@ -1,0 +1,668 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Why Scikit-Learn? &#8212; chemotools  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=d29a62e4" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '_explore/sklearn';</script>
+    <link rel="icon" href="../_static/favicon2.svg"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Working with spectra" href="spectra.html" />
+    <link rel="prev" title="Discover the environment" href="index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo-light-3.svg" class="logo__image only-light" alt="chemotools  documentation - Home"/>
+    <img src="../_static/logo-dark-3.svg" class="logo__image only-dark pst-js-only" alt="chemotools  documentation - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../_user/index.html">
+    User Guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../_methods/index.html">
+    Methods
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="index.html">
+    Explore
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../_learn/index.html">
+    Learn
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../_cite/index.html">
+    Cite
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/paucablop/chemotools" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fab fa-github-square fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.linkedin.com/company/chemotools" title="LinkedIn" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">LinkedIn</span></a>
+        </li>
+</ul></div>
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../_user/index.html">
+    User Guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../_methods/index.html">
+    Methods
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="index.html">
+    Explore
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../_learn/index.html">
+    Learn
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../_cite/index.html">
+    Cite
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/paucablop/chemotools" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fab fa-github-square fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.linkedin.com/company/chemotools" title="LinkedIn" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">LinkedIn</span></a>
+        </li>
+</ul></div>
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Why Scikit-Learn?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="spectra.html">Working with spectra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pipelines.html">Preprocessing pipelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="optimize.html">Optimize the model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dataframes.html">Working with DataFrames</a></li>
+<li class="toctree-l1"><a class="reference internal" href="persist.html">Persisting your models</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Discover the environment</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Why Scikit-Learn?</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="why-scikit-learn">
+<span id="sklearn"></span><h1>Why Scikit-Learn?<a class="headerlink" href="#why-scikit-learn" title="Link to this heading">#</a></h1>
+<p>Scikit-Learn brings modern machine learning tools to chemometrics—making workflows more flexible, scalable, and easy to prototype and validate.</p>
+<ul class="simple">
+<li><p><strong>Flexibility</strong>: Works with various chemometric models and preprocessing methods.</p></li>
+<li><p><strong>Integration</strong>: Can be combined with domain-specific tools for spectral analysis, multivariate statistics, and experimental design.</p></li>
+<li><p><strong>Scalability</strong>: Can handle small laboratory datasets as well as large-scale industrial data.</p></li>
+<li><p><strong>Easy Experimentation</strong>: Rapid prototyping with different algorithms and preprocessing techniques.</p></li>
+</ul>
+<section id="what-is-scikit-learn">
+<h2>What is Scikit-Learn?<a class="headerlink" href="#what-is-scikit-learn" title="Link to this heading">#</a></h2>
+<p><a class="reference external" href="https://scikit-learn.org/">Scikit-learn</a> (<code class="docutils literal notranslate"><span class="pre">sklearn</span></code>) is an open-source machine-learning library built on top of <strong>NumPy</strong>, <strong>SciPy</strong>. It offers a unified API for various machine-learning techniques, including:</p>
+<ul class="simple">
+<li><p><strong>Supervised learning</strong>: Regression, classification, and ensemble methods</p></li>
+<li><p><strong>Unsupervised learning</strong>: Clustering and dimensionality reduction</p></li>
+<li><p><strong>Data preprocessing</strong>: Feature scaling, encoding, and transformation</p></li>
+<li><p><strong>Model evaluation</strong>: Cross-validation, metrics, and hyperparameter tuning</p></li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">scikit-learn</span></code> is widely used in research and industry due to its simplicity, efficiency, and extensive documentation.</p>
+</section>
+<section id="a-broad-toolbox-of-models-and-methods">
+<h2>A Broad Toolbox of Models and Methods<a class="headerlink" href="#a-broad-toolbox-of-models-and-methods" title="Link to this heading">#</a></h2>
+<p>One of the biggest strengths of <code class="docutils literal notranslate"><span class="pre">scikit-learn</span></code> is its vast selection of models and tools. Some key categories include:</p>
+<section id="regression">
+<h3>Regression<a class="headerlink" href="#regression" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Linear Regression</strong> (<code class="docutils literal notranslate"><span class="pre">LinearRegression</span></code>): A simple yet effective model for continuous target variables.</p></li>
+<li><p><strong>Partial Least Squares</strong> (<code class="docutils literal notranslate"><span class="pre">PLSRegression</span></code>): A powerful method often used in chemometrics.</p></li>
+<li><p><strong>Support Vector Regression</strong> (<code class="docutils literal notranslate"><span class="pre">SVR</span></code>): Effective for nonlinear relationships.</p></li>
+</ul>
+</section>
+<section id="classification">
+<h3>Classification<a class="headerlink" href="#classification" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Logistic Regression</strong> (<code class="docutils literal notranslate"><span class="pre">LogisticRegression</span></code>): For binary and multi-class classification.</p></li>
+<li><p><strong>Random Forest</strong> (<code class="docutils literal notranslate"><span class="pre">RandomForestClassifier</span></code>): A robust ensemble method for better accuracy.</p></li>
+<li><p><strong>Support Vector Machines</strong> (<code class="docutils literal notranslate"><span class="pre">SVC</span></code>): Effective for complex decision boundaries.</p></li>
+</ul>
+</section>
+<section id="dimensionality-reduction">
+<h3>Dimensionality Reduction<a class="headerlink" href="#dimensionality-reduction" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Principal Component Analysis</strong> (<code class="docutils literal notranslate"><span class="pre">PCA</span></code>): Extracts the most important features in your dataset.</p></li>
+<li><p><strong>Non Negative Matrix Factorization</strong> (<code class="docutils literal notranslate"><span class="pre">NMF</span></code>): Useful for signal decomposition.</p></li>
+<li><p><strong>t-SNE</strong> (<code class="docutils literal notranslate"><span class="pre">TSNE</span></code>): Helps visualize complex high-dimensional data.</p></li>
+</ul>
+</section>
+<section id="preprocessing-tools">
+<h3>Preprocessing Tools<a class="headerlink" href="#preprocessing-tools" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Feature Scaling</strong> (<code class="docutils literal notranslate"><span class="pre">StandardScaler</span></code>, <code class="docutils literal notranslate"><span class="pre">MinMaxScaler</span></code>): Essential for models that rely on distance metrics.</p></li>
+<li><p><strong>Encoding Categorical Data</strong> (<code class="docutils literal notranslate"><span class="pre">OneHotEncoder</span></code>, <code class="docutils literal notranslate"><span class="pre">LabelEncoder</span></code>): Transforms categorical variables into numerical format.</p></li>
+<li><p><strong>Feature Selection</strong> (<code class="docutils literal notranslate"><span class="pre">SelectKBest</span></code>, <code class="docutils literal notranslate"><span class="pre">RFE</span></code>): Helps choose the most relevant variables.</p></li>
+</ul>
+</section>
+</section>
+<section id="the-scikit-learn-workflow">
+<h2>The scikit-learn workflow<a class="headerlink" href="#the-scikit-learn-workflow" title="Link to this heading">#</a></h2>
+<p>Scikit-learn follows an intuitive three-step process outlined in the figure below:</p>
+<a class="reference external image-reference" href="_figures/sklearn_workflow.jpg"><img alt="scikit-learn workflow" class="align-center" src="../_images/sklearn_workflow.jpg" style="width: 400px;" />
+</a>
+<ol class="arabic simple">
+<li><p><strong>Define</strong>: Configure the model/preprocessing parameters.</p></li>
+<li><p><strong>Fit</strong>: The model learns patterns from training data using <code class="docutils literal notranslate"><span class="pre">fit()</span></code></p></li>
+<li><p><strong>Apply</strong>: The fitted model processes new data using either:</p></li>
+</ol>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">transform()</span></code> for preprocessing steps and unsupervised learning</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">predict()</span></code> for supervised learning models (classification and regression)</p></li>
+</ul>
+<p>Let’s see two examples, one for a preprocessing and one for a regerssion model. First, import the required modules:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.preprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">StandardScaler</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.cross_decomposition</span><span class="w"> </span><span class="kn">import</span> <span class="n">PLSRegression</span>
+</pre></div>
+</div>
+<p>Preprocessing with <code class="docutils literal notranslate"><span class="pre">StandardScaler</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 1. Define the preprocessor</span>
+<span class="n">scaler</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">(</span><span class="n">with_mean</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">with_std</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="c1"># 2. Fit the preprocessor to the data</span>
+<span class="n">scaler</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+
+<span class="c1"># 3. Apply the processor to the data</span>
+<span class="n">X_scaled</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+
+<span class="c1"># ... or to new new data</span>
+<span class="n">X_new_scaled</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_new</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Building a <code class="docutils literal notranslate"><span class="pre">PLSRegression</span></code> model:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 1. Define the PLS model with two components</span>
+<span class="n">pls</span> <span class="o">=</span> <span class="n">PLSRegression</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># 2. Fit the PLS model to the training data</span>
+<span class="n">pls</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_scaled</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+
+<span class="c1"># 3. Apply the PLS model to new data</span>
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">pls</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_new_scaled</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="extended-ecosystem">
+<h2>Extended Ecosystem<a class="headerlink" href="#extended-ecosystem" title="Link to this heading">#</a></h2>
+<p>In addition to the <code class="docutils literal notranslate"><span class="pre">scikit-learn</span></code> main packages, the ecosystem includes a broad range of complementary open-source libraries that extend its functionality:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.skore.probabl.ai/">skore</a>: Streamline and structure model development and interpretation.</p></li>
+<li><p><a class="reference external" href="https://jacksonburns.github.io/astartes/README.html">astartes</a>: Algorithmic techniques for splitting data into training and test sets.</p></li>
+<li><p><a class="reference external" href="https://imbalanced-learn.org/stable/">Imbalanced-learn</a>: Techniques for handling imbalanced datasets.</p></li>
+<li><p><a class="reference external" href="https://skops.readthedocs.io/en/stable/">skops</a>: Tools for serializing and sharing machine learning models.</p></li>
+</ul>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Discover the environment</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="spectra.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Working with spectra</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-scikit-learn">What is Scikit-Learn?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-broad-toolbox-of-models-and-methods">A Broad Toolbox of Models and Methods</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regression">Regression</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classification">Classification</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dimensionality-reduction">Dimensionality Reduction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing-tools">Preprocessing Tools</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-scikit-learn-workflow">The scikit-learn workflow</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extended-ecosystem">Extended Ecosystem</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/_explore/sklearn.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2025, chemotools.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
