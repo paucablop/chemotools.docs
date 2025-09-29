@@ -42,7 +42,7 @@ jobs:
       - name: Sync dependencies (all groups)
         run: uv sync --all-groups
 
-      - name: Build documentation (all languages)
+      - name: Build documentation
         run: |
           task docs:html
 
