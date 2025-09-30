@@ -8,25 +8,25 @@ PACKAGE_DIRECTORY = os.path.dirname(os.path.abspath(__file__))
 
 
 def load_fermentation_train(set_output="pandas"):
-    """
-    Loads the training data of the fermentation dataset. This data corresponds to a synthetic dataset measured
-    off-line. This dataset is designed to represent the variability of real fermentation data.
+    """Load training partition of the fermentation dataset (synthetic offline spectra).
 
-    Arguments
-    -------
-    set_output: str, default='pandas'
-        The output format of the data. It can be 'pandas' or 'polars'. If 'polars', the data is returned as a polars DataFrame.
+    Parameters
+    ----------
+    set_output : {"pandas", "polars"}, default="pandas"
+        Output container type.
 
     Returns
     -------
-    train_spectra: pd.DataFrame A pandas DataFrame containing the synthetic spectra measured to train the model.
-    train_hplc: pd.DataFrame A pandas DataFrame containing the corresponding reference measurements analyzed with HPLC.
+    train_spectra : pandas.DataFrame or polars.DataFrame
+        Synthetic spectra used for calibration.
+    train_hplc : pandas.DataFrame or polars.DataFrame
+        Corresponding reference (HPLC) measurements.
 
     References
-    -------
-    - Cabaneros Lopez Pau, Udugama Isuru A., Thomsen Sune Tjalfe, Roslander Christian, Junicke Helena,
-    Mauricio Iglesias Miguel, Gernaey Krist V. Transforming data into information:
-    A parallel hybrid model for real-time state estimation in lignocellulose ethanol fermentations.
+    ----------
+    Cabaneros Lopez Pau, Udugama Isuru A., Thomsen Sune Tjalfe, Roslander Christian, Junicke Helena,
+    Mauricio Iglesias Miguel, Gernaey Krist V. "Transforming data into information: A parallel hybrid model for
+    real-time state estimation in lignocellulose ethanol fermentations."
     """
     if set_output == "pandas":
         train_spectra = pd.read_csv(PACKAGE_DIRECTORY + "/data/train_spectra.csv")
@@ -46,25 +46,25 @@ def load_fermentation_train(set_output="pandas"):
 
 
 def load_fermentation_test(set_output="pandas"):
-    """
-    Loads the testing data of the fermentation dataset. This data corresponds to real fermentation data measured
-    on-line during a fermentation process.
+    """Load test partition of the fermentation dataset (online process spectra).
 
-    Arguments
-    -------
-    set_output: str, default='pandas'
-        The output format of the data. It can be 'pandas' or 'polars'. If 'polars', the data is returned as a polars DataFrame.
+    Parameters
+    ----------
+    set_output : {"pandas", "polars"}, default="pandas"
+        Output container type.
 
     Returns
     -------
-    test_spectra: pd.DataFrame A pandas DataFrame containing the on-line spectra measured to train the model.
-    test_hplc: pd.DataFrame A pandas DataFrame containing the corresponding HPLC measurements.
+    test_spectra : pandas.DataFrame or polars.DataFrame
+        Online spectra captured during fermentation.
+    test_hplc : pandas.DataFrame or polars.DataFrame
+        Corresponding HPLC reference measurements.
 
     References
-    -------
-    - Cabaneros Lopez Pau, Udugama Isuru A., Thomsen Sune Tjalfe, Roslander Christian, Junicke Helena,
-    Mauricio Iglesias Miguel, Gernaey Krist V. Transforming data into information:
-    A parallel hybrid model for real-time state estimation in lignocellulose ethanol fermentations.
+    ----------
+    Cabaneros Lopez Pau, Udugama Isuru A., Thomsen Sune Tjalfe, Roslander Christian, Junicke Helena,
+    Mauricio Iglesias Miguel, Gernaey Krist V. "Transforming data into information: A parallel hybrid model for
+    real-time state estimation in lignocellulose ethanol fermentations."
     """
     if set_output == "pandas":
         fermentation_spectra = pd.read_csv(
@@ -92,19 +92,19 @@ def load_fermentation_test(set_output="pandas"):
 
 
 def load_coffee(set_output="pandas"):
-    """
-    Loads the coffee dataset. This data corresponds to a coffee spectra from three different origins
-    measured off-line using attenuated total reflectance Fourier transform infrared spectroscopy (ATR-FTIR).
+    """Load coffee ATR-FTIR dataset (three origins).
 
-    Arguments
-    -------
-    set_output: str, default='pandas'
-        The output format of the data. It can be 'pandas' or 'polars'. If 'polars', the data is returned as a polars DataFrame.
+    Parameters
+    ----------
+    set_output : {"pandas", "polars"}, default="pandas"
+        Output container type.
 
     Returns
     -------
-    coffee_spectra: pd.DataFrame A pandas DataFrame containing the coffee spectra.
-    coffee_labels: pd.DataFrame A pandas DataFrame containing the corresponding labels.
+    coffee_spectra : pandas.DataFrame or polars.DataFrame
+        Spectral measurements.
+    coffee_labels : pandas.DataFrame or polars.DataFrame
+        Origin labels for each spectrum.
     """
     if set_output == "pandas":
         coffee_spectra = pd.read_csv(PACKAGE_DIRECTORY + "/data/coffee_spectra.csv")

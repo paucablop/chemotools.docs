@@ -10,7 +10,7 @@ Previously, we saw how to use ``chemotools`` in combination with ``scikit-learn`
 
 An overview of the workflow is shown in the image below:
 
-.. image:: ./_figures/persist_scheme.png
+.. image:: ../_static/images/explore/persist/persist_scheme.png
     :alt: Persist your models
     :align: center
     :width: 600
