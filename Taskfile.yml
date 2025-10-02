@@ -65,15 +65,15 @@ tasks:
     desc: Serve Chinese docs locally
     cmds:
       - task: docs:html-zh
-      - echo "Chinese docs available at http://localhost:8000"
-      - cd {{.SPHINX_BUILD}}/html/zh_CN && python -m http.server 8000
+      - echo "Chinese docs available at http://localhost:8001"
+      - cd {{.SPHINX_BUILD}}/html/zh_CN && python3 -m http.server 8001
 
   serve:es:
     desc: Serve Spanish docs locally  
     cmds:
       - task: docs:html-es
-      - echo "Spanish docs available at http://localhost:8000"
-      - cd {{.SPHINX_BUILD}}/html/es && python -m http.server 8000
+      - echo "Spanish docs available at http://localhost:8002"
+      - cd {{.SPHINX_BUILD}}/html/es && python3 -m http.server 8002
 
   clean:
     desc: Remove build artifacts and generated API stubs
