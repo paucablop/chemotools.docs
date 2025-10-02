@@ -4,10 +4,10 @@ Quick start
 Check the `installation guide <../_user/install.html>`_ to get started.
 
 .. hint::
-    **New in chemometrics?** Learn through our step-by-step tutorials `here <../_learn/index.html>`_.
+    **New in chemometrics?** Learn through our step-by-step `tutorials page <../_learn/index.html>`_.
 
 .. hint::
-    **Want to explore the tools at your fingertips?** Check out our exploration page `here <../_explore/index.html>`_.
+    **Want to explore the tools at your fingertips?** Visit the `explore overview <../_explore/index.html>`_.
 
 Load data
 ---------
@@ -21,7 +21,7 @@ This loads a training set of mid infrared spectra (``X_train``) and associated r
     X_train, y_train = load_fermentation_train()
 
 .. hint::
-    **Looking for available datasets?** Find them on our datasets page `here <../_learn/datasets.html>`_.
+    **Looking for available datasets?** See the `datasets catalog <../_learn/datasets.html>`_.
 
 Preprocess spectra
 ------------------
@@ -39,7 +39,7 @@ Load, define and apply preprocessing steps to the training data. Here we use a S
     X_train_preprocessed = sg.fit_transform(X_train)
 
 .. hint::
-    **Want to know more about preprocessing methods?** Check out our preprocessing page `here <../_methods/index.html>`_.
+    **Want to know more about preprocessing methods?** Read the `methods index <../_methods/index.html>`_.
 
 Build a pipeline
 ----------------
@@ -65,9 +65,9 @@ Combine preprocessing and modelling steps in a single pipeline.
     y_train_pred = pipeline.predict(X_train)
 
 .. hint::
-    **Want to know more about pipelines?** Check out our pipelines page `here <../_explore/pipelines.html>`_.
+    **Want to know more about pipelines?** Open the `pipelines article <../_explore/pipelines.html>`_.
 
 .. hint::
-    **Curious to know more about models optimization?** Check out our optimization page `here <../_explore/optimize.html>`_.
+    **Curious about model optimization?** Read the `optimization guide <../_explore/optimize.html>`_.
 
 **Congratulations!** You’ve just built your first chemotools workflow in Python 🎯

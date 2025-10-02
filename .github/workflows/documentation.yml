@@ -46,6 +46,14 @@ jobs:
         run: |
           task docs:html
 
+  # Future: build localized versions (uncomment when translations exist)
+  # - name: Build Spanish docs
+  #   run: |
+  #     uv run sphinx-build -b html -D language=es docs/source docs/_build/html/es -j auto
+  # - name: Build Chinese docs
+  #   run: |
+  #     uv run sphinx-build -b html -D language=zh_CN docs/source docs/_build/html/zh_CN -j auto
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

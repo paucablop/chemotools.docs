@@ -13,6 +13,7 @@
    Explore <_explore/index>
    Learn <_learn/index>
    Cite <_cite/index>
+   API <api/index>
 
 
 

@@ -76,7 +76,9 @@ autodoc_default_options = {
 autodoc_member_order = "bysource"
 autoclass_content = "both"
 autosummary_generate = True     # generate stub pages automatically
-autosummary_imported_members = True
+# NOTE: imported members can include objects without a proper __file__ leading to
+# None source paths in gettext aggregation (Sphinx relpath NoneType error). Disable for now.
+# autosummary_imported_members = True
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
@@ -90,7 +92,20 @@ html_css_files = [
 # Tell autosummary where to find templates
 autosummary_generate = True
 templates_path = ['_templates']
-autosummary_imported_members = True
+# autosummary_imported_members intentionally disabled above (see note) to avoid
+# gettext builder relpath(None) TypeError.
+
+# --- Internationalization (i18n) -----------------------------------------
+# Default (source) language
+language = "en"
+# Where translation catalogs (.po/.mo) will live
+locale_dirs = ["../locale"]  # relative to this conf.py directory
+gettext_compact = False       # keep one .po per source file
+# If a translation is missing, fall back to English text
+html_language = "en"
+# Optionally, keep untranslated strings marked (set to True only locally)
+# gettext_uuid = False
+
 
 
 # Napoleon settings (for NumPy-style docstrings)
@@ -122,4 +137,39 @@ nitpicky = False
 # Exclude autosummary per-method/attribute pages (keep class pages)
 exclude_patterns = [
     "_methods/generated/*.*.*.*.rst",
+    "api/generated/chemotools.outliers.rst",  # keep excluded due to earlier duplicate method issues
 ]
+
+# ---------------------------------------------------------------------------
+# Workaround: Prevent gettext builder crash when a message location source is None.
+# This happens when Sphinx tries to compute a relative path for objects lacking a
+# concrete filesystem origin (e.g., dynamically created or C-level objects). We
+# monkeypatch GettextRenderer._relpath to tolerate None values.
+# Remove this once upstream Sphinx handles None safely.
+def _patch_gettext_relpath(app):  # pragma: no cover - build system hook
+    try:
+        from sphinx.builders.gettext import GettextRenderer, SphinxRenderer
+        from sphinx.util.osutil import canon_path, relpath as sphinx_relpath
+    except Exception:
+        return
+    if getattr(GettextRenderer, "_chemotools_safe", False):
+        return
+    def safe_render(self, filename, context):  # noqa: D401
+        # Re-implement original render but guard relpath against None
+        def _relpath(s):
+            if s is None:
+                return "UNKNOWN"
+            try:
+                return canon_path(sphinx_relpath(s, self.outdir))
+            except Exception:
+                return "UNKNOWN"
+        context['relpath'] = _relpath
+        return SphinxRenderer.render(self, filename, context)
+
+    GettextRenderer.render = safe_render  # type: ignore[assignment]
+    GettextRenderer._chemotools_safe = True
+
+
+def setup(app):  # pragma: no cover - Sphinx hook
+    app.connect("builder-inited", _patch_gettext_relpath)
+

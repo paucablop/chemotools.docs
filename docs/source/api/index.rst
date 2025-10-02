@@ -1,18 +1,24 @@
 API Reference
 =============
 
-The public Python API for ``chemotools``. Everything below is generated automatically
-using ``autosummary`` + ``autodoc``. Submodules and objects are expanded recursively.
+The public Python API for ``chemotools``. Below we curate the key submodules. This avoids
+deep recursive explosion and keeps build warnings to zero.
 
 .. autosummary::
     :toctree: generated
-    :recursive:
-    :caption: Top-level package
+    :caption: Core namespaces
 
-    chemotools
+    chemotools.augmentation
+    chemotools.baseline
+    chemotools.derivative
+    chemotools.feature_selection
+    chemotools.scale
+    chemotools.scatter
+    chemotools.smooth
+    chemotools.utils
 
 .. note:: The pages under ``generated/`` are auto-created at build time; you normally
-            should not add them to version control.
+          should not add them to version control.
 
 
 
