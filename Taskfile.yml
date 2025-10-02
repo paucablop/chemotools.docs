@@ -57,9 +57,14 @@ tasks:
       - uv run sphinx-build -b html {{.SPHINX_SOURCE}} {{.SPHINX_BUILD}}/html -W -j auto
 
   serve:
-    desc: Live-reload English docs (no i18n) using sphinx-autobuild
+    desc: Live-reload English docs on port 8003 (avoiding port conflicts)
     cmds:
-      - uv run sphinx-autobuild {{.SPHINX_SOURCE}} {{.SPHINX_BUILD}}/html --watch chemotools --ignore "{{.SPHINX_BUILD}}/*" --ignore "{{.API_OUT}}/*"
+      - uv run sphinx-autobuild {{.SPHINX_SOURCE}} {{.SPHINX_BUILD}}/html --watch chemotools --ignore "{{.SPHINX_BUILD}}/*" --ignore "{{.API_OUT}}/*" --port 8003
+
+  serve:en:
+    desc: Live-reload English docs on port 8003 (avoiding port conflicts)
+    cmds:
+      - uv run sphinx-autobuild {{.SPHINX_SOURCE}} {{.SPHINX_BUILD}}/html --watch chemotools --ignore "{{.SPHINX_BUILD}}/*" --ignore "{{.API_OUT}}/*" --port 8003
 
   serve:zh:
     desc: Serve Chinese docs locally
