@@ -1,0 +1,246 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, chemotools
+# This file is distributed under the same license as the chemotools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: chemotools \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-03 02:35+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/_explore/optimize.rst:2
+msgid "Optimize the model"
+msgstr ""
+
+#: ../../source/_explore/optimize.rst:3
+msgid ""
+"When building a chemometric model, analysts need to make several choices "
+"about hyperparameters that can significantly affect the model's "
+"performance. Hyperparameters are those parameters that are set before "
+"training the model. Some common hyperparameters are:"
+msgstr ""
+
+#: ../../source/_explore/optimize.rst:6
+msgid "*How many components should the model use?*"
+msgstr ""
+
+#: ../../source/_explore/optimize.rst:8
+msgid "*What’s the best filter length for a Savitzky-Golay filter?*"
+msgstr ""
+
+#: ../../source/_explore/optimize.rst:10
+msgid "*Which polynomial order works best?*"
+msgstr ""
+
+#: ../../source/_explore/optimize.rst:12
+msgid ""
+"To answer these, different hyperparameter combinations are tested and "
+"evaluated, typically using cross-validation, to find the ones that yield "
+"the best performant model."
+msgstr ""
+
+#: ../../source/_explore/optimize.rst:15
+msgid ""
+"In this section, we’ll investigate different options to optimize these "
+"choices using ``chemotools`` and Scikit-Learn’s model optimization "
+"options such as ``GridSearchCV`` or ``RandomSearchCV``, which will help "
+"searching the hyperparameter space systematically and selecting the best "
+"hyper parameters."
+msgstr ""
+
+#: ../../source/_explore/optimize.rst:19
+msgid ""
+"Two excellent advanced resources for hyperparameter optimization are "
+"shown below by the fellows at `Probabl. <https://probabl.ai/>`_."
+msgstr ""
+
+#: ../../source/_explore/optimize.rst:35
+msgid "|youtube_thumbnail1|"
+msgstr ""
+
+#: ../../source/_explore/optimize.rst:21
+msgid "Random Search"
+msgstr ""
+
+#: ../../source/_explore/optimize.rst:36
+msgid "|youtube_thumbnail2|"
+msgstr ""
+
+#: ../../source/_explore/optimize.rst:26
+msgid "GridSearchCV Optimize"
+msgstr ""
+
+#: ../../source/_explore/optimize.rst:39
+msgid "**Hyperparameter optimization**"
+msgstr ""
+
+#: ../../source/_explore/optimize.rst:40
+msgid ""
+"As an example, we will optimize the hyperparameters in the pipeline "
+"depicted in the image below."
+msgstr ""
+
+#: ../../source/_explore/optimize.rst:42
+msgid "Pipeline workflow"
+msgstr ""
+
+#: ../../source/_explore/optimize.rst:47
+msgid "The pipeline can be created using the code shown below:"
+msgstr ""
+
+#: ../../source/_explore/optimize.rst:67
+msgid ""
+"All hyperparameter optmization methods, following the three follwoing "
+"steps:"
+msgstr ""
+
+#: ../../source/_explore/optimize.rst:68
+msgid ""
+"They all explore the hyperparameter space to find an optimal set of "
+"hyperparameters."
+msgstr ""
+
+#: ../../source/_explore/optimize.rst:69
+msgid ""
+"They all use cross-validation to evaluate the performance of each set of "
+"hyperparameters."
+msgstr ""
+
+#: ../../source/_explore/optimize.rst:72
+msgid ""
+"The main difference between these methods is how they explore the "
+"hyperparameter space. For example, ``GridSearchCV`` explores the "
+"hyperparameter space systematically, while ``RandomSearchCV`` samples a "
+"fixed number of random combinations from the hyperparameter space."
+msgstr ""
+
+#: ../../source/_explore/optimize.rst:76
+msgid ""
+"The first step is to define the hyperparameter space. In our case we "
+"would like to evaluate the following hyperparameters: - The number of "
+"components in the PLS regression model (`n_components`) - The window size"
+" of the Savitzky-Golay filter (`window_size`) - The polynomial order of "
+"the Savitzky-Golay filter (`polynomial_order`) - The derivative order of "
+"the Savitzky-Golay filter (`derivate_order`)"
+msgstr ""
+
+#: ../../source/_explore/optimize.rst:83
+msgid ""
+"To define the hyperparameter space, we can define the hyper parameter "
+"grid as a dictionary, where the keys are the names of the hyperparameters"
+" and the values are lists of possible values for each hyperparameter. The"
+" code to define the hyperparameter space is shown below:"
+msgstr ""
+
+#: ../../source/_explore/optimize.rst:97
+msgid ""
+"Next step is to define the positions of the samples in the hyperparameter"
+" space. We will investigate different strategies."
+msgstr ""
+
+#: ../../source/_explore/optimize.rst:101
+msgid "**GridSearchCV**"
+msgstr ""
+
+#: ../../source/_explore/optimize.rst:102
+msgid ""
+"``GridSearchCV`` is a method that performs an exhaustive search over a "
+"specified parameter grid. It evaluates all possible combinations of "
+"hyperparameters in the grid and selects the one that yields the best "
+"performance based on cross-validation. This method is useful when the "
+"hyperparameter space is small and well-defined. A visual representation "
+"of the ``GridSearchCV`` process is shown below:"
+msgstr ""
+
+#: ../../source/_explore/optimize.rst:106
+msgid "GridSearchCV process"
+msgstr ""
+
+#: ../../source/_explore/optimize.rst:111
+msgid "The code to perform the ``GridSearchCV`` is shown below:"
+msgstr ""
+
+#: ../../source/_explore/optimize.rst:141
+msgid ""
+"There are a few important parameters to note in the ``GridSearchCV`` "
+"function:"
+msgstr ""
+
+#: ../../source/_explore/optimize.rst:142
+msgid ""
+"``scoring`` specifies the metric used to evaluate the performance of the "
+"model. In this case, we are using the negative mean squared error (MSE) "
+"as the scoring metric."
+msgstr ""
+
+#: ../../source/_explore/optimize.rst:143
+msgid ""
+"``cv`` specifies the number of cross-validation folds to use. In this "
+"case, we are using 5-fold cross-validation."
+msgstr ""
+
+#: ../../source/_explore/optimize.rst:144
+msgid ""
+"``n_jobs`` specifies the number of jobs to run in parallel. In this case,"
+" we are using all available cores by setting ``n_jobs=-1``."
+msgstr ""
+
+#: ../../source/_explore/optimize.rst:147
+msgid ""
+"🚀 Laveraging the multiple cores will speed up the process of "
+"hyperparameter optimization, especially when the dataset is large. You "
+"can further speed the process by caching the intermediate results using "
+"the ``memory`` parameter in the pipeline, as shown in the video above!"
+msgstr ""
+
+#: ../../source/_explore/optimize.rst:151
+msgid "**RandomizedSearchCV**"
+msgstr ""
+
+#: ../../source/_explore/optimize.rst:152
+msgid ""
+"``RandomizedSearchCV`` is a method that samples a fixed number of random "
+"combinations from the hyperparameter space and evaluates their "
+"performance using cross-validation. This method is useful when the "
+"hyperparameter space is large and well-defined. A visual representation "
+"of the ``RandomizedSearchCV`` process is shown below:"
+msgstr ""
+
+#: ../../source/_explore/optimize.rst:155
+msgid "RandomizedSearchCV process"
+msgstr ""
+
+#: ../../source/_explore/optimize.rst:160
+msgid "The code to perform the ``RandomizedSearchCV`` is shown below:"
+msgstr ""
+
+#: ../../source/_explore/optimize.rst:191
+msgid ""
+"The ``n_iter`` parameter specifies the number of random combinations to "
+"sample from the hyperparameter space. In this case, we are sampling 10 "
+"random combinations. The ``param_distributions`` parameter specifies the "
+"hyperparameter space to sample from. In this case, we are using the same "
+"hyperparameter space as in the ``GridSearchCV`` example. The ``scoring``,"
+" ``cv``, and ``n_jobs`` parameters are the same as in the "
+"``GridSearchCV`` example."
+msgstr ""
+
+#: ../../source/_explore/optimize.rst:196
+msgid ""
+"As explained in the video above, ``RandomizedSearchCV`` allows exploring "
+"more datapoints in the hyperparameter space, which can lead to better "
+"results than ``GridSearchCV``, especially when the hyperparameter space "
+"is large."
+msgstr ""
+

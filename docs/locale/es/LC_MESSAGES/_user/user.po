@@ -1,0 +1,100 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, chemotools
+# This file is distributed under the same license as the chemotools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: chemotools \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-03 02:35+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/_user/user.rst:2
+msgid "Quick start"
+msgstr ""
+
+#: ../../source/_user/user.rst:4
+msgid "Check the `installation guide <../_user/install.html>`_ to get started."
+msgstr ""
+
+#: ../../source/_user/user.rst:7
+msgid ""
+"**New in chemometrics?** Learn through our step-by-step `tutorials page "
+"<../_learn/index.html>`_."
+msgstr ""
+
+#: ../../source/_user/user.rst:10
+msgid ""
+"**Want to explore the tools at your fingertips?** Visit the `explore "
+"overview <../_explore/index.html>`_."
+msgstr ""
+
+#: ../../source/_user/user.rst:13
+msgid "Load data"
+msgstr ""
+
+#: ../../source/_user/user.rst:15
+msgid ""
+"This loads a training set of mid infrared spectra (``X_train``) and "
+"associated reference values (``y_train``) from a fermentation process."
+msgstr ""
+
+#: ../../source/_user/user.rst:24
+msgid ""
+"**Looking for available datasets?** See the `datasets catalog "
+"<../_learn/datasets.html>`_."
+msgstr ""
+
+#: ../../source/_user/user.rst:27
+msgid "Preprocess spectra"
+msgstr ""
+
+#: ../../source/_user/user.rst:29
+msgid ""
+"Load, define and apply preprocessing steps to the training data. Here we "
+"use a Savitzky-Golay filter to compute the first derivative of the sample"
+" spectra."
+msgstr ""
+
+#: ../../source/_user/user.rst:42
+msgid ""
+"**Want to know more about preprocessing methods?** Read the `methods "
+"index <../_methods/index.html>`_."
+msgstr ""
+
+#: ../../source/_user/user.rst:45
+msgid "Build a pipeline"
+msgstr ""
+
+#: ../../source/_user/user.rst:47
+msgid "Combine preprocessing and modelling steps in a single pipeline."
+msgstr ""
+
+#: ../../source/_user/user.rst:68
+msgid ""
+"**Want to know more about pipelines?** Open the `pipelines article "
+"<../_explore/pipelines.html>`_."
+msgstr ""
+
+#: ../../source/_user/user.rst:71
+msgid ""
+"**Curious about model optimization?** Read the `optimization guide "
+"<../_explore/optimize.html>`_."
+msgstr ""
+
+#: ../../source/_user/user.rst:73
+msgid ""
+"**Congratulations!** You’ve just built your first chemotools workflow in "
+"Python 🎯"
+msgstr ""
+

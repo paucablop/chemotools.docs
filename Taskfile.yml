@@ -61,6 +61,20 @@ tasks:
     cmds:
       - uv run sphinx-autobuild {{.SPHINX_SOURCE}} {{.SPHINX_BUILD}}/html --watch chemotools --ignore "{{.SPHINX_BUILD}}/*" --ignore "{{.API_OUT}}/*"
 
+  serve:zh:
+    desc: Serve Chinese docs locally
+    cmds:
+      - task: docs:html-zh
+      - echo "Chinese docs available at http://localhost:8000"
+      - cd {{.SPHINX_BUILD}}/html/zh_CN && python -m http.server 8000
+
+  serve:es:
+    desc: Serve Spanish docs locally  
+    cmds:
+      - task: docs:html-es
+      - echo "Spanish docs available at http://localhost:8000"
+      - cd {{.SPHINX_BUILD}}/html/es && python -m http.server 8000
+
   clean:
     desc: Remove build artifacts and generated API stubs
     cmds:

@@ -1,0 +1,147 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, chemotools
+# This file is distributed under the same license as the chemotools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: chemotools \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-03 02:35+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/_explore/pipelines.rst:2
+msgid "Preprocessing pipelines"
+msgstr ""
+
+#: ../../source/_explore/pipelines.rst:4
+msgid ""
+"Pipelines are becoming increasingly popular in machine learning "
+"workflows. In essence, pipelines are a sequence of connected data "
+"processing steps, where the output of one step is the input of the next. "
+"They are very useful for:"
+msgstr ""
+
+#: ../../source/_explore/pipelines.rst:6
+msgid "automating complex workflows,"
+msgstr ""
+
+#: ../../source/_explore/pipelines.rst:7
+msgid "improving efficiency,"
+msgstr ""
+
+#: ../../source/_explore/pipelines.rst:8
+msgid "reducing errors in data processing and analysis and"
+msgstr ""
+
+#: ../../source/_explore/pipelines.rst:9
+msgid "simplifying model persistence and deployment."
+msgstr ""
+
+#: ../../source/_explore/pipelines.rst:11
+msgid ""
+"All preprocessing techniques in ``chemotools`` are compatible with "
+"``scikit-learn`` and can be used in pipelines. As an example, we will "
+"study the case where we would like to apply the following preprocessing "
+"techniques to our spectra:"
+msgstr ""
+
+#: ../../source/_explore/pipelines.rst:13
+msgid "Range Cut"
+msgstr ""
+
+#: ../../source/_explore/pipelines.rst:14
+msgid "Linear Correction"
+msgstr ""
+
+#: ../../source/_explore/pipelines.rst:15
+msgid "Savitzky-Golay derivate"
+msgstr ""
+
+#: ../../source/_explore/pipelines.rst:16
+msgid "Mean Centering (Standard Scaler)"
+msgstr ""
+
+#: ../../source/_explore/pipelines.rst:17
+msgid "PLS regression"
+msgstr ""
+
+#: ../../source/_explore/pipelines.rst:20
+msgid "Traditional flow"
+msgstr ""
+
+#: ../../source/_explore/pipelines.rst:22
+msgid ""
+"In a traditional flow, would apply each preprocessing technique "
+"individually to the spectra as shown in the image below:"
+msgstr ""
+
+#: ../../source/_explore/pipelines.rst:24
+msgid "Traditional workflow"
+msgstr ""
+
+#: ../../source/_explore/pipelines.rst:29
+msgid "The code to perform this workflow would look like this:"
+msgstr ""
+
+#: ../../source/_explore/pipelines.rst:77
+msgid ""
+"This is a tedious and error-prone workflow, especially when the number of"
+" preprocessing steps increases. In addition, persisting the model and "
+"deploying it to a production environment is not straightforward, as each "
+"preprocessing step needs to be persisted and deployed individually."
+msgstr ""
+
+#: ../../source/_explore/pipelines.rst:80
+msgid "Pipeline flow"
+msgstr ""
+
+#: ../../source/_explore/pipelines.rst:81
+msgid ""
+"In a pipeline flow, we can combine all preprocessing steps into a single "
+"object. This simplifies the workflow and reduces the risk of errors. The "
+"figure below shows the same workflow as above, but using a pipeline:"
+msgstr ""
+
+#: ../../source/_explore/pipelines.rst:83
+msgid "Pipeline workflow"
+msgstr ""
+
+#: ../../source/_explore/pipelines.rst:88
+msgid ""
+"An outline of the code to perform the pipeline is shown in the image "
+"below:"
+msgstr ""
+
+#: ../../source/_explore/pipelines.rst:90
+msgid "Pipeline code"
+msgstr ""
+
+#: ../../source/_explore/pipelines.rst:95
+msgid "The code to perform the pipeline is shown below:"
+msgstr ""
+
+#: ../../source/_explore/pipelines.rst:122
+msgid ""
+"It is now possible to visualize the pipeline and the different "
+"preprocessing steps that are applied to the spectra."
+msgstr ""
+
+#: ../../source/_explore/pipelines.rst:129
+msgid ""
+"Notice that in the traditional workflow, the different preprocessing "
+"objects had to be persisted individually. In the pipeline workflow, the "
+"entire pipeline can be persisted and deployed to a production "
+"environment. See the :ref:`persisting-your-models` section for more "
+"information."
+msgstr ""
+

@@ -18,3 +18,72 @@ html[data-theme="dark"] .banner {
 .no-background {
     background-color: transparent !important;
 }
+
+/* Language Switcher Styles */
+.language-switcher {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.language-switcher .dropbtn {
+    background-color: transparent;
+    color: var(--pst-color-text-base);
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid var(--pst-color-border);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.language-switcher .dropbtn:hover {
+    background-color: var(--pst-color-surface);
+    border-color: var(--pst-color-primary);
+}
+
+.language-switcher .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: var(--pst-color-background);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border: 1px solid var(--pst-color-border);
+    border-radius: 4px;
+    z-index: 1000;
+    margin-top: 2px;
+}
+
+.language-switcher .dropdown-content a {
+    color: var(--pst-color-text-base);
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.language-switcher .dropdown-content a:hover {
+    background-color: var(--pst-color-surface);
+}
+
+.language-switcher:hover .dropdown-content {
+    display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .language-switcher {
+        margin-left: 5px;
+    }
+    
+    .language-switcher .dropbtn {
+        padding: 6px 8px;
+        font-size: 12px;
+    }
+    
+    .language-switcher .dropdown-content {
+        min-width: 140px;
+        right: -20px;
+    }
+}

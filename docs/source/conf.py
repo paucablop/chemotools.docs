@@ -43,7 +43,7 @@ html_theme_options = {
     },
     "navbar_align": "left",
     "navbar_center": ["navbar-nav"],
-    "navbar_end": ["navbar-icon-links", "theme-switcher"],  # Added theme-switcher here
+    "navbar_end": ["navbar-icon-links", "theme-switcher"],  # Keep original for now
     "show_nav_level": 4,
     "icon_links": [
         {
@@ -87,6 +87,9 @@ html_theme = "pydata_sphinx_theme"
 html_static_path = ["_static"]
 html_css_files = [
     "custom.css",
+]
+html_js_files = [
+    "language-switcher.js",
 ]
 
 # Tell autosummary where to find templates

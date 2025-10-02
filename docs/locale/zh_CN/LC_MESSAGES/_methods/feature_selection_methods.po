@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, chemotools
+# This file is distributed under the same license as the chemotools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: chemotools \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-03 02:35+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/_methods/feature_selection_methods.rst:2
+msgid "Feature Selection Methods"
+msgstr ""
+
+#: ../../source/_methods/feature_selection_methods.rst:15:<autosummary>:1
+msgid ":py:obj:`IndexSelector <chemotools.feature_selection.IndexSelector>`"
+msgstr ""
+
+#: ../../source/_methods/feature_selection_methods.rst:15:<autosummary>:1
+msgid ""
+"A transformer that Selects the spectral data to a specified array of "
+"features."
+msgstr ""
+
+#: ../../source/_methods/feature_selection_methods.rst:15:<autosummary>:1
+msgid ":py:obj:`RangeCut <chemotools.feature_selection.RangeCut>`"
+msgstr ""
+
+#: ../../source/_methods/feature_selection_methods.rst:15:<autosummary>:1
+msgid "Select a contiguous spectral region by index or by wavenumber."
+msgstr ""
+
+#: ../../source/_methods/feature_selection_methods.rst:15:<autosummary>:1
+msgid ":py:obj:`SRSelector <chemotools.feature_selection.SRSelector>`"
+msgstr ""
+
+#: ../../source/_methods/feature_selection_methods.rst:15:<autosummary>:1
+msgid ""
+"This selector is used to select features that contribute significantly to"
+" the latent variables in a PLS regression model using the Selectivity "
+"Ratio (SR) method."
+msgstr ""
+
+#: ../../source/_methods/feature_selection_methods.rst:15:<autosummary>:1
+msgid ":py:obj:`VIPSelector <chemotools.feature_selection.VIPSelector>`"
+msgstr ""
+
+#: ../../source/_methods/feature_selection_methods.rst:15:<autosummary>:1
+msgid ""
+"This selector is used to select features that contribute significantly to"
+" the latent variables in a PLS regression model using the Variables "
+"Importance in Projection (VIP) method."
+msgstr ""
+

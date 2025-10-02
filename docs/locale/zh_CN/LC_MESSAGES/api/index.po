@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, chemotools
+# This file is distributed under the same license as the chemotools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: chemotools \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-03 02:35+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: UNKNOWN:-1
+msgid "Core namespaces"
+msgstr ""
+
+#: ../../source/api/index.rst:2
+msgid "API Reference"
+msgstr ""
+
+#: ../../source/api/index.rst:4
+msgid ""
+"The public Python API for ``chemotools``. Below we curate the key "
+"submodules. This avoids deep recursive explosion and keeps build warnings"
+" to zero."
+msgstr ""
+
+#: ../../source/api/index.rst:19:<autosummary>:1
+msgid ":py:obj:`chemotools.augmentation <chemotools.augmentation>`\\"
+msgstr ""
+
+#: ../../source/api/index.rst:19:<autosummary>:1
+msgid ":py:obj:`chemotools.baseline <chemotools.baseline>`\\"
+msgstr ""
+
+#: ../../source/api/index.rst:19:<autosummary>:1
+msgid ":py:obj:`chemotools.derivative <chemotools.derivative>`\\"
+msgstr ""
+
+#: ../../source/api/index.rst:19:<autosummary>:1
+msgid ":py:obj:`chemotools.feature_selection <chemotools.feature_selection>`\\"
+msgstr ""
+
+#: ../../source/api/index.rst:19:<autosummary>:1
+msgid ":py:obj:`chemotools.scale <chemotools.scale>`\\"
+msgstr ""
+
+#: ../../source/api/index.rst:19:<autosummary>:1
+msgid ":py:obj:`chemotools.scatter <chemotools.scatter>`\\"
+msgstr ""
+
+#: ../../source/api/index.rst:19:<autosummary>:1
+msgid ":py:obj:`chemotools.smooth <chemotools.smooth>`\\"
+msgstr ""
+
+#: ../../source/api/index.rst:19:<autosummary>:1
+msgid ":py:obj:`chemotools.utils <chemotools.utils>`\\"
+msgstr ""
+
+#: ../../source/api/index.rst:20
+msgid ""
+"The pages under ``generated/`` are auto-created at build time; you "
+"normally should not add them to version control."
+msgstr ""
+

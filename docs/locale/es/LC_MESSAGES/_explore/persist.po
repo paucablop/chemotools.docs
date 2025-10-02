@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, chemotools
+# This file is distributed under the same license as the chemotools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: chemotools \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-03 02:35+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/_explore/persist.rst:4
+msgid "Persisting your models"
+msgstr ""
+
+#: ../../source/_explore/persist.rst:6
+msgid ""
+"Previously, we saw how to use ``chemotools`` in combination with "
+"``scikit-learn`` to preprocess your data and make predictions. However, "
+"in a real-world scenario, we would like to persist our trained (fitted) "
+"pipelines to deploy it to a production environment. In this section, we "
+"will show two ways to persist our models:"
+msgstr ""
+
+#: ../../source/_explore/persist.rst:8
+msgid "Using ``pickle``"
+msgstr ""
+
+#: ../../source/_explore/persist.rst:9
+msgid "Using ``joblib``"
+msgstr ""
+
+#: ../../source/_explore/persist.rst:11
+msgid "An overview of the workflow is shown in the image below:"
+msgstr ""
+
+#: ../../source/_explore/persist.rst:13
+msgid "Persist your models"
+msgstr ""
+
+#: ../../source/_explore/persist.rst:18
+msgid "For this section, we will use the following fit pipeline as an example:"
+msgstr ""
+
+#: ../../source/_explore/persist.rst:42
+msgid "Using pickle"
+msgstr ""
+
+#: ../../source/_explore/persist.rst:44
+msgid ""
+"``pickle`` is a Python module that implements a binary protocol for "
+"serializing and de-serializing a Python object structure. It is a "
+"standard module that comes with the Python installation. The following "
+"code shows how to persist a ``scikit-learn`` model using ``pickle``:"
+msgstr ""
+
+#: ../../source/_explore/persist.rst:47
+msgid ""
+"Notice that the ``pickle`` module is not secure against erroneous or "
+"maliciously constructed data. Never unpickle data received from an "
+"untrusted or unauthenticated source."
+msgstr ""
+
+#: ../../source/_explore/persist.rst:64
+msgid "Using joblib"
+msgstr ""
+
+#: ../../source/_explore/persist.rst:66
+msgid ""
+"``joblib`` is a Python module that provides utilities for saving and "
+"loading Python objects that make use of NumPy data structures, "
+"efficiently. It is not part of the standard Python installation, but it "
+"can be installed using ``pip``. The following code shows how to persist a"
+" ``scikit-learn`` model using ``joblib``:"
+msgstr ""
+
