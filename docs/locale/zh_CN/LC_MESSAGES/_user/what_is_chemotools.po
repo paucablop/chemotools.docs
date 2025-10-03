@@ -41,7 +41,7 @@ msgstr "丰富的工具集： 适用于各类光谱数据的转换器。"
 msgid ""
 "**Composable and scalable:** pipelines that integrate directly and grow "
 "with your workflow."
-msgstr "**可组合且可扩展：** 可直接集成并能随您工作流程发展的管道。"
+msgstr "可组合且可扩展：可直接集成并能随您工作流程发展的管道。"
 
 #: ../../source/_user/what_is_chemotools.rst:8
 msgid "**Reliable and transparent:** rigorously tested, peer-reviewed, and open."
@@ -139,7 +139,7 @@ msgid ""
 "**Thorough testing** — covered by extensive `unit tests "
 "<https://app.codecov.io/github/paucablop/chemotools>`_ and continuous "
 "code coverage for reliability and robustness."
-msgstr "全面测试 — 通过广泛的`单元测试 <https://app.codecov.io/github/paucablop/chemotools>`_ 和持续的代码覆盖率来确保可靠性和稳健性。"
+msgstr "全面测试 — 通过广泛的 `单元测试 <https://app.codecov.io/github/paucablop/chemotools>`_ 和持续的代码覆盖率来确保可靠性和稳健性。"
 
 #: ../../source/_user/what_is_chemotools.rst:52
 msgid ""
