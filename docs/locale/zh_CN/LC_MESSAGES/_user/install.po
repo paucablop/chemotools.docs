@@ -29,7 +29,7 @@ msgid ""
 "`PyPI <https://pypi.org/project/chemotools/>`_ using ``pip`` or using "
 "``conda`` from the ``conda-forge`` channel."
 msgstr ""
-"安装 chemotools 非常简单！您可以直接从 `PyPI <https://pypi.org/project/chemotools/>`_ 使用 ``pip`` 安装，或者从 ``conda-forge`` 频道使用 ``conda`` 安装。"
+"安装 ``chemotools`` 非常简单！您可以直接从 `PyPI <https://pypi.org/project/chemotools/>`_ 使用 ``pip`` 安装，或者从 ``conda-forge`` 频道使用 ``conda`` 安装。"
 
 #: ../../source/_user/install.rst:7
 msgid "Install using ``pip``"
