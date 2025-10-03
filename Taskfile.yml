@@ -24,14 +24,13 @@ tasks:
       - uv run sphinx-build -b html {{.SPHINX_SOURCE}} {{.SPHINX_BUILD}}/html -j auto
 
   docs:html-es:
-    desc: Build Spanish HTML documentation
     cmds:
-      - uv run sphinx-build -b html -D language=es {{.SPHINX_SOURCE}} {{.SPHINX_BUILD}}/html/es -j auto
+      - uv run sphinx-build -b html -D language=es -D html_theme_options.switcher.version_match=es {{.SPHINX_SOURCE}} {{.SPHINX_BUILD}}/html/es -j auto
 
   docs:html-zh:
-    desc: Build Chinese (zh_CN) HTML documentation
     cmds:
-      - uv run sphinx-build -b html -D language=zh_CN {{.SPHINX_SOURCE}} {{.SPHINX_BUILD}}/html/zh_CN -j auto
+      - uv run sphinx-build -b html -D language=zh_CN -D html_theme_options.switcher.version_match=zh_CN {{.SPHINX_SOURCE}} {{.SPHINX_BUILD}}/html/zh_CN -j auto
+
 
   docs:html-all:
     desc: Build all language variants (en, es, zh_CN)

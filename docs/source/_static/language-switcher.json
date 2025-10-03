@@ -1,0 +1,17 @@
+[
+    {
+        "version": "en",
+        "url": "/",
+        "name": "English"
+    },
+    {
+        "version": "es",
+        "url": "/es/",
+        "name": "Español"
+    },
+    {
+        "version": "zh_CN",
+        "url": "/zh_CN/",
+        "name": "中文"
+    }
+]

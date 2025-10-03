@@ -43,8 +43,12 @@ html_theme_options = {
     },
     "navbar_align": "left",
     "navbar_center": ["navbar-nav"],
-    "navbar_end": ["navbar-icon-links", "theme-switcher"],  # Keep original for now
+    "navbar_end": ["navbar-icon-links", "theme-switcher", "version-switcher"],
     "show_nav_level": 4,
+    "switcher": {
+        "json_url": "_static/language-switcher.json",
+        "version_match": "en",
+    },
     "icon_links": [
         {
             "name": "GitHub",
@@ -62,6 +66,7 @@ html_theme_options = {
     "use_edit_page_button": False,
     "navigation_with_keys": False,
 }
+
 
 # Only include public members unless explicitly told otherwise
 autodoc_default_options = {
@@ -91,6 +96,7 @@ html_css_files = [
 html_js_files = [
     "language-switcher.js",
 ]
+
 
 # Tell autosummary where to find templates
 autosummary_generate = True
