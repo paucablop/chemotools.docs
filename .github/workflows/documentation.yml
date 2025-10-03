@@ -44,7 +44,7 @@ jobs:
 
       - name: Build documentation
         run: |
-          task docs:html
+          task docs:html-all
 
   # Future: build localized versions (uncomment when translations exist)
   # - name: Build Spanish docs
