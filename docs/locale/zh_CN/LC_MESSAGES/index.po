@@ -77,7 +77,7 @@ msgid ""
 " integrate natively with the widely adopted ``scikit-learn`` API and the "
 "broader **Python machine learning ecosystem**."
 msgstr ""
-"``chemotools`` 是一个**用于光谱分析的 Python 软件包**，旨在与广泛采用的 ``scikit-learn`` API 及更广泛的 **Python 机器学习生态系统**原生集成。"
+"``chemotools`` 是一个用于光谱分析的 Python 软件包，旨在与广泛采用的 ``scikit-learn`` API 及更广泛的 Python 机器学习生态系统原生集成。"
 
 #: ../../source/index.rst:52
 msgid ""
@@ -88,8 +88,8 @@ msgid ""
 "**development and deployment** of models, making it easier to "
 "**standardize workflows** and **scale chemometric solutions**."
 msgstr ""
-"基于多年在各行业应用**光谱技术**的经验开发而成，其使命是为**科学家和工程师**提供构建**生产就绪的化学计量模型**所需的工具。``chemotools`` "
-"提供了一个**直观、灵活的环境**，能够简化模型的**开发与部署**过程，使**标准化工作流程**和**扩展化学计量解决方案**变得更加容易。"
+"基于多年在各行业应用光谱技术的经验开发而成，其使命是为科学家和工程师提供构建生产就绪的化学计量模型所需的工具。``chemotools`` "
+"提供了一个直观、灵活的环境，能够简化模型的开发与部署过程，使标准化工作流程和扩展化学计量解决方案变得更加容易。"
 
 #: ../../source/index.rst:54
 msgid "chemotools workflow"
