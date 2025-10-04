@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../../source/_explore/pipelines.rst:2
 msgid "Preprocessing pipelines"
-msgstr ""
+msgstr "预处理管道"
 
 #: ../../source/_explore/pipelines.rst:4
 msgid ""
@@ -29,23 +29,23 @@ msgid ""
 "workflows. In essence, pipelines are a sequence of connected data "
 "processing steps, where the output of one step is the input of the next. "
 "They are very useful for:"
-msgstr ""
+msgstr "管道在机器学习工作流程中正变得越来越流行。本质上，管道是一系列相互连接的数据处理步骤，其中一个步骤的输出是下一个步骤的输入。它们对于以下方面非常有用："
 
 #: ../../source/_explore/pipelines.rst:6
 msgid "automating complex workflows,"
-msgstr ""
+msgstr "自动化复杂的工作流程，"
 
 #: ../../source/_explore/pipelines.rst:7
 msgid "improving efficiency,"
-msgstr ""
+msgstr "提高效率，"
 
 #: ../../source/_explore/pipelines.rst:8
 msgid "reducing errors in data processing and analysis and"
-msgstr ""
+msgstr "减少数据处理和分析中的错误，以及"
 
 #: ../../source/_explore/pipelines.rst:9
 msgid "simplifying model persistence and deployment."
-msgstr ""
+msgstr "简化模型持久化和部署。"
 
 #: ../../source/_explore/pipelines.rst:11
 msgid ""
@@ -53,45 +53,45 @@ msgid ""
 "``scikit-learn`` and can be used in pipelines. As an example, we will "
 "study the case where we would like to apply the following preprocessing "
 "techniques to our spectra:"
-msgstr ""
+msgstr "``chemotools`` 中的所有预处理技术都与 ``scikit-learn`` 兼容，并可在管道中使用。作为一个示例，我们将研究希望将以下预处理技术应用于光谱的情况："
 
 #: ../../source/_explore/pipelines.rst:13
 msgid "Range Cut"
-msgstr ""
+msgstr "范围截取"
 
 #: ../../source/_explore/pipelines.rst:14
 msgid "Linear Correction"
-msgstr ""
+msgstr "线性校正"
 
 #: ../../source/_explore/pipelines.rst:15
 msgid "Savitzky-Golay derivate"
-msgstr ""
+msgstr "Savitzky-Golay 导数"
 
 #: ../../source/_explore/pipelines.rst:16
 msgid "Mean Centering (Standard Scaler)"
-msgstr ""
+msgstr "均值中心化（标准缩放器）"
 
 #: ../../source/_explore/pipelines.rst:17
 msgid "PLS regression"
-msgstr ""
+msgstr "PLS 回归"
 
 #: ../../source/_explore/pipelines.rst:20
 msgid "Traditional flow"
-msgstr ""
+msgstr "传统流程"
 
 #: ../../source/_explore/pipelines.rst:22
 msgid ""
 "In a traditional flow, would apply each preprocessing technique "
 "individually to the spectra as shown in the image below:"
-msgstr ""
+msgstr "在传统流程中，需要将每个预处理技术分别应用于光谱，如下图所示："
 
 #: ../../source/_explore/pipelines.rst:24
 msgid "Traditional workflow"
-msgstr ""
+msgstr "传统工作流程"
 
 #: ../../source/_explore/pipelines.rst:29
 msgid "The code to perform this workflow would look like this:"
-msgstr ""
+msgstr "执行此工作流程的代码如下所示："
 
 #: ../../source/_explore/pipelines.rst:77
 msgid ""
@@ -99,42 +99,42 @@ msgid ""
 " preprocessing steps increases. In addition, persisting the model and "
 "deploying it to a production environment is not straightforward, as each "
 "preprocessing step needs to be persisted and deployed individually."
-msgstr ""
+msgstr "这是一个繁琐且容易出错的工作流程，特别是当预处理步骤数量增加时。此外，持久化模型并将其部署到生产环境并不简单，因为每个预处理步骤都需要单独持久化和部署。"
 
 #: ../../source/_explore/pipelines.rst:80
 msgid "Pipeline flow"
-msgstr ""
+msgstr "管道流程"
 
 #: ../../source/_explore/pipelines.rst:81
 msgid ""
 "In a pipeline flow, we can combine all preprocessing steps into a single "
 "object. This simplifies the workflow and reduces the risk of errors. The "
 "figure below shows the same workflow as above, but using a pipeline:"
-msgstr ""
+msgstr "在管道流程中，我们可以将所有预处理步骤组合到单个对象中。这简化了工作流程并降低了错误风险。下图显示了与上述相同的工作流程，但使用了管道："
 
 #: ../../source/_explore/pipelines.rst:83
 msgid "Pipeline workflow"
-msgstr ""
+msgstr "管道工作流程"
 
 #: ../../source/_explore/pipelines.rst:88
 msgid ""
 "An outline of the code to perform the pipeline is shown in the image "
 "below:"
-msgstr ""
+msgstr "执行管道的代码概览如下图所示："
 
 #: ../../source/_explore/pipelines.rst:90
 msgid "Pipeline code"
-msgstr ""
+msgstr "管道代码"
 
 #: ../../source/_explore/pipelines.rst:95
 msgid "The code to perform the pipeline is shown below:"
-msgstr ""
+msgstr "执行管道的代码如下所示："
 
 #: ../../source/_explore/pipelines.rst:122
 msgid ""
 "It is now possible to visualize the pipeline and the different "
 "preprocessing steps that are applied to the spectra."
-msgstr ""
+msgstr "现在可以可视化管道以及应用于光谱的不同预处理步骤。"
 
 #: ../../source/_explore/pipelines.rst:129
 msgid ""
@@ -143,5 +143,4 @@ msgid ""
 "entire pipeline can be persisted and deployed to a production "
 "environment. See the :ref:`persisting-your-models` section for more "
 "information."
-msgstr ""
-
+msgstr "请注意，在传统工作流程中，不同的预处理对象必须单独持久化。在管道工作流程中，整个管道可以持久化并部署到生产环境。有关更多信息，请参阅 :ref:`persisting-your-models` 部分。"

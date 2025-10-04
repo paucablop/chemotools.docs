@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../../source/_explore/optimize.rst:2
 msgid "Optimize the model"
-msgstr ""
+msgstr "优化模型"
 
 #: ../../source/_explore/optimize.rst:3
 msgid ""
@@ -29,93 +29,93 @@ msgid ""
 "about hyperparameters that can significantly affect the model's "
 "performance. Hyperparameters are those parameters that are set before "
 "training the model. Some common hyperparameters are:"
-msgstr ""
+msgstr "在构建化学计量学模型时，分析人员需要做出几个关于超参数的选择，这些选择会显著影响模型的性能。超参数是在训练模型之前设置的参数。一些常见的超参数包括："
 
 #: ../../source/_explore/optimize.rst:6
 msgid "*How many components should the model use?*"
-msgstr ""
+msgstr "*模型应该使用多少个组件？*"
 
 #: ../../source/_explore/optimize.rst:8
-msgid "*What’s the best filter length for a Savitzky-Golay filter?*"
-msgstr ""
+msgid "*What's the best filter length for a Savitzky-Golay filter?*"
+msgstr "*Savitzky-Golay 滤波器的最佳滤波器长度是多少？*"
 
 #: ../../source/_explore/optimize.rst:10
 msgid "*Which polynomial order works best?*"
-msgstr ""
+msgstr "*哪个多项式阶数效果最好？*"
 
 #: ../../source/_explore/optimize.rst:12
 msgid ""
 "To answer these, different hyperparameter combinations are tested and "
 "evaluated, typically using cross-validation, to find the ones that yield "
 "the best performant model."
-msgstr ""
+msgstr "为了回答这些问题，通常会使用交叉验证来测试和评估不同的超参数组合，以找到能够产生最佳性能模型的组合。"
 
 #: ../../source/_explore/optimize.rst:15
 msgid ""
-"In this section, we’ll investigate different options to optimize these "
-"choices using ``chemotools`` and Scikit-Learn’s model optimization "
+"In this section, we'll investigate different options to optimize these "
+"choices using ``chemotools`` and Scikit-Learn's model optimization "
 "options such as ``GridSearchCV`` or ``RandomSearchCV``, which will help "
 "searching the hyperparameter space systematically and selecting the best "
 "hyper parameters."
-msgstr ""
+msgstr "在本节中，我们将研究使用 ``chemotools`` 和 Scikit-Learn 的模型优化选项（如 ``GridSearchCV`` 或 ``RandomSearchCV``）来优化这些选择的不同方法，这些方法将帮助系统地搜索超参数空间并选择最佳超参数。"
 
 #: ../../source/_explore/optimize.rst:19
 msgid ""
 "Two excellent advanced resources for hyperparameter optimization are "
 "shown below by the fellows at `Probabl. <https://probabl.ai/>`_."
-msgstr ""
+msgstr "以下是 `Probabl. <https://probabl.ai/>`_ 的同行提供的两个优秀的超参数优化高级资源。"
 
 #: ../../source/_explore/optimize.rst:35
 msgid "|youtube_thumbnail1|"
-msgstr ""
+msgstr "|youtube_thumbnail1|"
 
 #: ../../source/_explore/optimize.rst:21
 msgid "Random Search"
-msgstr ""
+msgstr "随机搜索"
 
 #: ../../source/_explore/optimize.rst:36
 msgid "|youtube_thumbnail2|"
-msgstr ""
+msgstr "|youtube_thumbnail2|"
 
 #: ../../source/_explore/optimize.rst:26
 msgid "GridSearchCV Optimize"
-msgstr ""
+msgstr "GridSearchCV 优化"
 
 #: ../../source/_explore/optimize.rst:39
 msgid "**Hyperparameter optimization**"
-msgstr ""
+msgstr "超参数优化"
 
 #: ../../source/_explore/optimize.rst:40
 msgid ""
 "As an example, we will optimize the hyperparameters in the pipeline "
 "depicted in the image below."
-msgstr ""
+msgstr "作为一个示例，我们将优化下图中描述的管道中的超参数。"
 
 #: ../../source/_explore/optimize.rst:42
 msgid "Pipeline workflow"
-msgstr ""
+msgstr "管道工作流程"
 
 #: ../../source/_explore/optimize.rst:47
 msgid "The pipeline can be created using the code shown below:"
-msgstr ""
+msgstr "可以使用如下所示的代码创建管道："
 
 #: ../../source/_explore/optimize.rst:67
 msgid ""
 "All hyperparameter optmization methods, following the three follwoing "
 "steps:"
-msgstr ""
+msgstr "所有超参数优化方法都遵循以下三个步骤："
 
 #: ../../source/_explore/optimize.rst:68
 msgid ""
 "They all explore the hyperparameter space to find an optimal set of "
 "hyperparameters."
-msgstr ""
+msgstr "它们都探索超参数空间以找到最优的超参数集。"
 
 #: ../../source/_explore/optimize.rst:69
 msgid ""
 "They all use cross-validation to evaluate the performance of each set of "
 "hyperparameters."
-msgstr ""
+msgstr "它们都使用交叉验证来评估每组超参数的性能。"
 
 #: ../../source/_explore/optimize.rst:72
 msgid ""
@@ -123,7 +123,7 @@ msgid ""
 "hyperparameter space. For example, ``GridSearchCV`` explores the "
 "hyperparameter space systematically, while ``RandomSearchCV`` samples a "
 "fixed number of random combinations from the hyperparameter space."
-msgstr ""
+msgstr "这些方法之间的主要区别在于它们探索超参数空间的方式。例如，``GridSearchCV`` 系统地探索超参数空间，而 ``RandomSearchCV`` 从超参数空间中采样固定数量的随机组合。"
 
 #: ../../source/_explore/optimize.rst:76
 msgid ""
@@ -133,7 +133,7 @@ msgid ""
 " of the Savitzky-Golay filter (`window_size`) - The polynomial order of "
 "the Savitzky-Golay filter (`polynomial_order`) - The derivative order of "
 "the Savitzky-Golay filter (`derivate_order`)"
-msgstr ""
+msgstr "第一步是定义超参数空间。在我们的案例中，我们希望评估以下超参数：- PLS 回归模型中的组件数量（`n_components`）- Savitzky-Golay 滤波器的窗口大小（`window_size`）- Savitzky-Golay 滤波器的多项式阶数（`polynomial_order`）- Savitzky-Golay 滤波器的导数阶数（`derivate_order`）"
 
 #: ../../source/_explore/optimize.rst:83
 msgid ""
@@ -141,17 +141,17 @@ msgid ""
 "grid as a dictionary, where the keys are the names of the hyperparameters"
 " and the values are lists of possible values for each hyperparameter. The"
 " code to define the hyperparameter space is shown below:"
-msgstr ""
+msgstr "为了定义超参数空间，我们可以将超参数网格定义为字典，其中键是超参数的名称，值是每个超参数的可能值列表。定义超参数空间的代码如下所示："
 
 #: ../../source/_explore/optimize.rst:97
 msgid ""
 "Next step is to define the positions of the samples in the hyperparameter"
 " space. We will investigate different strategies."
-msgstr ""
+msgstr "下一步是定义样本在超参数空间中的位置。我们将研究不同的策略。"
 
 #: ../../source/_explore/optimize.rst:101
 msgid "**GridSearchCV**"
-msgstr ""
+msgstr "**GridSearchCV**"
 
 #: ../../source/_explore/optimize.rst:102
 msgid ""
@@ -161,40 +161,40 @@ msgid ""
 "performance based on cross-validation. This method is useful when the "
 "hyperparameter space is small and well-defined. A visual representation "
 "of the ``GridSearchCV`` process is shown below:"
-msgstr ""
+msgstr "``GridSearchCV`` 是一种在指定参数网格上执行穷举搜索的方法。它评估网格中所有可能的超参数组合，并基于交叉验证选择性能最佳的组合。当超参数空间较小且定义明确时，此方法很有用。``GridSearchCV`` 过程的可视化表示如下所示："
 
 #: ../../source/_explore/optimize.rst:106
 msgid "GridSearchCV process"
-msgstr ""
+msgstr "GridSearchCV 过程"
 
 #: ../../source/_explore/optimize.rst:111
 msgid "The code to perform the ``GridSearchCV`` is shown below:"
-msgstr ""
+msgstr "执行 ``GridSearchCV`` 的代码如下所示："
 
 #: ../../source/_explore/optimize.rst:141
 msgid ""
 "There are a few important parameters to note in the ``GridSearchCV`` "
 "function:"
-msgstr ""
+msgstr "在 ``GridSearchCV`` 函数中有几个重要参数需要注意："
 
 #: ../../source/_explore/optimize.rst:142
 msgid ""
 "``scoring`` specifies the metric used to evaluate the performance of the "
 "model. In this case, we are using the negative mean squared error (MSE) "
 "as the scoring metric."
-msgstr ""
+msgstr "``scoring`` 指定用于评估模型性能的指标。在这种情况下，我们使用负均方误差（MSE）作为评分指标。"
 
 #: ../../source/_explore/optimize.rst:143
 msgid ""
 "``cv`` specifies the number of cross-validation folds to use. In this "
 "case, we are using 5-fold cross-validation."
-msgstr ""
+msgstr "``cv`` 指定要使用的交叉验证折数。在这种情况下，我们使用 5 折交叉验证。"
 
 #: ../../source/_explore/optimize.rst:144
 msgid ""
 "``n_jobs`` specifies the number of jobs to run in parallel. In this case,"
 " we are using all available cores by setting ``n_jobs=-1``."
-msgstr ""
+msgstr "``n_jobs`` 指定并行运行的作业数。在这种情况下，我们通过设置 ``n_jobs=-1`` 来使用所有可用的核心。"
 
 #: ../../source/_explore/optimize.rst:147
 msgid ""
@@ -202,11 +202,11 @@ msgid ""
 "hyperparameter optimization, especially when the dataset is large. You "
 "can further speed the process by caching the intermediate results using "
 "the ``memory`` parameter in the pipeline, as shown in the video above!"
-msgstr ""
+msgstr "🚀 利用多核将加速超参数优化的过程，尤其是在数据集较大时。您可以通过在管道中使用 ``memory`` 参数缓存中间结果来进一步加速该过程，如上方的视频所示！"
 
 #: ../../source/_explore/optimize.rst:151
 msgid "**RandomizedSearchCV**"
-msgstr ""
+msgstr "**RandomizedSearchCV**"
 
 #: ../../source/_explore/optimize.rst:152
 msgid ""
@@ -215,15 +215,15 @@ msgid ""
 "performance using cross-validation. This method is useful when the "
 "hyperparameter space is large and well-defined. A visual representation "
 "of the ``RandomizedSearchCV`` process is shown below:"
-msgstr ""
+msgstr "``RandomizedSearchCV`` 是一种从超参数空间中采样固定数量的随机组合，并使用交叉验证评估其性能的方法。当超参数空间较大且定义明确时，此方法很有用。``RandomizedSearchCV`` 过程的可视化表示如下所示："
 
 #: ../../source/_explore/optimize.rst:155
 msgid "RandomizedSearchCV process"
-msgstr ""
+msgstr "RandomizedSearchCV 过程"
 
 #: ../../source/_explore/optimize.rst:160
 msgid "The code to perform the ``RandomizedSearchCV`` is shown below:"
-msgstr ""
+msgstr "执行 ``RandomizedSearchCV`` 的代码如下所示："
 
 #: ../../source/_explore/optimize.rst:191
 msgid ""
@@ -234,7 +234,7 @@ msgid ""
 "hyperparameter space as in the ``GridSearchCV`` example. The ``scoring``,"
 " ``cv``, and ``n_jobs`` parameters are the same as in the "
 "``GridSearchCV`` example."
-msgstr ""
+msgstr "``n_iter`` 参数指定要从超参数空间中采样的随机组合数量。在这种情况下，我们采样 10 个随机组合。``param_distributions`` 参数指定要从中采样的超参数空间。在这种情况下，我们使用与 ``GridSearchCV`` 示例中相同的超参数空间。``scoring``、``cv`` 和 ``n_jobs`` 参数与 ``GridSearchCV`` 示例中的相同。"
 
 #: ../../source/_explore/optimize.rst:196
 msgid ""
@@ -242,5 +242,4 @@ msgid ""
 "more datapoints in the hyperparameter space, which can lead to better "
 "results than ``GridSearchCV``, especially when the hyperparameter space "
 "is large."
-msgstr ""
-
+msgstr "如上方的视频所述，``RandomizedSearchCV`` 允许在超参数空间中探索更多的数据点，这可能导致比 ``GridSearchCV`` 更好的结果，尤其是在超参数空间较大时。"
