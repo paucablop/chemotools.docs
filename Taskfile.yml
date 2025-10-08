@@ -24,12 +24,16 @@ tasks:
       - uv run sphinx-build -b html {{.SPHINX_SOURCE}} {{.SPHINX_BUILD}}/html -j auto
 
   docs:html-es:
+    desc: Build Spanish HTML documentation with button translation fix
     cmds:
       - uv run sphinx-build -b html -D language=es -D html_theme_options.switcher.version_match=es {{.SPHINX_SOURCE}} {{.SPHINX_BUILD}}/html/es -j auto
+      - uv run python docs/fix_translated_buttons.py {{.SPHINX_BUILD}}/html/es es
 
   docs:html-zh:
+    desc: Build Chinese HTML documentation with button translation fix
     cmds:
       - uv run sphinx-build -b html -D language=zh_CN -D html_theme_options.switcher.version_match=zh_CN {{.SPHINX_SOURCE}} {{.SPHINX_BUILD}}/html/zh_CN -j auto
+      - uv run python docs/fix_translated_buttons.py {{.SPHINX_BUILD}}/html/zh_CN zh_CN
 
 
   docs:html-all:

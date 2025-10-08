@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the chemotools package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: chemotools \n"
@@ -100,13 +99,19 @@ msgid "Start exploring"
 msgstr "开始探索"
 
 #: ../../source/index.rst:70
+# NOTE: Button text translation is handled by post-processing script (fix_translated_buttons.py)
+# to work around sphinx-design's i18n limitation. Keep this for reference.
 msgid "Discover the environment"
-msgstr "探索环境"
+msgstr ""
 
 #: ../../source/index.rst:81
+# NOTE: Button text translation is handled by post-processing script (fix_translated_buttons.py)
+# to work around sphinx-design's i18n limitation. Keep this for reference.
 msgid "Chemometrics tutorials"
-msgstr "化学计量学教程"
+msgstr ""
 
 #: ../../source/index.rst:92
+# NOTE: Button text translation is handled by post-processing script (fix_translated_buttons.py)
+# to work around sphinx-design's i18n limitation. Keep this for reference.
 msgid "Check out our Webinar"
-msgstr "查看我们的网络研讨会"
+msgstr ""
