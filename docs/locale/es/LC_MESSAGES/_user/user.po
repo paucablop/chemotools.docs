@@ -94,7 +94,7 @@ msgstr ""
 
 #: ../../source/_user/user.rst:73
 msgid ""
-"**Congratulations!** You’ve just built your first chemotools workflow in "
+"**Congratulations!** You have just built your first chemotools workflow in "
 "Python 🎯"
 msgstr ""
 

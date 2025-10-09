@@ -94,6 +94,6 @@ msgstr "对模型优化感到好奇？请阅读 `优化指南 <../_explore/optim
 
 #: ../../source/_user/user.rst:73
 msgid ""
-"**Congratulations!** You've just built your first chemotools workflow in "
+"**Congratulations!** You have just built your first chemotools workflow in "
 "Python 🎯"
 msgstr "恭喜！您刚刚在 Python 中构建了第一个 chemotools 工作流程 🎯"

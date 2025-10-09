@@ -70,4 +70,4 @@ Combine preprocessing and modelling steps in a single pipeline.
 .. hint::
     **Curious about model optimization?** Read the `optimization guide <../_explore/optimize.html>`_.
 
-**Congratulations!** You’ve just built your first chemotools workflow in Python 🎯
+**Congratulations!** You have just built your first chemotools workflow in Python 🎯
