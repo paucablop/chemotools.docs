@@ -52,8 +52,8 @@ msgstr ""
 
 #: ../../source/_explore/optimize.rst:15
 msgid ""
-"In this section, we’ll investigate different options to optimize these "
-"choices using ``chemotools`` and Scikit-Learn’s model optimization "
+"In this section, we will investigate different options to optimize these "
+"choices using ``chemotools`` and Scikit-Learn's model optimization "
 "options such as ``GridSearchCV`` or ``RandomSearchCV``, which will help "
 "searching the hyperparameter space systematically and selecting the best "
 "hyper parameters."
