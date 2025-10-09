@@ -21,122 +21,122 @@ msgstr ""
 
 #: ../../source/_learn/pls_classification.ipynb:9
 msgid "**Classify coffees with PLS-DA**"
-msgstr ""
+msgstr "**使用 PLS-DA 分类咖啡**"
 
 #: ../../source/_learn/pls_classification.ipynb:20
 msgid ""
 "💡\\ **NOTE:** This document is a Jupyter notebook. You can download the "
 "source file and run it in your Jupyter environment!"
-msgstr ""
+msgstr "💡\\ **注意：** 本文档是一个 Jupyter 笔记本。您可以下载源文件并在您的 Jupyter 环境中运行！"
 
 #: ../../source/_learn/pls_classification.ipynb:32
 msgid "**Introduction**"
-msgstr ""
+msgstr "**引言**"
 
 #: ../../source/_learn/pls_classification.ipynb:34
 msgid ""
 "*Can you taste the difference between a coffee from Ethiopia, Brazil, or "
 "Vietnam?*"
-msgstr ""
+msgstr "*您能品尝出埃塞俄比亚、巴西和越南咖啡的区别吗？*"
 
 #: ../../source/_learn/pls_classification.ipynb:36
 msgid ""
 "In this tutorial, we will use spectroscopy and machine learning to find "
 "the origin of three different coffees produced in:"
-msgstr ""
+msgstr "在本教程中，我们将使用光谱学和机器学习来找出三种不同咖啡的产地："
 
 #: ../../source/_learn/pls_classification.ipynb:44
 msgid ""
 "These spectra have been collected from brewed coffee using Attenuated "
 "Total Reflectance Mid-Infrared Spectroscopy (ATR-MIR)."
-msgstr ""
+msgstr "这些光谱是通过衰减全反射中红外光谱（ATR-MIR）从冲泡咖啡中收集的。"
 
 #: ../../source/_learn/pls_classification.ipynb:46
 msgid ""
 "In this guide, we'll walk through the steps to create a classification "
 "model that can differenciate the unique fingerprint of each coffee's "
 "origin from its spectral signature."
-msgstr ""
+msgstr "在本指南中，我们将逐步创建一个分类模型，该模型可以从光谱特征中区分每种咖啡产地的独特指纹。"
 
 #: ../../source/_learn/pls_classification.ipynb:48
 msgid ""
 "So, grab your favorite coffee mug, prepare to delve into the world of "
 "data-driven discovery, and let's embark on this aromatic journey."
-msgstr ""
+msgstr "所以，拿起您最喜欢的咖啡杯，准备深入数据驱动的发现世界，让我们开始这段芳香之旅。"
 
 #: ../../source/_learn/pls_classification.ipynb:50
 msgid ""
 "💡\\ **NOTE:** In our dataset, we've roasted all the coffee under the same"
 " conditions, but here's the twist: Ethiopian and Brazilian beans were "
 "brewed into espresso, while Vietnamese coffee was brewed on a moka pot ✨"
-msgstr ""
+msgstr "💡\\ **注意：** 在我们的数据集中，我们在相同条件下烘焙了所有咖啡，但有一个转折：埃塞俄比亚和巴西咖啡豆被冲泡成意式浓缩咖啡，而越南咖啡则用摩卡壶冲泡 ✨"
 
 #: ../../source/_learn/pls_classification.ipynb:62
 msgid "**Objective**"
-msgstr ""
+msgstr "**目标**"
 
 #: ../../source/_learn/pls_classification.ipynb:64
 msgid ""
 "In this exercise we will build a PLS-DA model to classify the origin of "
 "coffee samples from three different origins."
-msgstr ""
+msgstr "在本练习中，我们将构建一个 PLS-DA 模型来分类来自三个不同产地的咖啡样本。"
 
 #: ../../source/_learn/pls_classification.ipynb:76
 msgid "**Before starting**"
-msgstr ""
+msgstr "**开始之前**"
 
 #: ../../source/_learn/pls_classification.ipynb:78
 msgid ""
 "Before we start, you need to be sure to have the following dependencies "
 "installed:"
-msgstr ""
+msgstr "在开始之前，您需要确保已安装以下依赖项："
 
 #: ../../source/_learn/pls_classification.ipynb:88
 msgid "You can install them using"
-msgstr ""
+msgstr "您可以使用以下命令安装它们"
 
 #: ../../source/_learn/pls_classification.ipynb:108
 msgid "**Loading the coffee dataset**"
-msgstr ""
+msgstr "**加载咖啡数据集**"
 
 #: ../../source/_learn/pls_classification.ipynb:110
 msgid ""
 "The coffee dataset can be directly accessed from the "
 "``chemotools.datasets`` module, using the ``load_coffee()`` function."
-msgstr ""
+msgstr "咖啡数据集可以直接从 ``chemotools.datasets`` 模块中使用 ``load_coffee()`` 函数访问。"
 
 #: ../../source/_learn/pls_classification.ipynb:132
 msgid ""
 "The ``load_coffee()`` function returns two variables: ``spectra`` and "
 "``labels``:"
-msgstr ""
+msgstr "``load_coffee()`` 函数返回两个变量：``spectra`` 和 ``labels``："
 
 #: ../../source/_learn/pls_classification.ipynb:134
 msgid ""
 "``spectra``: A ``pandas.DataFrame`` containing the spectra of the coffee "
 "samples as rows."
-msgstr ""
+msgstr "``spectra``：一个 ``pandas.DataFrame``，包含咖啡样本的光谱，每行代表一个样本。"
 
 #: ../../source/_learn/pls_classification.ipynb:135
 msgid "``labels``: A ``pandas.DataFrame`` containing the origin of each sample."
-msgstr ""
+msgstr "``labels``：一个 ``pandas.DataFrame``，包含每个样本的产地。"
 
 #: ../../source/_learn/pls_classification.ipynb:139
 msgid ""
 "💡\\ **NOTE:** If you are interested in working with ``polars.DataFrame`` "
 "you can simply use the ``load_coffee(set_output=\"polars\")``."
-msgstr ""
+msgstr "💡\\ **注意：** 如果您有兴趣使用 ``polars.DataFrame``，您可以简单地使用 ``load_coffee(set_output=\"polars\")``。"
 
 #: ../../source/_learn/pls_classification.ipynb:151
 msgid "**Explore, plot and color**"
-msgstr ""
+msgstr "**探索、绘图和着色**"
 
 #: ../../source/_learn/pls_classification.ipynb:153
 msgid ""
 "Before we dive deep into the coffee data analysis, we will quickly "
 "inspect datasets. Let's get a snapshot of the data sizes and kickstart "
 "our analysis."
-msgstr ""
+msgstr "在我们深入咖啡数据分析之前，我们将快速检查数据集。让我们先了解数据大小的概况，然后开始我们的分析。"
 
 #: ../../source/_learn/pls_classification.ipynb:201
 msgid ""
@@ -145,14 +145,14 @@ msgid ""
 "The ``labels`` dataset contains the origin of each sample. To analyze the"
 " ``labels`` dataset we can use the ``value_counts()`` method from "
 "``pandas`` and make a bar plot."
-msgstr ""
+msgstr "``spectra`` 数据集包含 60 个样本（行）和 1841 个特征（列）。每个样本是一个光谱，每个特征是一个波数。``labels`` 数据集包含每个样本的产地。要分析 ``labels`` 数据集，我们可以使用 ``pandas`` 的 ``value_counts()`` 方法并制作条形图。"
 
 #: ../../source/_learn/pls_classification.ipynb:259
 msgid ""
 "We have a balanced dataset with 20 samples per class. Now that we have a "
 "better understanding of our data, let's start plotting the spectra. We "
 "will plot the different spectra and color them by their origin."
-msgstr ""
+msgstr "我们有一个平衡的数据集，每个类别有 20 个样本。既然我们对数据有了更好的理解，让我们开始绘制光谱。我们将绘制不同的光谱，并按它们的产地着色。"
 
 #: ../../source/_learn/pls_classification.ipynb:325
 msgid ""
@@ -161,7 +161,7 @@ msgid ""
 "origin of such differences. Let's start with an exploratory analysis. We "
 "can do that by using a Principal Component Analysis (PCA) to reduce the "
 "dimensionality of the data."
-msgstr ""
+msgstr "从视觉上看，我们可以看到三种咖啡的光谱存在一些差异。然而，我们需要更深入地了解这些差异的起源。让我们从探索性分析开始。我们可以使用主成分分析（PCA）来降低数据的维度。"
 
 #: ../../source/_learn/pls_classification.ipynb:327
 msgid ""
@@ -170,7 +170,7 @@ msgid ""
 " will use the ``PCA()`` method, also from ``scikit-learn``, to reduce the"
 " dimensionality of the data to two principal components. Finally, we will"
 " plot the scores and color them according to the origin of the coffee."
-msgstr ""
+msgstr "为此，我们将首先使用 ``scikit-learn`` 的 ``StandardScaler()`` 预处理方法对数据进行均值中心化。然后，我们将使用同样来自 ``scikit-learn`` 的 ``PCA()`` 方法将数据的维度降低到两个主成分。最后，我们将绘制得分图，并根据咖啡的产地为其着色。"
 
 #: ../../source/_learn/pls_classification.ipynb:329
 msgid ""
@@ -181,17 +181,17 @@ msgid ""
 "information about the absorbance of the sample. We can mean center the "
 "data using the ``StandardScaler()`` and setting the ``use_std`` argument "
 "to ``False``."
-msgstr ""
+msgstr "💡\\ **注意：** 使用光谱数据时，我们不想将光谱缩放到单位方差。相反，我们希望将数据均值中心化。这是因为光谱的方差与样品的吸光度有关。如果我们将数据缩放到单位方差，就会丢失关于样品吸光度的信息。我们可以使用 ``StandardScaler()`` 并将 ``use_std`` 参数设置为 ``False`` 来对数据进行均值中心化。"
 
 #: ../../source/_learn/pls_classification.ipynb:413
 msgid ""
 "The results show that there are some differences between the spectra of "
 "the three coffes."
-msgstr ""
+msgstr "结果显示三种咖啡的光谱之间存在一些差异。"
 
 #: ../../source/_learn/pls_classification.ipynb:425
 msgid "**Preprocessing the spectra**"
-msgstr ""
+msgstr "**预处理光谱**"
 
 #: ../../source/_learn/pls_classification.ipynb:427
 msgid ""
@@ -201,7 +201,7 @@ msgid ""
 "spectroscopic data, and this is where ``chemotools`` becomes very handy: "
 "we harness the power of such research and make it available to you using "
 "``scikit-learn`` standards."
-msgstr ""
+msgstr "预处理的目标是从光谱中去除非化学系统变异，例如基线漂移或散射效应。关于光谱数据预处理已有大量研究，这正是 ``chemotools`` 变得非常方便的地方：我们利用这些研究的力量，并使用 ``scikit-learn`` 标准将其提供给您。"
 
 #: ../../source/_learn/pls_classification.ipynb:429
 msgid ""
@@ -211,35 +211,35 @@ msgid ""
 "started/scikit_learn_integration.html#working-with-pipelines>`__ is a "
 "sequence of steps that are applied to the data in a given order. In our "
 "case, we will apply the following steps:"
-msgstr ""
+msgstr "我们将使用 ``sklearn.pipeline`` 中的 ``make_pipeline()`` 方法在管道中构建预处理步骤。`管道 <https://paucablop.github.io/chemotools/get-started/scikit_learn_integration.html#working-with-pipelines>`__ 是按给定顺序应用于数据的一系列步骤。在我们的案例中，我们将应用以下步骤："
 
 #: ../../source/_learn/pls_classification.ipynb:431
 msgid ""
 "`Standard normal variate (SNV) "
 "<https://paucablop.github.io/chemotools/docs/scatter.html#standard-"
 "normal-variate>`__ to remove scattering effects."
-msgstr ""
+msgstr "`标准正态变量（SNV） <https://paucablop.github.io/chemotools/docs/scatter.html#standard-normal-variate>`__ 以去除散射效应。"
 
 #: ../../source/_learn/pls_classification.ipynb:433
 msgid ""
 "`Derivative <https://paucablop.github.io/chemotools/docs/derivative.html"
 "#savitzky-golay-derivative>`__ to remove both additive and multiplicative"
 " scattering effects."
-msgstr ""
+msgstr "`导数 <https://paucablop.github.io/chemotools/docs/derivative.html#savitzky-golay-derivative>`__ 以去除加性和乘性散射效应。"
 
 #: ../../source/_learn/pls_classification.ipynb:435
 msgid ""
 "`Range cut "
 "<https://paucablop.github.io/chemotools/docs/feature_selection.html"
 "#range-cut>`__ to select the most relevant wavenumbers."
-msgstr ""
+msgstr "`范围截取 <https://paucablop.github.io/chemotools/docs/feature_selection.html#range-cut>`__ 以选择最相关的波数。"
 
 #: ../../source/_learn/pls_classification.ipynb:437
 msgid ""
 "`Standardize <https://scikit-"
 "learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html>`__"
 " remove the mean from the dataset."
-msgstr ""
+msgstr "`标准化 <https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html>`__ 从数据集中去除均值。"
 
 #: ../../source/_learn/pls_classification.ipynb:470
 msgid ""
@@ -249,24 +249,24 @@ msgid ""
 "``chemotools``, while ``StandardScaler`` and ``pipelines`` are "
 "functinlaities provided by ``scikit-learn``. This is the power of "
 "``chemotools``, it is designed to work seamlessly with ``scikit-learn``."
-msgstr ""
+msgstr "💡\\ **注意：** 这很酷！看到我们如何将化学计量学与 ``scikit-learn`` 集成吗？``StandardNormalVariate``、``SavitizkyGolay`` 和 ``RangeCut`` 都是在 ``chemotools`` 中实现的预处理技术，而 ``StandardScaler`` 和 ``pipelines`` 是 ``scikit-learn`` 提供的功能。这就是 ``chemotools`` 的强大之处，它被设计为与 ``scikit-learn`` 无缝协作。"
 
 #: ../../source/_learn/pls_classification.ipynb:472
 msgid ""
 "Let's plot the preprocessed spectra to see the effect of the "
 "preprocessing steps."
-msgstr ""
+msgstr "让我们绘制预处理后的光谱，看看预处理步骤的效果。"
 
 #: ../../source/_learn/pls_classification.ipynb:509
 msgid "**Building a classifier**"
-msgstr ""
+msgstr "**构建分类器**"
 
 #: ../../source/_learn/pls_classification.ipynb:511
 msgid ""
 "In this section, we'll dive into the world of classification. Our goal? "
 "To create a classification model that can distinguish the origins of our "
 "coffees using their spectral signatures."
-msgstr ""
+msgstr "在本节中，我们将深入分类的世界。我们的目标？创建一个分类模型，可以使用咖啡的光谱特征来区分它们的产地。"
 
 #: ../../source/_learn/pls_classification.ipynb:513
 msgid ""
@@ -277,20 +277,20 @@ msgid ""
 "spectral signatures with high accuracy. It's a powerful tool for pattern "
 "recognition in complex datasets, making it ideal for our coffee origin "
 "classification."
-msgstr ""
+msgstr "偏最小二乘判别分析（PLS-DA）是一种用于分类的简单统计技术。PLS-DA 模拟输入变量（光谱数据）和类别标签（咖啡产地）之间的关系，使其能够基于光谱特征以高精度分类新样本。它是复杂数据集中模式识别的强大工具，使其成为我们咖啡产地分类的理想选择。"
 
 #: ../../source/_learn/pls_classification.ipynb:515
 msgid ""
 "Before we start our PLS-DA algorithm, we need to encode the labels into "
 "numbers. We can do that using the ``LabelEncoder()`` method from "
 "``scikit-learn``."
-msgstr ""
+msgstr "在我们开始 PLS-DA 算法之前，我们需要将标签编码为数字。我们可以使用 ``scikit-learn`` 的 ``LabelEncoder()`` 方法来实现。"
 
 #: ../../source/_learn/pls_classification.ipynb:517
 msgid ""
 "``LabelEncoder()`` will assign a categorical value to each of the labels "
 "in our dataset (0 for Brasil, 1 for Ethiopia an 2 for Vietnam)."
-msgstr ""
+msgstr "``LabelEncoder()`` 将为数据集中的每个标签分配一个分类值（0 代表巴西，1 代表埃塞俄比亚，2 代表越南）。"
 
 #: ../../source/_learn/pls_classification.ipynb:546
 msgid ""
@@ -298,7 +298,7 @@ msgid ""
 "values, we are ready to train our PLS-DA model. However, before we start,"
 " we will divide our data into a training and a testing sets using the "
 "``train_test_split()`` method from the ``scikit-learn`` library."
-msgstr ""
+msgstr "既然我们的咖啡产地标签已编码为数值，我们准备训练我们的 PLS-DA 模型。然而，在开始之前，我们将使用 ``scikit-learn`` 库中的 ``train_test_split()`` 方法将数据分为训练集和测试集。"
 
 #: ../../source/_learn/pls_classification.ipynb:548
 #, python-format
@@ -308,13 +308,13 @@ msgid ""
 "reserving the remaining 20% for testing. This division ensures that our "
 "model's performance can be evaluated on unseen data, a crucial step in "
 "assessing its real-world applicability and predictive power."
-msgstr ""
+msgstr "我们的策略是将数据集的 80% 分配给模型训练，使其能够从光谱数据的不同特征中学习，同时保留剩余的 20% 用于测试。这种划分确保我们可以在未见过的数据上评估模型的性能，这是评估其实际适用性和预测能力的关键步骤。"
 
 #: ../../source/_learn/pls_classification.ipynb:572
 msgid ""
 "💡\\ **NOTE:** We set the ``random_state`` argument to 42 to ensure "
 "reproducibility of the results."
-msgstr ""
+msgstr "💡\\ **注意：** 我们将 ``random_state`` 参数设置为 42 以确保结果的可重现性。"
 
 #: ../../source/_learn/pls_classification.ipynb:574
 msgid ""
@@ -323,13 +323,13 @@ msgid ""
 "learn``. We will set the number of components to 2 and the ``scale`` "
 "argument to ``False``. This is because we have already scaled the data in"
 " the preprocessing step."
-msgstr ""
+msgstr "既然我们有了训练集和测试集，我们可以开始构建我们的 PLS-DA 模型。我们将使用 ``scikit-learn`` 的 ``PLSRegression()`` 方法。我们将组件数设置为 2，并将 ``scale`` 参数设置为 ``False``。这是因为我们已经在预处理步骤中对数据进行了缩放。"
 
 #: ../../source/_learn/pls_classification.ipynb:603
 msgid ""
 "💡\\ **NOTE:** We have chosen two components because from our PCA analysis"
 " we saw that using two components we can separate the three classes."
-msgstr ""
+msgstr "💡\\ **注意：** 我们选择两个组件是因为从我们的 PCA 分析中我们看到使用两个组件可以分离三个类别。"
 
 #: ../../source/_learn/pls_classification.ipynb:605
 msgid ""
@@ -339,31 +339,31 @@ msgid ""
 " and the `confusion matrix <https://scikit-"
 "learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html>`__"
 " methods from ``scikit-learn`` to evaluate the performance of the model."
-msgstr ""
+msgstr "既然我们已经训练了模型，我们可以评估其性能。我们将使用 ``scikit-learn`` 的 `准确率分数 <https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html>`__ 和 `混淆矩阵 <https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html>`__ 方法来评估模型的性能。"
 
 #: ../../source/_learn/pls_classification.ipynb:665
 msgid "**Recap**"
-msgstr ""
+msgstr "**回顾**"
 
 #: ../../source/_learn/pls_classification.ipynb:667
 msgid ""
 "**The Coffee Dataset:** Explore the unique world of coffee "
 "differentiation through Infrared Spectroscopy. This dataset contains IR "
 "spectra of coffee samples from Ethiopia, Brazil, and Vietnam."
-msgstr ""
+msgstr "**咖啡数据集：** 通过红外光谱探索咖啡区分的独特世界。该数据集包含来自埃塞俄比亚、巴西和越南的咖啡样本的红外光谱。"
 
 #: ../../source/_learn/pls_classification.ipynb:669
 msgid ""
 "**Importing the Data:** Effortlessly load the coffee spectra into a "
 "Pandas DataFrame using chemotools, making data analysis a breeze."
-msgstr ""
+msgstr "**导入数据：** 使用 chemotools 轻松将咖啡光谱加载到 Pandas DataFrame 中，使数据分析变得轻而易举。"
 
 #: ../../source/_learn/pls_classification.ipynb:671
 msgid ""
 "**Explore, Plot, and Color:** Gain insights into the dataset's size and "
 "composition, showcasing its 60 samples and 1841 features. Visualize the "
 "data with colorful coffee spectra plots."
-msgstr ""
+msgstr "**探索、绘图和着色：** 深入了解数据集的大小和组成，展示其 60 个样本和 1841 个特征。通过彩色咖啡光谱图可视化数据。"
 
 #: ../../source/_learn/pls_classification.ipynb:673
 msgid ""
@@ -371,7 +371,7 @@ msgid ""
 "where chemotools comes into play. Eliminate non-chemical systematic "
 "variations using techniques like Standard Normal Variate (SNV), "
 "Derivative, Range Cut, and Standardization."
-msgstr ""
+msgstr "**预处理光谱：** 深入预处理的世界，chemotools 在此发挥作用。使用标准正态变量（SNV）、导数、范围截取和标准化等技术消除非化学系统变异。"
 
 #: ../../source/_learn/pls_classification.ipynb:675
 msgid ""
@@ -380,12 +380,11 @@ msgid ""
 "classification. Encode labels into numerical values and split the data "
 "into training and testing sets. Train the model and evaluate its "
 "performance, achieving an impressive confusion matrix."
-msgstr ""
+msgstr "**数据建模：** 进入机器学习的领域，使用偏最小二乘判别分析（PLS-DA），这是一个强大的分类工具。将标签编码为数值，并将数据分为训练集和测试集。训练模型并评估其性能，获得令人印象深刻的混淆矩阵。"
 
 #: ../../source/_learn/pls_classification.ipynb:677
 msgid ""
 "This tutorial showcases the beauty of data science and chemistry, "
 "bringing the art of coffee classification to life within the rich world "
 "of spectral data."
-msgstr ""
-
+msgstr "本教程展示了数据科学和化学的美丽，在丰富的光谱数据世界中将咖啡分类的艺术变为现实。"

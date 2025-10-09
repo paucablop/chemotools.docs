@@ -21,17 +21,17 @@ msgstr ""
 
 #: ../../source/_learn/pls_regression.ipynb:9
 msgid "**Glucose monitoring with PLS**"
-msgstr ""
+msgstr "**使用 PLS 进行葡萄糖监测**"
 
 #: ../../source/_learn/pls_regression.ipynb:20
 msgid ""
 "💡\\ **NOTE:** This document is a Jupyter notebook. You can download the "
 "source file and run it in your Jupyter environment!"
-msgstr ""
+msgstr "💡\\ **注意：** 本文档是一个 Jupyter 笔记本。您可以下载源文件并在您的 Jupyter 环境中运行！"
 
 #: ../../source/_learn/pls_regression.ipynb:32
 msgid "**Introduction**"
-msgstr ""
+msgstr "**引言**"
 
 #: ../../source/_learn/pls_regression.ipynb:34
 msgid ""
@@ -40,23 +40,23 @@ msgid ""
 "reflectance, mid-infrared (ATR-MIR) spectroscopy, along with reference "
 "measurements using high-performance liquid chromatography (HPLC) for "
 "validation."
-msgstr ""
+msgstr "该数据集通过使用衰减全反射中红外光谱（ATR-MIR）收集的光谱数据以及使用高效液相色谱（HPLC）进行验证的参考测量，提供了关于木质纤维素乙醇发酵的信息。"
 
 #: ../../source/_learn/pls_regression.ipynb:36
 msgid "The project contains two datasets:"
-msgstr ""
+msgstr "该项目包含两个数据集："
 
 #: ../../source/_learn/pls_regression.ipynb:38
 msgid ""
 "**Training Dataset:** Contains spectral data with corresponding HPLC "
 "measurements used to train the partial least squares (PLS) models."
-msgstr ""
+msgstr "**训练数据集：** 包含带有相应 HPLC 测量的光谱数据，用于训练偏最小二乘（PLS）模型。"
 
 #: ../../source/_learn/pls_regression.ipynb:39
 msgid ""
 "**Testing Dataset:** Includes a time series of spectra collected during "
 "fermentation, plus off-line HPLC measurements."
-msgstr ""
+msgstr "**测试数据集：** 包含发酵过程中收集的光谱时间序列，以及离线 HPLC 测量。"
 
 #: ../../source/_learn/pls_regression.ipynb:41
 msgid ""
@@ -65,11 +65,11 @@ msgid ""
 "Information: A Parallel Hybrid Model for Real-Time State Estimation in "
 "Lignocellulosic Ethanol Fermentation.\" (Note that the data in the "
 "article differs from the data provided here.)"
-msgstr ""
+msgstr "有关这些数据集以及如何使用它们来监测发酵的更多信息，请参阅我们的文章：\"将数据转化为信息：木质纤维素乙醇发酵中实时状态估计的并行混合模型\"（请注意，文章中的数据与此处提供的数据不同）。"
 
 #: ../../source/_learn/pls_regression.ipynb:53
 msgid "**Objective**"
-msgstr ""
+msgstr "**目标**"
 
 #: ../../source/_learn/pls_regression.ipynb:55
 msgid ""
@@ -77,50 +77,50 @@ msgid ""
 "concentration in real-time using ATR-MIR spectroscopy. You'll train the "
 "model using a small training set of spiked spectra, then test its "
 "performance with spectra from an actual fermentation process."
-msgstr ""
+msgstr "在本练习中，您将构建一个 PLS 模型，使用 ATR-MIR 光谱实时监测葡萄糖浓度。您将使用一个小的加标光谱训练集来训练模型，然后使用实际发酵过程中的光谱测试其性能。"
 
 #: ../../source/_learn/pls_regression.ipynb:67
 msgid "**Before starting**"
-msgstr ""
+msgstr "**开始之前**"
 
 #: ../../source/_learn/pls_regression.ipynb:69
 msgid ""
 "Before we start, you need to be sure to have the following dependencies "
 "installed:"
-msgstr ""
+msgstr "在开始之前，您需要确保已安装以下依赖项："
 
 #: ../../source/_learn/pls_regression.ipynb:79
 msgid "You can install them using"
-msgstr ""
+msgstr "您可以使用以下命令安装它们"
 
 #: ../../source/_learn/pls_regression.ipynb:99
 msgid "**Loading the training data**"
-msgstr ""
+msgstr "**加载训练数据**"
 
 #: ../../source/_learn/pls_regression.ipynb:101
 msgid ""
 "You can access the from the ``chemotools.datasets`` module with the "
 "``load_fermentation_train()`` function."
-msgstr ""
+msgstr "您可以从 ``chemotools.datasets`` 模块中使用 ``load_fermentation_train()`` 函数访问。"
 
 #: ../../source/_learn/pls_regression.ipynb:123
 msgid ""
 "The ``load_fermentation_train()`` function returns two "
 "``pandas.DataFrame``:"
-msgstr ""
+msgstr "``load_fermentation_train()`` 函数返回两个 ``pandas.DataFrame``："
 
 #: ../../source/_learn/pls_regression.ipynb:125
 msgid ""
 "``spectra``: This dataframe contains spectral data, with columns "
 "representing wavenumbers and rows representing samples."
-msgstr ""
+msgstr "``spectra``：此数据框包含光谱数据，列代表波数，行代表样本。"
 
 #: ../../source/_learn/pls_regression.ipynb:127
 msgid ""
-"``hplc``: Here, you’ll find reference HPLC measurements for the glucose "
+"``hplc``: Here, you'll find reference HPLC measurements for the glucose "
 "concentration (in g/L) of each sample, stored in a single column labeled "
 "``glucose``."
-msgstr ""
+msgstr "``hplc``：在这里，您将找到每个样本葡萄糖浓度（以 g/L 为单位）的参考 HPLC 测量值，存储在名为 ``glucose`` 的单个列中。"
 
 #: ../../source/_learn/pls_regression.ipynb:131
 msgid ""
@@ -132,70 +132,70 @@ msgid ""
 "``str``. To extract the wavenumbers as ``float`` from the "
 "``polars.DataFrame`` you can use the "
 "``df.columns.to_numpy(dtype=np.float64)`` method."
-msgstr ""
+msgstr "💡\\ **注意：** 如果您有兴趣使用 ``polars.DataFrame``，您可以简单地使用 ``load_fermentation_train(set_output=\"polars\")``。请注意，如果您选择使用 ``polars.DataFrame``，波数以 ``str`` 形式在列名中给出，而不是 ``float``。这是因为 ``polars`` 不支持 ``str`` 以外的类型的列名。要从 ``polars.DataFrame`` 中提取波数作为 ``float``，您可以使用 ``df.columns.to_numpy(dtype=np.float64)`` 方法。"
 
 #: ../../source/_learn/pls_regression.ipynb:144
 msgid "**Exploring the training data**"
-msgstr ""
+msgstr "**探索训练数据**"
 
 #: ../../source/_learn/pls_regression.ipynb:146
 msgid ""
-"Before starting with data modeling, it’s important to get familiar with "
+"Before starting with data modeling, it's important to get familiar with "
 "your data. Let's start by answering some basic questions:"
-msgstr ""
+msgstr "在开始数据建模之前，熟悉您的数据很重要。让我们从回答一些基本问题开始："
 
 #: ../../source/_learn/pls_regression.ipynb:148
 msgid "*How many samples are there?*"
-msgstr ""
+msgstr "*有多少个样本？*"
 
 #: ../../source/_learn/pls_regression.ipynb:149
 msgid "*and how many wavenumbers are available?*"
-msgstr ""
+msgstr "*有多少个可用的波数？*"
 
 #: ../../source/_learn/pls_regression.ipynb:197
-msgid "Now that we have the basics down, let’s take a closer look at the data."
-msgstr ""
+msgid "Now that we have the basics down, let's take a closer look at the data."
+msgstr "既然我们已经掌握了基础知识，让我们更仔细地看看数据。"
 
 #: ../../source/_learn/pls_regression.ipynb:199
 msgid ""
 "For the spectral data, you can use the ``pandas.DataFrame.head()`` method"
 " to examine the first 5 rows:"
-msgstr ""
+msgstr "对于光谱数据，您可以使用 ``pandas.DataFrame.head()`` 方法检查前 5 行："
 
 #: ../../source/_learn/pls_regression.ipynb:483
 msgid ""
-"For brevity, we won’t display the entire table here, but you’ll notice "
+"For brevity, we won't display the entire table here, but you'll notice "
 "that each column corresponds to a wavenumber, and each row represents a "
 "sample."
-msgstr ""
+msgstr "为简洁起见，我们不会在此显示整个表格，但您会注意到每列对应一个波数，每行代表一个样本。"
 
 #: ../../source/_learn/pls_regression.ipynb:485
 msgid ""
 "Turning to the HPLC data, the ``pandas.DataFrame.describe()`` method "
 "provides a summary of the glucose column:"
-msgstr ""
+msgstr "转向 HPLC 数据，``pandas.DataFrame.describe()`` 方法提供了葡萄糖列的摘要："
 
 #: ../../source/_learn/pls_regression.ipynb:621
 msgid ""
 "This summary offers insights into the distribution of the glucose "
 "concentration. With this practical knowledge, we are now ready to "
 "continue with our data modeling journey."
-msgstr ""
+msgstr "此摘要提供了对葡萄糖浓度分布的见解。有了这些实用知识，我们现在准备继续我们的数据建模之旅。"
 
 #: ../../source/_learn/pls_regression.ipynb:633
 msgid "**Visualizing the training data**"
-msgstr ""
+msgstr "**可视化训练数据**"
 
 #: ../../source/_learn/pls_regression.ipynb:635
 msgid ""
 "To better understand our dataset, we will visualize the data. We will "
 "plot the spectra in the train dataset, with each spectrum color-coded to "
 "reflect its associated glucose concentration. This visual approach "
-"provides a didactic means to understand the dataset’s characteristics, "
+"provides a didactic means to understand the dataset's characteristics, "
 "offering insights into chemical variations among the samples. To do so, "
-"we’ll use the ``matplotlib.pyplot`` module. Remember to install it first "
+"we'll use the ``matplotlib.pyplot`` module. Remember to install it first "
 "using:"
-msgstr ""
+msgstr "为了更好地理解我们的数据集，我们将可视化数据。我们将绘制训练数据集中的光谱，每个光谱根据其相关的葡萄糖浓度进行颜色编码。这种视觉方法提供了一种教学手段来理解数据集的特性，提供对样本间化学变化的见解。为此，我们将使用 ``matplotlib.pyplot`` 模块。请记住首先使用以下命令安装它："
 
 #: ../../source/_learn/pls_regression.ipynb:641
 msgid ""
@@ -205,13 +205,13 @@ msgid ""
 "to work with spectral data. Therefore, we will convert the "
 "``pandas.DataFrame`` to ``numpy.ndarray`` using the "
 "``pandas.DataFrame.to_numpy()`` method."
-msgstr ""
+msgstr "到目前为止，我们使用 ``pandas.DataFrame`` 来表示数据集。``pandas.DataFrame`` 非常适合存储和操作许多大型数据集。然而，我经常发现使用 ``numpy.ndarray`` 处理光谱数据更方便。因此，我们将使用 ``pandas.DataFrame.to_numpy()`` 方法将 ``pandas.DataFrame`` 转换为 ``numpy.ndarray``。"
 
 #: ../../source/_learn/pls_regression.ipynb:643
 msgid ""
 "So our first step will be to transform our ``pandas.DataFrame`` to "
 "``numpy.ndarray``:"
-msgstr ""
+msgstr "所以我们的第一步是将我们的 ``pandas.DataFrame`` 转换为 ``numpy.ndarray``："
 
 #: ../../source/_learn/pls_regression.ipynb:672
 msgid ""
@@ -219,40 +219,40 @@ msgid ""
 " color-codes each spectrum according to its glucose concentration. This "
 "approach helps visualize the relationship between spectral patterns and "
 "glucose levels."
-msgstr ""
+msgstr "在绘制数据之前，我们将创建一个专用的绘图函数，根据葡萄糖浓度对每个光谱进行颜色编码。这种方法有助于可视化光谱模式与葡萄糖水平之间的关系。"
 
 #: ../../source/_learn/pls_regression.ipynb:674
 msgid "The function will implement:"
-msgstr ""
+msgstr "该函数将实现："
 
 #: ../../source/_learn/pls_regression.ipynb:676
 msgid ""
 "**Color normalization**: We'll use ``matplotlib.colors.Normalize`` to "
 "scale glucose concentration values to a 0-1 range, making them suitable "
 "for color mapping."
-msgstr ""
+msgstr "**颜色归一化**：我们将使用 ``matplotlib.colors.Normalize`` 将葡萄糖浓度值缩放到 0-1 范围，使其适合颜色映射。"
 
 #: ../../source/_learn/pls_regression.ipynb:678
 msgid ""
 "**Color mapping**: The normalized values will be mapped to colors using a"
 " color map via ``matplotlib.cm.ScalarMappable``."
-msgstr ""
+msgstr "**颜色映射**：归一化的值将通过 ``matplotlib.cm.ScalarMappable`` 使用颜色映射映射到颜色。"
 
 #: ../../source/_learn/pls_regression.ipynb:680
 msgid ""
 "**Colorbar**: We'll add a colorbar to indicate how colors correspond to "
 "glucose concentration values."
-msgstr ""
+msgstr "**颜色条**：我们将添加一个颜色条来指示颜色如何对应葡萄糖浓度值。"
 
 #: ../../source/_learn/pls_regression.ipynb:682
 msgid ""
 "This visualization allows us to compare multiple spectra based on their "
 "associated glucose concentrations."
-msgstr ""
+msgstr "这种可视化使我们能够基于相关的葡萄糖浓度比较多个光谱。"
 
 #: ../../source/_learn/pls_regression.ipynb:759
 msgid "We can now use this function to plot the training dataset:"
-msgstr ""
+msgstr "我们现在可以使用此函数绘制训练数据集："
 
 #: ../../source/_learn/pls_regression.ipynb:787
 msgid ""
@@ -263,11 +263,11 @@ msgid ""
 "the zoom_in=True parameter in our plot_spectra() function to focus on "
 "this region. Later, we'll learn how to properly trim the spectra using "
 "preprocessing functions."
-msgstr ""
+msgstr "这些光谱可能看起来不清楚，因为它们覆盖了广泛的波数范围，包括化学信息很少的区域。为了获得更好的视图，我们应该专注于 950 到 1550 cm-1 之间的\"指纹\"区域，重要的化学特征出现在这里。目前，我们将在 plot_spectra() 函数中使用 zoom_in=True 参数来聚焦此区域。稍后，我们将学习如何使用预处理函数正确修剪光谱。"
 
 #: ../../source/_learn/pls_regression.ipynb:817
 msgid "**Preprocessing the training data**"
-msgstr ""
+msgstr "**预处理训练数据**"
 
 #: ../../source/_learn/pls_regression.ipynb:819
 msgid ""
@@ -276,11 +276,11 @@ msgid ""
 "such as baseline shifts and noise, which can negatively impact model "
 "performance. We'll use the ``chemotools`` and the ``scikit-learn`` "
 "modules to preprocess the spectral data."
-msgstr ""
+msgstr "既然您已经探索了数据集，是时候预处理光谱数据了。此步骤对于去除不需要的变异（如基线漂移和噪声）至关重要，这些变异可能对模型性能产生负面影响。我们将使用 ``chemotools`` 和 ``scikit-learn`` 模块来预处理光谱数据。"
 
 #: ../../source/_learn/pls_regression.ipynb:821
 msgid "We will preprocess the spectra using the following steps:"
-msgstr ""
+msgstr "我们将使用以下步骤预处理光谱："
 
 #: ../../source/_learn/pls_regression.ipynb:823
 msgid ""
@@ -288,14 +288,14 @@ msgid ""
 "<https://paucablop.github.io/chemotools/docs/feature_selection.html"
 "#range-cut>`__: to remove the wavenumbers outside the range between 950 "
 "and 1550 cm-1."
-msgstr ""
+msgstr "`范围截取 <https://paucablop.github.io/chemotools/docs/feature_selection.html#range-cut>`__：去除 950 到 1550 cm-1 范围之外的波数。"
 
 #: ../../source/_learn/pls_regression.ipynb:825
 msgid ""
 "`Linear Correction "
 "<https://paucablop.github.io/chemotools/docs/baseline.html#linear-"
 "baseline-correction>`__: to remove the linear baseline shift."
-msgstr ""
+msgstr "`线性校正 <https://paucablop.github.io/chemotools/docs/baseline.html#linear-baseline-correction>`__：去除线性基线漂移。"
 
 #: ../../source/_learn/pls_regression.ipynb:827
 msgid ""
@@ -304,14 +304,14 @@ msgid ""
 "golay-derivative>`__: calculates the nth order derivative of the spectra "
 "using the Savitzky-Golay method. This is useful to remove additive and "
 "multiplicative scatter effects."
-msgstr ""
+msgstr "`Savitzky-Golay <https://paucablop.github.io/chemotools/docs/derivative.html#savitzky-golay-derivative>`__：使用 Savitzky-Golay 方法计算光谱的 n 阶导数。这对于去除加性和乘性散射效应很有用。"
 
 #: ../../source/_learn/pls_regression.ipynb:829
 msgid ""
 "`Standard Scaler <https://scikit-"
 "learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html>`__:"
 " to scale the spectra to zero mean."
-msgstr ""
+msgstr "`标准缩放器 <https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html>`__：将光谱缩放到零均值。"
 
 #: ../../source/_learn/pls_regression.ipynb:840
 msgid ""
@@ -319,7 +319,7 @@ msgid ""
 "<https://scikit-"
 "learn.org/stable/modules/generated/sklearn.pipeline.make_pipeline.html>`__"
 " function from ``scikit-learn``."
-msgstr ""
+msgstr "我们将使用 ``scikit-learn`` 中的 ```make_pipeline()`` <https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.make_pipeline.html>`__ 函数链接预处理步骤。"
 
 #: ../../source/_learn/pls_regression.ipynb:842
 msgid ""
@@ -329,17 +329,17 @@ msgid ""
 "You can find more information on working with pipelines at our "
 "`documentation page <https://paucablop.github.io/chemotools/get-"
 "started/scikit_learn_integration.html#working-with-pipelines>`__."
-msgstr ""
+msgstr "💡 **注意：** *什么是管道？* 管道是按特定顺序执行的一系列步骤。在我们的案例中，我们将创建一个管道，该管道将按上述顺序执行预处理步骤。您可以在我们的 `文档页面 <https://paucablop.github.io/chemotools/get-started/scikit_learn_integration.html#working-with-pipelines>`__ 上找到有关使用管道的更多信息。"
 
 #: ../../source/_learn/pls_regression.ipynb:875
 msgid "Now we can use the preprocessing pipeline to preprocess the spectra:"
-msgstr ""
+msgstr "现在我们可以使用预处理管道来预处理光谱："
 
 #: ../../source/_learn/pls_regression.ipynb:895
 msgid ""
 "And we can use the ``plot_spectra()`` function to plot the preprocessed "
 "spectra:"
-msgstr ""
+msgstr "我们可以使用 ``plot_spectra()`` 函数绘制预处理后的光谱："
 
 #: ../../source/_learn/pls_regression.ipynb:928
 msgid ""
@@ -349,60 +349,60 @@ msgid ""
 "``StandardScaler`` and ``pipelines`` are functionalities provided by "
 "``scikit-learn`` This is the power of ``chemotools``— it is designed to "
 "work seamlessly with ``scikit-learn``"
-msgstr ""
+msgstr "💡 **注意：** 这很酷！看到我们如何将化学计量学与 scikit-learn 集成吗？``RangeCut``、``LinearCorrection`` 和 ``SavitizkyGolay`` 都是在 ``chemotools`` 中实现的预处理技术，而 ``StandardScaler`` 和 ``pipelines`` 是 ``scikit-learn`` 提供的功能。这就是 ``chemotools`` 的力量——它被设计为与 ``scikit-learn`` 无缝协作。"
 
 #: ../../source/_learn/pls_regression.ipynb:940
 msgid "**Training a PLS model**"
-msgstr ""
+msgstr "**训练 PLS 模型**"
 
 #: ../../source/_learn/pls_regression.ipynb:951
 msgid ""
 "Partial Least Squares (PLS) is a powerful regression technique commonly "
 "used in chemometrics. It works by finding a latent space representation "
 "that maximizes covariance with the target variable."
-msgstr ""
+msgstr "偏最小二乘（PLS）是一种强大的回归技术，常用于化学计量学。它通过找到与目标变量协方差最大的潜在空间表示来工作。"
 
 #: ../../source/_learn/pls_regression.ipynb:953
 msgid ""
 "A critical parameter in PLS modeling is the number of components "
 "(dimensions) in the latent space:"
-msgstr ""
+msgstr "PLS 建模中的一个关键参数是潜在空间中的组件数量（维度）："
 
 #: ../../source/_learn/pls_regression.ipynb:955
 msgid ""
 "Too many components leads to overfitting, where the model captures noise "
 "rather than signal"
-msgstr ""
+msgstr "组件过多会导致过拟合，模型捕获的是噪声而不是信号"
 
 #: ../../source/_learn/pls_regression.ipynb:956
 msgid ""
 "Too few components results in underfitting, missing important patterns in"
 " the data"
-msgstr ""
+msgstr "组件过少会导致欠拟合，错过数据中的重要模式"
 
 #: ../../source/_learn/pls_regression.ipynb:958
 msgid ""
 "When working with limited samples, cross-validation provides a reliable "
 "method for selecting the optimal number of components. This approach:"
-msgstr ""
+msgstr "当使用有限样本时，交叉验证提供了一种可靠的方法来选择最佳组件数量。这种方法："
 
 #: ../../source/_learn/pls_regression.ipynb:960
 msgid "Divides the data into training and validation sets"
-msgstr ""
+msgstr "将数据分为训练集和验证集"
 
 #: ../../source/_learn/pls_regression.ipynb:961
 msgid ""
 "Trains the model on the training set and evaluates it on the validation "
 "set"
-msgstr ""
+msgstr "在训练集上训练模型并在验证集上评估它"
 
 #: ../../source/_learn/pls_regression.ipynb:962
 msgid "Repeats this process with different data splits"
-msgstr ""
+msgstr "使用不同的数据分割重复此过程"
 
 #: ../../source/_learn/pls_regression.ipynb:963
 msgid "Averages the results to estimate the model's generalization error"
-msgstr ""
+msgstr "平均结果以估计模型的泛化误差"
 
 #: ../../source/_learn/pls_regression.ipynb:965
 msgid ""
@@ -410,14 +410,14 @@ msgid ""
 "systematically test different component numbers through cross-validation."
 " This will identify the optimal complexity for our PLS model based on "
 "performance metrics across multiple data splits."
-msgstr ""
+msgstr "对于我们的分析，我们将使用 scikit-learn 的 ``GridSearchCV`` 类通过交叉验证系统地测试不同的组件数量。这将基于多个数据分割的性能指标确定我们 PLS 模型的最佳复杂度。"
 
 #: ../../source/_learn/pls_regression.ipynb:1030
 msgid ""
 "Suggesting that the optimal number of components is 6, with a mean "
 "absolute error of 0.92 g/L. We can verify this by plotting the mean "
 "absolute error as a function of the number of components:"
-msgstr ""
+msgstr "表明最佳组件数量为 6，平均绝对误差为 0.92 g/L。我们可以通过绘制平均绝对误差作为组件数量的函数来验证这一点："
 
 #: ../../source/_learn/pls_regression.ipynb:1064
 msgid ""
@@ -430,15 +430,15 @@ msgid ""
 "might be more robust. Therefore, it is always a good idea to try "
 "different numbers of components and select the one that gives the best "
 "performance. However, for now we will train the model with 6 components:"
-msgstr ""
+msgstr "尽管使用最小化平均绝对误差的组件数量是一个好的起点，但并不总是最好的。与具有 3 个甚至 2 个组件的模型相比，具有 6 个组件的模型不会显著增加平均绝对误差。然而，具有 6 个组件的模型包括与较小特征值相关的组件，这些组件更不确定。这意味着具有 3 个或 2 个组件的模型可能更稳健。因此，尝试不同数量的组件并选择性能最好的那个总是一个好主意。但是，目前我们将使用 6 个组件训练模型："
 
 #: ../../source/_learn/pls_regression.ipynb:1540
 msgid "Finally we can evaluate the performance of the model on the training set:"
-msgstr ""
+msgstr "最后我们可以在训练集上评估模型的性能："
 
 #: ../../source/_learn/pls_regression.ipynb:1581
 msgid "**Applying the model**"
-msgstr ""
+msgstr "**应用模型**"
 
 #: ../../source/_learn/pls_regression.ipynb:1583
 msgid ""
@@ -446,7 +446,7 @@ msgid ""
 "dataset. The testing dataset contains spectra recorded in real-time "
 "during the fermentation process. The test dataset contains two "
 "``pandas.DataFrame``:"
-msgstr ""
+msgstr "既然我们已经训练了模型，我们可以将其应用于测试数据集。测试数据集包含发酵过程中实时记录的光谱。测试数据集包含两个 ``pandas.DataFrame``："
 
 #: ../../source/_learn/pls_regression.ipynb:1585
 msgid ""
@@ -454,36 +454,36 @@ msgid ""
 "representing wavenumbers and rows representing samples. These spectra "
 "were recorded in real-time during the fermentation process approximately "
 "every 1.5 minutes."
-msgstr ""
+msgstr "``spectra``：此数据集包含光谱数据，列代表波数，行代表样本。这些光谱在发酵过程中大约每 1.5 分钟实时记录一次。"
 
 #: ../../source/_learn/pls_regression.ipynb:1587
 msgid ""
 "``hplc``: This dataset contains HPLC measurements, specifically glucose "
 "concentrations (in g/L), stored in a single column labeled ``glucose``. "
 "These measurements were recorded off-line approximately every 60 minutes."
-msgstr ""
+msgstr "``hplc``：此数据集包含 HPLC 测量值，特别是葡萄糖浓度（以 g/L 为单位），存储在名为 ``glucose`` 的单个列中。这些测量值大约每 60 分钟离线记录一次。"
 
 #: ../../source/_learn/pls_regression.ipynb:1589
 msgid ""
 "We will use the ``load_fermentation_test()`` function from the "
 "``chemotools.datasets`` module to load the testing dataset:"
-msgstr ""
+msgstr "我们将使用 ``chemotools.datasets`` 模块中的 ``load_fermentation_test()`` 函数加载测试数据集："
 
 #: ../../source/_learn/pls_regression.ipynb:1611
 msgid ""
 "Then, we will preprocess the spectra using the same preprocessing "
 "pipeline that we used for the training dataset:"
-msgstr ""
+msgstr "然后，我们将使用与训练数据集相同的预处理管道来预处理光谱："
 
 #: ../../source/_learn/pls_regression.ipynb:1635
 msgid "Finally, we can use the PLS model to predict the glucose concentrations:"
-msgstr ""
+msgstr "最后，我们可以使用 PLS 模型预测葡萄糖浓度："
 
 #: ../../source/_learn/pls_regression.ipynb:1656
 msgid ""
 "We can use the predicted values to plot the spectra color-coded according"
 " to the predicted glucose concentrations:"
-msgstr ""
+msgstr "我们可以使用预测值根据预测的葡萄糖浓度绘制颜色编码的光谱："
 
 #: ../../source/_learn/pls_regression.ipynb:1684
 msgid ""
@@ -491,11 +491,11 @@ msgid ""
 " HPLC measurements. We will plot the predictions and the off-line "
 "measurements over time. Each spectrum was taken every 1.25 minutes, while"
 " the off-line measurements were taken every 60 minutes."
-msgstr ""
+msgstr "现在我们可以将预测的葡萄糖浓度与离线 HPLC 测量值进行比较。我们将绘制预测值和离线测量值随时间的变化。每个光谱每 1.25 分钟采集一次，而离线测量每 60 分钟采集一次。"
 
 #: ../../source/_learn/pls_regression.ipynb:1727
 msgid "**Recap**"
-msgstr ""
+msgstr "**回顾**"
 
 #: ../../source/_learn/pls_regression.ipynb:1738
 msgid ""
@@ -503,8 +503,8 @@ msgid ""
 "learning for spectroscopic data analysis, focusing on the Fermentation "
 "dataset. We covered essential steps in building a regression model to "
 "predict glucose concentrations during lignocellulosic ethanol "
-"fermentation. Here’s a brief recap of what we accomplished:"
-msgstr ""
+"fermentation. Here's a brief recap of what we accomplished:"
+msgstr "在本教程中，我们踏入了机器学习用于光谱数据分析的领域，重点关注发酵数据集。我们涵盖了构建回归模型以预测木质纤维素乙醇发酵过程中葡萄糖浓度的基本步骤。以下是我们完成的工作的简要回顾："
 
 #: ../../source/_learn/pls_regression.ipynb:1740
 msgid ""
@@ -513,7 +513,7 @@ msgid ""
 "infrared spectroscopy (ATR-MIR), and HPLC reference data. We highlighted "
 "the importance of this dataset in understanding real-time fermentation "
 "processes."
-msgstr ""
+msgstr "**引言：** 我们介绍了发酵数据集，该数据集包含通过衰减全反射中红外光谱（ATR-MIR）获得的光谱数据和 HPLC 参考数据。我们强调了此数据集在理解实时发酵过程中的重要性。"
 
 #: ../../source/_learn/pls_regression.ipynb:1742
 msgid ""
@@ -521,7 +521,7 @@ msgid ""
 "its dimensions, and gained insights into both spectral and HPLC data. "
 "Understanding your data is a crucial first step in any data analysis "
 "project."
-msgstr ""
+msgstr "**加载和探索数据：** 我们加载了训练数据集，探索了其维度，并对光谱和 HPLC 数据获得了见解。理解您的数据是任何数据分析项目中的关键第一步。"
 
 #: ../../source/_learn/pls_regression.ipynb:1744
 msgid ""
@@ -529,29 +529,29 @@ msgid ""
 "understanding of the dataset. By plotting the spectra color-coded by "
 "glucose concentration, we visually examined the chemical variations among"
 " samples."
-msgstr ""
+msgstr "**可视化数据：** 我们使用数据可视化来更深入地理解数据集。通过绘制按葡萄糖浓度颜色编码的光谱，我们视觉检查了样本间的化学变化。"
 
 #: ../../source/_learn/pls_regression.ipynb:1746
 msgid ""
 "**Preprocessing Data:** We applied preprocessing techniques, such as "
 "range cutting, linear correction, Savitzky-Golay derivative, and standard"
 " scaling, to prepare the spectral data for modeling. This step removed "
-"unwanted variations and enhanced the data’s quality."
-msgstr ""
+"unwanted variations and enhanced the data's quality."
+msgstr "**预处理数据：** 我们应用了预处理技术，如范围截取、线性校正、Savitzky-Golay 导数和标准缩放，以准备用于建模的光谱数据。此步骤去除了不需要的变异并提高了数据质量。"
 
 #: ../../source/_learn/pls_regression.ipynb:1748
 msgid ""
 "**Model Training:** We trained a Partial Least Squares (PLS) regression "
 "model to predict glucose concentrations. We used cross-validation to find"
 " the optimal number of components and assessed model performance."
-msgstr ""
+msgstr "**模型训练：** 我们训练了一个偏最小二乘（PLS）回归模型来预测葡萄糖浓度。我们使用交叉验证找到最佳组件数量并评估了模型性能。"
 
 #: ../../source/_learn/pls_regression.ipynb:1750
 msgid ""
 "**Application to Testing Data:** We extended our model to predict glucose"
 " concentrations in real-time by applying it to the testing dataset. This "
 "allowed us to monitor glucose levels during fermentation."
-msgstr ""
+msgstr "**应用于测试数据：** 我们通过将模型应用于测试数据集来扩展我们的模型以实时预测葡萄糖浓度。这使我们能够在发酵过程中监测葡萄糖水平。"
 
 #: ../../source/_learn/pls_regression.ipynb:1752
 msgid ""
@@ -560,5 +560,4 @@ msgid ""
 " these steps, you can gain valuable insights from complex spectral data "
 "and make predictions that can be applied in real-world applications. "
 "Happy analyzing!"
-msgstr ""
-
+msgstr "本教程为任何有兴趣使用机器学习技术进行光谱数据分析的人提供了坚实的基础。通过遵循这些步骤，您可以从复杂的光谱数据中获得有价值的见解，并做出可应用于现实世界应用的预测。分析愉快！"
