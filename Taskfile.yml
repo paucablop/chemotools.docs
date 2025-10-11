@@ -49,10 +49,10 @@ tasks:
       - uv run sphinx-build -b gettext {{.SPHINX_SOURCE}} {{.SPHINX_BUILD}}/gettext -j auto
 
   docs:update-translations:
-    desc: Update .po files for es and zh_CN
+    desc: Update .po files for es, zh_CN, and ja
     deps: [docs:gettext]
     cmds:
-      - uv run sphinx-intl update -p {{.SPHINX_BUILD}}/gettext -l es -l zh_CN
+      - uv run sphinx-intl update -p {{.SPHINX_BUILD}}/gettext -d docs/locale -l es -l zh_CN -l ja
 
   docs:check:
     desc: Build English docs treating warnings as errors (CI quality gate)

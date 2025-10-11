@@ -5,9 +5,9 @@ This directory holds localization catalogs for Sphinx.
 ## Workflow
 1. Extract messages (English source):
    task docs:gettext
-2. Update / create catalogs for target languages (example for es, zh_CN):
+2. Update / create catalogs for target languages (example for es, zh_CN, ja):
    task docs:update-translations
-3. Edit the generated `.po` files under `es/LC_MESSAGES` and `zh_CN/LC_MESSAGES`.
+3. Edit the generated `.po` files under `es/LC_MESSAGES`, `zh_CN/LC_MESSAGES`, and `ja/LC_MESSAGES`.
 4. Build a localized version (example Spanish):
    sphinx-build -b html -D language=es docs/source docs/_build/html/es
 
@@ -19,7 +19,7 @@ This directory holds localization catalogs for Sphinx.
 
 ## Useful Flags
 - `sphinx-build -b gettext` writes `.pot` sources into `_build/gettext`.
-- `sphinx-intl update -p _build/gettext -l es -l zh_CN` updates catalogs.
+- `sphinx-intl update -p _build/gettext -d docs/locale -l es -l zh_CN -l ja` updates catalogs.
 
 ## Quality Checklist Before Commit
 - No fuzzy entries left for completed sections.
