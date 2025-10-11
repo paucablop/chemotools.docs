@@ -39,7 +39,7 @@ Two excellent advanced resources for hyperparameter optimization are shown below
 -------------------------------------
 As an example, we will optimize the hyperparameters in the pipeline depicted in the image below.
 
-.. image:: ./figures/pipelines_pipeline.png
+.. image:: ../_static/images/explore/pipelines_pipeline.png
     :alt: Pipeline workflow
     :align: center
     :width: 800
@@ -103,7 +103,7 @@ Next step is to define the positions of the samples in the hyperparameter space.
 It evaluates all possible combinations of hyperparameters in the grid and selects the one that yields the best performance based on cross-validation.
 This method is useful when the hyperparameter space is small and well-defined. A visual representation of the ``GridSearchCV`` process is shown below:
 
-.. image:: ./figures/optimize_gridsearchcv.png
+.. image:: ../_static/images/explore/optimize_gridsearchcv.png
     :alt: GridSearchCV process
     :align: center
     :width: 800
@@ -152,7 +152,7 @@ There are a few important parameters to note in the ``GridSearchCV`` function:
 ``RandomizedSearchCV`` is a method that samples a fixed number of random combinations from the hyperparameter space and evaluates their performance using cross-validation.
 This method is useful when the hyperparameter space is large and well-defined. A visual representation of the ``RandomizedSearchCV`` process is shown below:
 
-.. image:: ./figures/optimize_randomsearchcv.png
+.. image:: ../_static/images/explore/optimize_randomsearchcv.png
     :alt: RandomizedSearchCV process
     :align: center
     :width: 800

@@ -18,7 +18,7 @@ Learn
    :gutter: 2 3 4 4
 
    .. grid-item-card::
-      :img-top: ../_static/learn/datasets.png
+      :img-top: ../_static/images/learn/datasets.png
       :text-align: center
 
       .. button-ref:: ./datasets
@@ -29,7 +29,7 @@ Learn
             **Data sets**
 
    .. grid-item-card::
-      :img-top: ../_static/learn/fermentation.png
+      :img-top: ../_static/images/learn/fermentation.png
       :text-align: center
 
       .. button-ref:: ./pls_regression
@@ -40,7 +40,7 @@ Learn
             **Fermentation monitoring**
 
    .. grid-item-card::
-      :img-top: ../_static/learn/coffee.png
+      :img-top: ../_static/images/learn/coffee.png
       :text-align: center
 
       .. button-ref:: ./pls_classification

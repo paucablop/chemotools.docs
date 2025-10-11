@@ -1,6 +1,6 @@
 :html_theme.sidebar_secondary.remove:
 
-.. image:: _static/_test_image/banner.svg
+.. image:: _static/images/main/banner.svg
    :class: banner
 
 
@@ -51,7 +51,7 @@ Welcome to chemotools
 
 Developed after years of applying **spectroscopy** across industries, its mission is to empower **scientists and engineers** with the tools needed to build **production-ready chemometric models**. ``chemotools`` provides an **intuitive, flexible environment** that streamlines the **development and deployment** of models, making it easier to **standardize workflows** and **scale chemometric solutions**.
 
-.. image:: _static/_main_page/chemotools_overview.png
+.. image:: _static/images/main/chemotools_overview.png
    :alt: chemotools workflow
 
 
@@ -64,7 +64,7 @@ Start exploring
    :gutter: 2 3 4 4
 
    .. grid-item-card::
-      :img-top: ../source/_static/_test_image/discover.png
+      :img-top: _static/images/index/discover.png
       :text-align: center
 
       .. button-ref:: explore/index
@@ -75,7 +75,7 @@ Start exploring
             **Discover the environment**
 
    .. grid-item-card::
-      :img-top: ../source/_static/_test_image/learn6.png
+      :img-top: _static/images/index/learn6.png
       :text-align: center
 
       .. button-ref:: learn/index
@@ -86,7 +86,7 @@ Start exploring
             **Chemometrics tutorials**
 
    .. grid-item-card::
-      :img-top: ../source/_static/_test_image/webinar2.png
+      :img-top: _static/images/index/webinar2.png
       :text-align: center
 
       .. button-link:: https://www.youtube.com/watch?v=leB43KchETw&t

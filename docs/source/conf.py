@@ -29,17 +29,17 @@ extensions = [
 ]
 
 html_theme = "pydata_sphinx_theme"
-html_logo = "_static/_main_page/logo-light-3.svg"
+html_logo = "_static/images/main/logo-light-3.svg"
 html_favicon = (
-    "_static/_main_page/favicon2.svg"  # or favicon.png if using PNG
+    "_static/images/main/favicon2.svg"  # or favicon.png if using PNG
 )
 
 # Optional theme customization
 html_theme_options = {
     "show_prev_next": True,
     "logo": {
-        "image_light": "_static/_main_page/logo-light-3.svg",
-        "image_dark": "_static/_main_page/logo-dark-3.svg",
+        "image_light": "_static/images/main/logo-light-3.svg",
+        "image_dark": "_static/images/main/logo-dark-3.svg",
     },
     "navbar_align": "left",
     "navbar_center": ["navbar-nav"],

@@ -16,7 +16,7 @@ Methods
    :gutter: 4 4 5 5
 
    .. grid-item-card::
-      :img-top: ../../source/methods/figures/augmentation.png
+      :img-top: ../_static/images/methods/augmentation.png
       :text-align: center
 
       Add random variation in your data to simulate different real-world scenarios.
@@ -30,7 +30,7 @@ Methods
          **Augmentation**
 
    .. grid-item-card::
-      :img-top: ../../source/methods/figures/preprocessing.png
+      :img-top: ../_static/images/methods/preprocessing.png
       :text-align: center
 
       Preprocess your data to remove remove noise and highlight the chemical information.
@@ -44,7 +44,7 @@ Methods
          **Preprocessing**
 
    .. grid-item-card::
-      :img-top: ../../source/methods/figures/feature_selection.png
+      :img-top: ../_static/images/methods/feature_selection.png
       :text-align: center
 
       Select the most chemically relevant features to improve the performance of your model.
@@ -58,7 +58,7 @@ Methods
          **Feature selection**
 
    .. grid-item-card::
-      :img-top: ../../source/methods/figures/outliers.png
+      :img-top: ../_static/images/methods/outliers.png
       :text-align: center
 
       Detect outliers from your data to improve diagnostics and reliability of the results.
