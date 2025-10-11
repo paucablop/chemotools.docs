@@ -24,19 +24,16 @@ msgid "Quick start"
 msgstr "快速开始"
 
 #: ../../source/user/user.rst:4
-#, fuzzy
 msgid "Check the `installation guide <../user/install.html>`_ to get started."
 msgstr "请查看 `安装指南 <../_user/install.html>`_ 以开始使用。"
 
 #: ../../source/user/user.rst:7
-#, fuzzy
 msgid ""
 "**New in chemometrics?** Learn through our step-by-step `tutorials page "
 "<../learn/index.html>`_."
 msgstr "化学计量学新手？通过我们的分步 `教程页面 <../_learn/index.html>`_ 来学习。"
 
 #: ../../source/user/user.rst:10
-#, fuzzy
 msgid ""
 "**Want to explore the tools at your fingertips?** Visit the `explore "
 "overview <../explore/index.html>`_."
@@ -53,7 +50,6 @@ msgid ""
 msgstr "这将加载一个发酵过程中的中红外光谱训练集（``X_train``）及其相关的参考值（``y_train``）。"
 
 #: ../../source/user/user.rst:24
-#, fuzzy
 msgid ""
 "**Looking for available datasets?** See the `datasets catalog "
 "<../learn/datasets.html>`_."
@@ -71,7 +67,6 @@ msgid ""
 msgstr "加载、定义并将预处理步骤应用于训练数据。这里我们使用 Savitzky-Golay 滤波器来计算样品光谱的一阶导数。"
 
 #: ../../source/user/user.rst:42
-#, fuzzy
 msgid ""
 "**Want to know more about preprocessing methods?** Read the `methods "
 "index <../methods/index.html>`_."
@@ -86,14 +81,12 @@ msgid "Combine preprocessing and modelling steps in a single pipeline."
 msgstr "将预处理和建模步骤组合到单个管道中。"
 
 #: ../../source/user/user.rst:68
-#, fuzzy
 msgid ""
 "**Want to know more about pipelines?** Open the `pipelines article "
 "<../explore/pipelines.html>`_."
 msgstr "想要了解更多关于管道的信息？请打开 `管道文章 <../_explore/pipelines.html>`_。"
 
 #: ../../source/user/user.rst:71
-#, fuzzy
 msgid ""
 "**Curious about model optimization?** Read the `optimization guide "
 "<../explore/optimize.html>`_."

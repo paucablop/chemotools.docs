@@ -25,15 +25,15 @@ msgstr "クイックスタート"
 
 #: ../../source/user/user.rst:4
 msgid "Check the `installation guide <../user/install.html>`_ to get started."
-msgstr "始めるには`インストールガイド <../user/install.html>`_をご確認ください。"
+msgstr "始めるには `インストールガイド <../user/install.html>`_ をご確認ください。"
 
 #: ../../source/user/user.rst:7
 msgid ""
 "**New in chemometrics?** Learn through our step-by-step `tutorials page "
 "<../learn/index.html>`_."
 msgstr ""
-"ケモメトリクスは初めてですか？ ステップバイステップの`チュートリアルページ "
-"<../learn/index.html>`_で学習できます。"
+"ケモメトリクスは初めてですか？ ステップバイステップの `チュートリアルページ "
+"<../learn/index.html>`_ で学習できます。"
 
 #: ../../source/user/user.rst:10
 msgid ""
@@ -41,7 +41,7 @@ msgid ""
 "overview <../explore/index.html>`_."
 msgstr ""
 "手元のツールを探索したいですか？ `探索の概要 "
-"<../explore/index.html>`_をご覧ください。"
+"<../explore/index.html>`_ をご覧ください。"
 
 #: ../../source/user/user.rst:13
 msgid "Load data"
@@ -61,7 +61,7 @@ msgid ""
 "<../learn/datasets.html>`_."
 msgstr ""
 "利用可能なデータセットをお探しですか？ `データセットカタログ "
-"<../learn/datasets.html>`_をご覧ください。"
+"<../learn/datasets.html>`_ をご覧ください。"
 
 #: ../../source/user/user.rst:27
 msgid "Preprocess spectra"
@@ -83,7 +83,7 @@ msgid ""
 "index <../methods/index.html>`_."
 msgstr ""
 "前処理手法についてもっと知りたいですか？ `手法インデックス "
-"<../methods/index.html>`_をお読みください。"
+"<../methods/index.html>`_ をお読みください。"
 
 #: ../../source/user/user.rst:45
 msgid "Build a pipeline"
@@ -99,7 +99,7 @@ msgid ""
 "<../explore/pipelines.html>`_."
 msgstr ""
 "パイプラインについてもっと知りたいですか？ `パイプラインの記事 "
-"<../explore/pipelines.html>`_をご覧ください。"
+"<../explore/pipelines.html>`_ をご覧ください。"
 
 #: ../../source/user/user.rst:71
 msgid ""
@@ -107,12 +107,12 @@ msgid ""
 "<../explore/optimize.html>`_."
 msgstr ""
 "モデルの最適化について興味がありますか？ `最適化ガイド "
-"<../explore/optimize.html>`_をお読みください。"
+"<../explore/optimize.html>`_ をお読みください。"
 
 #: ../../source/user/user.rst:73
 msgid ""
 "**Congratulations!** You have just built your first chemotools workflow "
 "in Python 🎯"
 msgstr ""
-"おめでとうございます！ Pythonで最初のchemotoolsワークフローを構築しました 🎯"
+"おめでとうございます！ Pythonで最初の ``chemotools`` ワークフローを構築しました 🎯"
 

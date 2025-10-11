@@ -62,7 +62,7 @@ msgstr "可组合的构建模块 / 生命周期"
 msgid ""
 "**Curious about scikit-learn?** See the dedicated `scikit-learn overview "
 "<../explore/sklearn.html>`_."
-msgstr "对 scikit-learn 感到好奇？请参阅专门的 `scikit-learn 概述 <../_explore/sklearn.html>`_。"
+msgstr "对 scikit-learn 感到好奇？请参阅专门的 `scikit-learn <../_explore/sklearn.html>`_ 概述。"
 
 #: ../../source/user/what_is_chemotools.rst:23
 msgid "Extensive Toolkit"
