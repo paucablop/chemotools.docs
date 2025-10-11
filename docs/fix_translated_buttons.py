@@ -162,6 +162,77 @@ BUTTON_TRANSLATIONS = {
             "url": "outliers.html",
         },
     },
+    "ja": {
+        # Main index page
+        "Discover the environment": {
+            "translation": "環境を探索",
+            "url": "explore/index.html",
+        },
+        "Chemometrics tutorials": {
+            "translation": "ケモメトリクスのチュートリアル",
+            "url": "learn/index.html",
+        },
+        "Check out our Webinar": {
+            "translation": "ウェビナーをチェック",
+            "url": "https://www.youtube.com/watch?v=leB43KchETw&t",
+            "external": True,
+        },
+        # learn/index page
+        "Data sets": {
+            "translation": "データセット",
+            "url": "datasets.html",
+        },
+        "Fermentation monitoring": {
+            "translation": "発酵モニタリング",
+            "url": "pls_regression.html",
+        },
+        "Coffee classificatoin": {  # Note: typo in original
+            "translation": "コーヒーの分類",
+            "url": "pls_classification.html",
+        },
+        # explore/index page
+        "Get started with scikit-learn": {
+            "translation": "scikit-learnを始める",
+            "url": "sklearn.html",
+        },
+        "Working with spectra": {
+            "translation": "スペクトルデータの操作",
+            "url": "spectra.html",
+        },
+        "Creating your pipelines": {
+            "translation": "パイプラインの作成",
+            "url": "pipelines.html",
+        },
+        "Optimize your processing": {
+            "translation": "処理の最適化",
+            "url": "optimize.html",
+        },
+        "DataFrame lover?": {
+            "translation": "DataFrameが好き？",
+            "url": "dataframes.html",
+        },
+        "Persisting your models": {
+            "translation": "モデルの永続化",
+            "url": "persist.html",
+        },
+        # methods/index page
+        "Augmentation": {
+            "translation": "データ拡張",
+            "url": "augmentation.html",
+        },
+        "Preprocessing": {
+            "translation": "前処理",
+            "url": "preprocessing.html",
+        },
+        "Feature selection": {
+            "translation": "特徴選択",
+            "url": "feature_selection.html",
+        },
+        "Outliers": {
+            "translation": "外れ値検出",
+            "url": "outliers.html",
+        },
+    },
 }
 
 

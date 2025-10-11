@@ -13,5 +13,10 @@
         "version": "zh_CN",
         "url": "/zh_CN/",
         "name": "中文"
+    },
+    {
+        "version": "ja",
+        "url": "/ja/",
+        "name": "日本語"
     }
 ]

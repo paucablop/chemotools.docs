@@ -35,13 +35,19 @@ tasks:
       - uv run sphinx-build -b html -D language=zh_CN -D html_theme_options.switcher.version_match=zh_CN {{.SPHINX_SOURCE}} {{.SPHINX_BUILD}}/html/zh_CN -j auto
       - uv run python docs/fix_translated_buttons.py {{.SPHINX_BUILD}}/html/zh_CN zh_CN
 
+  docs:html-ja:
+    desc: Build Japanese HTML documentation with button translation fix
+    cmds:
+      - uv run sphinx-build -b html -D language=ja -D html_theme_options.switcher.version_match=ja {{.SPHINX_SOURCE}} {{.SPHINX_BUILD}}/html/ja -j auto
+      - uv run python docs/fix_translated_buttons.py {{.SPHINX_BUILD}}/html/ja ja
 
   docs:html-all:
-    desc: Build all language variants (en, es, zh_CN)
+    desc: Build all language variants (en, es, zh_CN, ja)
     cmds:
       - task: docs:html
       - task: docs:html-es
       - task: docs:html-zh
+      - task: docs:html-ja
 
   docs:gettext:
     desc: Extract gettext catalogs
@@ -82,6 +88,13 @@ tasks:
       - task: docs:html-es
       - echo "Spanish docs available at http://localhost:8002"
       - cd {{.SPHINX_BUILD}}/html/es && python3 -m http.server 8002
+
+  serve:ja:
+    desc: Serve Japanese docs locally
+    cmds:
+      - task: docs:html-ja
+      - echo "Japanese docs available at http://localhost:8004"
+      - cd {{.SPHINX_BUILD}}/html/ja && python3 -m http.server 8004
 
   clean:
     desc: Remove build artifacts and generated API stubs
