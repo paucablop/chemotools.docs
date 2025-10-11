@@ -75,7 +75,7 @@ BUTTON_TRANSLATIONS = {
         },
         # _methods/index page
         "Augmentation": {
-            "translation": "增强",
+            "translation": "数据增强",
             "url": "augmentation.html",
         },
         "Preprocessing": {
@@ -87,7 +87,7 @@ BUTTON_TRANSLATIONS = {
             "url": "feature_selection.html",
         },
         "Outliers": {
-            "translation": "异常值",
+            "translation": "异常值检测",
             "url": "outliers.html",
         },
     },

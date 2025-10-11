@@ -21,13 +21,13 @@ msgstr ""
 
 #: ../../source/_methods/index.rst:7
 msgid "Methods"
-msgstr ""
+msgstr "方法"
 
 #: ../../source/_methods/index.rst:22
 msgid ""
 "Add random variation in your data to simulate different real-world "
 "scenarios."
-msgstr ""
+msgstr "在数据中添加随机变异，以模拟不同的现实场景。"
 
 #: ../../source/_methods/index.rst:24
 msgid "Augmentation"
@@ -37,7 +37,7 @@ msgstr ""
 msgid ""
 "Preprocess your data to remove remove noise and highlight the chemical "
 "information."
-msgstr ""
+msgstr "预处理数据以去除噪声并突出化学信息。"
 
 #: ../../source/_methods/index.rst:38
 msgid "Preprocessing"
@@ -47,7 +47,7 @@ msgstr ""
 msgid ""
 "Select the most chemically relevant features to improve the performance "
 "of your model."
-msgstr ""
+msgstr "选择最具化学相关性的特征，以提高模型的性能。"
 
 #: ../../source/_methods/index.rst:52
 msgid "Feature selection"
@@ -57,9 +57,8 @@ msgstr ""
 msgid ""
 "Detect outliers from your data to improve diagnostics and reliability of "
 "the results."
-msgstr ""
+msgstr "检测数据异常值，以优化分析结果。"
 
 #: ../../source/_methods/index.rst:66
 msgid "Outliers"
 msgstr ""
-
