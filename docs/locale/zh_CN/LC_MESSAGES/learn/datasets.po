@@ -1,0 +1,152 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, chemotools
+# This file is distributed under the same license as the chemotools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: chemotools \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-03 02:35+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/learn/datasets.rst:2
+msgid "**Explore our datasets**"
+msgstr "**探索我们的数据集**"
+
+#: ../../source/learn/datasets.rst:4
+msgid ""
+"Welcome to the world of data exploration! Our ``chemotools`` package "
+"provides useful datasets that help you test the package and learn. You "
+"can find these datasets in the ``chemotools.datasets`` module and access "
+"them using simple loading functions. Here's what we offer:"
+msgstr "欢迎来到数据探索的世界！我们的 ``chemotools`` 包提供了有用的数据集，帮助您测试软件包和学习。您可以在 ``chemotools.datasets`` 模块中找到这些数据集，并使用简单的加载函数访问它们。以下是我们提供的内容："
+
+#: ../../source/learn/datasets.rst:9
+msgid "The Fermentation Dataset 🧪"
+msgstr "发酵数据集 🧪"
+
+#: ../../source/learn/datasets.rst:11
+msgid ""
+"This dataset contains spectra collected during a yeast fermentation "
+"process using attenuated total reflectance Fourier transform infrared "
+"spectroscopy (ATR-FTIR). The dataset includes both a training set and a "
+"test set."
+msgstr "该数据集包含使用衰减全反射傅里叶变换红外光谱（ATR-FTIR）在酵母发酵过程中收集的光谱。该数据集包括训练集和测试集。"
+
+#: ../../source/learn/datasets.rst:15
+msgid ""
+"For more information about the Fermentation Dataset, see these "
+"publications:"
+msgstr "有关发酵数据集的更多信息，请参阅以下出版物："
+
+#: ../../source/learn/datasets.rst:17
+msgid ""
+"Cabaneros Lopez, P., Abeykoon Udugama, I., Thomsen, S.T., et al. "
+"`Transforming data to information: A parallel hybrid model for real-time "
+"state estimation in lignocellulosic ethanol fermentation "
+"<https://doi.org/10.1002/bit.27586>`_."
+msgstr "Cabaneros Lopez, P., Abeykoon Udugama, I., Thomsen, S.T., 等人。`将数据转化为信息：用于木质纤维素乙醇发酵实时状态估计的并行混合模型 <https://doi.org/10.1002/bit.27586>`_。"
+
+#: ../../source/learn/datasets.rst:19
+msgid ""
+"Cabaneros Lopez, P., Abeykoon Udugama, I., Thomsen, S.T., et al. `Towards"
+" a digital twin: a hybrid data-driven and mechanistic digital shadow to "
+"forecast the evolution of lignocellulosic fermentation "
+"<https://doi.org/10.1002/bbb.2108>`_."
+msgstr "Cabaneros Lopez, P., Abeykoon Udugama, I., Thomsen, S.T., 等人。`迈向数字孪生：用于预测木质纤维素发酵演变的混合数据驱动和机制数字阴影 <https://doi.org/10.1002/bbb.2108>`_。"
+
+#: ../../source/learn/datasets.rst:21
+msgid ""
+"Cabaneros Lopez, P., Abeykoon Udugama, I., Thomsen, S.T., et al. "
+"`Promoting the co-utilisation of glucose and xylose in lignocellulosic "
+"ethanol fermentations using a data-driven feed-back controller "
+"<https://doi.org/10.1186/s13068-020-01829-2>`_."
+msgstr "Cabaneros Lopez, P., Abeykoon Udugama, I., Thomsen, S.T., 等人。`使用数据驱动反馈控制器促进木质纤维素乙醇发酵中葡萄糖和木糖的共同利用 <https://doi.org/10.1186/s13068-020-01829-2>`_。"
+
+#: ../../source/learn/datasets.rst:25
+msgid "The Train Set"
+msgstr "训练集"
+
+#: ../../source/learn/datasets.rst:27
+msgid ""
+"The train set contains 21 synthetic spectra with reference glucose "
+"concentrations, measured by high-performance liquid chromatography "
+"(HPLC). You can load the train set as a ``pandas.DataFrame`` or as a "
+"``polars.DataFrame``:"
+msgstr "训练集包含 21 个合成光谱，带有通过高效液相色谱（HPLC）测量的参考葡萄糖浓度。您可以将训练集加载为 ``pandas.DataFrame`` 或 ``polars.DataFrame``："
+
+#: ../../source/learn/datasets.rst:31 ../../source/learn/datasets.rst:62
+#: ../../source/learn/datasets.rst:90
+msgid "**Load as pandas.DataFrame**:"
+msgstr "**加载为 pandas.DataFrame**："
+
+#: ../../source/learn/datasets.rst:39 ../../source/learn/datasets.rst:70
+#: ../../source/learn/datasets.rst:98
+msgid "**Load as polars.DataFrame**:"
+msgstr "**加载为 polars.DataFrame**："
+
+#: ../../source/learn/datasets.rst:48
+msgid "Polars is supported in ``chemotools``>=0.1.5"
+msgstr "Polars 在 ``chemotools``>=0.1.5 中受支持"
+
+#: ../../source/learn/datasets.rst:51
+msgid ""
+"To learn how to build a PLS model using the Fermentation Dataset, see our"
+" `Training Guide <https://chemotools.org/_learn/pls_regression.html>`__."
+msgstr "要学习如何使用发酵数据集构建 PLS 模型，请参阅我们的 `训练指南 <https://chemotools.org/_learn/pls_regression.html>`__。"
+
+#: ../../source/learn/datasets.rst:54
+msgid "The Test Set"
+msgstr "测试集"
+
+#: ../../source/learn/datasets.rst:56
+msgid ""
+"The test set contains over 1000 spectra collected during a fermentation "
+"process. These spectra were captured every 1.25 minutes over several "
+"hours. It also includes 35 reference glucose concentrations measured "
+"hourly during the fermentation."
+msgstr "测试集包含在发酵过程中收集的 1000 多个光谱。这些光谱在几个小时内每 1.25 分钟捕获一次。它还包括在发酵过程中每小时测量的 35 个参考葡萄糖浓度。"
+
+#: ../../source/learn/datasets.rst:60
+msgid "Load the test set using:"
+msgstr "使用以下方式加载测试集："
+
+#: ../../source/learn/datasets.rst:79
+msgid ""
+"The wavenumbers are stored as column names in both the "
+"``pandas.DataFrame`` and the ``polars.DataFrame``. In a "
+"``pandas.DataFrame`` the column names can be of type ``float``, but in a "
+"``polars.DataFrame`` the column names must be of type ``str``."
+msgstr "波数在 ``pandas.DataFrame`` 和 ``polars.DataFrame`` 中都存储为列名。在 ``pandas.DataFrame`` 中，列名可以是 ``float`` 类型，但在 ``polars.DataFrame`` 中，列名必须是 ``str`` 类型。"
+
+#: ../../source/learn/datasets.rst:84
+msgid "The Coffee Dataset ☕"
+msgstr "咖啡数据集 ☕"
+
+#: ../../source/learn/datasets.rst:86
+msgid ""
+"The Coffee Dataset contains spectra collected from various coffee samples"
+" from different countries. These spectra were collected using attenuated "
+"total reflectance Fourier transform infrared spectroscopy (ATR-FTIR)."
+msgstr "咖啡数据集包含从不同国家的各种咖啡样本收集的光谱。这些光谱是使用衰减全反射傅里叶变换红外光谱（ATR-FTIR）收集的。"
+
+#: ../../source/learn/datasets.rst:107
+msgid ""
+"To learn how to build a PLS-DA classification model using the Coffee "
+"Dataset, see our `Training Guide "
+"<https://chemotools.org/_learn/pls_classification.html>`__."
+msgstr "要学习如何使用咖啡数据集构建 PLS-DA 分类模型，请参阅我们的 `训练指南 <https://chemotools.org/_learn/pls_classification.html>`__。"
+
+#: ../../source/learn/datasets.rst:110
+msgid "We hope you enjoy exploring these datasets! 🚀"
+msgstr "我们希望您享受探索这些数据集的乐趣！🚀"

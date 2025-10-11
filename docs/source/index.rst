@@ -8,11 +8,11 @@
    :maxdepth: 1
    :hidden:
 
-   User Guide <_user/index>
-   Methods <_methods/index>
-   Explore <_explore/index>
-   Learn <_learn/index>
-   Cite <_cite/index>
+   User Guide <user/index>
+   Methods <methods/index>
+   Explore <explore/index>
+   Learn <learn/index>
+   Cite <cite/index>
    API <api/index>
 
 
@@ -67,7 +67,7 @@ Start exploring
       :img-top: ../source/_static/_test_image/discover.png
       :text-align: center
 
-      .. button-ref:: _explore/index
+      .. button-ref:: explore/index
             :expand:
             :color: secondary
             :click-parent:
@@ -78,7 +78,7 @@ Start exploring
       :img-top: ../source/_static/_test_image/learn6.png
       :text-align: center
 
-      .. button-ref:: _learn/index
+      .. button-ref:: learn/index
             :expand:
             :color: secondary
             :click-parent:

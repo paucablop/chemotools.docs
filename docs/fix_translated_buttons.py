@@ -24,11 +24,11 @@ BUTTON_TRANSLATIONS = {
         # Main index page
         "Discover the environment": {
             "translation": "探索环境",
-            "url": "_explore/index.html",
+            "url": "explore/index.html",
         },
         "Chemometrics tutorials": {
             "translation": "化学计量学教程",
-            "url": "_learn/index.html",
+            "url": "learn/index.html",
         },
         "Check out our Webinar": {
             "translation": "查看我们的网络研讨会",
@@ -95,11 +95,11 @@ BUTTON_TRANSLATIONS = {
         # Main index page
         "Discover the environment": {
             "translation": "Descubre el entorno",
-            "url": "_explore/index.html",
+            "url": "explore/index.html",
         },
         "Chemometrics tutorials": {
             "translation": "Tutoriales de quimiometría",
-            "url": "_learn/index.html",
+            "url": "learn/index.html",
         },
         "Check out our Webinar": {
             "translation": "Mira nuestro seminario web",
