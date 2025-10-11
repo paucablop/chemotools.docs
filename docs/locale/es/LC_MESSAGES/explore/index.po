@@ -21,29 +21,29 @@ msgstr ""
 
 #: ../../source/explore/index.rst:6
 msgid "Discover the environment"
-msgstr ""
+msgstr "Descubre el entorno"
 
 #: ../../source/explore/index.rst:26
 msgid "Get started with scikit-learn"
-msgstr ""
+msgstr "Comenzar con scikit-learn"
 
 #: ../../source/explore/index.rst:37
 msgid "Working with spectra"
-msgstr ""
+msgstr "Trabajando con espectros"
 
 #: ../../source/explore/index.rst:48
 msgid "Creating your pipelines"
-msgstr ""
+msgstr "Creando tus pipelines"
 
 #: ../../source/explore/index.rst:59
 msgid "Optimize your processing"
-msgstr ""
+msgstr "Optimiza tu procesamiento"
 
 #: ../../source/explore/index.rst:70
 msgid "DataFrame lover?"
-msgstr ""
+msgstr "¿Amante de DataFrames?"
 
 #: ../../source/explore/index.rst:82
 msgid "Persisting your models"
-msgstr ""
+msgstr "Persistiendo tus modelos"
 

@@ -106,7 +106,61 @@ BUTTON_TRANSLATIONS = {
             "url": "https://www.youtube.com/watch?v=leB43KchETw&t",
             "external": True,
         },
-        # Add more Spanish translations as needed
+        # learn/index page
+        "Data sets": {
+            "translation": "Conjuntos de datos",
+            "url": "datasets.html",
+        },
+        "Fermentation monitoring": {
+            "translation": "Monitoreo de fermentación",
+            "url": "pls_regression.html",
+        },
+        "Coffee classificatoin": {  # Note: typo in original
+            "translation": "Clasificación de café",
+            "url": "pls_classification.html",
+        },
+        # explore/index page
+        "Get started with scikit-learn": {
+            "translation": "Comenzar con scikit-learn",
+            "url": "sklearn.html",
+        },
+        "Working with spectra": {
+            "translation": "Trabajando con espectros",
+            "url": "spectra.html",
+        },
+        "Creating your pipelines": {
+            "translation": "Creando tus pipelines",
+            "url": "pipelines.html",
+        },
+        "Optimize your processing": {
+            "translation": "Optimiza tu procesamiento",
+            "url": "optimize.html",
+        },
+        "DataFrame lover?": {
+            "translation": "¿Amante de DataFrames?",
+            "url": "dataframes.html",
+        },
+        "Persisting your models": {
+            "translation": "Persistiendo tus modelos",
+            "url": "persist.html",
+        },
+        # methods/index page
+        "Augmentation": {
+            "translation": "Aumento de datos",
+            "url": "augmentation.html",
+        },
+        "Preprocessing": {
+            "translation": "Preprocesamiento",
+            "url": "preprocessing.html",
+        },
+        "Feature selection": {
+            "translation": "Selección de características",
+            "url": "feature_selection.html",
+        },
+        "Outliers": {
+            "translation": "Valores atípicos",
+            "url": "outliers.html",
+        },
     },
 }
 
@@ -143,7 +197,7 @@ def fix_buttons_in_html(html_path, language):
         btn_link = p.find('a', class_='sd-btn')
         
         if btn_link:
-            # Get the text content of the button
+            # Case 1: Button element exists, just translate the text
             span_elem = btn_link.find('span')
             if span_elem:
                 english_text = span_elem.get_text(strip=True)
@@ -157,6 +211,28 @@ def fix_buttons_in_html(html_path, language):
                     
                     modified = True
                     print(f"  ✓ Translated button: '{english_text}' -> '{translated_text}'")
+        else:
+            # Case 2: Plain text that should be a button
+            # Check if this paragraph contains translated button text
+            text_content = p.get_text(strip=True)
+            
+            # Look through all translations to find a match
+            for english_text, trans_data in translations.items():
+                if text_content == trans_data['translation']:
+                    # This is a translated button text without button styling!
+                    url = trans_data['url']
+                    is_external = trans_data.get('external', False)
+                    
+                    # Create the proper button HTML
+                    button_html = create_button_html(text_content, url, is_external)
+                    
+                    # Replace the plain paragraph with the button
+                    new_soup = BeautifulSoup(button_html, 'html.parser')
+                    p.replace_with(new_soup)
+                    
+                    modified = True
+                    print(f"  ✓ Converted plain text to button: '{text_content}'")
+                    break
     
     if modified:
         # Write the modified HTML back

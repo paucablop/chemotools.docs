@@ -21,15 +21,17 @@ msgstr ""
 
 #: ../../source/methods/outliers.rst:5
 msgid "API Modules"
-msgstr ""
+msgstr "Módulos de API"
 
 #: ../../source/methods/outliers.rst:2
 msgid "Outliers"
-msgstr ""
+msgstr "Valores atípicos"
 
 #: ../../source/methods/outliers.rst:3
 msgid ""
 "Detect outliers from your data to improve diagnostics and reliability of "
 "the results."
 msgstr ""
+"Detecta valores atípicos de tus datos para mejorar los diagnósticos y la confiabilidad de "
+"los resultados."
 

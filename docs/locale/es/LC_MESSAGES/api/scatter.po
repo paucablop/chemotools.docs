@@ -21,77 +21,89 @@ msgstr ""
 
 #: ../../source/api/scatter.rst:2
 msgid "chemotools.scatter"
-msgstr ""
+msgstr "chemotools.scatter"
 
 #: ../../source/api/scatter.rst:6
 msgid ""
 "Scatter correction methods to remove multiplicative scatter effects and "
 "physical variations in spectral data."
 msgstr ""
+"Métodos de corrección de dispersión para eliminar efectos de dispersión "
+"multiplicativa y variaciones físicas en datos espectrales."
 
 #: ../../source/api/scatter.rst:8
 msgid "**Import from this module:**"
-msgstr ""
+msgstr "**Importar desde este módulo:**"
 
 #: ../../source/api/scatter.rst:20
 msgid "Available Classes"
-msgstr ""
+msgstr "Clases disponibles"
 
 #: ../../source/api/scatter.rst:26
 msgid "Class"
-msgstr ""
+msgstr "Clase"
 
 #: ../../source/api/scatter.rst:27
 msgid "Description"
-msgstr ""
+msgstr "Descripción"
 
 #: ../../source/api/scatter.rst:28
 msgid ""
 ":doc:`ExtendedMultiplicativeScatterCorrection "
 "</methods/generated/chemotools.scatter.ExtendedMultiplicativeScatterCorrection>`"
 msgstr ""
+":doc:`ExtendedMultiplicativeScatterCorrection "
+"</methods/generated/chemotools.scatter.ExtendedMultiplicativeScatterCorrection>`"
 
 #: ../../source/api/scatter.rst:29
 msgid "EMSC with polynomial baseline correction"
-msgstr ""
+msgstr "EMSC con corrección de línea base polinómica"
 
 #: ../../source/api/scatter.rst:30
 msgid ""
 ":doc:`MultiplicativeScatterCorrection "
 "</methods/generated/chemotools.scatter.MultiplicativeScatterCorrection>`"
 msgstr ""
+":doc:`MultiplicativeScatterCorrection "
+"</methods/generated/chemotools.scatter.MultiplicativeScatterCorrection>`"
 
 #: ../../source/api/scatter.rst:31
 msgid "Classic MSC algorithm"
-msgstr ""
+msgstr "Algoritmo MSC clásico"
 
 #: ../../source/api/scatter.rst:32
 msgid ""
 ":doc:`RobustNormalVariate "
 "</methods/generated/chemotools.scatter.RobustNormalVariate>`"
 msgstr ""
+":doc:`RobustNormalVariate "
+"</methods/generated/chemotools.scatter.RobustNormalVariate>`"
 
 #: ../../source/api/scatter.rst:33
 msgid "RNV using median and MAD for robustness"
-msgstr ""
+msgstr "RNV usando mediana y MAD para robustez"
 
 #: ../../source/api/scatter.rst:34
 msgid ""
 ":doc:`StandardNormalVariate "
 "</methods/generated/chemotools.scatter.StandardNormalVariate>`"
 msgstr ""
+":doc:`StandardNormalVariate "
+"</methods/generated/chemotools.scatter.StandardNormalVariate>`"
 
 #: ../../source/api/scatter.rst:35
 msgid "SNV using mean and standard deviation"
-msgstr ""
+msgstr "SNV usando media y desviación estándar"
 
 #: ../../source/api/scatter.rst:38
 msgid "See Also"
-msgstr ""
+msgstr "Ver también"
 
 #: ../../source/api/scatter.rst:40
 msgid ""
 ":doc:`Scatter Correction Methods Overview </methods/scatter>` - Complete "
 "documentation with examples and visual guides"
 msgstr ""
+":doc:`Resumen de métodos de corrección de dispersión </methods/scatter>` - "
+"Documentación completa con ejemplos y guías visuales"
 

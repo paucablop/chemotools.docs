@@ -21,25 +21,29 @@ msgstr ""
 
 #: ../../source/methods/derivative.rst:2
 msgid "Derivative"
-msgstr ""
+msgstr "Derivada"
 
 #: ../../source/methods/derivative.rst:13:<autosummary>:1
 msgid ":py:obj:`NorrisWilliams <chemotools.derivative.NorrisWilliams>`"
-msgstr ""
+msgstr ":py:obj:`NorrisWilliams <chemotools.derivative.NorrisWilliams>`"
 
 #: ../../source/methods/derivative.rst:13:<autosummary>:1
 msgid ""
 "A transformer that calculates the Norris-Williams derivative of the input"
 " data."
 msgstr ""
+"Un transformador que calcula la derivada de Norris-Williams de los datos de "
+"entrada."
 
 #: ../../source/methods/derivative.rst:13:<autosummary>:1
 msgid ":py:obj:`SavitzkyGolay <chemotools.derivative.SavitzkyGolay>`"
-msgstr ""
+msgstr ":py:obj:`SavitzkyGolay <chemotools.derivative.SavitzkyGolay>`"
 
 #: ../../source/methods/derivative.rst:13:<autosummary>:1
 msgid ""
 "A transformer that calculates the Savitzky-Golay derivative of the input "
 "data."
 msgstr ""
+"Un transformador que calcula la derivada de Savitzky-Golay de los datos de "
+"entrada."
 

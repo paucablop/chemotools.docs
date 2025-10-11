@@ -21,45 +21,53 @@ msgstr ""
 
 #: ../../source/methods/index.rst:7
 msgid "Methods"
-msgstr ""
+msgstr "Métodos"
 
 #: ../../source/methods/index.rst:22
 msgid ""
 "Add random variation in your data to simulate different real-world "
 "scenarios."
 msgstr ""
+"Añade variación aleatoria en tus datos para simular diferentes "
+"escenarios del mundo real."
 
 #: ../../source/methods/index.rst:24
 msgid "Augmentation"
-msgstr ""
+msgstr "Aumento de datos"
 
 #: ../../source/methods/index.rst:36
 msgid ""
 "Preprocess your data to remove remove noise and highlight the chemical "
 "information."
 msgstr ""
+"Preprocesa tus datos para eliminar ruido y resaltar la "
+"información química."
 
 #: ../../source/methods/index.rst:38
 msgid "Preprocessing"
-msgstr ""
+msgstr "Preprocesamiento"
 
 #: ../../source/methods/index.rst:50
 msgid ""
 "Select the most chemically relevant features to improve the performance "
 "of your model."
 msgstr ""
+"Selecciona las características químicamente más relevantes para mejorar el rendimiento "
+"de tu modelo."
 
 #: ../../source/methods/index.rst:52
 msgid "Feature selection"
-msgstr ""
+msgstr "Selección de características"
 
 #: ../../source/methods/index.rst:64
 msgid ""
 "Detect outliers from your data to improve diagnostics and reliability of "
 "the results."
 msgstr ""
+"Detecta valores atípicos en tus datos para mejorar el diagnóstico y la confiabilidad de "
+"los resultados."
 
 #: ../../source/methods/index.rst:66
 msgid "Outliers"
-msgstr ""
+msgstr "Valores atípicos"
 

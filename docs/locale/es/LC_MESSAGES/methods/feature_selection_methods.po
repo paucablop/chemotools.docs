@@ -21,29 +21,31 @@ msgstr ""
 
 #: ../../source/methods/feature_selection_methods.rst:2
 msgid "Feature Selection Methods"
-msgstr ""
+msgstr "Métodos de selección de características"
 
 #: ../../source/methods/feature_selection_methods.rst:15:<autosummary>:1
 msgid ":py:obj:`IndexSelector <chemotools.feature_selection.IndexSelector>`"
-msgstr ""
+msgstr ":py:obj:`IndexSelector <chemotools.feature_selection.IndexSelector>`"
 
 #: ../../source/methods/feature_selection_methods.rst:15:<autosummary>:1
 msgid ""
 "A transformer that Selects the spectral data to a specified array of "
 "features."
 msgstr ""
+"Un transformador que selecciona los datos espectrales a un conjunto especificado de "
+"características."
 
 #: ../../source/methods/feature_selection_methods.rst:15:<autosummary>:1
 msgid ":py:obj:`RangeCut <chemotools.feature_selection.RangeCut>`"
-msgstr ""
+msgstr ":py:obj:`RangeCut <chemotools.feature_selection.RangeCut>`"
 
 #: ../../source/methods/feature_selection_methods.rst:15:<autosummary>:1
 msgid "Select a contiguous spectral region by index or by wavenumber."
-msgstr ""
+msgstr "Selecciona una región espectral contigua por índice o por número de onda."
 
 #: ../../source/methods/feature_selection_methods.rst:15:<autosummary>:1
 msgid ":py:obj:`SRSelector <chemotools.feature_selection.SRSelector>`"
-msgstr ""
+msgstr ":py:obj:`SRSelector <chemotools.feature_selection.SRSelector>`"
 
 #: ../../source/methods/feature_selection_methods.rst:15:<autosummary>:1
 msgid ""
@@ -51,10 +53,13 @@ msgid ""
 " the latent variables in a PLS regression model using the Selectivity "
 "Ratio (SR) method."
 msgstr ""
+"Este selector se utiliza para seleccionar características que contribuyen significativamente a"
+" las variables latentes en un modelo de regresión PLS utilizando el método de Razón "
+"de Selectividad (SR)."
 
 #: ../../source/methods/feature_selection_methods.rst:15:<autosummary>:1
 msgid ":py:obj:`VIPSelector <chemotools.feature_selection.VIPSelector>`"
-msgstr ""
+msgstr ":py:obj:`VIPSelector <chemotools.feature_selection.VIPSelector>`"
 
 #: ../../source/methods/feature_selection_methods.rst:15:<autosummary>:1
 msgid ""
@@ -62,4 +67,7 @@ msgid ""
 " the latent variables in a PLS regression model using the Variables "
 "Importance in Projection (VIP) method."
 msgstr ""
+"Este selector se utiliza para seleccionar características que contribuyen significativamente a"
+" las variables latentes en un modelo de regresión PLS utilizando el método de Importancia "
+"de Variables en Proyección (VIP)."
 

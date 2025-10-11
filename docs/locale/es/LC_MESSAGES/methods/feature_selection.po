@@ -21,15 +21,17 @@ msgstr ""
 
 #: ../../source/methods/feature_selection.rst:5
 msgid "API Modules"
-msgstr ""
+msgstr "Módulos de API"
 
 #: ../../source/methods/feature_selection.rst:2
 msgid "Feature Selection"
-msgstr ""
+msgstr "Selección de características"
 
 #: ../../source/methods/feature_selection.rst:3
 msgid ""
 "Select the most chemically relevant features to improve the performance "
 "of your model."
 msgstr ""
+"Selecciona las características químicamente más relevantes para mejorar el rendimiento "
+"de tu modelo."
 

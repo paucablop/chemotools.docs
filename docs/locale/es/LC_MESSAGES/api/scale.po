@@ -21,61 +21,65 @@ msgstr ""
 
 #: ../../source/api/scale.rst:2
 msgid "chemotools.scale"
-msgstr ""
+msgstr "chemotools.scale"
 
 #: ../../source/api/scale.rst:6
 msgid ""
 "Scaling methods to normalize spectral intensity and improve model "
 "performance."
 msgstr ""
+"Métodos de escalado para normalizar la intensidad espectral y mejorar "
+"el rendimiento del modelo."
 
 #: ../../source/api/scale.rst:8
 msgid "**Import from this module:**"
-msgstr ""
+msgstr "**Importar desde este módulo:**"
 
 #: ../../source/api/scale.rst:19
 msgid "Available Classes"
-msgstr ""
+msgstr "Clases disponibles"
 
 #: ../../source/api/scale.rst:25
 msgid "Class"
-msgstr ""
+msgstr "Clase"
 
 #: ../../source/api/scale.rst:26
 msgid "Description"
-msgstr ""
+msgstr "Descripción"
 
 #: ../../source/api/scale.rst:27
 msgid ":doc:`MinMaxScaler </methods/generated/chemotools.scale.MinMaxScaler>`"
-msgstr ""
+msgstr ":doc:`MinMaxScaler </methods/generated/chemotools.scale.MinMaxScaler>`"
 
 #: ../../source/api/scale.rst:28
 msgid "Scale features to a given range (min-max normalization)"
-msgstr ""
+msgstr "Escalar características a un rango dado (normalización min-max)"
 
 #: ../../source/api/scale.rst:29
 msgid ":doc:`NormScaler </methods/generated/chemotools.scale.NormScaler>`"
-msgstr ""
+msgstr ":doc:`NormScaler </methods/generated/chemotools.scale.NormScaler>`"
 
 #: ../../source/api/scale.rst:30
 msgid "Scale by vector norm (L1, L2, or max)"
-msgstr ""
+msgstr "Escalar por norma vectorial (L1, L2, o máximo)"
 
 #: ../../source/api/scale.rst:31
 msgid ":doc:`PointScaler </methods/generated/chemotools.scale.PointScaler>`"
-msgstr ""
+msgstr ":doc:`PointScaler </methods/generated/chemotools.scale.PointScaler>`"
 
 #: ../../source/api/scale.rst:32
 msgid "Scale relative to a specific point in the spectrum"
-msgstr ""
+msgstr "Escalar relativo a un punto específico en el espectro"
 
 #: ../../source/api/scale.rst:35
 msgid "See Also"
-msgstr ""
+msgstr "Ver también"
 
 #: ../../source/api/scale.rst:37
 msgid ""
 ":doc:`Scale Methods Overview </methods/scale>` - Complete documentation "
 "with examples and visual guides"
 msgstr ""
+":doc:`Resumen de métodos de escalado </methods/scale>` - Documentación "
+"completa con ejemplos y guías visuales"
 

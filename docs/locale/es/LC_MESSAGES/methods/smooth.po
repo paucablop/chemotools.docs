@@ -21,39 +21,41 @@ msgstr ""
 
 #: ../../source/methods/smooth.rst:2
 msgid "Smoothing Methods"
-msgstr ""
+msgstr "Métodos de suavizado"
 
 #: ../../source/methods/smooth.rst:13:<autosummary>:1
 msgid ":py:obj:`MeanFilter <chemotools.smooth.MeanFilter>`"
-msgstr ""
+msgstr ":py:obj:`MeanFilter <chemotools.smooth.MeanFilter>`"
 
 #: ../../source/methods/smooth.rst:13:<autosummary>:1
 msgid "A transformer that calculates the mean filter of the input data."
-msgstr ""
+msgstr "Un transformador que calcula el filtro de media de los datos de entrada."
 
 #: ../../source/methods/smooth.rst:13:<autosummary>:1
 msgid ":py:obj:`MedianFilter <chemotools.smooth.MedianFilter>`"
-msgstr ""
+msgstr ":py:obj:`MedianFilter <chemotools.smooth.MedianFilter>`"
 
 #: ../../source/methods/smooth.rst:13:<autosummary>:1
 msgid ""
 "A smoothing transformer that calculates the median filter of the input "
 "data."
 msgstr ""
+"Un transformador de suavizado que calcula el filtro de mediana de los datos de "
+"entrada."
 
 #: ../../source/methods/smooth.rst:13:<autosummary>:1
 msgid ":py:obj:`SavitzkyGolayFilter <chemotools.smooth.SavitzkyGolayFilter>`"
-msgstr ""
+msgstr ":py:obj:`SavitzkyGolayFilter <chemotools.smooth.SavitzkyGolayFilter>`"
 
 #: ../../source/methods/smooth.rst:13:<autosummary>:1
 msgid "A transformer that calculates the Savitzky-Golay filter of the input data."
-msgstr ""
+msgstr "Un transformador que calcula el filtro de Savitzky-Golay de los datos de entrada."
 
 #: ../../source/methods/smooth.rst:13:<autosummary>:1
 msgid ":py:obj:`WhittakerSmooth <chemotools.smooth.WhittakerSmooth>`"
-msgstr ""
+msgstr ":py:obj:`WhittakerSmooth <chemotools.smooth.WhittakerSmooth>`"
 
 #: ../../source/methods/smooth.rst:13:<autosummary>:1
 msgid "Whittaker smoothing for noise reduction and signal trend estimation."
-msgstr ""
+msgstr "Suavizado de Whittaker para reducción de ruido y estimación de tendencias de señal."
 

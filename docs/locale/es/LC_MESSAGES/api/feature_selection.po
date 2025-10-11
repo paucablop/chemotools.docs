@@ -21,75 +21,85 @@ msgstr ""
 
 #: ../../source/api/feature_selection.rst:2
 msgid "chemotools.feature_selection"
-msgstr ""
+msgstr "chemotools.feature_selection"
 
 #: ../../source/api/feature_selection.rst:6
 msgid ""
 "Feature selection methods to identify the most chemically relevant "
 "wavelengths or variables for your models."
 msgstr ""
+"Métodos de selección de características para identificar las longitudes de onda "
+"o variables químicamente más relevantes para tus modelos."
 
 #: ../../source/api/feature_selection.rst:8
 msgid "**Import from this module:**"
-msgstr ""
+msgstr "**Importar desde este módulo:**"
 
 #: ../../source/api/feature_selection.rst:20
 msgid "Available Classes"
-msgstr ""
+msgstr "Clases disponibles"
 
 #: ../../source/api/feature_selection.rst:26
 msgid "Class"
-msgstr ""
+msgstr "Clase"
 
 #: ../../source/api/feature_selection.rst:27
 msgid "Description"
-msgstr ""
+msgstr "Descripción"
 
 #: ../../source/api/feature_selection.rst:28
 msgid ""
 ":doc:`IndexSelector "
 "</methods/generated/chemotools.feature_selection.IndexSelector>`"
 msgstr ""
+":doc:`IndexSelector "
+"</methods/generated/chemotools.feature_selection.IndexSelector>`"
 
 #: ../../source/api/feature_selection.rst:29
 msgid "Select features by specific indices"
-msgstr ""
+msgstr "Seleccionar características por índices específicos"
 
 #: ../../source/api/feature_selection.rst:30
 msgid ":doc:`RangeCut </methods/generated/chemotools.feature_selection.RangeCut>`"
-msgstr ""
+msgstr ":doc:`RangeCut </methods/generated/chemotools.feature_selection.RangeCut>`"
 
 #: ../../source/api/feature_selection.rst:31
 msgid "Select features within a specified range"
-msgstr ""
+msgstr "Seleccionar características dentro de un rango especificado"
 
 #: ../../source/api/feature_selection.rst:32
 msgid ""
 ":doc:`SRSelector "
 "</methods/generated/chemotools.feature_selection.SRSelector>`"
 msgstr ""
+":doc:`SRSelector "
+"</methods/generated/chemotools.feature_selection.SRSelector>`"
 
 #: ../../source/api/feature_selection.rst:33
 msgid "Selectivity ratio based feature selection"
-msgstr ""
+msgstr "Selección de características basada en ratio de selectividad"
 
 #: ../../source/api/feature_selection.rst:34
 msgid ""
 ":doc:`VIPSelector "
 "</methods/generated/chemotools.feature_selection.VIPSelector>`"
 msgstr ""
+":doc:`VIPSelector "
+"</methods/generated/chemotools.feature_selection.VIPSelector>`"
 
 #: ../../source/api/feature_selection.rst:35
 msgid "Variable importance in projection (VIP) selector"
-msgstr ""
+msgstr "Selector de importancia de variable en proyección (VIP)"
 
 #: ../../source/api/feature_selection.rst:38
 msgid "See Also"
-msgstr ""
+msgstr "Ver también"
 
 #: ../../source/api/feature_selection.rst:40
 msgid ""
 ":doc:`Feature Selection Methods Overview </methods/feature_selection>` - "
 "Complete documentation with examples and visual guides"
 msgstr ""
+":doc:`Resumen de métodos de selección de características </methods/feature_selection>` - "
+"Documentación completa con ejemplos y guías visuales"
 

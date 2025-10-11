@@ -21,57 +21,65 @@ msgstr ""
 
 #: ../../source/api/derivative.rst:2
 msgid "chemotools.derivative"
-msgstr ""
+msgstr "chemotools.derivative"
 
 #: ../../source/api/derivative.rst:6
 msgid ""
 "Derivative calculation methods for spectral analysis. Derivatives help "
 "remove baseline effects and enhance spectral features."
 msgstr ""
+"Métodos de cálculo de derivadas para análisis espectral. Las derivadas ayudan "
+"a eliminar efectos de línea base y realzar características espectrales."
 
 #: ../../source/api/derivative.rst:8
 msgid "**Import from this module:**"
-msgstr ""
+msgstr "**Importar desde este módulo:**"
 
 #: ../../source/api/derivative.rst:18
 msgid "Available Classes"
-msgstr ""
+msgstr "Clases disponibles"
 
 #: ../../source/api/derivative.rst:24
 msgid "Class"
-msgstr ""
+msgstr "Clase"
 
 #: ../../source/api/derivative.rst:25
 msgid "Description"
-msgstr ""
+msgstr "Descripción"
 
 #: ../../source/api/derivative.rst:26
 msgid ""
 ":doc:`NorrisWilliams "
 "</methods/generated/chemotools.derivative.NorrisWilliams>`"
 msgstr ""
+":doc:`NorrisWilliams "
+"</methods/generated/chemotools.derivative.NorrisWilliams>`"
 
 #: ../../source/api/derivative.rst:27
 msgid "Norris-Williams derivative with gap parameter"
-msgstr ""
+msgstr "Derivada de Norris-Williams con parámetro de intervalo"
 
 #: ../../source/api/derivative.rst:28
 msgid ""
 ":doc:`SavitzkyGolay "
 "</methods/generated/chemotools.derivative.SavitzkyGolay>`"
 msgstr ""
+":doc:`SavitzkyGolay "
+"</methods/generated/chemotools.derivative.SavitzkyGolay>`"
 
 #: ../../source/api/derivative.rst:29
 msgid "Savitzky-Golay derivative filter"
-msgstr ""
+msgstr "Filtro de derivada de Savitzky-Golay"
 
 #: ../../source/api/derivative.rst:32
 msgid "See Also"
-msgstr ""
+msgstr "Ver también"
 
 #: ../../source/api/derivative.rst:34
 msgid ""
 ":doc:`Derivative Methods Overview </methods/derivative>` - Complete "
 "documentation with examples and visual guides"
 msgstr ""
+":doc:`Resumen de métodos de derivadas </methods/derivative>` - Documentación "
+"completa con ejemplos y guías visuales"
 

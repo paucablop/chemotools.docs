@@ -21,67 +21,71 @@ msgstr ""
 
 #: ../../source/api/index.rst:8
 msgid "Augmentation"
-msgstr ""
+msgstr "Aumento de datos"
 
 #: ../../source/api/index.rst:8
 msgid "Baseline"
-msgstr ""
+msgstr "Corrección de línea base"
 
 #: ../../source/api/index.rst:8
 msgid "Derivative"
-msgstr ""
+msgstr "Derivadas"
 
 #: ../../source/api/index.rst:8
 msgid "Feature Selection"
-msgstr ""
+msgstr "Selección de características"
 
 #: ../../source/api/index.rst:8
 msgid "Outliers"
-msgstr ""
+msgstr "Valores atípicos"
 
 #: ../../source/api/index.rst:8
 msgid "Scale"
-msgstr ""
+msgstr "Escalado"
 
 #: ../../source/api/index.rst:8
 msgid "Scatter"
-msgstr ""
+msgstr "Corrección de dispersión"
 
 #: ../../source/api/index.rst:8
 msgid "Smooth"
-msgstr ""
+msgstr "Suavizado"
 
 #: ../../source/api/index.rst:8
 msgid "Utilities"
-msgstr ""
+msgstr "Utilidades"
 
 #: ../../source/api/index.rst:8
 msgid "Core Modules"
-msgstr ""
+msgstr "Módulos principales"
 
 #: ../../source/api/index.rst:2
 msgid "API Reference"
-msgstr ""
+msgstr "Referencia de la API"
 
 #: ../../source/api/index.rst:4
 msgid ""
 "The public Python API for ``chemotools``. This section provides a "
 "technical reference for all importable modules and classes."
 msgstr ""
+"La API pública de Python para ``chemotools``. Esta sección proporciona una "
+"referencia técnica para todos los módulos y clases importables."
 
 #: ../../source/api/index.rst:6
 msgid ""
 "For detailed documentation with examples and visual guides, see the "
 ":doc:`Methods </methods/index>` section."
 msgstr ""
+"Para documentación detallada con ejemplos y guías visuales, consulte la "
+"sección :doc:`Métodos </methods/index>`."
 
 #: ../../source/api/index.rst:23
 msgid "Quick Import Reference"
-msgstr ""
+msgstr "Referencia rápida de importación"
 
 #: ../../source/api/index.rst:25
 msgid "All classes can be imported directly from their respective modules:"
-msgstr ""
+msgstr "Todas las clases se pueden importar directamente desde sus respectivos módulos:"
 
 #~ msgid "Core namespaces"
 #~ msgstr ""

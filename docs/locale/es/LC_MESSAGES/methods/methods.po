@@ -21,17 +21,19 @@ msgstr ""
 
 #: ../../source/methods/methods.rst:4
 msgid "Methods overview"
-msgstr ""
+msgstr "Descripción general de métodos"
 
 #: ../../source/methods/methods.rst:6
 msgid ""
 "This page is a placeholder for upcoming method categories such as "
 "Augmentation, Feature Selection, and Outliers."
 msgstr ""
+"Esta página es un marcador de posición para las próximas categorías de métodos como "
+"Aumento de datos, Selección de características y Valores atípicos."
 
 #: ../../source/methods/methods.rst:9
 msgid "Available pages"
-msgstr ""
+msgstr "Páginas disponibles"
 
 #~ msgid ""
 #~ "This page is a placeholder for "

@@ -21,39 +21,45 @@ msgstr ""
 
 #: ../../source/api/utils.rst:2
 msgid "chemotools.utils"
-msgstr ""
+msgstr "chemotools.utils"
 
 #: ../../source/api/utils.rst:6
 msgid "Utility functions and helper methods used internally by chemotools."
-msgstr ""
+msgstr "Funciones de utilidad y métodos auxiliares usados internamente por chemotools."
 
 #: ../../source/api/utils.rst:8
 msgid "**Import from this module:**"
-msgstr ""
+msgstr "**Importar desde este módulo:**"
 
 #: ../../source/api/utils.rst:18
 msgid ""
 "This module contains internal utilities. Most users won't need to import "
 "directly from here."
 msgstr ""
+"Este módulo contiene utilidades internas. La mayoría de los usuarios no necesitarán "
+"importar directamente desde aquí."
 
 #: ../../source/api/utils.rst:20
 msgid ""
 "For linear algebra operations used in preprocessing, see the specific "
 "method classes in other modules."
 msgstr ""
+"Para operaciones de álgebra lineal usadas en preprocesamiento, consulte las clases "
+"de métodos específicos en otros módulos."
 
 #: ../../source/api/utils.rst:23
 msgid "Available Functions"
-msgstr ""
+msgstr "Funciones disponibles"
 
 #: ../../source/api/utils.rst:25
 msgid ""
 "This module provides linear algebra utilities and helper functions that "
 "support the core chemotools methods."
 msgstr ""
+"Este módulo proporciona utilidades de álgebra lineal y funciones auxiliares que "
+"soportan los métodos principales de chemotools."
 
 #: ../../source/api/utils.rst:27
 msgid "See the source code for implementation details."
-msgstr ""
+msgstr "Consulte el código fuente para detalles de implementación."
 

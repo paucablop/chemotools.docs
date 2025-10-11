@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../../source/explore/pipelines.rst:2
 msgid "Preprocessing pipelines"
-msgstr ""
+msgstr "Pipelines de preprocesamiento"
 
 #: ../../source/explore/pipelines.rst:4
 msgid ""
@@ -30,22 +30,26 @@ msgid ""
 "processing steps, where the output of one step is the input of the next. "
 "They are very useful for:"
 msgstr ""
+"Los pipelines se están volviendo cada vez más populares en flujos de trabajo de aprendizaje automático. "
+"En esencia, los pipelines son una secuencia de pasos de procesamiento de datos conectados, "
+"donde la salida de un paso es la entrada del siguiente. "
+"Son muy útiles para:"
 
 #: ../../source/explore/pipelines.rst:6
 msgid "automating complex workflows,"
-msgstr ""
+msgstr "automatizar flujos de trabajo complejos,"
 
 #: ../../source/explore/pipelines.rst:7
 msgid "improving efficiency,"
-msgstr ""
+msgstr "mejorar la eficiencia,"
 
 #: ../../source/explore/pipelines.rst:8
 msgid "reducing errors in data processing and analysis and"
-msgstr ""
+msgstr "reducir errores en el procesamiento y análisis de datos y"
 
 #: ../../source/explore/pipelines.rst:9
 msgid "simplifying model persistence and deployment."
-msgstr ""
+msgstr "simplificar la persistencia y el despliegue de modelos."
 
 #: ../../source/explore/pipelines.rst:11
 msgid ""
@@ -54,30 +58,34 @@ msgid ""
 "study the case where we would like to apply the following preprocessing "
 "techniques to our spectra:"
 msgstr ""
+"Todas las técnicas de preprocesamiento en ``chemotools`` son compatibles con "
+"``scikit-learn`` y se pueden usar en pipelines. Como ejemplo, estudiaremos "
+"el caso donde queremos aplicar las siguientes técnicas de preprocesamiento "
+"a nuestros espectros:"
 
 #: ../../source/explore/pipelines.rst:13
 msgid "Range Cut"
-msgstr ""
+msgstr "Corte de rango"
 
 #: ../../source/explore/pipelines.rst:14
 msgid "Linear Correction"
-msgstr ""
+msgstr "Corrección lineal"
 
 #: ../../source/explore/pipelines.rst:15
 msgid "Savitzky-Golay derivate"
-msgstr ""
+msgstr "Derivada de Savitzky-Golay"
 
 #: ../../source/explore/pipelines.rst:16
 msgid "Mean Centering (Standard Scaler)"
-msgstr ""
+msgstr "Centrado de media (Standard Scaler)"
 
 #: ../../source/explore/pipelines.rst:17
 msgid "PLS regression"
-msgstr ""
+msgstr "Regresión PLS"
 
 #: ../../source/explore/pipelines.rst:20
 msgid "Traditional flow"
-msgstr ""
+msgstr "Flujo tradicional"
 
 #: ../../source/explore/pipelines.rst:22
 msgid ""

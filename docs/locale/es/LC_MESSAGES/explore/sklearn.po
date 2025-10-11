@@ -21,41 +21,51 @@ msgstr ""
 
 #: ../../source/explore/sklearn.rst:4
 msgid "Why Scikit-Learn?"
-msgstr ""
+msgstr "¿Por qué Scikit-Learn?"
 
 #: ../../source/explore/sklearn.rst:6
 msgid ""
 "Scikit-Learn brings modern machine learning tools to chemometrics—making "
 "workflows more flexible, scalable, and easy to prototype and validate."
 msgstr ""
+"Scikit-Learn trae herramientas modernas de aprendizaje automático a la quimiometría, haciendo que "
+"los flujos de trabajo sean más flexibles, escalables y fáciles de prototipar y validar."
 
 #: ../../source/explore/sklearn.rst:8
 msgid ""
 "**Flexibility**: Works with various chemometric models and preprocessing "
 "methods."
 msgstr ""
+"**Flexibilidad**: Funciona con varios modelos quimiométricos y métodos de "
+"preprocesamiento."
 
 #: ../../source/explore/sklearn.rst:9
 msgid ""
 "**Integration**: Can be combined with domain-specific tools for spectral "
 "analysis, multivariate statistics, and experimental design."
 msgstr ""
+"**Integración**: Se puede combinar con herramientas específicas del dominio para análisis "
+"espectral, estadística multivariante y diseño experimental."
 
 #: ../../source/explore/sklearn.rst:10
 msgid ""
 "**Scalability**: Can handle small laboratory datasets as well as large-"
 "scale industrial data."
 msgstr ""
+"**Escalabilidad**: Puede manejar pequeños conjuntos de datos de laboratorio así como "
+"datos industriales a gran escala."
 
 #: ../../source/explore/sklearn.rst:11
 msgid ""
 "**Easy Experimentation**: Rapid prototyping with different algorithms and"
 " preprocessing techniques."
 msgstr ""
+"**Experimentación fácil**: Prototipado rápido con diferentes algoritmos y "
+"técnicas de preprocesamiento."
 
 #: ../../source/explore/sklearn.rst:15
 msgid "What is Scikit-Learn?"
-msgstr ""
+msgstr "¿Qué es Scikit-Learn?"
 
 #: ../../source/explore/sklearn.rst:17
 msgid ""
@@ -63,22 +73,24 @@ msgid ""
 "source machine-learning library built on top of **NumPy**, **SciPy**. It "
 "offers a unified API for various machine-learning techniques, including:"
 msgstr ""
+"`Scikit-learn <https://scikit-learn.org/>`_ (``sklearn``) es una biblioteca de aprendizaje automático de código "
+"abierto construida sobre **NumPy** y **SciPy**. Ofrece una API unificada para varias técnicas de aprendizaje automático, incluyendo:"
 
 #: ../../source/explore/sklearn.rst:19
 msgid "**Supervised learning**: Regression, classification, and ensemble methods"
-msgstr ""
+msgstr "**Aprendizaje supervisado**: Regresión, clasificación y métodos de conjunto"
 
 #: ../../source/explore/sklearn.rst:20
 msgid "**Unsupervised learning**: Clustering and dimensionality reduction"
-msgstr ""
+msgstr "**Aprendizaje no supervisado**: Agrupamiento y reducción de dimensionalidad"
 
 #: ../../source/explore/sklearn.rst:21
 msgid "**Data preprocessing**: Feature scaling, encoding, and transformation"
-msgstr ""
+msgstr "**Preprocesamiento de datos**: Escalado de características, codificación y transformación"
 
 #: ../../source/explore/sklearn.rst:22
 msgid "**Model evaluation**: Cross-validation, metrics, and hyperparameter tuning"
-msgstr ""
+msgstr "**Evaluación de modelos**: Validación cruzada, métricas y ajuste de hiperparámetros"
 
 #: ../../source/explore/sklearn.rst:24
 msgid ""

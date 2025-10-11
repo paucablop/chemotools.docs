@@ -21,14 +21,15 @@ msgstr ""
 
 #: ../../source/methods/augmentation.rst:5
 msgid "API Modules"
-msgstr ""
+msgstr "Módulos de API"
 
 #: ../../source/methods/augmentation.rst:2
 msgid "Augmentation"
-msgstr ""
+msgstr "Aumento de datos"
 
 #: ../../source/methods/augmentation.rst:3
 msgid ""
 "Simulate real-world variations in your spectral data to enhance model robustness. This can include introducing controlled noise, baseline shifts, or small wavelength misalignments to mimic real measurement conditions. By doing so, your model learns to handle variability in experimental setups, instrument performance, and sample preparation—leading to more reliable predictions when applied to unseen data."
 msgstr ""
+"Simula variaciones del mundo real en tus datos espectrales para mejorar la robustez del modelo. Esto puede incluir la introducción de ruido controlado, desplazamientos de línea base o pequeños desalineamientos de longitud de onda para imitar condiciones de medición reales. Al hacerlo, tu modelo aprende a manejar la variabilidad en configuraciones experimentales, rendimiento de instrumentos y preparación de muestras, lo que conduce a predicciones más confiables cuando se aplica a datos no vistos."
 

@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../../source/learn/datasets.rst:2
 msgid "**Explore our datasets**"
-msgstr ""
+msgstr "**Explora nuestros conjuntos de datos**"
 
 #: ../../source/learn/datasets.rst:4
 msgid ""
@@ -30,10 +30,14 @@ msgid ""
 "can find these datasets in the ``chemotools.datasets`` module and access "
 "them using simple loading functions. Here's what we offer:"
 msgstr ""
+"¡Bienvenido al mundo de la exploración de datos! Nuestro paquete ``chemotools`` "
+"proporciona conjuntos de datos útiles que te ayudan a probar el paquete y aprender. Puedes "
+"encontrar estos conjuntos de datos en el módulo ``chemotools.datasets`` y acceder a "
+"ellos usando funciones de carga simples. Esto es lo que ofrecemos:"
 
 #: ../../source/learn/datasets.rst:9
 msgid "The Fermentation Dataset 🧪"
-msgstr ""
+msgstr "El conjunto de datos de fermentación 🧪"
 
 #: ../../source/learn/datasets.rst:11
 msgid ""
@@ -42,12 +46,18 @@ msgid ""
 "spectroscopy (ATR-FTIR). The dataset includes both a training set and a "
 "test set."
 msgstr ""
+"Este conjunto de datos contiene espectros recopilados durante un proceso de fermentación de levadura "
+"usando espectroscopía infrarroja por transformada de Fourier de reflectancia total atenuada "
+"(ATR-FTIR). El conjunto de datos incluye tanto un conjunto de entrenamiento como un conjunto de "
+"prueba."
 
 #: ../../source/learn/datasets.rst:15
 msgid ""
 "For more information about the Fermentation Dataset, see these "
 "publications:"
 msgstr ""
+"Para más información sobre el conjunto de datos de fermentación, consulta estas "
+"publicaciones:"
 
 #: ../../source/learn/datasets.rst:17
 msgid ""
@@ -56,6 +66,10 @@ msgid ""
 "state estimation in lignocellulosic ethanol fermentation "
 "<https://doi.org/10.1002/bit.27586>`_."
 msgstr ""
+"Cabaneros Lopez, P., Abeykoon Udugama, I., Thomsen, S.T., et al. "
+"`Transformando datos en información: Un modelo híbrido paralelo para la estimación de "
+"estado en tiempo real en fermentación de etanol lignocelulósico "
+"<https://doi.org/10.1002/bit.27586>`_."
 
 #: ../../source/learn/datasets.rst:19
 msgid ""
@@ -64,6 +78,10 @@ msgid ""
 "forecast the evolution of lignocellulosic fermentation "
 "<https://doi.org/10.1002/bbb.2108>`_."
 msgstr ""
+"Cabaneros Lopez, P., Abeykoon Udugama, I., Thomsen, S.T., et al. `Hacia "
+"un gemelo digital: una sombra digital híbrida basada en datos y mecanicista para "
+"pronosticar la evolución de la fermentación lignocelulósica "
+"<https://doi.org/10.1002/bbb.2108>`_."
 
 #: ../../source/learn/datasets.rst:21
 msgid ""
@@ -72,10 +90,14 @@ msgid ""
 "ethanol fermentations using a data-driven feed-back controller "
 "<https://doi.org/10.1186/s13068-020-01829-2>`_."
 msgstr ""
+"Cabaneros Lopez, P., Abeykoon Udugama, I., Thomsen, S.T., et al. "
+"`Promoviendo la co-utilización de glucosa y xilosa en fermentaciones de etanol lignocelulósico "
+"usando un controlador de retroalimentación basado en datos "
+"<https://doi.org/10.1186/s13068-020-01829-2>`_."
 
 #: ../../source/learn/datasets.rst:25
 msgid "The Train Set"
-msgstr ""
+msgstr "El conjunto de entrenamiento"
 
 #: ../../source/learn/datasets.rst:27
 msgid ""
