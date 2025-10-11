@@ -21,47 +21,51 @@ msgstr ""
 
 #: ../../source/_methods/scatter.rst:2
 msgid "Scattering Methods"
-msgstr ""
+msgstr "散射校正方法"
 
 #: ../../source/_methods/scatter.rst:14:<autosummary>:1
 msgid ""
 ":py:obj:`ExtendedMultiplicativeScatterCorrection "
 "<chemotools.scatter.ExtendedMultiplicativeScatterCorrection>`"
 msgstr ""
+":py:obj:`ExtendedMultiplicativeScatterCorrection "
+"<chemotools.scatter.ExtendedMultiplicativeScatterCorrection>`"
 
 #: ../../source/_methods/scatter.rst:14:<autosummary>:1
 msgid ""
 "Extended multiplicative scatter correction (EMSC) is a preprocessing "
 "technique for removing non linear scatter effects from spectra."
-msgstr ""
+msgstr "扩展乘性散射校正（EMSC）是一种用于去除光谱中非线性散射效应的预处理技术。"
 
 #: ../../source/_methods/scatter.rst:14:<autosummary>:1
 msgid ""
 ":py:obj:`MultiplicativeScatterCorrection "
 "<chemotools.scatter.MultiplicativeScatterCorrection>`"
 msgstr ""
+":py:obj:`MultiplicativeScatterCorrection "
+"<chemotools.scatter.MultiplicativeScatterCorrection>`"
 
 #: ../../source/_methods/scatter.rst:14:<autosummary>:1
 msgid ""
 "Multiplicative scatter correction (MSC) is a preprocessing technique for "
 "removing scatter effects from spectra."
-msgstr ""
+msgstr "乘性散射校正（MSC）是一种用于去除光谱中散射效应的预处理技术。"
 
 #: ../../source/_methods/scatter.rst:14:<autosummary>:1
 msgid ":py:obj:`RobustNormalVariate <chemotools.scatter.RobustNormalVariate>`"
-msgstr ""
+msgstr ":py:obj:`RobustNormalVariate <chemotools.scatter.RobustNormalVariate>`"
 
 #: ../../source/_methods/scatter.rst:14:<autosummary>:1
 msgid "A transformer that calculates the robust normal variate of the input data."
-msgstr ""
+msgstr "计算输入数据的稳健标准正态变换的转换器。"
 
 #: ../../source/_methods/scatter.rst:14:<autosummary>:1
 msgid ":py:obj:`StandardNormalVariate <chemotools.scatter.StandardNormalVariate>`"
-msgstr ""
+msgstr ":py:obj:`StandardNormalVariate <chemotools.scatter.StandardNormalVariate>`"
 
 #: ../../source/_methods/scatter.rst:14:<autosummary>:1
 msgid ""
 "A transformer that calculates the standard normal variate of the input "
 "data."
-msgstr ""
+msgstr "计算输入数据的标准正态变换的转换器。"
 

@@ -21,25 +21,25 @@ msgstr ""
 
 #: ../../source/_methods/derivative.rst:2
 msgid "Derivative"
-msgstr ""
+msgstr "导数"
 
 #: ../../source/_methods/derivative.rst:13:<autosummary>:1
 msgid ":py:obj:`NorrisWilliams <chemotools.derivative.NorrisWilliams>`"
-msgstr ""
+msgstr ":py:obj:`NorrisWilliams <chemotools.derivative.NorrisWilliams>`"
 
 #: ../../source/_methods/derivative.rst:13:<autosummary>:1
 msgid ""
 "A transformer that calculates the Norris-Williams derivative of the input"
 " data."
-msgstr ""
+msgstr "计算输入数据的 Norris-Williams 导数的转换器。"
 
 #: ../../source/_methods/derivative.rst:13:<autosummary>:1
 msgid ":py:obj:`SavitzkyGolay <chemotools.derivative.SavitzkyGolay>`"
-msgstr ""
+msgstr ":py:obj:`SavitzkyGolay <chemotools.derivative.SavitzkyGolay>`"
 
 #: ../../source/_methods/derivative.rst:13:<autosummary>:1
 msgid ""
 "A transformer that calculates the Savitzky-Golay derivative of the input "
 "data."
-msgstr ""
+msgstr "计算输入数据的 Savitzky-Golay 导数的转换器。"
 

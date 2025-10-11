@@ -21,33 +21,33 @@ msgstr ""
 
 #: ../../source/_methods/scale.rst:2
 msgid "Scaling Methods"
-msgstr ""
+msgstr "缩放方法"
 
 #: ../../source/_methods/scale.rst:13:<autosummary>:1
 msgid ":py:obj:`MinMaxScaler <chemotools.scale.MinMaxScaler>`"
-msgstr ""
+msgstr ":py:obj:`MinMaxScaler <chemotools.scale.MinMaxScaler>`"
 
 #: ../../source/_methods/scale.rst:13:<autosummary>:1
 msgid ""
 "A transformer that scales the input data by subtracting the minimum and "
 "dividing by the difference between the maximum and the minimum."
-msgstr ""
+msgstr "通过减去最小值并除以最大值和最小值之间的差值来缩放输入数据的转换器。"
 
 #: ../../source/_methods/scale.rst:13:<autosummary>:1
 msgid ":py:obj:`NormScaler <chemotools.scale.NormScaler>`"
-msgstr ""
+msgstr ":py:obj:`NormScaler <chemotools.scale.NormScaler>`"
 
 #: ../../source/_methods/scale.rst:13:<autosummary>:1
 msgid "A transformer that scales the input data by the L-norm of the spectrum."
-msgstr ""
+msgstr "通过光谱的 L-范数缩放输入数据的转换器。"
 
 #: ../../source/_methods/scale.rst:13:<autosummary>:1
 msgid ":py:obj:`PointScaler <chemotools.scale.PointScaler>`"
-msgstr ""
+msgstr ":py:obj:`PointScaler <chemotools.scale.PointScaler>`"
 
 #: ../../source/_methods/scale.rst:13:<autosummary>:1
 msgid ""
 "A transformer that scales the input data by the intensity value at a "
 "given point."
-msgstr ""
+msgstr "通过给定点的强度值缩放输入数据的转换器。"
 
