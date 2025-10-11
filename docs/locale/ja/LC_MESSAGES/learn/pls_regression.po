@@ -119,21 +119,21 @@ msgid ""
 "You can access the from the ``chemotools.datasets`` module with the "
 "``load_fermentation_train()`` function."
 msgstr ""
-" ``chemotools.datasets`` モジュールの ``load_fermentation_train()`` 関数からアクセスできます。"
+"``chemotools.datasets`` モジュールの ``load_fermentation_train()`` 関数からアクセスできます。"
 
 #: ../../source/learn/pls_regression.ipynb:123
 msgid ""
 "The ``load_fermentation_train()`` function returns two "
 "``pandas.DataFrame``:"
 msgstr ""
-" ``load_fermentation_train()`` 関数は2つの ``pandas.DataFrame`` を返します："
+"``load_fermentation_train()`` 関数は2つの ``pandas.DataFrame`` を返します："
 
 #: ../../source/learn/pls_regression.ipynb:125
 msgid ""
 "``spectra``: This dataframe contains spectral data, with columns "
 "representing wavenumbers and rows representing samples."
 msgstr ""
-" ``spectra`` ：このデータフレームにはスペクトルデータが含まれており、列は波数を表し、行はサンプルを表します。"
+"``spectra`` ：このデータフレームにはスペクトルデータが含まれており、列は波数を表し、行はサンプルを表します。"
 
 #: ../../source/learn/pls_regression.ipynb:127
 msgid ""
@@ -141,7 +141,7 @@ msgid ""
 "concentration (in g/L) of each sample, stored in a single column labeled "
 "``glucose``."
 msgstr ""
-" ``hplc`` ：ここでは、各サンプルのグルコース濃度（g/L）の参照HPLC測定値が、 ``glucose`` という"
+"``hplc`` ：ここでは、各サンプルのグルコース濃度（g/L）の参照HPLC測定値が、 ``glucose`` という"
 "ラベルの単一列に格納されています。"
 
 #: ../../source/learn/pls_regression.ipynb:131
@@ -357,7 +357,7 @@ msgid ""
 "#range-cut>`__: to remove the wavenumbers outside the range between 950 "
 "and 1550 cm-1."
 msgstr ""
-" `Range Cut <https://paucablop.github.io/chemotools/docs/feature_selection.html#range-cut>`__ ："
+"`Range Cut <https://paucablop.github.io/chemotools/docs/feature_selection.html#range-cut>`__ ："
 "950から1550 cm-1の範囲外の波数を除去します。"
 
 #: ../../source/learn/pls_regression.ipynb:825
@@ -366,7 +366,7 @@ msgid ""
 "<https://paucablop.github.io/chemotools/docs/baseline.html#linear-"
 "baseline-correction>`__: to remove the linear baseline shift."
 msgstr ""
-" `Linear Correction <https://paucablop.github.io/chemotools/docs/baseline.html#linear-baseline-correction>`__ ："
+"`Linear Correction <https://paucablop.github.io/chemotools/docs/baseline.html#linear-baseline-correction>`__ ："
 "線形ベースラインシフトを除去します。"
 
 #: ../../source/learn/pls_regression.ipynb:827
@@ -377,7 +377,7 @@ msgid ""
 "using the Savitzky-Golay method. This is useful to remove additive and "
 "multiplicative scatter effects."
 msgstr ""
-" `Savitzky-Golay <https://paucablop.github.io/chemotools/docs/derivative.html#savitzky-golay-derivative>`__ ："
+"`Savitzky-Golay <https://paucablop.github.io/chemotools/docs/derivative.html#savitzky-golay-derivative>`__ ："
 "Savitzky-Golay法を使用してスペクトルのn次導関数を計算します。これは、"
 "加法および乗法の散乱効果を除去するのに役立ちます。"
 
@@ -387,7 +387,7 @@ msgid ""
 "learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html>`__:"
 " to scale the spectra to zero mean."
 msgstr ""
-" `Standard Scaler <https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html>`__ ："
+"`Standard Scaler <https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html>`__ ："
 "スペクトルをゼロ平均にスケーリングします。"
 
 #: ../../source/learn/pls_regression.ipynb:840
@@ -397,7 +397,7 @@ msgid ""
 "learn.org/stable/modules/generated/sklearn.pipeline.make_pipeline.html>`__"
 " function from ``scikit-learn``."
 msgstr ""
-" ``scikit-learn`` の ```make_pipeline()`` <https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.make_pipeline.html>`__ "
+"``scikit-learn`` の ``make_pipeline()`` `詳細については〜を参照してください <https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.make_pipeline.html>`__ "
 "関数を使用して前処理ステップを連鎖させます。"
 
 #: ../../source/learn/pls_regression.ipynb:842
@@ -568,7 +568,7 @@ msgid ""
 "were recorded in real-time during the fermentation process approximately "
 "every 1.5 minutes."
 msgstr ""
-" ``spectra`` ：このデータセットにはスペクトルデータが含まれており、列は波数を表し、"
+"``spectra`` ：このデータセットにはスペクトルデータが含まれており、列は波数を表し、"
 "行はサンプルを表します。これらのスペクトルは、発酵プロセス中に約1.5分ごとに"
 "リアルタイムで記録されました。"
 
@@ -578,7 +578,7 @@ msgid ""
 "concentrations (in g/L), stored in a single column labeled ``glucose``. "
 "These measurements were recorded off-line approximately every 60 minutes."
 msgstr ""
-" ``hplc`` ：このデータセットにはHPLC測定値、具体的にはグルコース濃度（g/L）が含まれており、"
+"``hplc`` ：このデータセットにはHPLC測定値、具体的にはグルコース濃度（g/L）が含まれており、"
 " ``glucose`` というラベルの単一列に格納されています。これらの測定値は、"
 "約60分ごとにオフラインで記録されました。"
 
@@ -587,7 +587,7 @@ msgid ""
 "We will use the ``load_fermentation_test()`` function from the "
 "``chemotools.datasets`` module to load the testing dataset:"
 msgstr ""
-" ``chemotools.datasets`` モジュールの ``load_fermentation_test()`` 関数を使用して"
+"``chemotools.datasets`` モジュールの ``load_fermentation_test()`` 関数を使用して"
 "テストデータセットをロードします："
 
 #: ../../source/learn/pls_regression.ipynb:1611
