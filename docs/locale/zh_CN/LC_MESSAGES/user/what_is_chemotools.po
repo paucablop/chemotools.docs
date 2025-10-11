@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: chemotools \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-03 02:35+0800\n"
+"POT-Creation-Date: 2025-10-11 18:36+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -30,8 +30,8 @@ msgid ""
 "``scikit-learn`` ecosystem, enabling reproducible and scalable "
 "development of spectroscopic models."
 msgstr ""
-"``chemotools`` 是一个用于光谱预处理和化学计量学建模的开源 Python 包。它直接与 "
-"``scikit-learn`` 生态系统集成，支持可重现且可扩展的光谱模型开发。"
+"``chemotools`` 是一个用于光谱预处理和化学计量学建模的开源 Python 包。它直接与 ``scikit-learn`` "
+"生态系统集成，支持可重现且可扩展的光谱模型开发。"
 
 #: ../../source/user/what_is_chemotools.rst:6
 msgid "**Extensive toolkit:** transformers for diverse spectroscopic data."
@@ -58,9 +58,10 @@ msgid "Composable building blocks / lifecycle"
 msgstr "可组合的构建模块 / 生命周期"
 
 #: ../../source/user/what_is_chemotools.rst:20
+#, fuzzy
 msgid ""
 "**Curious about scikit-learn?** See the dedicated `scikit-learn overview "
-"<../_explore/sklearn.html>`_."
+"<../explore/sklearn.html>`_."
 msgstr "对 scikit-learn 感到好奇？请参阅专门的 `scikit-learn 概述 <../_explore/sklearn.html>`_。"
 
 #: ../../source/user/what_is_chemotools.rst:23
@@ -78,7 +79,8 @@ msgid ""
 "**robust, end-to-end spectroscopic models**."
 msgstr ""
 "光谱学是多样化的——不同的仪器、样品基质和分析目标需要不同的方法。``chemotools`` "
-"为光谱数据提供了一套专注的转换器，并使将它们组装成预处理管道变得简单。通过连接到更广泛的 Python 生态系统，您可以利用先进的机器学习和科学库来构建稳健的端到端光谱模型。"
+"为光谱数据提供了一套专注的转换器，并使将它们组装成预处理管道变得简单。通过连接到更广泛的 Python "
+"生态系统，您可以利用先进的机器学习和科学库来构建稳健的端到端光谱模型。"
 
 #: ../../source/user/what_is_chemotools.rst:26
 msgid "Ecosystem: chemotools with sklearn, numpy and friends"
@@ -92,9 +94,10 @@ msgid ""
 msgstr "将您的预处理与 ``scikit-learn`` 生态系统连接起来，以解锁用于特征选择、模型调优、验证和部署的广泛工具栈。"
 
 #: ../../source/user/what_is_chemotools.rst:36
+#, fuzzy
 msgid ""
 "**Want to explore the tools at your fingertips?** Visit the `explore "
-"overview <../_explore/index.html>`_."
+"overview <../explore/index.html>`_."
 msgstr "想要探索触手可及的工具？ 请访问 `探索概览 <../_explore/index.html>`_。"
 
 #: ../../source/user/what_is_chemotools.rst:39
@@ -109,8 +112,8 @@ msgid ""
 "feature selection, modelling, and validation can be chained directly — no"
 " adapters required."
 msgstr ""
-"``chemotools`` 将预处理转变为模块化、可组合的过程：每个转换器都遵循 ``fit`` / ``transform`` API，并直接与 "
-"``scikit-learn`` 管道集成。预处理、特征选择、建模和验证可以直接链接——无需适配器。"
+"``chemotools`` 将预处理转变为模块化、可组合的过程：每个转换器都遵循 ``fit`` / ``transform`` "
+"API，并直接与 ``scikit-learn`` 管道集成。预处理、特征选择、建模和验证可以直接链接——无需适配器。"
 
 #: ../../source/user/what_is_chemotools.rst:42
 msgid ""
@@ -139,22 +142,29 @@ msgid ""
 "**Thorough testing** — covered by extensive `unit tests "
 "<https://app.codecov.io/github/paucablop/chemotools>`_ and continuous "
 "code coverage for reliability and robustness."
-msgstr "全面测试 — 通过广泛的 `单元测试 <https://app.codecov.io/github/paucablop/chemotools>`_ 和持续的代码覆盖率来确保可靠性和稳健性。"
+msgstr ""
+"全面测试 — 通过广泛的 `单元测试 <https://app.codecov.io/github/paucablop/chemotools>`_"
+" 和持续的代码覆盖率来确保可靠性和稳健性。"
 
 #: ../../source/user/what_is_chemotools.rst:52
 msgid ""
 "**Transparency** — we provide a Software Bill of Materials (SBOM) in "
 "`CycloneDX <https://cyclonedx.org/>`_ format with every release, "
 "supporting validation and clearance in regulated environments."
-msgstr "透明度 — 我们在每个版本中都提供 `CycloneDX <https://cyclonedx.org/>`_ 格式的软件物料清单 (SBOM)，以支持在受监管环境中的验证和审核。"
+msgstr ""
+"透明度 — 我们在每个版本中都提供 `CycloneDX <https://cyclonedx.org/>`_ 格式的软件物料清单 "
+"(SBOM)，以支持在受监管环境中的验证和审核。"
 
 #: ../../source/user/what_is_chemotools.rst:53
 msgid ""
 "**Peer-reviewed** — published in the `Journal of Open Source Software "
 "(JOSS) <https://joss.theoj.org/papers/10.21105/joss.06802>`_ following "
 "independent peer review."
-msgstr "同行评审 — 经过独立同行评审后，发表于 `Journal of Open Source Software (JOSS) <https://joss.theoj.org/papers/10.21105/joss.06802>`_。"
+msgstr ""
+"同行评审 — 经过独立同行评审后，发表于 `Journal of Open Source Software (JOSS) "
+"<https://joss.theoj.org/papers/10.21105/joss.06802>`_。"
 
 #: ../../source/user/what_is_chemotools.rst:56
 msgid "Quality, transparency, and trust — built in from the start."
 msgstr "质量、透明度和信任——从一开始就内置其中。"
+

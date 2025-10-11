@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: chemotools \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-03 02:35+0800\n"
+"POT-Creation-Date: 2025-10-11 18:36+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -24,19 +24,22 @@ msgid "Quick start"
 msgstr "快速开始"
 
 #: ../../source/user/user.rst:4
-msgid "Check the `installation guide <../_user/install.html>`_ to get started."
+#, fuzzy
+msgid "Check the `installation guide <../user/install.html>`_ to get started."
 msgstr "请查看 `安装指南 <../_user/install.html>`_ 以开始使用。"
 
 #: ../../source/user/user.rst:7
+#, fuzzy
 msgid ""
 "**New in chemometrics?** Learn through our step-by-step `tutorials page "
-"<../_learn/index.html>`_."
+"<../learn/index.html>`_."
 msgstr "化学计量学新手？通过我们的分步 `教程页面 <../_learn/index.html>`_ 来学习。"
 
 #: ../../source/user/user.rst:10
+#, fuzzy
 msgid ""
 "**Want to explore the tools at your fingertips?** Visit the `explore "
-"overview <../_explore/index.html>`_."
+"overview <../explore/index.html>`_."
 msgstr "想要探索触手可及的工具？请访问 `探索概览 <../_explore/index.html>`_。"
 
 #: ../../source/user/user.rst:13
@@ -50,9 +53,10 @@ msgid ""
 msgstr "这将加载一个发酵过程中的中红外光谱训练集（``X_train``）及其相关的参考值（``y_train``）。"
 
 #: ../../source/user/user.rst:24
+#, fuzzy
 msgid ""
 "**Looking for available datasets?** See the `datasets catalog "
-"<../_learn/datasets.html>`_."
+"<../learn/datasets.html>`_."
 msgstr "寻找可用的数据集？请查看 `数据集目录 <../_learn/datasets.html>`_。"
 
 #: ../../source/user/user.rst:27
@@ -67,9 +71,10 @@ msgid ""
 msgstr "加载、定义并将预处理步骤应用于训练数据。这里我们使用 Savitzky-Golay 滤波器来计算样品光谱的一阶导数。"
 
 #: ../../source/user/user.rst:42
+#, fuzzy
 msgid ""
 "**Want to know more about preprocessing methods?** Read the `methods "
-"index <../_methods/index.html>`_."
+"index <../methods/index.html>`_."
 msgstr "想要了解更多预处理方法？请阅读 `方法索引 <../_methods/index.html>`_。"
 
 #: ../../source/user/user.rst:45
@@ -81,19 +86,22 @@ msgid "Combine preprocessing and modelling steps in a single pipeline."
 msgstr "将预处理和建模步骤组合到单个管道中。"
 
 #: ../../source/user/user.rst:68
+#, fuzzy
 msgid ""
 "**Want to know more about pipelines?** Open the `pipelines article "
-"<../_explore/pipelines.html>`_."
+"<../explore/pipelines.html>`_."
 msgstr "想要了解更多关于管道的信息？请打开 `管道文章 <../_explore/pipelines.html>`_。"
 
 #: ../../source/user/user.rst:71
+#, fuzzy
 msgid ""
 "**Curious about model optimization?** Read the `optimization guide "
-"<../_explore/optimize.html>`_."
+"<../explore/optimize.html>`_."
 msgstr "对模型优化感到好奇？请阅读 `优化指南 <../_explore/optimize.html>`_。"
 
 #: ../../source/user/user.rst:73
 msgid ""
-"**Congratulations!** You have just built your first chemotools workflow in "
-"Python 🎯"
+"**Congratulations!** You have just built your first chemotools workflow "
+"in Python 🎯"
 msgstr "恭喜！您刚刚在 Python 中构建了第一个 chemotools 工作流程 🎯"
+

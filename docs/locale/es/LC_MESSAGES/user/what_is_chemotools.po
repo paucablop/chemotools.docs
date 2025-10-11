@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: chemotools \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-03 02:35+0800\n"
+"POT-Creation-Date: 2025-10-11 18:36+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
@@ -58,7 +58,7 @@ msgstr ""
 #: ../../source/user/what_is_chemotools.rst:20
 msgid ""
 "**Curious about scikit-learn?** See the dedicated `scikit-learn overview "
-"<../_explore/sklearn.html>`_."
+"<../explore/sklearn.html>`_."
 msgstr ""
 
 #: ../../source/user/what_is_chemotools.rst:23
@@ -90,7 +90,7 @@ msgstr ""
 #: ../../source/user/what_is_chemotools.rst:36
 msgid ""
 "**Want to explore the tools at your fingertips?** Visit the `explore "
-"overview <../_explore/index.html>`_."
+"overview <../explore/index.html>`_."
 msgstr ""
 
 #: ../../source/user/what_is_chemotools.rst:39
@@ -152,4 +152,16 @@ msgstr ""
 #: ../../source/user/what_is_chemotools.rst:56
 msgid "Quality, transparency, and trust — built in from the start."
 msgstr ""
+
+#~ msgid ""
+#~ "**Curious about scikit-learn?** See the"
+#~ " dedicated `scikit-learn overview "
+#~ "<../_explore/sklearn.html>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Want to explore the tools at "
+#~ "your fingertips?** Visit the `explore "
+#~ "overview <../_explore/index.html>`_."
+#~ msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: chemotools \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-03 02:35+0800\n"
+"POT-Creation-Date: 2025-10-11 18:36+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
@@ -102,7 +102,7 @@ msgstr ""
 #: ../../source/learn/datasets.rst:51
 msgid ""
 "To learn how to build a PLS model using the Fermentation Dataset, see our"
-" `Training Guide <https://chemotools.org/_learn/pls_regression.html>`__."
+" `Training Guide <https://chemotools.org/learn/pls_regression.html>`__."
 msgstr ""
 
 #: ../../source/learn/datasets.rst:54
@@ -144,10 +144,24 @@ msgstr ""
 msgid ""
 "To learn how to build a PLS-DA classification model using the Coffee "
 "Dataset, see our `Training Guide "
-"<https://chemotools.org/_learn/pls_classification.html>`__."
+"<https://chemotools.org/learn/pls_classification.html>`__."
 msgstr ""
 
 #: ../../source/learn/datasets.rst:110
 msgid "We hope you enjoy exploring these datasets! 🚀"
 msgstr ""
+
+#~ msgid ""
+#~ "To learn how to build a PLS "
+#~ "model using the Fermentation Dataset, "
+#~ "see our `Training Guide "
+#~ "<https://chemotools.org/_learn/pls_regression.html>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To learn how to build a PLS-"
+#~ "DA classification model using the Coffee"
+#~ " Dataset, see our `Training Guide "
+#~ "<https://chemotools.org/_learn/pls_classification.html>`__."
+#~ msgstr ""
 
