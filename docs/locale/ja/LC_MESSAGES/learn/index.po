@@ -21,17 +21,17 @@ msgstr ""
 
 #: ../../source/learn/index.rst:6
 msgid "Learn"
-msgstr ""
+msgstr "学習"
 
 #: ../../source/learn/index.rst:24
 msgid "Data sets"
-msgstr ""
+msgstr "データセット"
 
 #: ../../source/learn/index.rst:35
 msgid "Fermentation monitoring"
-msgstr ""
+msgstr "発酵モニタリング"
 
 #: ../../source/learn/index.rst:46
 msgid "Coffee classificatoin"
-msgstr ""
+msgstr "コーヒーの分類"
 

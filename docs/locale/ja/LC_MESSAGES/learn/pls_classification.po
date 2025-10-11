@@ -21,35 +21,42 @@ msgstr ""
 
 #: ../../source/learn/pls_classification.ipynb:9
 msgid "**Classify coffees with PLS-DA**"
-msgstr ""
+msgstr "PLS-DAでコーヒーを分類"
 
 #: ../../source/learn/pls_classification.ipynb:20
 msgid ""
 "💡\\ **NOTE:** This document is a Jupyter notebook. You can download the "
 "source file and run it in your Jupyter environment!"
 msgstr ""
+"💡 注意：このドキュメントはJupyterノートブックです。ソースファイルを"
+"ダウンロードして、Jupyter環境で実行できます！"
 
 #: ../../source/learn/pls_classification.ipynb:32
 msgid "**Introduction**"
-msgstr ""
+msgstr "はじめに"
 
 #: ../../source/learn/pls_classification.ipynb:34
 msgid ""
 "*Can you taste the difference between a coffee from Ethiopia, Brazil, or "
 "Vietnam?*"
 msgstr ""
+"エチオピア、ブラジル、またはベトナムのコーヒーの味の違いがわかりますか？"
 
 #: ../../source/learn/pls_classification.ipynb:36
 msgid ""
 "In this tutorial, we will use spectroscopy and machine learning to find "
 "the origin of three different coffees produced in:"
 msgstr ""
+"このチュートリアルでは、分光法と機械学習を使用して、次の3つの異なる地域で"
+"生産されたコーヒーの産地を特定します："
 
 #: ../../source/learn/pls_classification.ipynb:44
 msgid ""
 "These spectra have been collected from brewed coffee using Attenuated "
 "Total Reflectance Mid-Infrared Spectroscopy (ATR-MIR)."
 msgstr ""
+"これらのスペクトルは、減衰全反射中赤外分光法（ATR-MIR）を使用して"
+"抽出されたコーヒーから収集されました。"
 
 #: ../../source/learn/pls_classification.ipynb:46
 msgid ""
@@ -57,12 +64,16 @@ msgid ""
 "model that can differenciate the unique fingerprint of each coffee's "
 "origin from its spectral signature."
 msgstr ""
+"このガイドでは、各コーヒーの産地の独特な指紋をスペクトルシグネチャから"
+"区別できる分類モデルを作成する手順を説明します。"
 
 #: ../../source/learn/pls_classification.ipynb:48
 msgid ""
 "So, grab your favorite coffee mug, prepare to delve into the world of "
 "data-driven discovery, and let's embark on this aromatic journey."
 msgstr ""
+"では、お気に入りのコーヒーマグを手に取り、データ駆動型の発見の世界に飛び込む準備をして、"
+"この香り高い旅に出発しましょう。"
 
 #: ../../source/learn/pls_classification.ipynb:50
 msgid ""
@@ -70,66 +81,80 @@ msgid ""
 " conditions, but here's the twist: Ethiopian and Brazilian beans were "
 "brewed into espresso, while Vietnamese coffee was brewed on a moka pot ✨"
 msgstr ""
+"💡 注意：データセットでは、すべてのコーヒーを同じ条件で焙煎しましたが、"
+"ここに注目してください。エチオピアとブラジルの豆はエスプレッソに抽出され、"
+"ベトナムのコーヒーはモカポットで抽出されました ✨"
 
 #: ../../source/learn/pls_classification.ipynb:62
 msgid "**Objective**"
-msgstr ""
+msgstr "目的"
 
 #: ../../source/learn/pls_classification.ipynb:64
 msgid ""
 "In this exercise we will build a PLS-DA model to classify the origin of "
 "coffee samples from three different origins."
 msgstr ""
+"この演習では、3つの異なる産地のコーヒーサンプルの産地を分類する"
+"PLS-DAモデルを構築します。"
 
 #: ../../source/learn/pls_classification.ipynb:76
 msgid "**Before starting**"
-msgstr ""
+msgstr "始める前に"
 
 #: ../../source/learn/pls_classification.ipynb:78
 msgid ""
 "Before we start, you need to be sure to have the following dependencies "
 "installed:"
 msgstr ""
+"始める前に、以下の依存関係がインストールされていることを確認してください："
 
 #: ../../source/learn/pls_classification.ipynb:88
 msgid "You can install them using"
-msgstr ""
+msgstr "次のコマンドでインストールできます"
 
 #: ../../source/learn/pls_classification.ipynb:108
 msgid "**Loading the coffee dataset**"
-msgstr ""
+msgstr "コーヒーデータセットの読み込み"
 
 #: ../../source/learn/pls_classification.ipynb:110
 msgid ""
 "The coffee dataset can be directly accessed from the "
 "``chemotools.datasets`` module, using the ``load_coffee()`` function."
 msgstr ""
+"コーヒーデータセットは、 ``chemotools.datasets`` モジュールから "
+" ``load_coffee()`` 関数を使用して直接アクセスできます。"
 
 #: ../../source/learn/pls_classification.ipynb:132
 msgid ""
 "The ``load_coffee()`` function returns two variables: ``spectra`` and "
 "``labels``:"
 msgstr ""
+" ``load_coffee()`` 関数は2つの変数を返します： ``spectra`` と "
+" ``labels`` ："
 
 #: ../../source/learn/pls_classification.ipynb:134
 msgid ""
 "``spectra``: A ``pandas.DataFrame`` containing the spectra of the coffee "
 "samples as rows."
 msgstr ""
+" ``spectra`` ： ``pandas.DataFrame`` で、コーヒーサンプルのスペクトルを行として含みます。"
 
 #: ../../source/learn/pls_classification.ipynb:135
 msgid "``labels``: A ``pandas.DataFrame`` containing the origin of each sample."
 msgstr ""
+" ``labels`` ： ``pandas.DataFrame`` で、各サンプルの産地を含みます。"
 
 #: ../../source/learn/pls_classification.ipynb:139
 msgid ""
 "💡\\ **NOTE:** If you are interested in working with ``polars.DataFrame`` "
 "you can simply use the ``load_coffee(set_output=\"polars\")``."
 msgstr ""
+"💡 注意： ``polars.DataFrame`` を使用したい場合は、 ``load_coffee(set_output=\"polars\")`` を"
+"使用するだけです。"
 
 #: ../../source/learn/pls_classification.ipynb:151
 msgid "**Explore, plot and color**"
-msgstr ""
+msgstr "探索、プロット、色付け"
 
 #: ../../source/learn/pls_classification.ipynb:153
 msgid ""
@@ -137,6 +162,8 @@ msgid ""
 "inspect datasets. Let's get a snapshot of the data sizes and kickstart "
 "our analysis."
 msgstr ""
+"コーヒーデータ分析に深く入る前に、データセットを簡単に検査します。"
+"データサイズのスナップショットを取得して、分析を開始しましょう。"
 
 #: ../../source/learn/pls_classification.ipynb:201
 msgid ""
@@ -146,6 +173,10 @@ msgid ""
 " ``labels`` dataset we can use the ``value_counts()`` method from "
 "``pandas`` and make a bar plot."
 msgstr ""
+" ``spectra`` データセットには60のサンプル（行）と1841の特徴（列）が含まれています。"
+"各サンプルはスペクトルであり、各特徴は波数です。 ``labels`` データセットには"
+"各サンプルの産地が含まれています。 ``labels`` データセットを分析するには、"
+" ``pandas`` の ``value_counts()`` メソッドを使用して棒グラフを作成できます。"
 
 #: ../../source/learn/pls_classification.ipynb:259
 msgid ""
@@ -153,6 +184,9 @@ msgid ""
 "better understanding of our data, let's start plotting the spectra. We "
 "will plot the different spectra and color them by their origin."
 msgstr ""
+"クラスごとに20サンプルを持つバランスの取れたデータセットがあります。"
+"データの理解が深まったので、スペクトルのプロットを始めましょう。"
+"異なるスペクトルをプロットし、産地別に色分けします。"
 
 #: ../../source/learn/pls_classification.ipynb:325
 msgid ""
@@ -162,6 +196,10 @@ msgid ""
 "can do that by using a Principal Component Analysis (PCA) to reduce the "
 "dimensionality of the data."
 msgstr ""
+"視覚的に、3つのコーヒーのスペクトル間にいくつかの違いがあることがわかります。"
+"ただし、このような違いの原因を理解するには、さらに深く掘り下げる必要があります。"
+"探索的分析から始めましょう。主成分分析（PCA）を使用してデータの次元を削減することで"
+"これを行うことができます。"
 
 #: ../../source/learn/pls_classification.ipynb:327
 msgid ""
@@ -171,6 +209,10 @@ msgid ""
 " dimensionality of the data to two principal components. Finally, we will"
 " plot the scores and color them according to the origin of the coffee."
 msgstr ""
+"そのために、まず ``scikit-learn`` の ``StandardScaler()`` 前処理メソッドを"
+"使用してデータを平均中心化します。次に、同じく ``scikit-learn`` の ``PCA()`` メソッドを"
+"使用して、データの次元を2つの主成分に削減します。最後に、スコアをプロットし、"
+"コーヒーの産地に従って色分けします。"
 
 #: ../../source/learn/pls_classification.ipynb:329
 msgid ""
@@ -182,16 +224,22 @@ msgid ""
 "data using the ``StandardScaler()`` and setting the ``use_std`` argument "
 "to ``False``."
 msgstr ""
+"💡 注意：分光データを使用する場合、スペクトルを単位分散にスケーリングしたくありません。"
+"代わりに、データを平均中心化したいと考えます。これは、スペクトルの分散がサンプルの吸光度に"
+"関連しているためです。データを単位分散にスケーリングすると、サンプルの吸光度に関する"
+"情報が失われます。 ``StandardScaler()`` を使用し、 ``use_std`` 引数を"
+" ``False`` に設定することで、データを平均中心化できます。"
 
 #: ../../source/learn/pls_classification.ipynb:413
 msgid ""
 "The results show that there are some differences between the spectra of "
 "the three coffes."
 msgstr ""
+"結果は、3つのコーヒーのスペクトル間にいくつかの違いがあることを示しています。"
 
 #: ../../source/learn/pls_classification.ipynb:425
 msgid "**Preprocessing the spectra**"
-msgstr ""
+msgstr "スペクトルの前処理"
 
 #: ../../source/learn/pls_classification.ipynb:427
 msgid ""
@@ -202,6 +250,10 @@ msgid ""
 "we harness the power of such research and make it available to you using "
 "``scikit-learn`` standards."
 msgstr ""
+"前処理の目的は、ベースラインシフトや散乱効果などの非化学的な系統的変動を"
+"スペクトルから除去することです。分光データの前処理については多くの研究が行われており、"
+"ここで ``chemotools`` が非常に便利です。そのような研究の力を活用し、"
+" ``scikit-learn`` 標準を使用して利用できるようにしています。"
 
 #: ../../source/learn/pls_classification.ipynb:429
 msgid ""
@@ -212,6 +264,11 @@ msgid ""
 "sequence of steps that are applied to the data in a given order. In our "
 "case, we will apply the following steps:"
 msgstr ""
+" ``sklearn.pipeline`` の ``make_pipeline()`` メソッドを使用して、"
+"前処理ステップをパイプラインで構築します。 `パイプライン "
+"<https://paucablop.github.io/chemotools/get-"
+"started/scikit_learn_integration.html#working-with-pipelines>`__ は、"
+"指定された順序でデータに適用される一連のステップです。今回は、次のステップを適用します："
 
 #: ../../source/learn/pls_classification.ipynb:431
 msgid ""
@@ -219,6 +276,9 @@ msgid ""
 "<https://paucablop.github.io/chemotools/docs/scatter.html#standard-"
 "normal-variate>`__ to remove scattering effects."
 msgstr ""
+"`標準正規変量（SNV） "
+"<https://paucablop.github.io/chemotools/docs/scatter.html#standard-"
+"normal-variate>`__ で散乱効果を除去します。"
 
 #: ../../source/learn/pls_classification.ipynb:433
 msgid ""
@@ -226,6 +286,8 @@ msgid ""
 "#savitzky-golay-derivative>`__ to remove both additive and multiplicative"
 " scattering effects."
 msgstr ""
+"`微分 <https://paucablop.github.io/chemotools/docs/derivative.html"
+"#savitzky-golay-derivative>`__ で加算的および乗算的な散乱効果の両方を除去します。"
 
 #: ../../source/learn/pls_classification.ipynb:435
 msgid ""
@@ -233,6 +295,9 @@ msgid ""
 "<https://paucablop.github.io/chemotools/docs/feature_selection.html"
 "#range-cut>`__ to select the most relevant wavenumbers."
 msgstr ""
+"`範囲カット "
+"<https://paucablop.github.io/chemotools/docs/feature_selection.html"
+"#range-cut>`__ で最も関連性の高い波数を選択します。"
 
 #: ../../source/learn/pls_classification.ipynb:437
 msgid ""
@@ -240,6 +305,9 @@ msgid ""
 "learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html>`__"
 " remove the mean from the dataset."
 msgstr ""
+"`標準化 <https://scikit-"
+"learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html>`__ "
+"でデータセットから平均を除去します。"
 
 #: ../../source/learn/pls_classification.ipynb:470
 msgid ""
@@ -250,16 +318,23 @@ msgid ""
 "functinlaities provided by ``scikit-learn``. This is the power of "
 "``chemotools``, it is designed to work seamlessly with ``scikit-learn``."
 msgstr ""
+"💡 注意：これは素晴らしいです！ケモメトリクスを ``scikit-learn`` と"
+"どのように統合しているかご覧ください。 ``StandardNormalVariate`` 、 ``SavitizkyGolay`` 、"
+" ``RangeCut`` はすべて ``chemotools`` に実装された前処理技術であり、"
+" ``StandardScaler`` と ``pipelines`` は ``scikit-learn`` によって提供される"
+"機能です。これが ``chemotools`` の力であり、 ``scikit-learn`` とシームレスに"
+"動作するように設計されています。"
 
 #: ../../source/learn/pls_classification.ipynb:472
 msgid ""
 "Let's plot the preprocessed spectra to see the effect of the "
 "preprocessing steps."
 msgstr ""
+"前処理されたスペクトルをプロットして、前処理ステップの効果を見てみましょう。"
 
 #: ../../source/learn/pls_classification.ipynb:509
 msgid "**Building a classifier**"
-msgstr ""
+msgstr "分類器の構築"
 
 #: ../../source/learn/pls_classification.ipynb:511
 msgid ""
@@ -267,6 +342,8 @@ msgid ""
 "To create a classification model that can distinguish the origins of our "
 "coffees using their spectral signatures."
 msgstr ""
+"このセクションでは、分類の世界に飛び込みます。目標は？"
+"スペクトルシグネチャを使用してコーヒーの産地を区別できる分類モデルを作成することです。"
 
 #: ../../source/learn/pls_classification.ipynb:513
 msgid ""
@@ -278,6 +355,10 @@ msgid ""
 "recognition in complex datasets, making it ideal for our coffee origin "
 "classification."
 msgstr ""
+"部分最小二乗判別分析（PLS-DA）は、分類に使用されるシンプルな統計手法です。"
+"PLS-DAは、入力変数（スペクトルデータ）とクラスラベル（コーヒーの産地）の間の"
+"関係をモデル化し、スペクトルシグネチャに基づいて新しいサンプルを高精度で分類できます。"
+"複雑なデータセットでのパターン認識のための強力なツールであり、コーヒーの産地分類に最適です。"
 
 #: ../../source/learn/pls_classification.ipynb:515
 msgid ""
@@ -285,12 +366,16 @@ msgid ""
 "numbers. We can do that using the ``LabelEncoder()`` method from "
 "``scikit-learn``."
 msgstr ""
+"PLS-DAアルゴリズムを開始する前に、ラベルを数値にエンコードする必要があります。"
+"これは ``scikit-learn`` の ``LabelEncoder()`` メソッドを使用して実行できます。"
 
 #: ../../source/learn/pls_classification.ipynb:517
 msgid ""
 "``LabelEncoder()`` will assign a categorical value to each of the labels "
 "in our dataset (0 for Brasil, 1 for Ethiopia an 2 for Vietnam)."
 msgstr ""
+"``LabelEncoder()`` は、データセット内の各ラベルにカテゴリ値を割り当てます"
+"（ブラジルは0、エチオピアは1、ベトナムは2）。"
 
 #: ../../source/learn/pls_classification.ipynb:546
 msgid ""
@@ -299,6 +384,9 @@ msgid ""
 " we will divide our data into a training and a testing sets using the "
 "``train_test_split()`` method from the ``scikit-learn`` library."
 msgstr ""
+"コーヒーの産地ラベルが数値にエンコードされたので、PLS-DAモデルを訓練する準備ができました。"
+"ただし、開始する前に、 ``scikit-learn`` ライブラリの ``train_test_split()`` "
+"メソッドを使用して、データを訓練セットとテストセットに分割します。"
 
 #: ../../source/learn/pls_classification.ipynb:548
 #, python-format
@@ -309,12 +397,17 @@ msgid ""
 "model's performance can be evaluated on unseen data, a crucial step in "
 "assessing its real-world applicability and predictive power."
 msgstr ""
+"戦略は、データセットの80%をモデルの訓練に割り当て、スペクトルデータの特徴的な"
+"特性から学習させることです。残りの20%はテスト用に確保します。この分割により、"
+"モデルのパフォーマンスを未見のデータで評価できます。これは、実世界での適用可能性と"
+"予測力を評価するための重要なステップです。"
 
 #: ../../source/learn/pls_classification.ipynb:572
 msgid ""
 "💡\\ **NOTE:** We set the ``random_state`` argument to 42 to ensure "
 "reproducibility of the results."
 msgstr ""
+"💡 注意： ``random_state`` 引数を42に設定して、結果の再現性を確保しています。"
 
 #: ../../source/learn/pls_classification.ipynb:574
 msgid ""
@@ -324,12 +417,18 @@ msgid ""
 "argument to ``False``. This is because we have already scaled the data in"
 " the preprocessing step."
 msgstr ""
+"訓練セットとテストセットを用意したので、PLS-DAモデルの構築を開始できます。"
+" ``scikit-learn`` の ``PLSRegression()`` メソッドを使用します。"
+"コンポーネント数を2に設定し、 ``scale`` 引数を ``False`` に設定します。"
+"これは、前処理ステップでデータをすでにスケーリングしているためです。"
 
 #: ../../source/learn/pls_classification.ipynb:603
 msgid ""
 "💡\\ **NOTE:** We have chosen two components because from our PCA analysis"
 " we saw that using two components we can separate the three classes."
 msgstr ""
+"💡 注意：PCA分析から、2つのコンポーネントを使用すると3つのクラスを分離できることが"
+"わかったため、2つのコンポーネントを選択しました。"
 
 #: ../../source/learn/pls_classification.ipynb:605
 msgid ""
@@ -340,10 +439,15 @@ msgid ""
 "learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html>`__"
 " methods from ``scikit-learn`` to evaluate the performance of the model."
 msgstr ""
+"モデルを訓練したので、そのパフォーマンスを評価できます。"
+"モデルのパフォーマンスを評価するために、 ``scikit-learn`` の "
+" `accuracy score <https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html>`__ "
+"と `confusion matrix <https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html>`__ "
+"メソッドを使用します。"
 
 #: ../../source/learn/pls_classification.ipynb:665
 msgid "**Recap**"
-msgstr ""
+msgstr "まとめ"
 
 #: ../../source/learn/pls_classification.ipynb:667
 msgid ""
@@ -351,12 +455,16 @@ msgid ""
 "differentiation through Infrared Spectroscopy. This dataset contains IR "
 "spectra of coffee samples from Ethiopia, Brazil, and Vietnam."
 msgstr ""
+"コーヒーデータセット：赤外分光法によるコーヒーの差別化のユニークな世界を探求します。"
+"このデータセットには、エチオピア、ブラジル、ベトナムのコーヒーサンプルのIRスペクトルが含まれています。"
 
 #: ../../source/learn/pls_classification.ipynb:669
 msgid ""
 "**Importing the Data:** Effortlessly load the coffee spectra into a "
 "Pandas DataFrame using chemotools, making data analysis a breeze."
 msgstr ""
+"データのインポート： ``chemotools`` を使用してコーヒースペクトルをPandas DataFrameに"
+"簡単にロードし、データ分析を容易にします。"
 
 #: ../../source/learn/pls_classification.ipynb:671
 msgid ""
@@ -364,6 +472,8 @@ msgid ""
 "composition, showcasing its 60 samples and 1841 features. Visualize the "
 "data with colorful coffee spectra plots."
 msgstr ""
+"探索、プロット、色付け：データセットのサイズと構成についての洞察を得て、"
+"60サンプルと1841特徴を示します。カラフルなコーヒースペクトルプロットでデータを視覚化します。"
 
 #: ../../source/learn/pls_classification.ipynb:673
 msgid ""
@@ -372,6 +482,9 @@ msgid ""
 "variations using techniques like Standard Normal Variate (SNV), "
 "Derivative, Range Cut, and Standardization."
 msgstr ""
+"スペクトルの前処理： ``chemotools`` が活躍する前処理の世界に飛び込みます。"
+"標準正規変量（SNV）、微分、範囲カット、標準化などの技術を使用して、"
+"非化学的な系統的変動を排除します。"
 
 #: ../../source/learn/pls_classification.ipynb:675
 msgid ""
@@ -381,6 +494,10 @@ msgid ""
 "into training and testing sets. Train the model and evaluate its "
 "performance, achieving an impressive confusion matrix."
 msgstr ""
+"データのモデリング：部分最小二乗判別分析（PLS-DA）という分類のための強力な"
+"ツールを使用して、機械学習の領域に入ります。ラベルを数値にエンコードし、"
+"データを訓練セットとテストセットに分割します。モデルを訓練してパフォーマンスを"
+"評価し、印象的な混同行列を達成します。"
 
 #: ../../source/learn/pls_classification.ipynb:677
 msgid ""
@@ -388,4 +505,6 @@ msgid ""
 "bringing the art of coffee classification to life within the rich world "
 "of spectral data."
 msgstr ""
+"このチュートリアルは、データサイエンスと化学の美しさを示し、"
+"スペクトルデータの豊かな世界でコーヒー分類の芸術を生き生きとさせます。"
 

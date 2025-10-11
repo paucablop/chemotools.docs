@@ -21,17 +21,19 @@ msgstr ""
 
 #: ../../source/learn/pls_regression.ipynb:9
 msgid "**Glucose monitoring with PLS**"
-msgstr ""
+msgstr "PLSによるグルコースモニタリング"
 
 #: ../../source/learn/pls_regression.ipynb:20
 msgid ""
 "💡\\ **NOTE:** This document is a Jupyter notebook. You can download the "
 "source file and run it in your Jupyter environment!"
 msgstr ""
+"💡 注意：このドキュメントはJupyterノートブックです。ソースファイルをダウンロードして、"
+"Jupyter環境で実行できます！"
 
 #: ../../source/learn/pls_regression.ipynb:32
 msgid "**Introduction**"
-msgstr ""
+msgstr "はじめに"
 
 #: ../../source/learn/pls_regression.ipynb:34
 msgid ""
@@ -41,22 +43,29 @@ msgid ""
 "measurements using high-performance liquid chromatography (HPLC) for "
 "validation."
 msgstr ""
+"このデータセットは、減衰全反射中赤外（ATR-MIR）分光法を使用して収集された"
+"分光データを通じて、リグノセルロース系エタノール発酵に関する情報を提供します。"
+"検証には高速液体クロマトグラフィー（HPLC）を使用した参照測定も含まれています。"
 
 #: ../../source/learn/pls_regression.ipynb:36
 msgid "The project contains two datasets:"
-msgstr ""
+msgstr "プロジェクトには2つのデータセットが含まれています："
 
 #: ../../source/learn/pls_regression.ipynb:38
 msgid ""
 "**Training Dataset:** Contains spectral data with corresponding HPLC "
 "measurements used to train the partial least squares (PLS) models."
 msgstr ""
+"訓練データセット：部分最小二乗（PLS）モデルを訓練するために使用される、"
+"対応するHPLC測定値を含むスペクトルデータが含まれています。"
 
 #: ../../source/learn/pls_regression.ipynb:39
 msgid ""
 "**Testing Dataset:** Includes a time series of spectra collected during "
 "fermentation, plus off-line HPLC measurements."
 msgstr ""
+"テストデータセット：発酵中に収集されたスペクトルの時系列と、"
+"オフラインHPLC測定値が含まれています。"
 
 #: ../../source/learn/pls_regression.ipynb:41
 msgid ""
@@ -66,10 +75,14 @@ msgid ""
 "Lignocellulosic Ethanol Fermentation.\" (Note that the data in the "
 "article differs from the data provided here.)"
 msgstr ""
+"これらのデータセットと発酵のモニタリングへの使用方法の詳細については、"
+"論文「Transforming Data to Information: A Parallel Hybrid Model for Real-Time State Estimation in "
+"Lignocellulosic Ethanol Fermentation」を参照してください。"
+"（論文のデータとここで提供されるデータは異なることに注意してください。）"
 
 #: ../../source/learn/pls_regression.ipynb:53
 msgid "**Objective**"
-msgstr ""
+msgstr "目的"
 
 #: ../../source/learn/pls_regression.ipynb:55
 msgid ""
@@ -78,42 +91,49 @@ msgid ""
 "model using a small training set of spiked spectra, then test its "
 "performance with spectra from an actual fermentation process."
 msgstr ""
+"この演習では、ATR-MIR分光法を使用してグルコース濃度をリアルタイムで"
+"モニタリングするPLSモデルを構築します。スパイクされたスペクトルの小さな訓練セットを"
+"使用してモデルを訓練し、実際の発酵プロセスからのスペクトルでパフォーマンスをテストします。"
 
 #: ../../source/learn/pls_regression.ipynb:67
 msgid "**Before starting**"
-msgstr ""
+msgstr "始める前に"
 
 #: ../../source/learn/pls_regression.ipynb:69
 msgid ""
 "Before we start, you need to be sure to have the following dependencies "
 "installed:"
 msgstr ""
+"始める前に、以下の依存関係がインストールされていることを確認する必要があります："
 
 #: ../../source/learn/pls_regression.ipynb:79
 msgid "You can install them using"
-msgstr ""
+msgstr "次のコマンドでインストールできます"
 
 #: ../../source/learn/pls_regression.ipynb:99
 msgid "**Loading the training data**"
-msgstr ""
+msgstr "訓練データのロード"
 
 #: ../../source/learn/pls_regression.ipynb:101
 msgid ""
 "You can access the from the ``chemotools.datasets`` module with the "
 "``load_fermentation_train()`` function."
 msgstr ""
+" ``chemotools.datasets`` モジュールの ``load_fermentation_train()`` 関数からアクセスできます。"
 
 #: ../../source/learn/pls_regression.ipynb:123
 msgid ""
 "The ``load_fermentation_train()`` function returns two "
 "``pandas.DataFrame``:"
 msgstr ""
+" ``load_fermentation_train()`` 関数は2つの ``pandas.DataFrame`` を返します："
 
 #: ../../source/learn/pls_regression.ipynb:125
 msgid ""
 "``spectra``: This dataframe contains spectral data, with columns "
 "representing wavenumbers and rows representing samples."
 msgstr ""
+" ``spectra`` ：このデータフレームにはスペクトルデータが含まれており、列は波数を表し、行はサンプルを表します。"
 
 #: ../../source/learn/pls_regression.ipynb:127
 msgid ""
@@ -121,6 +141,8 @@ msgid ""
 "concentration (in g/L) of each sample, stored in a single column labeled "
 "``glucose``."
 msgstr ""
+" ``hplc`` ：ここでは、各サンプルのグルコース濃度（g/L）の参照HPLC測定値が、 ``glucose`` という"
+"ラベルの単一列に格納されています。"
 
 #: ../../source/learn/pls_regression.ipynb:131
 msgid ""
@@ -133,34 +155,44 @@ msgid ""
 "``polars.DataFrame`` you can use the "
 "``df.columns.to_numpy(dtype=np.float64)`` method."
 msgstr ""
+"💡 注意： ``polars.DataFrame`` を使用する場合は、"
+" ``load_fermentation_train(set_output=\"polars\")`` を使用できます。"
+" ``polars.DataFrame`` を使用する場合、波数は ``float`` ではなく ``str`` として"
+"列名に指定されることに注意してください。これは、 ``polars`` が ``str`` 以外の型の"
+"列名をサポートしていないためです。 ``polars.DataFrame`` から ``float`` として波数を"
+"抽出するには、 ``df.columns.to_numpy(dtype=np.float64)`` メソッドを使用できます。"
 
 #: ../../source/learn/pls_regression.ipynb:144
 msgid "**Exploring the training data**"
-msgstr ""
+msgstr "訓練データの探索"
 
 #: ../../source/learn/pls_regression.ipynb:146
 msgid ""
 "Before starting with data modeling, it's important to get familiar with "
 "your data. Let's start by answering some basic questions:"
 msgstr ""
+"データモデリングを開始する前に、データに慣れることが重要です。"
+"いくつかの基本的な質問に答えることから始めましょう："
 
 #: ../../source/learn/pls_regression.ipynb:148
 msgid "*How many samples are there?*"
-msgstr ""
+msgstr "サンプルはいくつありますか？"
 
 #: ../../source/learn/pls_regression.ipynb:149
 msgid "*and how many wavenumbers are available?*"
-msgstr ""
+msgstr "利用可能な波数はいくつですか？"
 
 #: ../../source/learn/pls_regression.ipynb:197
 msgid "Now that we have the basics down, let's take a closer look at the data."
-msgstr ""
+msgstr "基本を理解したので、データをより詳しく見てみましょう。"
 
 #: ../../source/learn/pls_regression.ipynb:199
 msgid ""
 "For the spectral data, you can use the ``pandas.DataFrame.head()`` method"
 " to examine the first 5 rows:"
 msgstr ""
+"スペクトルデータの場合、 ``pandas.DataFrame.head()`` メソッドを使用して"
+"最初の5行を調べることができます："
 
 #: ../../source/learn/pls_regression.ipynb:483
 msgid ""
@@ -168,12 +200,16 @@ msgid ""
 "that each column corresponds to a wavenumber, and each row represents a "
 "sample."
 msgstr ""
+"簡潔にするために、ここでは全テーブルを表示しませんが、各列が波数に対応し、"
+"各行がサンプルを表していることに気づくでしょう。"
 
 #: ../../source/learn/pls_regression.ipynb:485
 msgid ""
 "Turning to the HPLC data, the ``pandas.DataFrame.describe()`` method "
 "provides a summary of the glucose column:"
 msgstr ""
+"HPLCデータに移ると、 ``pandas.DataFrame.describe()`` メソッドがグルコース列の"
+"要約を提供します："
 
 #: ../../source/learn/pls_regression.ipynb:621
 msgid ""
@@ -181,10 +217,12 @@ msgid ""
 "concentration. With this practical knowledge, we are now ready to "
 "continue with our data modeling journey."
 msgstr ""
+"この要約は、グルコース濃度の分布に関する洞察を提供します。"
+"この実用的な知識により、データモデリングの旅を続ける準備が整いました。"
 
 #: ../../source/learn/pls_regression.ipynb:633
 msgid "**Visualizing the training data**"
-msgstr ""
+msgstr "訓練データの視覚化"
 
 #: ../../source/learn/pls_regression.ipynb:635
 msgid ""
@@ -196,6 +234,12 @@ msgid ""
 "we'll use the ``matplotlib.pyplot`` module. Remember to install it first "
 "using:"
 msgstr ""
+"データセットをより よく理解するために、データを視覚化します。訓練データセット内の"
+"スペクトルをプロットし、各スペクトルを関連するグルコース濃度を反映する色で"
+"コーディングします。この視覚的なアプローチは、データセットの特性を理解するための"
+"教育的な手段を提供し、サンプル間の化学的変動に関する洞察を提供します。"
+"これを行うには、 ``matplotlib.pyplot`` モジュールを使用します。最初に次のコマンドで"
+"インストールすることを忘れないでください："
 
 #: ../../source/learn/pls_regression.ipynb:641
 msgid ""
@@ -206,12 +250,18 @@ msgid ""
 "``pandas.DataFrame`` to ``numpy.ndarray`` using the "
 "``pandas.DataFrame.to_numpy()`` method."
 msgstr ""
+"これまで、データセットを表すために ``pandas.DataFrame`` を使用してきました。"
+" ``pandas.DataFrame`` は、多くの大規模データセットを保存および操作するのに優れています。"
+"ただし、スペクトルデータを扱う場合は ``numpy.ndarray`` を使用する方が便利だと感じることが"
+"よくあります。したがって、 ``pandas.DataFrame.to_numpy()`` メソッドを使用して"
+" ``pandas.DataFrame`` を ``numpy.ndarray`` に変換します。"
 
 #: ../../source/learn/pls_regression.ipynb:643
 msgid ""
 "So our first step will be to transform our ``pandas.DataFrame`` to "
 "``numpy.ndarray``:"
 msgstr ""
+"最初のステップは、 ``pandas.DataFrame`` を ``numpy.ndarray`` に変換することです："
 
 #: ../../source/learn/pls_regression.ipynb:672
 msgid ""
@@ -220,10 +270,13 @@ msgid ""
 "approach helps visualize the relationship between spectral patterns and "
 "glucose levels."
 msgstr ""
+"データをプロットする前に、各スペクトルをグルコース濃度に応じて色分けする"
+"専用のプロット関数を作成します。このアプローチは、スペクトルパターンと"
+"グルコースレベルの関係を視覚化するのに役立ちます。"
 
 #: ../../source/learn/pls_regression.ipynb:674
 msgid "The function will implement:"
-msgstr ""
+msgstr "関数は次を実装します："
 
 #: ../../source/learn/pls_regression.ipynb:676
 msgid ""
@@ -231,28 +284,34 @@ msgid ""
 "scale glucose concentration values to a 0-1 range, making them suitable "
 "for color mapping."
 msgstr ""
+"色の正規化： ``matplotlib.colors.Normalize`` を使用してグルコース濃度値を"
+"0-1の範囲にスケーリングし、色マッピングに適したものにします。"
 
 #: ../../source/learn/pls_regression.ipynb:678
 msgid ""
 "**Color mapping**: The normalized values will be mapped to colors using a"
 " color map via ``matplotlib.cm.ScalarMappable``."
 msgstr ""
+"色マッピング：正規化された値は、 ``matplotlib.cm.ScalarMappable`` を介して"
+"カラーマップを使用して色にマッピングされます。"
 
 #: ../../source/learn/pls_regression.ipynb:680
 msgid ""
 "**Colorbar**: We'll add a colorbar to indicate how colors correspond to "
 "glucose concentration values."
 msgstr ""
+"カラーバー：色がグルコース濃度値にどのように対応するかを示すカラーバーを追加します。"
 
 #: ../../source/learn/pls_regression.ipynb:682
 msgid ""
 "This visualization allows us to compare multiple spectra based on their "
 "associated glucose concentrations."
 msgstr ""
+"この視覚化により、関連するグルコース濃度に基づいて複数のスペクトルを比較できます。"
 
 #: ../../source/learn/pls_regression.ipynb:759
 msgid "We can now use this function to plot the training dataset:"
-msgstr ""
+msgstr "この関数を使用して訓練データセットをプロットできます："
 
 #: ../../source/learn/pls_regression.ipynb:787
 msgid ""
@@ -264,10 +323,15 @@ msgid ""
 "this region. Later, we'll learn how to properly trim the spectra using "
 "preprocessing functions."
 msgstr ""
+"これらのスペクトルは不明瞭に見えるかもしれません。これは、化学情報がほとんどない"
+"領域を含む広い波数範囲をカバーしているためです。より良い表示を得るには、"
+"重要な化学的特徴が現れる950から1550 cm-1の間の「指紋」領域に焦点を当てる必要があります。"
+"今のところ、 plot_spectra() 関数の zoom_in=True パラメータを使用してこの領域に"
+"焦点を当てます。後で、前処理関数を使用してスペクトルを適切にトリミングする方法を学びます。"
 
 #: ../../source/learn/pls_regression.ipynb:817
 msgid "**Preprocessing the training data**"
-msgstr ""
+msgstr "訓練データの前処理"
 
 #: ../../source/learn/pls_regression.ipynb:819
 msgid ""
@@ -277,10 +341,14 @@ msgid ""
 "performance. We'll use the ``chemotools`` and the ``scikit-learn`` "
 "modules to preprocess the spectral data."
 msgstr ""
+"データセットを探索したので、スペクトルデータを前処理する時が来ました。"
+"このステップは、ベースラインシフトやノイズなどの不要な変動を除去するために"
+"不可欠です。これらは、モデルのパフォーマンスに悪影響を与える可能性があります。"
+" ``chemotools`` と ``scikit-learn`` モジュールを使用してスペクトルデータを前処理します。"
 
 #: ../../source/learn/pls_regression.ipynb:821
 msgid "We will preprocess the spectra using the following steps:"
-msgstr ""
+msgstr "次のステップを使用してスペクトルを前処理します："
 
 #: ../../source/learn/pls_regression.ipynb:823
 msgid ""
@@ -289,6 +357,8 @@ msgid ""
 "#range-cut>`__: to remove the wavenumbers outside the range between 950 "
 "and 1550 cm-1."
 msgstr ""
+" `Range Cut <https://paucablop.github.io/chemotools/docs/feature_selection.html#range-cut>`__ ："
+"950から1550 cm-1の範囲外の波数を除去します。"
 
 #: ../../source/learn/pls_regression.ipynb:825
 msgid ""
@@ -296,6 +366,8 @@ msgid ""
 "<https://paucablop.github.io/chemotools/docs/baseline.html#linear-"
 "baseline-correction>`__: to remove the linear baseline shift."
 msgstr ""
+" `Linear Correction <https://paucablop.github.io/chemotools/docs/baseline.html#linear-baseline-correction>`__ ："
+"線形ベースラインシフトを除去します。"
 
 #: ../../source/learn/pls_regression.ipynb:827
 msgid ""
@@ -305,6 +377,9 @@ msgid ""
 "using the Savitzky-Golay method. This is useful to remove additive and "
 "multiplicative scatter effects."
 msgstr ""
+" `Savitzky-Golay <https://paucablop.github.io/chemotools/docs/derivative.html#savitzky-golay-derivative>`__ ："
+"Savitzky-Golay法を使用してスペクトルのn次導関数を計算します。これは、"
+"加法および乗法の散乱効果を除去するのに役立ちます。"
 
 #: ../../source/learn/pls_regression.ipynb:829
 msgid ""
@@ -312,6 +387,8 @@ msgid ""
 "learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html>`__:"
 " to scale the spectra to zero mean."
 msgstr ""
+" `Standard Scaler <https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html>`__ ："
+"スペクトルをゼロ平均にスケーリングします。"
 
 #: ../../source/learn/pls_regression.ipynb:840
 msgid ""
@@ -320,6 +397,8 @@ msgid ""
 "learn.org/stable/modules/generated/sklearn.pipeline.make_pipeline.html>`__"
 " function from ``scikit-learn``."
 msgstr ""
+" ``scikit-learn`` の ```make_pipeline()`` <https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.make_pipeline.html>`__ "
+"関数を使用して前処理ステップを連鎖させます。"
 
 #: ../../source/learn/pls_regression.ipynb:842
 msgid ""
@@ -330,16 +409,22 @@ msgid ""
 "`documentation page <https://paucablop.github.io/chemotools/get-"
 "started/scikit_learn_integration.html#working-with-pipelines>`__."
 msgstr ""
+"💡 注意：パイプラインとは？パイプラインは、特定の順序で実行されるステップのシーケンスです。"
+"今回の場合、上記の順序で前処理ステップを実行するパイプラインを作成します。"
+"パイプラインの使用方法の詳細については、 "
+" `ドキュメントページ <https://paucablop.github.io/chemotools/get-started/scikit_learn_integration.html#working-with-pipelines>`__ "
+"を参照してください。"
 
 #: ../../source/learn/pls_regression.ipynb:875
 msgid "Now we can use the preprocessing pipeline to preprocess the spectra:"
-msgstr ""
+msgstr "前処理パイプラインを使用してスペクトルを前処理できます："
 
 #: ../../source/learn/pls_regression.ipynb:895
 msgid ""
 "And we can use the ``plot_spectra()`` function to plot the preprocessed "
 "spectra:"
 msgstr ""
+"そして、 ``plot_spectra()`` 関数を使用して前処理されたスペクトルをプロットできます："
 
 #: ../../source/learn/pls_regression.ipynb:928
 msgid ""
@@ -350,10 +435,15 @@ msgid ""
 "``scikit-learn`` This is the power of ``chemotools``— it is designed to "
 "work seamlessly with ``scikit-learn``"
 msgstr ""
+"💡 注意：これは素晴らしいです！ケモメトリクスを ``scikit-learn`` とどのように統合しているか"
+"ご覧ください。 ``RangeCut`` 、 ``LinearCorrection`` 、 ``SavitizkyGolay`` は"
+"すべて ``chemotools`` に実装された前処理技術であり、 ``StandardScaler`` と"
+" ``pipelines`` は ``scikit-learn`` によって提供される機能です。これが ``chemotools`` の"
+"力であり、 ``scikit-learn`` とシームレスに動作するように設計されています。"
 
 #: ../../source/learn/pls_regression.ipynb:940
 msgid "**Training a PLS model**"
-msgstr ""
+msgstr "PLSモデルの訓練"
 
 #: ../../source/learn/pls_regression.ipynb:951
 msgid ""
@@ -361,48 +451,56 @@ msgid ""
 "used in chemometrics. It works by finding a latent space representation "
 "that maximizes covariance with the target variable."
 msgstr ""
+"部分最小二乗（PLS）は、ケモメトリクスで一般的に使用される強力な回帰技術です。"
+"目的変数との共分散を最大化する潜在空間表現を見つけることで機能します。"
 
 #: ../../source/learn/pls_regression.ipynb:953
 msgid ""
 "A critical parameter in PLS modeling is the number of components "
 "(dimensions) in the latent space:"
 msgstr ""
+"PLSモデリングの重要なパラメータは、潜在空間のコンポーネント数（次元数）です："
 
 #: ../../source/learn/pls_regression.ipynb:955
 msgid ""
 "Too many components leads to overfitting, where the model captures noise "
 "rather than signal"
 msgstr ""
+"コンポーネントが多すぎると過学習につながり、モデルがシグナルではなくノイズを捕捉します"
 
 #: ../../source/learn/pls_regression.ipynb:956
 msgid ""
 "Too few components results in underfitting, missing important patterns in"
 " the data"
 msgstr ""
+"コンポーネントが少なすぎると過小適合になり、データ内の重要なパターンを見逃します"
 
 #: ../../source/learn/pls_regression.ipynb:958
 msgid ""
 "When working with limited samples, cross-validation provides a reliable "
 "method for selecting the optimal number of components. This approach:"
 msgstr ""
+"限られたサンプルを扱う場合、交差検証は最適なコンポーネント数を選択するための"
+"信頼できる方法を提供します。このアプローチは："
 
 #: ../../source/learn/pls_regression.ipynb:960
 msgid "Divides the data into training and validation sets"
-msgstr ""
+msgstr "データを訓練セットと検証セットに分割します"
 
 #: ../../source/learn/pls_regression.ipynb:961
 msgid ""
 "Trains the model on the training set and evaluates it on the validation "
 "set"
 msgstr ""
+"訓練セットでモデルを訓練し、検証セットで評価します"
 
 #: ../../source/learn/pls_regression.ipynb:962
 msgid "Repeats this process with different data splits"
-msgstr ""
+msgstr "異なるデータ分割でこのプロセスを繰り返します"
 
 #: ../../source/learn/pls_regression.ipynb:963
 msgid "Averages the results to estimate the model's generalization error"
-msgstr ""
+msgstr "結果を平均してモデルの汎化誤差を推定します"
 
 #: ../../source/learn/pls_regression.ipynb:965
 msgid ""
@@ -411,6 +509,9 @@ msgid ""
 " This will identify the optimal complexity for our PLS model based on "
 "performance metrics across multiple data splits."
 msgstr ""
+"分析には、scikit-learnの ``GridSearchCV`` クラスを使用して、交差検証を通じて"
+"異なるコンポーネント数を体系的にテストします。これにより、複数のデータ分割にわたる"
+"パフォーマンス指標に基づいてPLSモデルの最適な複雑さが特定されます。"
 
 #: ../../source/learn/pls_regression.ipynb:1030
 msgid ""
@@ -418,6 +519,8 @@ msgid ""
 "absolute error of 0.92 g/L. We can verify this by plotting the mean "
 "absolute error as a function of the number of components:"
 msgstr ""
+"最適なコンポーネント数は6で、平均絶対誤差は0.92 g/Lであることが示唆されています。"
+"これを検証するために、コンポーネント数の関数として平均絶対誤差をプロットできます："
 
 #: ../../source/learn/pls_regression.ipynb:1064
 msgid ""
@@ -431,14 +534,21 @@ msgid ""
 "different numbers of components and select the one that gives the best "
 "performance. However, for now we will train the model with 6 components:"
 msgstr ""
+"平均絶対誤差を最小化するコンポーネント数を使用することは良い出発点ですが、"
+"常に最良とは限りません。6コンポーネントモデルは、3コンポーネントまたは2コンポーネント"
+"モデルと比較して平均絶対誤差をあまり増加させません。しかし、6コンポーネントモデルには"
+"小さな固有値に関連するコンポーネントが含まれており、これらはより不確実です。"
+"これは、3または2コンポーネントのモデルの方がより堅牢である可能性があることを意味します。"
+"したがって、異なるコンポーネント数を試して、最高のパフォーマンスを提供するものを選択することは"
+"常に良い考えです。ただし、今のところ6コンポーネントでモデルを訓練します："
 
 #: ../../source/learn/pls_regression.ipynb:1540
 msgid "Finally we can evaluate the performance of the model on the training set:"
-msgstr ""
+msgstr "最後に、訓練セットでモデルのパフォーマンスを評価できます："
 
 #: ../../source/learn/pls_regression.ipynb:1581
 msgid "**Applying the model**"
-msgstr ""
+msgstr "モデルの適用"
 
 #: ../../source/learn/pls_regression.ipynb:1583
 msgid ""
@@ -447,6 +557,9 @@ msgid ""
 "during the fermentation process. The test dataset contains two "
 "``pandas.DataFrame``:"
 msgstr ""
+"モデルを訓練したので、テストデータセットに適用できます。テストデータセットには、"
+"発酵プロセス中にリアルタイムで記録されたスペクトルが含まれています。"
+"テストデータセットには2つの ``pandas.DataFrame`` が含まれています："
 
 #: ../../source/learn/pls_regression.ipynb:1585
 msgid ""
@@ -455,6 +568,9 @@ msgid ""
 "were recorded in real-time during the fermentation process approximately "
 "every 1.5 minutes."
 msgstr ""
+" ``spectra`` ：このデータセットにはスペクトルデータが含まれており、列は波数を表し、"
+"行はサンプルを表します。これらのスペクトルは、発酵プロセス中に約1.5分ごとに"
+"リアルタイムで記録されました。"
 
 #: ../../source/learn/pls_regression.ipynb:1587
 msgid ""
@@ -462,28 +578,35 @@ msgid ""
 "concentrations (in g/L), stored in a single column labeled ``glucose``. "
 "These measurements were recorded off-line approximately every 60 minutes."
 msgstr ""
+" ``hplc`` ：このデータセットにはHPLC測定値、具体的にはグルコース濃度（g/L）が含まれており、"
+" ``glucose`` というラベルの単一列に格納されています。これらの測定値は、"
+"約60分ごとにオフラインで記録されました。"
 
 #: ../../source/learn/pls_regression.ipynb:1589
 msgid ""
 "We will use the ``load_fermentation_test()`` function from the "
 "``chemotools.datasets`` module to load the testing dataset:"
 msgstr ""
+" ``chemotools.datasets`` モジュールの ``load_fermentation_test()`` 関数を使用して"
+"テストデータセットをロードします："
 
 #: ../../source/learn/pls_regression.ipynb:1611
 msgid ""
 "Then, we will preprocess the spectra using the same preprocessing "
 "pipeline that we used for the training dataset:"
 msgstr ""
+"次に、訓練データセットに使用したのと同じ前処理パイプラインを使用してスペクトルを前処理します："
 
 #: ../../source/learn/pls_regression.ipynb:1635
 msgid "Finally, we can use the PLS model to predict the glucose concentrations:"
-msgstr ""
+msgstr "最後に、PLSモデルを使用してグルコース濃度を予測できます："
 
 #: ../../source/learn/pls_regression.ipynb:1656
 msgid ""
 "We can use the predicted values to plot the spectra color-coded according"
 " to the predicted glucose concentrations:"
 msgstr ""
+"予測値を使用して、予測されたグルコース濃度に応じて色分けされたスペクトルをプロットできます："
 
 #: ../../source/learn/pls_regression.ipynb:1684
 msgid ""
@@ -492,10 +615,13 @@ msgid ""
 "measurements over time. Each spectrum was taken every 1.25 minutes, while"
 " the off-line measurements were taken every 60 minutes."
 msgstr ""
+"予測されたグルコース濃度をオフラインHPLC測定値と比較できます。時間経過に伴う予測と"
+"オフライン測定値をプロットします。各スペクトルは1.25分ごとに取得され、"
+"オフライン測定値は60分ごとに取得されました。"
 
 #: ../../source/learn/pls_regression.ipynb:1727
 msgid "**Recap**"
-msgstr ""
+msgstr "まとめ"
 
 #: ../../source/learn/pls_regression.ipynb:1738
 msgid ""
@@ -505,6 +631,10 @@ msgid ""
 "during lignocellulosic ethanol fermentation. Here's a quick summary of "
 "what we covered:"
 msgstr ""
+"このチュートリアルでは、発酵データセットを使用して分光データ分析に機械学習を"
+"適用する方法を探求しました。目標は、リグノセルロース系エタノール発酵中の"
+"グルコース濃度を予測できる回帰モデルを構築することでした。"
+"カバーした内容の簡単な要約は次のとおりです："
 
 #: ../../source/learn/pls_regression.ipynb:1740
 msgid ""
@@ -514,6 +644,9 @@ msgid ""
 "This dataset is especially valuable for studying real-time fermentation "
 "processes."
 msgstr ""
+"はじめに：減衰全反射中赤外分光法（ATR-MIR）を介して収集されたスペクトルデータと"
+"対応するHPLC参照データを含む発酵データセットを紹介することから始めました。"
+"このデータセットは、リアルタイム発酵プロセスの研究に特に価値があります。"
 
 #: ../../source/learn/pls_regression.ipynb:1742
 msgid ""
@@ -522,6 +655,9 @@ msgid ""
 "measurements. Understanding the data at this stage is a critical "
 "foundation for any successful analysis."
 msgstr ""
+"データのロードと探索：訓練データをロードし、その構造を調べ、スペクトル測定と"
+"HPLC測定の両方を詳しく見ました。この段階でデータを理解することは、"
+"成功した分析の重要な基盤です。"
 
 #: ../../source/learn/pls_regression.ipynb:1744
 msgid ""
@@ -530,6 +666,9 @@ msgid ""
 "concentration, we could observe how chemical variations appear across "
 "samples."
 msgstr ""
+"データの視覚化：視覚化を通じて、データセットのより明確な全体像を得ました。"
+"グルコース濃度で色分けされたスペクトルをプロットすることで、サンプル全体で"
+"化学的変動がどのように現れるかを観察できました。"
 
 #: ../../source/learn/pls_regression.ipynb:1746
 msgid ""
@@ -538,6 +677,9 @@ msgid ""
 "correction, Savitzky-Golay derivatives, and standard scaling. These steps"
 " helped reduce noise and improve overall data quality."
 msgstr ""
+"データの前処理：範囲カット、線形補正、Savitzky-Golay導関数、標準スケーリングなどの"
+"いくつかの前処理技術を適用して、モデリング用のスペクトルデータを準備しました。"
+"これらのステップは、ノイズを軽減し、全体的なデータ品質を向上させるのに役立ちました。"
 
 #: ../../source/learn/pls_regression.ipynb:1748
 msgid ""
@@ -546,6 +688,9 @@ msgid ""
 "validation helped us determine the optimal number of components and "
 "evaluate the model's performance."
 msgstr ""
+"モデルの訓練：処理されたデータを使用して、グルコース濃度を予測する部分最小二乗（PLS）"
+"回帰モデルを訓練しました。交差検証は、最適なコンポーネント数を決定し、"
+"モデルのパフォーマンスを評価するのに役立ちました。"
 
 #: ../../source/learn/pls_regression.ipynb:1750
 msgid ""
@@ -554,6 +699,9 @@ msgid ""
 "demonstrated how the model can be used to track glucose levels during "
 "fermentation."
 msgstr ""
+"テストと適用：最後に、訓練されたモデルをテストデータセットに適用して、"
+"リアルタイムでグルコース濃度を予測しました。これは、発酵中のグルコースレベルを"
+"追跡するためにモデルをどのように使用できるかを示しました。"
 
 #: ../../source/learn/pls_regression.ipynb:1752
 msgid ""
@@ -562,4 +710,7 @@ msgid ""
 "extract meaningful insights from complex spectral data and build "
 "predictive models that have real-world applications."
 msgstr ""
+"このチュートリアルは、分光データ分析に機械学習を使用するための実用的な入門を提供します。"
+"これらのステップに従うことで、複雑なスペクトルデータから意味のある洞察を抽出し、"
+"実世界のアプリケーションを持つ予測モデルを構築できます。"
 

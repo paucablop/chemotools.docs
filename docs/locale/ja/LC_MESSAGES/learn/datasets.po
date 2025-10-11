@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../../source/learn/datasets.rst:2
 msgid "**Explore our datasets**"
-msgstr ""
+msgstr "データセットを探索"
 
 #: ../../source/learn/datasets.rst:4
 msgid ""
@@ -30,10 +30,13 @@ msgid ""
 "can find these datasets in the ``chemotools.datasets`` module and access "
 "them using simple loading functions. Here's what we offer:"
 msgstr ""
+"データ探索の世界へようこそ！ ``chemotools`` パッケージは、パッケージのテストと学習に役立つ"
+"便利なデータセットを提供しています。これらのデータセットは ``chemotools.datasets`` モジュールにあり、"
+"シンプルな読み込み関数を使用してアクセスできます。以下が提供内容です："
 
 #: ../../source/learn/datasets.rst:9
 msgid "The Fermentation Dataset 🧪"
-msgstr ""
+msgstr "発酵データセット 🧪"
 
 #: ../../source/learn/datasets.rst:11
 msgid ""
@@ -42,12 +45,16 @@ msgid ""
 "spectroscopy (ATR-FTIR). The dataset includes both a training set and a "
 "test set."
 msgstr ""
+"このデータセットには、減衰全反射フーリエ変換赤外分光法（ATR-FTIR）を使用して"
+"酵母発酵プロセス中に収集されたスペクトルが含まれています。データセットには"
+"訓練セットとテストセットの両方が含まれています。"
 
 #: ../../source/learn/datasets.rst:15
 msgid ""
 "For more information about the Fermentation Dataset, see these "
 "publications:"
 msgstr ""
+"発酵データセットの詳細については、以下の文献を参照してください："
 
 #: ../../source/learn/datasets.rst:17
 msgid ""
@@ -56,6 +63,10 @@ msgid ""
 "state estimation in lignocellulosic ethanol fermentation "
 "<https://doi.org/10.1002/bit.27586>`_."
 msgstr ""
+"Cabaneros Lopez, P., Abeykoon Udugama, I., Thomsen, S.T., et al. "
+"`Transforming data to information: A parallel hybrid model for real-time "
+"state estimation in lignocellulosic ethanol fermentation "
+"<https://doi.org/10.1002/bit.27586>`_."
 
 #: ../../source/learn/datasets.rst:19
 msgid ""
@@ -64,6 +75,10 @@ msgid ""
 "forecast the evolution of lignocellulosic fermentation "
 "<https://doi.org/10.1002/bbb.2108>`_."
 msgstr ""
+"Cabaneros Lopez, P., Abeykoon Udugama, I., Thomsen, S.T., et al. `Towards"
+" a digital twin: a hybrid data-driven and mechanistic digital shadow to "
+"forecast the evolution of lignocellulosic fermentation "
+"<https://doi.org/10.1002/bbb.2108>`_."
 
 #: ../../source/learn/datasets.rst:21
 msgid ""
@@ -72,10 +87,14 @@ msgid ""
 "ethanol fermentations using a data-driven feed-back controller "
 "<https://doi.org/10.1186/s13068-020-01829-2>`_."
 msgstr ""
+"Cabaneros Lopez, P., Abeykoon Udugama, I., Thomsen, S.T., et al. "
+"`Promoting the co-utilisation of glucose and xylose in lignocellulosic "
+"ethanol fermentations using a data-driven feed-back controller "
+"<https://doi.org/10.1186/s13068-020-01829-2>`_."
 
 #: ../../source/learn/datasets.rst:25
 msgid "The Train Set"
-msgstr ""
+msgstr "訓練セット"
 
 #: ../../source/learn/datasets.rst:27
 msgid ""
@@ -84,30 +103,35 @@ msgid ""
 "(HPLC). You can load the train set as a ``pandas.DataFrame`` or as a "
 "``polars.DataFrame``:"
 msgstr ""
+"訓練セットには、高速液体クロマトグラフィー（HPLC）で測定された"
+"参照グルコース濃度を持つ21の合成スペクトルが含まれています。"
+"訓練セットは ``pandas.DataFrame`` または ``polars.DataFrame`` として読み込むことができます："
 
 #: ../../source/learn/datasets.rst:31 ../../source/learn/datasets.rst:62
 #: ../../source/learn/datasets.rst:90
 msgid "**Load as pandas.DataFrame**:"
-msgstr ""
+msgstr "pandas.DataFrameとして読み込む："
 
 #: ../../source/learn/datasets.rst:39 ../../source/learn/datasets.rst:70
 #: ../../source/learn/datasets.rst:98
 msgid "**Load as polars.DataFrame**:"
-msgstr ""
+msgstr "polars.DataFrameとして読み込む："
 
 #: ../../source/learn/datasets.rst:48
 msgid "Polars is supported in ``chemotools``>=0.1.5"
-msgstr ""
+msgstr "Polarsは ``chemotools`` >=0.1.5でサポートされています"
 
 #: ../../source/learn/datasets.rst:51
 msgid ""
 "To learn how to build a PLS model using the Fermentation Dataset, see our"
 " `Training Guide <https://chemotools.org/learn/pls_regression.html>`__."
 msgstr ""
+"発酵データセットを使用してPLSモデルを構築する方法については、"
+"`トレーニングガイド <https://chemotools.org/learn/pls_regression.html>`__ を参照してください。"
 
 #: ../../source/learn/datasets.rst:54
 msgid "The Test Set"
-msgstr ""
+msgstr "テストセット"
 
 #: ../../source/learn/datasets.rst:56
 msgid ""
@@ -116,10 +140,13 @@ msgid ""
 "hours. It also includes 35 reference glucose concentrations measured "
 "hourly during the fermentation."
 msgstr ""
+"テストセットには、発酵プロセス中に収集された1000以上のスペクトルが含まれています。"
+"これらのスペクトルは、数時間にわたって1.25分ごとにキャプチャされました。"
+"また、発酵中に1時間ごとに測定された35の参照グルコース濃度も含まれています。"
 
 #: ../../source/learn/datasets.rst:60
 msgid "Load the test set using:"
-msgstr ""
+msgstr "テストセットを読み込むには："
 
 #: ../../source/learn/datasets.rst:79
 msgid ""
@@ -128,10 +155,13 @@ msgid ""
 "``pandas.DataFrame`` the column names can be of type ``float``, but in a "
 "``polars.DataFrame`` the column names must be of type ``str``."
 msgstr ""
+"波数は ``pandas.DataFrame`` と ``polars.DataFrame`` の両方で列名として保存されます。"
+" ``pandas.DataFrame`` では列名は ``float`` 型にできますが、"
+" ``polars.DataFrame`` では列名は ``str`` 型である必要があります。"
 
 #: ../../source/learn/datasets.rst:84
 msgid "The Coffee Dataset ☕"
-msgstr ""
+msgstr "コーヒーデータセット ☕"
 
 #: ../../source/learn/datasets.rst:86
 msgid ""
@@ -139,6 +169,8 @@ msgid ""
 " from different countries. These spectra were collected using attenuated "
 "total reflectance Fourier transform infrared spectroscopy (ATR-FTIR)."
 msgstr ""
+"コーヒーデータセットには、さまざまな国のコーヒーサンプルから収集されたスペクトルが含まれています。"
+"これらのスペクトルは、減衰全反射フーリエ変換赤外分光法（ATR-FTIR）を使用して収集されました。"
 
 #: ../../source/learn/datasets.rst:107
 msgid ""
@@ -146,8 +178,11 @@ msgid ""
 "Dataset, see our `Training Guide "
 "<https://chemotools.org/learn/pls_classification.html>`__."
 msgstr ""
+"コーヒーデータセットを使用してPLS-DA分類モデルを構築する方法については、"
+"`トレーニングガイド "
+"<https://chemotools.org/learn/pls_classification.html>`__ を参照してください。"
 
 #: ../../source/learn/datasets.rst:110
 msgid "We hope you enjoy exploring these datasets! 🚀"
-msgstr ""
+msgstr "これらのデータセットの探索をお楽しみください！ 🚀"
 
