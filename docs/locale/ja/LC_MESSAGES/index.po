@@ -21,55 +21,55 @@ msgstr ""
 
 #: ../../source/index.rst:7
 msgid "User Guide"
-msgstr ""
+msgstr "ユーザーガイド"
 
 #: ../../source/index.rst:7
 msgid "Methods"
-msgstr ""
+msgstr "手法"
 
 #: ../../source/index.rst:7
 msgid "Explore"
-msgstr ""
+msgstr "探索"
 
 #: ../../source/index.rst:7
 msgid "Learn"
-msgstr ""
+msgstr "学習"
 
 #: ../../source/index.rst:7
 msgid "Cite"
-msgstr ""
+msgstr "引用"
 
 #: ../../source/index.rst:7
 msgid "API"
-msgstr ""
+msgstr "API"
 
 #: ../../source/index.rst:20
 msgid "PyPI version"
-msgstr ""
+msgstr "PyPIバージョン"
 
 #: ../../source/index.rst:24
 msgid "Python versions"
-msgstr ""
+msgstr "Pythonバージョン"
 
 #: ../../source/index.rst:28
 msgid "License"
-msgstr ""
+msgstr "ライセンス"
 
 #: ../../source/index.rst:32
 msgid "Code coverage"
-msgstr ""
+msgstr "コードカバレッジ"
 
 #: ../../source/index.rst:36
 msgid "Downloads"
-msgstr ""
+msgstr "ダウンロード数"
 
 #: ../../source/index.rst:40
 msgid "DOI"
-msgstr ""
+msgstr "DOI"
 
 #: ../../source/index.rst:47
 msgid "Welcome to chemotools"
-msgstr ""
+msgstr "chemotoolsへようこそ"
 
 #: ../../source/index.rst:50
 msgid ""
@@ -77,6 +77,8 @@ msgid ""
 " integrate natively with the widely adopted ``scikit-learn`` API and the "
 "broader **Python machine learning ecosystem**."
 msgstr ""
+"``chemotools``は**スペクトル解析のためのPythonパッケージであり、広く採用されている``scikit-learn`` APIおよび"
+"より広範なPython機械学習エコシステムとネイティブに統合するように設計されています。"
 
 #: ../../source/index.rst:52
 msgid ""
@@ -87,24 +89,28 @@ msgid ""
 "**development and deployment** of models, making it easier to "
 "**standardize workflows** and **scale chemometric solutions**."
 msgstr ""
+"さまざまな業界で長年にわたり分光法を適用してきた経験から開発されたこのツールは、"
+"科学者やエンジニアが本番環境対応のケモメトリクスモデルを構築するために必要なツールを提供することを使命としています。"
+"``chemotools``は、モデルの開発とデプロイメントを効率化する直感的で柔軟な環境を提供し、"
+"ワークフローの標準化とケモメトリクスソリューションのスケール化を容易にします。"
 
 #: ../../source/index.rst:54
 msgid "chemotools workflow"
-msgstr ""
+msgstr "chemotoolsワークフロー"
 
 #: ../../source/index.rst:61
 msgid "Start exploring"
-msgstr ""
+msgstr "探索を始める"
 
 #: ../../source/index.rst:70
 msgid "Discover the environment"
-msgstr ""
+msgstr "環境を探索"
 
 #: ../../source/index.rst:81
 msgid "Chemometrics tutorials"
-msgstr ""
+msgstr "ケモメトリクスのチュートリアル"
 
 #: ../../source/index.rst:92
 msgid "Check out our Webinar"
-msgstr ""
+msgstr "ウェビナーをチェック"
 
