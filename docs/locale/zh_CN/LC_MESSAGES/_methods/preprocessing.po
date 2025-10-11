@@ -21,15 +21,13 @@ msgstr ""
 
 #: ../../source/_methods/preprocessing.rst:5
 msgid "API Modules"
-msgstr ""
+msgstr "API 模块"
 
 #: ../../source/_methods/preprocessing.rst:2
 msgid "Preprocessing"
-msgstr ""
+msgstr "预处理"
 
 #: ../../source/_methods/preprocessing.rst:3
 msgid ""
-"Preprocess your data to remove remove noise and highlight the chemical "
-"information."
-msgstr ""
-
+"Preprocess your data to remove noise and enhance the chemical information contained in the spectra. Common preprocessing techniques include baseline correction, smoothing, normalization, and derivative transformations. These steps help eliminate unwanted variations caused by instrumental drift or sample inconsistencies, allowing the model to focus on the true chemical signals that drive accurate predictions."
+msgstr "预处理数据以去除噪声并增强光谱中包含的化学信息。常见的预处理技术包括基线校正、平滑处理、归一化和导数变换。这些步骤有助于消除由仪器漂移或样品不一致性引起的不必要变异，使模型能够专注于驱动准确预测的真实化学信号。"

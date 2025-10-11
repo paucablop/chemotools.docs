@@ -21,59 +21,58 @@ msgstr ""
 
 #: ../../source/_methods/augmentation_methods.rst:2
 msgid "Augmentation Methods"
-msgstr ""
+msgstr "数据增强方法"
 
 #: ../../source/_methods/augmentation_methods.rst:17:<autosummary>:1
 msgid ":py:obj:`AddNoise <chemotools.augmentation.AddNoise>`"
-msgstr ""
+msgstr ":py:obj:`AddNoise <chemotools.augmentation.AddNoise>`"
 
 #: ../../source/_methods/augmentation_methods.rst:17:<autosummary>:1
 msgid "Add noise to input data from various probability distributions."
-msgstr ""
+msgstr "从各种概率分布向输入数据添加噪声。"
 
 #: ../../source/_methods/augmentation_methods.rst:17:<autosummary>:1
 msgid ":py:obj:`BaselineShift <chemotools.augmentation.BaselineShift>`"
-msgstr ""
+msgstr ":py:obj:`BaselineShift <chemotools.augmentation.BaselineShift>`"
 
 #: ../../source/_methods/augmentation_methods.rst:17:<autosummary>:1
 msgid "Adds a constant baseline to the data."
-msgstr ""
+msgstr "向数据添加恒定基线。"
 
 #: ../../source/_methods/augmentation_methods.rst:17:<autosummary>:1
 msgid ":py:obj:`FractionalShift <chemotools.augmentation.FractionalShift>`"
-msgstr ""
+msgstr ":py:obj:`FractionalShift <chemotools.augmentation.FractionalShift>`"
 
 #: ../../source/_methods/augmentation_methods.rst:17:<autosummary>:1
 msgid ""
 "Shift signals by a random fractional amount using cubic spline "
 "interpolation."
-msgstr ""
+msgstr "使用三次样条插值将信号移动随机小数量。"
 
 #: ../../source/_methods/augmentation_methods.rst:17:<autosummary>:1
 msgid ":py:obj:`GaussianBroadening <chemotools.augmentation.GaussianBroadening>`"
-msgstr ""
+msgstr ":py:obj:`GaussianBroadening <chemotools.augmentation.GaussianBroadening>`"
 
 #: ../../source/_methods/augmentation_methods.rst:17:<autosummary>:1
 msgid "Transform spectral data by broadening peaks using Gaussian convolution."
-msgstr ""
+msgstr "通过使用高斯卷积展宽峰来转换光谱数据。"
 
 #: ../../source/_methods/augmentation_methods.rst:17:<autosummary>:1
 msgid ":py:obj:`IndexShift <chemotools.augmentation.IndexShift>`"
-msgstr ""
+msgstr ":py:obj:`IndexShift <chemotools.augmentation.IndexShift>`"
 
 #: ../../source/_methods/augmentation_methods.rst:17:<autosummary>:1
 msgid ""
 "Shift the spectrum a given number of indices between -shift and +shift "
 "drawn from a discrete uniform distribution."
-msgstr ""
+msgstr "将光谱移动从离散均匀分布中抽取的介于 -shift 和 +shift 之间的给定索引数。"
 
 #: ../../source/_methods/augmentation_methods.rst:17:<autosummary>:1
 msgid ":py:obj:`SpectrumScale <chemotools.augmentation.SpectrumScale>`"
-msgstr ""
+msgstr ":py:obj:`SpectrumScale <chemotools.augmentation.SpectrumScale>`"
 
 #: ../../source/_methods/augmentation_methods.rst:17:<autosummary>:1
 msgid ""
 "Scales the data by a value drawn from the uniform distribution centered "
 "around 1.0."
-msgstr ""
-
+msgstr "通过从以 1.0 为中心的均匀分布中抽取的值来缩放数据。"

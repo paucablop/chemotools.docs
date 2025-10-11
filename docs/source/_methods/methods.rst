@@ -3,7 +3,7 @@
 Methods overview
 ================
 
-This page is a placeholder for upcoming method categories such as Augmentation, Feature Selection, and Metrics.
+This page is a placeholder for upcoming method categories such as Augmentation, Feature Selection, and Outliers.
 
 Available pages
 ---------------

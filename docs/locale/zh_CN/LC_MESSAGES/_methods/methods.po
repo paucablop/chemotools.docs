@@ -21,15 +21,14 @@ msgstr ""
 
 #: ../../source/_methods/methods.rst:4
 msgid "Methods overview"
-msgstr ""
+msgstr "方法概览"
 
 #: ../../source/_methods/methods.rst:6
 msgid ""
 "This page is a placeholder for upcoming method categories such as "
-"Augmentation, Feature Selection, and Metrics."
-msgstr ""
+"Augmentation, Feature Selection, and Outliers."
+msgstr "此页面是即将推出的方法类别的占位符，例如数据增强、特征选择和异常值检测。"
 
 #: ../../source/_methods/methods.rst:9
 msgid "Available pages"
-msgstr ""
-
+msgstr "可用页面"
