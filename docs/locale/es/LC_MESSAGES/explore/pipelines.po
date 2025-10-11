@@ -92,14 +92,16 @@ msgid ""
 "In a traditional flow, would apply each preprocessing technique "
 "individually to the spectra as shown in the image below:"
 msgstr ""
+"En un flujo tradicional, aplicaríamos cada técnica de preprocesamiento "
+"individualmente a los espectros como se muestra en la imagen a continuación:"
 
 #: ../../source/explore/pipelines.rst:24
 msgid "Traditional workflow"
-msgstr ""
+msgstr "Flujo de trabajo tradicional"
 
 #: ../../source/explore/pipelines.rst:29
 msgid "The code to perform this workflow would look like this:"
-msgstr ""
+msgstr "El código para realizar este flujo de trabajo se vería así:"
 
 #: ../../source/explore/pipelines.rst:77
 msgid ""
@@ -108,10 +110,14 @@ msgid ""
 "deploying it to a production environment is not straightforward, as each "
 "preprocessing step needs to be persisted and deployed individually."
 msgstr ""
+"Este es un flujo de trabajo tedioso y propenso a errores, especialmente cuando el número de "
+"pasos de preprocesamiento aumenta. Además, persistir el modelo y "
+"desplegarlo en un entorno de producción no es sencillo, ya que cada "
+"paso de preprocesamiento necesita ser persistido y desplegado individualmente."
 
 #: ../../source/explore/pipelines.rst:80
 msgid "Pipeline flow"
-msgstr ""
+msgstr "Flujo de pipeline"
 
 #: ../../source/explore/pipelines.rst:81
 msgid ""
@@ -119,30 +125,37 @@ msgid ""
 "object. This simplifies the workflow and reduces the risk of errors. The "
 "figure below shows the same workflow as above, but using a pipeline:"
 msgstr ""
+"En un flujo de pipeline, podemos combinar todos los pasos de preprocesamiento en un único "
+"objeto. Esto simplifica el flujo de trabajo y reduce el riesgo de errores. La "
+"figura a continuación muestra el mismo flujo de trabajo que antes, pero usando un pipeline:"
 
 #: ../../source/explore/pipelines.rst:83
 msgid "Pipeline workflow"
-msgstr ""
+msgstr "Flujo de trabajo de pipeline"
 
 #: ../../source/explore/pipelines.rst:88
 msgid ""
 "An outline of the code to perform the pipeline is shown in the image "
 "below:"
 msgstr ""
+"Un esquema del código para realizar el pipeline se muestra en la imagen "
+"a continuación:"
 
 #: ../../source/explore/pipelines.rst:90
 msgid "Pipeline code"
-msgstr ""
+msgstr "Código del pipeline"
 
 #: ../../source/explore/pipelines.rst:95
 msgid "The code to perform the pipeline is shown below:"
-msgstr ""
+msgstr "El código para realizar el pipeline se muestra a continuación:"
 
 #: ../../source/explore/pipelines.rst:122
 msgid ""
 "It is now possible to visualize the pipeline and the different "
 "preprocessing steps that are applied to the spectra."
 msgstr ""
+"Ahora es posible visualizar el pipeline y los diferentes "
+"pasos de preprocesamiento que se aplican a los espectros."
 
 #: ../../source/explore/pipelines.rst:129
 msgid ""
@@ -152,4 +165,9 @@ msgid ""
 "environment. See the :ref:`persisting-your-models` section for more "
 "information."
 msgstr ""
+"Observe que en el flujo de trabajo tradicional, los diferentes objetos de preprocesamiento "
+"tenían que ser persistidos individualmente. En el flujo de trabajo de pipeline, todo el "
+"pipeline puede ser persistido y desplegado en un entorno de producción. "
+"Consulte la sección :ref:`persisting-your-models` para más "
+"información."
 

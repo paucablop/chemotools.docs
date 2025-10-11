@@ -61,7 +61,7 @@ msgstr "組み合わせ可能な構成要素 / ライフサイクル"
 
 #: ../../source/user/what_is_chemotools.rst:20
 msgid ""
-"**Curious about scikit-learn?** See the dedicated ``scikit-learn overview`` "
+"**Curious about scikit-learn?** See the dedicated `scikit-learn overview "
 "<../explore/sklearn.html>`_."
 msgstr ""
 "``scikit-learn`` について詳しく知りたいですか？ 専用の ``scikit-learn`` 概要"
@@ -164,7 +164,7 @@ msgid ""
 "code coverage for reliability and robustness."
 msgstr ""
 "徹底的なテスト — 広範な`ユニットテスト "
-"<https://app.codecov.io/github/paucablop/chemotools>`_と継続的な"
+"<https://app.codecov.io/github/paucablop/chemotools>`_ と継続的な"
 "コードカバレッジにより、信頼性と堅牢性が保証されています。"
 
 #: ../../source/user/what_is_chemotools.rst:52
@@ -183,8 +183,8 @@ msgid ""
 "(JOSS) <https://joss.theoj.org/papers/10.21105/joss.06802>`_ following "
 "independent peer review."
 msgstr ""
-"査読済み — 独立した査読を経て`Journal of Open Source Software "
-"(JOSS) <https://joss.theoj.org/papers/10.21105/joss.06802>`_に掲載されています。"
+"査読済み — 独立した査読を経て `Journal of Open Source Software "
+"(JOSS) <https://joss.theoj.org/papers/10.21105/joss.06802>`_ に掲載されています。"
 
 #: ../../source/user/what_is_chemotools.rst:56
 msgid "Quality, transparency, and trust — built in from the start."
