@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../../source/cite/index.rst:4
 msgid "Cite chemotools"
-msgstr ""
+msgstr "chemotools の引用"
 
 #: ../../source/cite/index.rst:10
 msgid ""
@@ -29,10 +29,13 @@ msgid ""
 "Source Software (JOSS). The paper is available at: "
 "https://doi.org/10.21105/joss.06802"
 msgstr ""
+"Chemotools は査読を経て Journal of Open Source Software (JOSS) に掲載されています。論文は以下で入手できます: "
+"https://doi.org/10.21105/joss.06802"
 
 #: ../../source/cite/index.rst:15
 msgid ""
 "If you use chemotools in your research or software and would like to cite"
 " it, please use the following BibTeX entry:"
 msgstr ""
+"研究やソフトウェアで chemotools を使用し、引用したい場合は、以下の BibTeX エントリをご利用ください:"
 
