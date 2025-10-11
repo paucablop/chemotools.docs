@@ -21,49 +21,49 @@ msgstr ""
 
 #: ../../source/_methods/outliers_methods.rst:2
 msgid "Outliers Methods"
-msgstr ""
+msgstr "异常值检测方法"
 
 #: ../../source/_methods/outliers_methods.rst:16:<autosummary>:1
 msgid ":py:obj:`DModX <chemotools.outliers.DModX>`"
-msgstr ""
+msgstr ":py:obj:`DModX <chemotools.outliers.DModX>`"
 
 #: ../../source/_methods/outliers_methods.rst:16:<autosummary>:1
 msgid "Calculate Distance to Model (DModX) statistics."
-msgstr ""
+msgstr "计算模型距离（DModX）统计量。"
 
 #: ../../source/_methods/outliers_methods.rst:16:<autosummary>:1
 msgid ":py:obj:`HotellingT2 <chemotools.outliers.HotellingT2>`"
-msgstr ""
+msgstr ":py:obj:`HotellingT2 <chemotools.outliers.HotellingT2>`"
 
 #: ../../source/_methods/outliers_methods.rst:16:<autosummary>:1
 msgid "Calculate Hotelling's T-squared statistics for PCA or PLS like models."
-msgstr ""
+msgstr "计算 PCA 或 PLS 类模型的 Hotelling T² 统计量。"
 
 #: ../../source/_methods/outliers_methods.rst:16:<autosummary>:1
 msgid ":py:obj:`QResiduals <chemotools.outliers.QResiduals>`"
-msgstr ""
+msgstr ":py:obj:`QResiduals <chemotools.outliers.QResiduals>`"
 
 #: ../../source/_methods/outliers_methods.rst:16:<autosummary>:1
 msgid ""
 "Calculate Q residuals (Squared Prediction Error - SPE) for PCA or PLS "
 "models."
-msgstr ""
+msgstr "计算 PCA 或 PLS 模型的 Q 残差（平方预测误差 - SPE）。"
 
 #: ../../source/_methods/outliers_methods.rst:16:<autosummary>:1
 msgid ":py:obj:`Leverage <chemotools.outliers.Leverage>`"
-msgstr ""
+msgstr ":py:obj:`Leverage <chemotools.outliers.Leverage>`"
 
 #: ../../source/_methods/outliers_methods.rst:16:<autosummary>:1
 msgid ""
 "Calculate the leverage of the training samples on  the latent space of a "
 "PLS model."
-msgstr ""
+msgstr "计算训练样本在 PLS 模型潜在空间上的杠杆值。"
 
 #: ../../source/_methods/outliers_methods.rst:16:<autosummary>:1
 msgid ":py:obj:`StudentizedResiduals <chemotools.outliers.StudentizedResiduals>`"
-msgstr ""
+msgstr ":py:obj:`StudentizedResiduals <chemotools.outliers.StudentizedResiduals>`"
 
 #: ../../source/_methods/outliers_methods.rst:16:<autosummary>:1
 msgid "Calculate the Studentized Residuals on a _PLS model preditions."
-msgstr ""
+msgstr "计算 PLS 模型预测的学生化残差。"
 

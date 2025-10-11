@@ -21,45 +21,45 @@ msgstr ""
 
 #: ../../source/_methods/feature_selection_methods.rst:2
 msgid "Feature Selection Methods"
-msgstr ""
+msgstr "特征选择方法"
 
 #: ../../source/_methods/feature_selection_methods.rst:15:<autosummary>:1
 msgid ":py:obj:`IndexSelector <chemotools.feature_selection.IndexSelector>`"
-msgstr ""
+msgstr ":py:obj:`IndexSelector <chemotools.feature_selection.IndexSelector>`"
 
 #: ../../source/_methods/feature_selection_methods.rst:15:<autosummary>:1
 msgid ""
 "A transformer that Selects the spectral data to a specified array of "
 "features."
-msgstr ""
+msgstr "一个将光谱数据选择为指定特征数组的转换器。"
 
 #: ../../source/_methods/feature_selection_methods.rst:15:<autosummary>:1
 msgid ":py:obj:`RangeCut <chemotools.feature_selection.RangeCut>`"
-msgstr ""
+msgstr ":py:obj:`RangeCut <chemotools.feature_selection.RangeCut>`"
 
 #: ../../source/_methods/feature_selection_methods.rst:15:<autosummary>:1
 msgid "Select a contiguous spectral region by index or by wavenumber."
-msgstr ""
+msgstr "按索引或波数选择连续的光谱区域。"
 
 #: ../../source/_methods/feature_selection_methods.rst:15:<autosummary>:1
 msgid ":py:obj:`SRSelector <chemotools.feature_selection.SRSelector>`"
-msgstr ""
+msgstr ":py:obj:`SRSelector <chemotools.feature_selection.SRSelector>`"
 
 #: ../../source/_methods/feature_selection_methods.rst:15:<autosummary>:1
 msgid ""
 "This selector is used to select features that contribute significantly to"
 " the latent variables in a PLS regression model using the Selectivity "
 "Ratio (SR) method."
-msgstr ""
+msgstr "此选择器用于使用选择性比率（SR）方法选择对 PLS 回归模型中潜在变量有显著贡献的特征。"
 
 #: ../../source/_methods/feature_selection_methods.rst:15:<autosummary>:1
 msgid ":py:obj:`VIPSelector <chemotools.feature_selection.VIPSelector>`"
-msgstr ""
+msgstr ":py:obj:`VIPSelector <chemotools.feature_selection.VIPSelector>`"
 
 #: ../../source/_methods/feature_selection_methods.rst:15:<autosummary>:1
 msgid ""
 "This selector is used to select features that contribute significantly to"
 " the latent variables in a PLS regression model using the Variables "
 "Importance in Projection (VIP) method."
-msgstr ""
+msgstr "此选择器用于使用投影变量重要性（VIP）方法选择对 PLS 回归模型中潜在变量有显著贡献的特征。"
 

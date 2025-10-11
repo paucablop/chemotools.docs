@@ -21,15 +21,15 @@ msgstr ""
 
 #: ../../source/_methods/feature_selection.rst:5
 msgid "API Modules"
-msgstr ""
+msgstr "API 模块"
 
 #: ../../source/_methods/feature_selection.rst:2
 msgid "Feature Selection"
-msgstr ""
+msgstr "特征选择"
 
 #: ../../source/_methods/feature_selection.rst:3
 msgid ""
 "Select the most chemically relevant features to improve the performance "
 "of your model."
-msgstr ""
+msgstr "选择最具化学相关性的特征，以提高模型的性能。"
 

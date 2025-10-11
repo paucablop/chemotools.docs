@@ -21,15 +21,15 @@ msgstr ""
 
 #: ../../source/_methods/outliers.rst:5
 msgid "API Modules"
-msgstr ""
+msgstr "API 模块"
 
 #: ../../source/_methods/outliers.rst:2
 msgid "Outliers"
-msgstr ""
+msgstr "异常值检测"
 
 #: ../../source/_methods/outliers.rst:3
 msgid ""
 "Detect outliers from your data to improve diagnostics and reliability of "
 "the results."
-msgstr ""
+msgstr "检测数据中的异常值，以提高结果的诊断能力和可靠性。"
 
