@@ -21,43 +21,51 @@ msgstr ""
 
 #: ../../source/user/user.rst:2
 msgid "Quick start"
-msgstr ""
+msgstr "クイックスタート"
 
 #: ../../source/user/user.rst:4
 msgid "Check the `installation guide <../user/install.html>`_ to get started."
-msgstr ""
+msgstr "始めるには`インストールガイド <../user/install.html>`_をご確認ください。"
 
 #: ../../source/user/user.rst:7
 msgid ""
 "**New in chemometrics?** Learn through our step-by-step `tutorials page "
 "<../learn/index.html>`_."
 msgstr ""
+"ケモメトリクスは初めてですか？ ステップバイステップの`チュートリアルページ "
+"<../learn/index.html>`_で学習できます。"
 
 #: ../../source/user/user.rst:10
 msgid ""
 "**Want to explore the tools at your fingertips?** Visit the `explore "
 "overview <../explore/index.html>`_."
 msgstr ""
+"手元のツールを探索したいですか？ `探索の概要 "
+"<../explore/index.html>`_をご覧ください。"
 
 #: ../../source/user/user.rst:13
 msgid "Load data"
-msgstr ""
+msgstr "データの読み込み"
 
 #: ../../source/user/user.rst:15
 msgid ""
 "This loads a training set of mid infrared spectra (``X_train``) and "
 "associated reference values (``y_train``) from a fermentation process."
 msgstr ""
+"これは、発酵プロセスからの中赤外スペクトルの訓練セット（``X_train``）と"
+"関連する参照値（``y_train``）を読み込みます。"
 
 #: ../../source/user/user.rst:24
 msgid ""
 "**Looking for available datasets?** See the `datasets catalog "
 "<../learn/datasets.html>`_."
 msgstr ""
+"利用可能なデータセットをお探しですか？ `データセットカタログ "
+"<../learn/datasets.html>`_をご覧ください。"
 
 #: ../../source/user/user.rst:27
 msgid "Preprocess spectra"
-msgstr ""
+msgstr "スペクトルの前処理"
 
 #: ../../source/user/user.rst:29
 msgid ""
@@ -65,36 +73,46 @@ msgid ""
 "use a Savitzky-Golay filter to compute the first derivative of the sample"
 " spectra."
 msgstr ""
+"訓練データに前処理ステップを読み込み、定義し、適用します。"
+"ここでは、Savitzky-Golayフィルターを使用して、"
+"サンプルスペクトルの1次導関数を計算します。"
 
 #: ../../source/user/user.rst:42
 msgid ""
 "**Want to know more about preprocessing methods?** Read the `methods "
 "index <../methods/index.html>`_."
 msgstr ""
+"前処理手法についてもっと知りたいですか？ `手法インデックス "
+"<../methods/index.html>`_をお読みください。"
 
 #: ../../source/user/user.rst:45
 msgid "Build a pipeline"
-msgstr ""
+msgstr "パイプラインの構築"
 
 #: ../../source/user/user.rst:47
 msgid "Combine preprocessing and modelling steps in a single pipeline."
-msgstr ""
+msgstr "前処理とモデリングのステップを1つのパイプラインに統合します。"
 
 #: ../../source/user/user.rst:68
 msgid ""
 "**Want to know more about pipelines?** Open the `pipelines article "
 "<../explore/pipelines.html>`_."
 msgstr ""
+"パイプラインについてもっと知りたいですか？ `パイプラインの記事 "
+"<../explore/pipelines.html>`_をご覧ください。"
 
 #: ../../source/user/user.rst:71
 msgid ""
 "**Curious about model optimization?** Read the `optimization guide "
 "<../explore/optimize.html>`_."
 msgstr ""
+"モデルの最適化について興味がありますか？ `最適化ガイド "
+"<../explore/optimize.html>`_をお読みください。"
 
 #: ../../source/user/user.rst:73
 msgid ""
 "**Congratulations!** You have just built your first chemotools workflow "
 "in Python 🎯"
 msgstr ""
+"おめでとうございます！ Pythonで最初のchemotoolsワークフローを構築しました 🎯"
 

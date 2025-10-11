@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../../source/user/install.rst:2
 msgid "How to install chemotools"
-msgstr ""
+msgstr "chemotoolsのインストール方法"
 
 #: ../../source/user/install.rst:4
 msgid ""
@@ -29,20 +29,23 @@ msgid ""
 "`PyPI <https://pypi.org/project/chemotools/>`_ using ``pip`` or using "
 "``conda`` from the ``conda-forge`` channel."
 msgstr ""
+"chemotoolsのインストールはとても簡単です！"
+"`PyPI <https://pypi.org/project/chemotools/>`_ から``pip`` を使用して、"
+"または``conda-forge``チャンネルから``conda``を使用して直接インストールできます。"
 
 #: ../../source/user/install.rst:7
 msgid "Install using ``pip``"
-msgstr ""
+msgstr "``pip`` を使用したインストール"
 
 #: ../../source/user/install.rst:8
 msgid "To install using ``pip``, run:"
-msgstr ""
+msgstr "``pip`` を使用してインストールするには、次のコマンドを実行します："
 
 #: ../../source/user/install.rst:15
 msgid "Install using ``conda``"
-msgstr ""
+msgstr "``conda`` を使用したインストール"
 
 #: ../../source/user/install.rst:17
 msgid "To install using ``conda`` from the ``conda-forge`` channel, use:"
-msgstr ""
+msgstr "``conda-forge`` チャンネルから``conda`` を使用してインストールするには、次のコマンドを使用します："
 

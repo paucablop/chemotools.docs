@@ -77,7 +77,7 @@ msgid ""
 " integrate natively with the widely adopted ``scikit-learn`` API and the "
 "broader **Python machine learning ecosystem**."
 msgstr ""
-"``chemotools``は**スペクトル解析のためのPythonパッケージであり、広く採用されている``scikit-learn`` APIおよび"
+"``chemotools`` は**スペクトル解析のためのPythonパッケージであり、広く採用されている ``scikit-learn`` APIおよび"
 "より広範なPython機械学習エコシステムとネイティブに統合するように設計されています。"
 
 #: ../../source/index.rst:52
@@ -91,7 +91,7 @@ msgid ""
 msgstr ""
 "さまざまな業界で長年にわたり分光法を適用してきた経験から開発されたこのツールは、"
 "科学者やエンジニアが本番環境対応のケモメトリクスモデルを構築するために必要なツールを提供することを使命としています。"
-"``chemotools``は、モデルの開発とデプロイメントを効率化する直感的で柔軟な環境を提供し、"
+"``chemotools`` は、モデルの開発とデプロイメントを効率化する直感的で柔軟な環境を提供し、"
 "ワークフローの標準化とケモメトリクスソリューションのスケール化を容易にします。"
 
 #: ../../source/index.rst:54
