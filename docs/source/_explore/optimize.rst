@@ -5,7 +5,7 @@ Hyperparameters are those parameters that are set before training the model. Som
 
 - *How many components should the model use?*
 
-- *What’s the best filter length for a Savitzky-Golay filter?*
+- *What's the best filter length for a Savitzky-Golay filter?*
 
 - *Which polynomial order works best?*
 

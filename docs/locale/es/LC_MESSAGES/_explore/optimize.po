@@ -36,7 +36,7 @@ msgid "*How many components should the model use?*"
 msgstr ""
 
 #: ../../source/_explore/optimize.rst:8
-msgid "*What’s the best filter length for a Savitzky-Golay filter?*"
+msgid "*What's the best filter length for a Savitzky-Golay filter?*"
 msgstr ""
 
 #: ../../source/_explore/optimize.rst:10
