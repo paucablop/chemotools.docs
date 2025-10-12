@@ -21,29 +21,29 @@ msgstr ""
 
 #: ../../source/explore/index.rst:6
 msgid "Discover the environment"
-msgstr ""
+msgstr "環境を理解する"
 
 #: ../../source/explore/index.rst:26
 msgid "Get started with scikit-learn"
-msgstr ""
+msgstr "scikit-learn を始める"
 
 #: ../../source/explore/index.rst:37
 msgid "Working with spectra"
-msgstr ""
+msgstr "スペクトルを扱う"
 
 #: ../../source/explore/index.rst:48
 msgid "Creating your pipelines"
-msgstr ""
+msgstr "パイプラインを作成する"
 
 #: ../../source/explore/index.rst:59
 msgid "Optimize your processing"
-msgstr ""
+msgstr "処理を最適化する"
 
 #: ../../source/explore/index.rst:70
 msgid "DataFrame lover?"
-msgstr ""
+msgstr "DataFrame がお好きですか？"
 
 #: ../../source/explore/index.rst:82
 msgid "Persisting your models"
-msgstr ""
+msgstr "モデルを永続化する"
 

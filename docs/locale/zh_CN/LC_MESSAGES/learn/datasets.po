@@ -113,7 +113,6 @@ msgid "Polars is supported in ``chemotools``>=0.1.5"
 msgstr "Polars 在 ``chemotools``>=0.1.5 中受支持"
 
 #: ../../source/learn/datasets.rst:51
-#, fuzzy
 msgid ""
 "To learn how to build a PLS model using the Fermentation Dataset, see our"
 " `Training Guide <https://chemotools.org/learn/pls_regression.html>`__."

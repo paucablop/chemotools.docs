@@ -77,7 +77,7 @@ msgid ""
 " integrate natively with the widely adopted ``scikit-learn`` API and the "
 "broader **Python machine learning ecosystem**."
 msgstr ""
-"``chemotools`` は**スペクトル解析のためのPythonパッケージであり、広く採用されている ``scikit-learn`` APIおよび"
+"``chemotools`` はスペクトル解析のためのPythonパッケージであり、広く採用されている ``scikit-learn`` APIおよび"
 "より広範なPython機械学習エコシステムとネイティブに統合するように設計されています。"
 
 #: ../../source/index.rst:52

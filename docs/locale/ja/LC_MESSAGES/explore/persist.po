@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../../source/explore/persist.rst:4
 msgid "Persisting your models"
-msgstr ""
+msgstr "モデルを永続化する"
 
 #: ../../source/explore/persist.rst:6
 msgid ""
@@ -31,30 +31,33 @@ msgid ""
 "pipelines to deploy it to a production environment. In this section, we "
 "will show two ways to persist our models:"
 msgstr ""
+"以前、 ``chemotools`` を ``scikit-learn`` と組み合わせて使用し、データを前処理して予測を行う方法を見ました。"
+"しかし、実際のシナリオでは、訓練済み（フィット済み）のパイプラインを永続化して、本番環境にデプロイしたいと考えます。"
+"このセクションでは、モデルを永続化する2つの方法を紹介します:"
 
 #: ../../source/explore/persist.rst:8
 msgid "Using ``pickle``"
-msgstr ""
+msgstr "``pickle`` を使用する"
 
 #: ../../source/explore/persist.rst:9
 msgid "Using ``joblib``"
-msgstr ""
+msgstr "``joblib`` を使用する"
 
 #: ../../source/explore/persist.rst:11
 msgid "An overview of the workflow is shown in the image below:"
-msgstr ""
+msgstr "ワークフローの概要を以下の画像に示します:"
 
 #: ../../source/explore/persist.rst:13
 msgid "Persist your models"
-msgstr ""
+msgstr "モデルの永続化"
 
 #: ../../source/explore/persist.rst:18
 msgid "For this section, we will use the following fit pipeline as an example:"
-msgstr ""
+msgstr "このセクションでは、以下のフィット済みパイプラインを例として使用します:"
 
 #: ../../source/explore/persist.rst:42
 msgid "Using pickle"
-msgstr ""
+msgstr "pickle を使用する"
 
 #: ../../source/explore/persist.rst:44
 msgid ""
@@ -63,6 +66,8 @@ msgid ""
 "standard module that comes with the Python installation. The following "
 "code shows how to persist a ``scikit-learn`` model using ``pickle``:"
 msgstr ""
+"``pickle`` は、Python オブジェクト構造をシリアル化およびデシリアル化するためのバイナリプロトコルを実装する Python モジュールです。"
+"Python インストールに付属する標準モジュールです。以下のコードは、 ``pickle`` を使用して ``scikit-learn`` モデルを永続化する方法を示しています:"
 
 #: ../../source/explore/persist.rst:47
 msgid ""
@@ -70,10 +75,12 @@ msgid ""
 "maliciously constructed data. Never unpickle data received from an "
 "untrusted or unauthenticated source."
 msgstr ""
+"``pickle`` モジュールは、誤ったデータや悪意を持って構築されたデータに対して安全ではありません。"
+"信頼できない、または認証されていないソースから受け取ったデータを決してアンピクルしないでください。"
 
 #: ../../source/explore/persist.rst:64
 msgid "Using joblib"
-msgstr ""
+msgstr "joblib を使用する"
 
 #: ../../source/explore/persist.rst:66
 msgid ""
@@ -83,4 +90,7 @@ msgid ""
 "can be installed using ``pip``. The following code shows how to persist a"
 " ``scikit-learn`` model using ``joblib``:"
 msgstr ""
+"``joblib`` は、NumPy データ構造を使用する Python オブジェクトを効率的に保存および読み込むためのユーティリティを提供する Python モジュールです。"
+"標準の Python インストールには含まれていませんが、 ``pip`` を使用してインストールできます。"
+"以下のコードは、 ``joblib`` を使用して ``scikit-learn`` モデルを永続化する方法を示しています:"
 

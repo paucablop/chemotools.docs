@@ -509,7 +509,7 @@ msgid ""
 " This will identify the optimal complexity for our PLS model based on "
 "performance metrics across multiple data splits."
 msgstr ""
-"分析には、scikit-learnの ``GridSearchCV`` クラスを使用して、交差検証を通じて"
+"分析には、``scikit-learn`` の ``GridSearchCV`` クラスを使用して、交差検証を通じて"
 "異なるコンポーネント数を体系的にテストします。これにより、複数のデータ分割にわたる"
 "パフォーマンス指標に基づいてPLSモデルの最適な複雑さが特定されます。"
 
