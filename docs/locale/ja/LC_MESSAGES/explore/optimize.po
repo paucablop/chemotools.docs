@@ -245,7 +245,7 @@ msgid ""
 "hyperparameter space is large and well-defined. A visual representation "
 "of the ``RandomizedSearchCV`` process is shown below:"
 msgstr ""
-" ``RandomizedSearchCV`` は、ハイパーパラメータ空間から固定数のランダムな組み合わせをサンプリングし、"
+"``RandomizedSearchCV`` は、ハイパーパラメータ空間から固定数のランダムな組み合わせをサンプリングし、"
 "クロスバリデーションを使用してそれらの性能を評価する手法です。この手法は、ハイパーパラメータ空間が大きく、明確に定義されている場合に有用です。"
 " ``RandomizedSearchCV`` プロセスの視覚的表現を以下に示します:"
 
