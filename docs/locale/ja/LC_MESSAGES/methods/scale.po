@@ -21,33 +21,33 @@ msgstr ""
 
 #: ../../source/methods/scale.rst:2
 msgid "Scaling Methods"
-msgstr ""
+msgstr "スケーリング手法"
 
 #: ../../source/methods/scale.rst:13:<autosummary>:1
 msgid ":py:obj:`MinMaxScaler <chemotools.scale.MinMaxScaler>`"
-msgstr ""
+msgstr ":py:obj:`MinMaxScaler <chemotools.scale.MinMaxScaler>`"
 
 #: ../../source/methods/scale.rst:13:<autosummary>:1
 msgid ""
 "A transformer that scales the input data by subtracting the minimum and "
 "dividing by the difference between the maximum and the minimum."
-msgstr ""
+msgstr "最小値を減算し、最大値と最小値の差で除算して入力データをスケーリングする変換器。"
 
 #: ../../source/methods/scale.rst:13:<autosummary>:1
 msgid ":py:obj:`NormScaler <chemotools.scale.NormScaler>`"
-msgstr ""
+msgstr ":py:obj:`NormScaler <chemotools.scale.NormScaler>`"
 
 #: ../../source/methods/scale.rst:13:<autosummary>:1
 msgid "A transformer that scales the input data by the L-norm of the spectrum."
-msgstr ""
+msgstr "スペクトルのLノルムによって入力データをスケーリングする変換器。"
 
 #: ../../source/methods/scale.rst:13:<autosummary>:1
 msgid ":py:obj:`PointScaler <chemotools.scale.PointScaler>`"
-msgstr ""
+msgstr ":py:obj:`PointScaler <chemotools.scale.PointScaler>`"
 
 #: ../../source/methods/scale.rst:13:<autosummary>:1
 msgid ""
 "A transformer that scales the input data by the intensity value at a "
 "given point."
-msgstr ""
+msgstr "指定された点の強度値によって入力データをスケーリングする変換器。"
 

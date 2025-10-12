@@ -21,49 +21,49 @@ msgstr ""
 
 #: ../../source/methods/outliers_methods.rst:2
 msgid "Outliers Methods"
-msgstr ""
+msgstr "外れ値手法"
 
 #: ../../source/methods/outliers_methods.rst:16:<autosummary>:1
 msgid ":py:obj:`DModX <chemotools.outliers.DModX>`"
-msgstr ""
+msgstr ":py:obj:`DModX <chemotools.outliers.DModX>`"
 
 #: ../../source/methods/outliers_methods.rst:16:<autosummary>:1
 msgid "Calculate Distance to Model (DModX) statistics."
-msgstr ""
+msgstr "モデルまでの距離(DModX)統計量を計算します。"
 
 #: ../../source/methods/outliers_methods.rst:16:<autosummary>:1
 msgid ":py:obj:`HotellingT2 <chemotools.outliers.HotellingT2>`"
-msgstr ""
+msgstr ":py:obj:`HotellingT2 <chemotools.outliers.HotellingT2>`"
 
 #: ../../source/methods/outliers_methods.rst:16:<autosummary>:1
 msgid "Calculate Hotelling's T-squared statistics for PCA or PLS like models."
-msgstr ""
+msgstr "PCAまたはPLS類似モデルのHotellingのT二乗統計量を計算します。"
 
 #: ../../source/methods/outliers_methods.rst:16:<autosummary>:1
 msgid ":py:obj:`QResiduals <chemotools.outliers.QResiduals>`"
-msgstr ""
+msgstr ":py:obj:`QResiduals <chemotools.outliers.QResiduals>`"
 
 #: ../../source/methods/outliers_methods.rst:16:<autosummary>:1
 msgid ""
 "Calculate Q residuals (Squared Prediction Error - SPE) for PCA or PLS "
 "models."
-msgstr ""
+msgstr "PCAまたはPLSモデルのQ残差(二乗予測誤差 - SPE)を計算します。"
 
 #: ../../source/methods/outliers_methods.rst:16:<autosummary>:1
 msgid ":py:obj:`Leverage <chemotools.outliers.Leverage>`"
-msgstr ""
+msgstr ":py:obj:`Leverage <chemotools.outliers.Leverage>`"
 
 #: ../../source/methods/outliers_methods.rst:16:<autosummary>:1
 msgid ""
 "Calculate the leverage of the training samples on  the latent space of a "
 "PLS model."
-msgstr ""
+msgstr "PLSモデルの潜在空間における訓練サンプルのレバレッジを計算します。"
 
 #: ../../source/methods/outliers_methods.rst:16:<autosummary>:1
 msgid ":py:obj:`StudentizedResiduals <chemotools.outliers.StudentizedResiduals>`"
-msgstr ""
+msgstr ":py:obj:`StudentizedResiduals <chemotools.outliers.StudentizedResiduals>`"
 
 #: ../../source/methods/outliers_methods.rst:16:<autosummary>:1
 msgid "Calculate the Studentized Residuals on a _PLS model preditions."
-msgstr ""
+msgstr "PLSモデル予測のスチューデント化残差を計算します。"
 

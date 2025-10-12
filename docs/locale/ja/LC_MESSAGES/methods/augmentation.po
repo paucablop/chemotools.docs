@@ -21,11 +21,11 @@ msgstr ""
 
 #: ../../source/methods/augmentation.rst:5
 msgid "API Modules"
-msgstr ""
+msgstr "API モジュール"
 
 #: ../../source/methods/augmentation.rst:2
 msgid "Augmentation"
-msgstr ""
+msgstr "データ拡張"
 
 #: ../../source/methods/augmentation.rst:3
 msgid ""
@@ -37,4 +37,7 @@ msgid ""
 "preparation—leading to more reliable predictions when applied to unseen "
 "data."
 msgstr ""
+"モデルの堅牢性を高めるために、スペクトルデータに実世界の変動をシミュレートします。これには、実際の測定条件を模倣するために、制御されたノイズ、ベースラインシフト、"
+"または小さな波長のずれを導入することが含まれます。これにより、モデルは実験セットアップ、機器性能、サンプル調製のばらつきを処理する方法を学習し、"
+"未知のデータに適用した際により信頼性の高い予測につながります。"
 

@@ -21,15 +21,15 @@ msgstr ""
 
 #: ../../source/methods/outliers.rst:5
 msgid "API Modules"
-msgstr ""
+msgstr "API モジュール"
 
 #: ../../source/methods/outliers.rst:2
 msgid "Outliers"
-msgstr ""
+msgstr "外れ値"
 
 #: ../../source/methods/outliers.rst:3
 msgid ""
 "Detect outliers from your data to improve diagnostics and reliability of "
 "the results."
-msgstr ""
+msgstr "データから外れ値を検出し、診断と結果の信頼性を向上させます。"
 

@@ -21,15 +21,15 @@ msgstr ""
 
 #: ../../source/methods/methods.rst:4
 msgid "Methods overview"
-msgstr ""
+msgstr "メソッド概要"
 
 #: ../../source/methods/methods.rst:6
 msgid ""
 "This page is a placeholder for upcoming method categories such as "
 "Augmentation, Feature Selection, and Outliers."
-msgstr ""
+msgstr "このページは、拡張、特徴量選択、外れ値などの今後のメソッドカテゴリのプレースホルダです。"
 
 #: ../../source/methods/methods.rst:9
 msgid "Available pages"
-msgstr ""
+msgstr "利用可能なページ"
 

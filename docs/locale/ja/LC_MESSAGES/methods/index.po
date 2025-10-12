@@ -21,13 +21,14 @@ msgstr ""
 
 #: ../../source/methods/index.rst:7
 msgid "Methods"
-msgstr ""
+msgstr "メソッド"
 
 #: ../../source/methods/index.rst:22
 msgid ""
 "Add random variation in your data to simulate different real-world "
 "scenarios."
 msgstr ""
+"さまざまな実世界のシナリオをシミュレートするために、データにランダムな変動を追加します。"
 
 #: ../../source/methods/index.rst:24
 msgid "Augmentation"
@@ -38,6 +39,7 @@ msgid ""
 "Preprocess your data to remove remove noise and highlight the chemical "
 "information."
 msgstr ""
+"ノイズを除去し、化学情報を強調するためにデータを前処理します。"
 
 #: ../../source/methods/index.rst:38
 msgid "Preprocessing"
@@ -48,6 +50,7 @@ msgid ""
 "Select the most chemically relevant features to improve the performance "
 "of your model."
 msgstr ""
+"モデルの性能を向上させるために、化学的に最も関連性の高い特徴を選択します。"
 
 #: ../../source/methods/index.rst:52
 msgid "Feature selection"
@@ -58,6 +61,7 @@ msgid ""
 "Detect outliers from your data to improve diagnostics and reliability of "
 "the results."
 msgstr ""
+"結果の診断と信頼性を向上させるために、データから外れ値を検出します。"
 
 #: ../../source/methods/index.rst:66
 msgid "Outliers"

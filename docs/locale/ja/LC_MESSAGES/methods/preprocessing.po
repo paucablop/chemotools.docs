@@ -21,11 +21,11 @@ msgstr ""
 
 #: ../../source/methods/preprocessing.rst:5
 msgid "API Modules"
-msgstr ""
+msgstr "API モジュール"
 
 #: ../../source/methods/preprocessing.rst:2
 msgid "Preprocessing"
-msgstr ""
+msgstr "前処理"
 
 #: ../../source/methods/preprocessing.rst:3
 msgid ""
@@ -36,4 +36,7 @@ msgid ""
 " instrumental drift or sample inconsistencies, allowing the model to "
 "focus on the true chemical signals that drive accurate predictions."
 msgstr ""
+"ノイズを除去し、スペクトルに含まれる化学情報を強調するためにデータを前処理します。一般的な前処理技術には、ベースライン補正、平滑化、正規化、"
+"微分変換などがあります。これらのステップは、機器ドリフトやサンプルの不整合によって引き起こされる望ましくない変動を排除し、"
+"モデルが正確な予測を導く真の化学シグナルに焦点を当てることを可能にします。"
 
