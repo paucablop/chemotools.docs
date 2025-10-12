@@ -21,39 +21,42 @@ msgstr ""
 
 #: ../../source/api/utils.rst:2
 msgid "chemotools.utils"
-msgstr ""
+msgstr "chemotools.utils"
 
 #: ../../source/api/utils.rst:6
 msgid "Utility functions and helper methods used internally by chemotools."
-msgstr ""
+msgstr "chemotools で内部的に使用されるユーティリティ関数とヘルパーメソッド。"
 
 #: ../../source/api/utils.rst:8
 msgid "**Import from this module:**"
-msgstr ""
+msgstr "このモジュールからのインポート:"
 
 #: ../../source/api/utils.rst:18
 msgid ""
 "This module contains internal utilities. Most users won't need to import "
 "directly from here."
 msgstr ""
+"このモジュールには内部ユーティリティが含まれています。ほとんどのユーザーは、ここから直接インポートする必要はありません。"
 
 #: ../../source/api/utils.rst:20
 msgid ""
 "For linear algebra operations used in preprocessing, see the specific "
 "method classes in other modules."
 msgstr ""
+"前処理で使用される線形代数演算については、他のモジュールの特定のメソッドクラスを参照してください。"
 
 #: ../../source/api/utils.rst:23
 msgid "Available Functions"
-msgstr ""
+msgstr "利用可能な関数"
 
 #: ../../source/api/utils.rst:25
 msgid ""
 "This module provides linear algebra utilities and helper functions that "
 "support the core chemotools methods."
 msgstr ""
+"このモジュールは、chemotools のコアメソッドをサポートする線形代数ユーティリティとヘルパー関数を提供します。"
 
 #: ../../source/api/utils.rst:27
 msgid "See the source code for implementation details."
-msgstr ""
+msgstr "実装の詳細については、ソースコードを参照してください。"
 

@@ -21,71 +21,76 @@ msgstr ""
 
 #: ../../source/api/smooth.rst:2
 msgid "chemotools.smooth"
-msgstr ""
+msgstr "chemotools.smooth"
 
 #: ../../source/api/smooth.rst:6
 msgid "Smoothing methods to reduce noise while preserving spectral features."
-msgstr ""
+msgstr "スペクトル特徴を保持しながらノイズを低減するための平滑化手法。"
 
 #: ../../source/api/smooth.rst:8
 msgid "**Import from this module:**"
-msgstr ""
+msgstr "このモジュールからのインポート:"
 
 #: ../../source/api/smooth.rst:20
 msgid "Available Classes"
-msgstr ""
+msgstr "利用可能なクラス"
 
 #: ../../source/api/smooth.rst:26
 msgid "Class"
-msgstr ""
+msgstr "クラス"
 
 #: ../../source/api/smooth.rst:27
 msgid "Description"
-msgstr ""
+msgstr "説明"
 
 #: ../../source/api/smooth.rst:28
 msgid ":doc:`MeanFilter </methods/generated/chemotools.smooth.MeanFilter>`"
-msgstr ""
+msgstr ":doc:`MeanFilter </methods/generated/chemotools.smooth.MeanFilter>`"
 
 #: ../../source/api/smooth.rst:29
 msgid "Moving average smoothing"
-msgstr ""
+msgstr "移動平均平滑化"
 
 #: ../../source/api/smooth.rst:30
 msgid ":doc:`MedianFilter </methods/generated/chemotools.smooth.MedianFilter>`"
-msgstr ""
+msgstr ":doc:`MedianFilter </methods/generated/chemotools.smooth.MedianFilter>`"
 
 #: ../../source/api/smooth.rst:31
 msgid "Median filter for noise reduction"
-msgstr ""
+msgstr "ノイズ低減のためのメディアンフィルタ"
 
 #: ../../source/api/smooth.rst:32
 msgid ""
 ":doc:`SavitzkyGolayFilter "
 "</methods/generated/chemotools.smooth.SavitzkyGolayFilter>`"
 msgstr ""
+":doc:`SavitzkyGolayFilter "
+"</methods/generated/chemotools.smooth.SavitzkyGolayFilter>`"
 
 #: ../../source/api/smooth.rst:33
 msgid "Savitzky-Golay smoothing filter"
-msgstr ""
+msgstr "Savitzky-Golay 平滑化フィルタ"
 
 #: ../../source/api/smooth.rst:34
 msgid ""
 ":doc:`WhittakerSmooth "
 "</methods/generated/chemotools.smooth.WhittakerSmooth>`"
 msgstr ""
+":doc:`WhittakerSmooth "
+"</methods/generated/chemotools.smooth.WhittakerSmooth>`"
 
 #: ../../source/api/smooth.rst:35
 msgid "Whittaker smoothing with penalized least squares"
-msgstr ""
+msgstr "ペナルティ付き最小二乗法による Whittaker 平滑化"
 
 #: ../../source/api/smooth.rst:38
 msgid "See Also"
-msgstr ""
+msgstr "関連項目"
 
 #: ../../source/api/smooth.rst:40
 msgid ""
 ":doc:`Smoothing Methods Overview </methods/smooth>` - Complete "
 "documentation with examples and visual guides"
 msgstr ""
+":doc:`平滑化手法の概要 </methods/smooth>` - 例とビジュアルガイドを含む完全なドキュメント"
 

@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../../source/api/augmentation.rst:2
 msgid "chemotools.augmentation"
-msgstr ""
+msgstr "chemotools.augmentation"
 
 #: ../../source/api/augmentation.rst:6
 msgid ""
@@ -29,86 +29,96 @@ msgid ""
 "controlled variation to your data to simulate different real-world "
 "scenarios and improve model robustness."
 msgstr ""
+"スペクトル分析のためのデータ拡張手法。これらの手法は、さまざまな実世界のシナリオをシミュレートし、モデルの堅牢性を向上させるために、データに制御された変動を追加します。"
 
 #: ../../source/api/augmentation.rst:8
 msgid "**Import from this module:**"
-msgstr ""
+msgstr "このモジュールからのインポート:"
 
 #: ../../source/api/augmentation.rst:22
 msgid "Available Classes"
-msgstr ""
+msgstr "利用可能なクラス"
 
 #: ../../source/api/augmentation.rst:28
 msgid "Class"
-msgstr ""
+msgstr "クラス"
 
 #: ../../source/api/augmentation.rst:29
 msgid "Description"
-msgstr ""
+msgstr "説明"
 
 #: ../../source/api/augmentation.rst:30
 msgid ":doc:`AddNoise </methods/generated/chemotools.augmentation.AddNoise>`"
-msgstr ""
+msgstr ":doc:`AddNoise </methods/generated/chemotools.augmentation.AddNoise>`"
 
 #: ../../source/api/augmentation.rst:31
 msgid "Add random noise to spectra"
-msgstr ""
+msgstr "スペクトルにランダムノイズを追加"
 
 #: ../../source/api/augmentation.rst:32
 msgid ""
 ":doc:`BaselineShift "
 "</methods/generated/chemotools.augmentation.BaselineShift>`"
 msgstr ""
+":doc:`BaselineShift "
+"</methods/generated/chemotools.augmentation.BaselineShift>`"
 
 #: ../../source/api/augmentation.rst:33
 msgid "Shift baseline by a constant value"
-msgstr ""
+msgstr "ベースラインを定数値でシフト"
 
 #: ../../source/api/augmentation.rst:34
 msgid ""
 ":doc:`FractionalShift "
 "</methods/generated/chemotools.augmentation.FractionalShift>`"
 msgstr ""
+":doc:`FractionalShift "
+"</methods/generated/chemotools.augmentation.FractionalShift>`"
 
 #: ../../source/api/augmentation.rst:35
 msgid "Apply fractional wavelength shifts"
-msgstr ""
+msgstr "波長の分数シフトを適用"
 
 #: ../../source/api/augmentation.rst:36
 msgid ""
 ":doc:`GaussianBroadening "
 "</methods/generated/chemotools.augmentation.GaussianBroadening>`"
 msgstr ""
+":doc:`GaussianBroadening "
+"</methods/generated/chemotools.augmentation.GaussianBroadening>`"
 
 #: ../../source/api/augmentation.rst:37
 msgid "Broaden peaks with Gaussian kernel"
-msgstr ""
+msgstr "ガウシアンカーネルでピークを広げる"
 
 #: ../../source/api/augmentation.rst:38
 msgid ":doc:`IndexShift </methods/generated/chemotools.augmentation.IndexShift>`"
-msgstr ""
+msgstr ":doc:`IndexShift </methods/generated/chemotools.augmentation.IndexShift>`"
 
 #: ../../source/api/augmentation.rst:39
 msgid "Shift spectra by index positions"
-msgstr ""
+msgstr "インデックス位置でスペクトルをシフト"
 
 #: ../../source/api/augmentation.rst:40
 msgid ""
 ":doc:`SpectrumScale "
 "</methods/generated/chemotools.augmentation.SpectrumScale>`"
 msgstr ""
+":doc:`SpectrumScale "
+"</methods/generated/chemotools.augmentation.SpectrumScale>`"
 
 #: ../../source/api/augmentation.rst:41
 msgid "Scale spectrum intensity"
-msgstr ""
+msgstr "スペクトル強度をスケーリング"
 
 #: ../../source/api/augmentation.rst:44
 msgid "See Also"
-msgstr ""
+msgstr "関連項目"
 
 #: ../../source/api/augmentation.rst:46
 msgid ""
 ":doc:`Augmentation Methods Overview </methods/augmentation>` - Complete "
 "documentation with examples and visual guides"
 msgstr ""
+":doc:`データ拡張手法の概要 </methods/augmentation>` - 例とビジュアルガイドを含む完全なドキュメント"
 

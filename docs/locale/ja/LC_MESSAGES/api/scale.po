@@ -21,61 +21,63 @@ msgstr ""
 
 #: ../../source/api/scale.rst:2
 msgid "chemotools.scale"
-msgstr ""
+msgstr "chemotools.scale"
 
 #: ../../source/api/scale.rst:6
 msgid ""
 "Scaling methods to normalize spectral intensity and improve model "
 "performance."
 msgstr ""
+"スペクトル強度を正規化し、モデル性能を向上させるためのスケーリング手法。"
 
 #: ../../source/api/scale.rst:8
 msgid "**Import from this module:**"
-msgstr ""
+msgstr "このモジュールからのインポート:"
 
 #: ../../source/api/scale.rst:19
 msgid "Available Classes"
-msgstr ""
+msgstr "利用可能なクラス"
 
 #: ../../source/api/scale.rst:25
 msgid "Class"
-msgstr ""
+msgstr "クラス"
 
 #: ../../source/api/scale.rst:26
 msgid "Description"
-msgstr ""
+msgstr "説明"
 
 #: ../../source/api/scale.rst:27
 msgid ":doc:`MinMaxScaler </methods/generated/chemotools.scale.MinMaxScaler>`"
-msgstr ""
+msgstr ":doc:`MinMaxScaler </methods/generated/chemotools.scale.MinMaxScaler>`"
 
 #: ../../source/api/scale.rst:28
 msgid "Scale features to a given range (min-max normalization)"
-msgstr ""
+msgstr "特徴を指定された範囲にスケーリング（最小最大正規化）"
 
 #: ../../source/api/scale.rst:29
 msgid ":doc:`NormScaler </methods/generated/chemotools.scale.NormScaler>`"
-msgstr ""
+msgstr ":doc:`NormScaler </methods/generated/chemotools.scale.NormScaler>`"
 
 #: ../../source/api/scale.rst:30
 msgid "Scale by vector norm (L1, L2, or max)"
-msgstr ""
+msgstr "ベクトルノルムでスケーリング（L1、L2、または最大値）"
 
 #: ../../source/api/scale.rst:31
 msgid ":doc:`PointScaler </methods/generated/chemotools.scale.PointScaler>`"
-msgstr ""
+msgstr ":doc:`PointScaler </methods/generated/chemotools.scale.PointScaler>`"
 
 #: ../../source/api/scale.rst:32
 msgid "Scale relative to a specific point in the spectrum"
-msgstr ""
+msgstr "スペクトル内の特定の点を基準にスケーリング"
 
 #: ../../source/api/scale.rst:35
 msgid "See Also"
-msgstr ""
+msgstr "関連項目"
 
 #: ../../source/api/scale.rst:37
 msgid ""
 ":doc:`Scale Methods Overview </methods/scale>` - Complete documentation "
 "with examples and visual guides"
 msgstr ""
+":doc:`スケーリング手法の概要 </methods/scale>` - 例とビジュアルガイドを含む完全なドキュメント"
 
