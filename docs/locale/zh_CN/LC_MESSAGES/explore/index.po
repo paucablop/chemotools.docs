@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../../source/explore/index.rst:6
 msgid "Discover the environment"
-msgstr ""
+msgstr "探索环境"
 
 #: ../../source/explore/index.rst:26
 msgid "Get started with scikit-learn"

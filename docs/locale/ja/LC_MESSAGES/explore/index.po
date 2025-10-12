@@ -25,25 +25,25 @@ msgstr "環境を理解する"
 
 #: ../../source/explore/index.rst:26
 msgid "Get started with scikit-learn"
-msgstr "scikit-learn を始める"
+msgstr "scikit-learnを始める"
 
 #: ../../source/explore/index.rst:37
 msgid "Working with spectra"
-msgstr "スペクトルを扱う"
+msgstr "スペクトルデータの操作"
 
 #: ../../source/explore/index.rst:48
 msgid "Creating your pipelines"
-msgstr "パイプラインを作成する"
+msgstr "パイプラインの作成"
 
 #: ../../source/explore/index.rst:59
 msgid "Optimize your processing"
-msgstr "処理を最適化する"
+msgstr "処理の最適化"
 
 #: ../../source/explore/index.rst:70
 msgid "DataFrame lover?"
-msgstr "DataFrame がお好きですか？"
+msgstr "DataFrameが好き？"
 
 #: ../../source/explore/index.rst:82
 msgid "Persisting your models"
-msgstr "モデルを永続化する"
+msgstr "モデルの永続化"
 
