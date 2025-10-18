@@ -46,7 +46,6 @@ class SubtractReference(TransformerMixin, OneToOneFeatureMixin, BaseEstimator):
     >>> transformer.fit(X)
     >>> # Generate baseline-corrected data
     >>> X_corrected = transformer.transform(X)
-
     """
 
     def __init__(

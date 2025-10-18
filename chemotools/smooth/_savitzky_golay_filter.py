@@ -1,5 +1,5 @@
 """
-The :mod:`chemotools.smooth._median_filter` module implements the Median Filter (MD) transformation.
+The :mod:`chemotools.smooth._savitzky_golay_filter` module implements the Savitzky-Golay Filter (SGF) transformation.
 """
 
 # Authors: Pau Cabaneros
@@ -47,7 +47,6 @@ class SavitzkyGolayFilter(TransformerMixin, OneToOneFeatureMixin, BaseEstimator)
     SavitzkyGolayFilter()
     >>> # Fit and transform the data
     >>> X_smoothed = sgf.fit_transform(X)
-
     """
 
     def __init__(

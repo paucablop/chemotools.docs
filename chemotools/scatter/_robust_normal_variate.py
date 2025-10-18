@@ -70,7 +70,7 @@ class RobustNormalVariate(TransformerMixin, OneToOneFeatureMixin, BaseEstimator)
         Fit the transformer to the input data.
 
         Parameters
-        ---------->
+        ----------
         X : np.ndarray of shape (n_samples, n_features)
             The input data to fit the transformer to.
 

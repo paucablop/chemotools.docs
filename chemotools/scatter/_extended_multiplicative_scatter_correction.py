@@ -105,7 +105,7 @@ class ExtendedMultiplicativeScatterCorrection(
 
         Returns
         -------
-        self : MultiplicativeScatterCorrection
+        self : ExtendedMultiplicativeScatterCorrection
             The fitted transformer.
         """
         # Check that X is a 2D array and has only finite values

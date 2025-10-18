@@ -1,3 +1,9 @@
+"""
+The :mod:`chemotools.feature_selection._range_cut` module implements the RangeCut
+to select specific features from spectral data based on start and end indices or 
+wavenumbers.
+"""
+
 from typing import Optional
 
 import numpy as np

@@ -86,7 +86,7 @@ class SavitzkyGolay(TransformerMixin, OneToOneFeatureMixin, BaseEstimator):
 
         Returns
         -------
-        self : NorrisWilliams
+        self : SavitzkyGolay
             The fitted transformer.
         """
         # Check that X is a 2D array and has only finite values
